@@ -31,7 +31,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             case 'angeliar':
                 bot.sendMessage({
                     to: channelID,
-                    message: 'Angelia R: Thy Fair Lady **Passive:** - **Advisor Skill:** Grant front row ally (x0.6) Armor (CD: 3) **1B:** Grant front row ally (x0.6) Armor, trigger 1 block skill **2B:** Grant all allies (x0.72) Armor **4B:** Heal (Attack power Icon x 1.8) front row ally'
+                    message: '```Angelia R: Thy Fair Lady 
+                    **Passive:** - 
+                    **Advisor Skill:** Grant front row ally (x0.6) Armor (CD: 3) 
+                    **1B:** Grant front row ally (x0.6) Armor, trigger 1 block skill 
+                    **2B:** Grant all allies (x0.72) Armor *
+                    *4B:** Heal (Attack power Icon x 1.8) front row ally```'
                 });
             break;
             // Just add any case commands if you want to..
