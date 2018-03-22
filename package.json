@@ -4,5 +4,6 @@
   "description": "The sdorica bot",
   "main": "bot.js",
   "author": "Karen",
+  "private": true,
   "dependencies": {}
 }
