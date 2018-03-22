@@ -30,7 +30,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             case 'angelia r':
                 bot.sendMessage({
                     to: channelID,
-                    message: ' Angelia R: Thy Fair Lady'
+                    message: 'Angelia R: Thy Fair Lady'
                 });
             break;
             // Just add any case commands if you want to..
