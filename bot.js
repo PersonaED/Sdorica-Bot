@@ -26,11 +26,15 @@ bot.on('message', function (user, userID, channelID, message, evt) {
        
         args = args.splice(1);
         switch(cmd) {
-            // !ping
-            case 'ping':
+            // !angelia r
+            case 'angelia r':
                 bot.sendMessage({
                     to: channelID,
-                    message: 'Pong!'
+                    message: ' Angelia R: Thy Fair Lady '
+                
+                
+                
+                
                 });
             break;
             // Just add any case commands if you want to..
