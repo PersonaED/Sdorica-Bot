@@ -31,7 +31,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             case 'angeliar':
                 bot.sendMessage({
                     to: channelID,
-                    message: '{files: ["https://i.imgur.com/sT1bN2g.png"]}\nAngelia R: Thy Fair Lady \n**Passive:** - \n**Advisor Skill:** Grant front row ally (x0.6) Armor (CD: 3) \n**1B:** Grant front row ally (x0.6) Armor, trigger 1 block skill \n**2B:** Grant all allies (x0.72) Armor \n**4B:** Heal (x 1.8) front row ally'
+                    message: '"image": {"url": "https://i.imgur.com/sT1bN2g.png" \nAngelia R: Thy Fair Lady \n**Passive:** - \n**Advisor Skill:** Grant front row ally (x0.6) Armor (CD: 3) \n**1B:** Grant front row ally (x0.6) Armor, trigger 1 block skill \n**2B:** Grant all allies (x0.72) Armor \n**4B:** Heal (x 1.8) front row ally'
                 });
             break;
             // Just add any case commands if you want to..
