@@ -30,10 +30,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             case 'angelia r':
                 bot.sendMessage({
                     to: channelID,
-                    message: ' Angelia R: Thy Fair Lady
-                    
-                    https://vignette.wikia.nocookie.net/sdorica/images/8/86/%28Thy_Fair_Lady%29_Angelia.png/revision/latest?cb=20170918005835
-                    '
+                    message: ' Angelia R: Thy Fair Lady'
                 });
             break;
             // Just add any case commands if you want to..
