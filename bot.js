@@ -27,8 +27,8 @@ bot.on('message', function (user, userID, channelID, message, evt) {
        
         args = args.splice(1);
         switch(cmd) {
-            // !ping
-            case 'ping':
+            // !angeliar
+            case 'angeliar':
                 bot.sendMessage({
                     to: channelID,
                     message: 'Angelia R: Thy Fair Lady'
