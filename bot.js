@@ -1,3 +1,4 @@
+
 var Discord = require('discord.io');
 var logger = require('winston');
 var auth = require('./auth.json');
@@ -26,11 +27,11 @@ bot.on('message', function (user, userID, channelID, message, evt) {
        
         args = args.splice(1);
         switch(cmd) {
-            // !angelia r
-            case 'angelia r':
+            // !ping
+            case 'ping':
                 bot.sendMessage({
                     to: channelID,
-                    message: 'Angelia R: Thy Fair Lady'
+                    message: 'Pong!'
                 });
             break;
             // Just add any case commands if you want to..
