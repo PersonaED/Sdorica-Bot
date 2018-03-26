@@ -19,7 +19,7 @@ export default {
     "advisor": "Grant front row ally (x 0.6) Armor (CD: 3)",
     "1B": "Grant front row ally (x 0.6) Armor, trigger 1 block skill",
     "2B": "Grant all allies (x0.72) Armor",
-    "4B": "Heal (x 1.8) front row ally, grant Exhaust, trigger 2 block skill. \n_Exhaust: Skill power decreased by 30% for each stack. 3 stacks max",
+    "4B": "Heal (x 1.8) front row ally, grant Exhaust, trigger 2 block skill. \n_Exhaust: Skill power decreased by 30% for each stack. 3 stacks max_",
   },
   "angelia sr": {
     "tier": "sr",
