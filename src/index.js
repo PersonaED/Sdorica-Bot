@@ -9,15 +9,14 @@ client.on("ready", () => {
 });
 
 const sendMessage = (characterInfo, message) => {
-  message.channel.send({
+  const { tier, block } = characterInfo;
+  const messageTemplate = {
     "embed": {
-      "color": 16777215,
       "thumbnail": {
         "url": characterInfo.sprite || '-'
       },
       "author": {
         "name": characterInfo.name || '-',
-        "icon_url": "https://i.imgur.com/U1PAqYL.png" || '-'
       },
       "fields": [
         {
@@ -42,11 +41,60 @@ const sendMessage = (characterInfo, message) => {
         }
       ]
     }
-  });
+  }
+
+  if (block) {
+    switch(block.toLowerCase()) {
+      case 'gold': {
+        messageTemplate.embed.color = 15778654;
+        break;
+      }
+      case 'yellow': {
+        messageTemplate.embed.color = 15778654;
+        break;
+      }
+      case 'black': {
+        messageTemplate.embed.color = 4928799;
+        break;
+      }
+      case 'white': {
+        messageTemplate.embed.color = 16777205;
+        break;
+      }
+      default: {
+        messageTemplate.embed.color = 4886754;
+      }
+    }
+  }
+
+  if (tier) {
+    switch(tier.toLowerCase()) {
+      case 'n': {
+        messageTemplate.embed.author.icon_url = "https://i.imgur.com/8deb9BH.png";
+        break;
+      }
+      case 'r': {
+        messageTemplate.embed.author.icon_url = "https://i.imgur.com/2zOUJmF.png";
+        break;
+      }
+      case 'sr': {
+        messageTemplate.embed.author.icon_url = "https://i.imgur.com/8xIe2Iv.png";
+        break;
+      }
+      case 'ssr': {
+        messageTemplate.embed.author.icon_url = "https://i.imgur.com/gBz92gT.png";
+        break;
+      }
+      default: {}
+    }
+  }
+  message.channel.send(messageTemplate);
 }
 
 client.on("message", (message) => {
-  const { content } = message;
+  const content = message.content.toLowerCase();
+
+  console.log(Object.keys(angelia));
 
   if (content.startsWith("!angelia n")) {
     sendMessage(angelia["angelia n"], message);
@@ -64,47 +112,6 @@ client.on("message", (message) => {
     sendMessage(angelia["angelia skin"], message);
   }
 
-  // if (content.startsWith("!angelian")) {
-  //   message.channel.send({
-  //     "embed": {
-  //       "color": 16777215,
-  //       "thumbnail": {
-  //         "url": "https://i.imgur.com/sT1bN2g.png"
-  //       },
-  //       "author": {
-  //         "name": "Angelia N: Thy Fair Lady",
-  //         "icon_url": "https://i.imgur.com/U1PAqYL.png"
-  //       },
-  //       "fields": [
-  //         {
-  //           "name": "Passive: ",
-  //           "value": "-"
-  //         },
-  //         {
-  //           "name": "Advisor Skill:",
-  //           "value": "Grant front row ally (x 0.6) Armor (CD: 3)"
-  //         },
-  //         {
-  //           "name": "1B:",
-  //           "value": "Grant front row ally (x 0.6) Armor, trigger 1 block skill"
-  //         },
-  //         {
-  //           "name": "2B:",
-  //           "value": "Grant all allies (x0.72) Armor"
-  //         },
-  //         {
-  //           "name": "4B",
-  //           "value": "Heal (Attack power Icon x 1.8) front row ally",
-  //           "inline": true
-  //         }
-  //       ]
-  //     }
-  //   });
-  // }
-  //
-  // if (message.content.startsWith("!sdoricabothelp")) {
-  //   message.channel.send("made by karen with love");
-  // }
 
 });
 
