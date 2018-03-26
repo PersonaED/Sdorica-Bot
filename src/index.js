@@ -1,8 +1,30 @@
+import buckets from 'buckets-js';
 import { angelia } from './assets';
 import settings from './settings'
 
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const validTiers = ['n', 'r', 'sr', 'ssr']
+const charactersDB = {
+  angelia,
+};
+
+const compare = (a, b) => {
+  if (a < b) {
+     return -1;
+  } if (a > b) {
+     return 1;
+  }
+  return 0;
+}
+
+const searchPointer = new buckets.BSTree(compare);
+Object.keys(charactersDB).forEach((characterInfo) => {
+  const charType = Object.keys(charactersDB[characterInfo]);
+  charType.forEach((keyName) => {
+    searchPointer.add(keyName);
+  })
+})
 
 client.on("ready", () => {
   console.log("I am ready!");
@@ -20,7 +42,7 @@ const sendMessage = (characterInfo, message) => {
       },
       "fields": [
         {
-          "name": "Passive: ",
+          "name": "Passive:",
           "value": characterInfo.passive || '-'
         },
         {
@@ -36,7 +58,7 @@ const sendMessage = (characterInfo, message) => {
           "value": characterInfo["2B"] || '-'
         },
         {
-          "name": "4B",
+          "name": "4B:",
           "value": characterInfo["4B"] || '-'
         }
       ]
@@ -69,19 +91,19 @@ const sendMessage = (characterInfo, message) => {
 
   if (tier) {
     switch(tier.toLowerCase()) {
-      case 'n': {
+      case validTiers[0]: {
         messageTemplate.embed.author.icon_url = "https://i.imgur.com/8deb9BH.png";
         break;
       }
-      case 'r': {
+      case validTiers[1]: {
         messageTemplate.embed.author.icon_url = "https://i.imgur.com/2zOUJmF.png";
         break;
       }
-      case 'sr': {
+      case validTiers[2]: {
         messageTemplate.embed.author.icon_url = "https://i.imgur.com/8xIe2Iv.png";
         break;
       }
-      case 'ssr': {
+      case validTiers[3]: {
         messageTemplate.embed.author.icon_url = "https://i.imgur.com/gBz92gT.png";
         break;
       }
@@ -93,26 +115,22 @@ const sendMessage = (characterInfo, message) => {
 
 client.on("message", (message) => {
   const content = message.content.toLowerCase();
+  const splitContent = content.split(/[ ,]+/);
 
-  console.log(Object.keys(angelia));
-
-  if (content.startsWith("!angelia n")) {
-    sendMessage(angelia["angelia n"], message);
-  }
-  if (content.startsWith("!angelia r")) {
-    sendMessage(angelia["angelia r"], message);
-  }
-  if (content.startsWith("!angelia sr")) {
-    sendMessage(angelia["angelia sr"], message);
-  }
-  if (content.startsWith("!angelia ssr")) {
-    sendMessage(angelia["angelia ssr"], message);
-  }
-  if (content.startsWith("!angelia skin")) {
-    sendMessage(angelia["angelia skin"], message);
+  // if missing !, ignore everything
+  if (content.charAt(0) !== "!") {
+    return;
   }
 
-
+  // send message for particular sdorica hero character
+  if (splitContent.length >= 2) {
+    const name = splitContent[0].replace("!", "").toLowerCase();
+    const type = splitContent[1].toLowerCase();
+    const joinedMessage = `${name} ${type}`;
+    if (searchPointer.contains(joinedMessage)) {
+      sendMessage(charactersDB[name][joinedMessage], message);
+    }
+  }
 });
 
 client.login(settings.token);

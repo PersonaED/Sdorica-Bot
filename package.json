@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Sdorica Bot for character info",
   "dependencies": {
+    "buckets-js": "^1.98.2",
     "discord.js": "^11.3.2"
   },
   "devDependencies": {
@@ -14,6 +15,7 @@
     "clean": "rm -rf build && mkdir build",
     "babel": "babel src --out-dir build",
     "build": "npm run clean && npm run babel",
+    "production": "npm run build && npm start",
     "start": "node ./build/index.js"
   },
   "repository": {
