@@ -1,0 +1,9 @@
+const Discord = require("discord.js");
+const client = new Discord.Client();
+const config = require("./config.json");
+{
+  "token": "NDI2MjM5MTE0MjY2ODA0MjI0.DZYDYw.mzxBDabB4M50hX0SgBxmsEbyFPc",
+  "ownerID": "karen"
+}
+
+if(message.author.id !== config.ownerID) return;
