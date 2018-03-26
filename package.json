@@ -1,7 +1,29 @@
 {
-  "name": "",
-  "version": "",
+  "name": "sdorica-bot",
+  "version": "1.0.0",
+  "description": "Sdorica Bot for character info",
   "dependencies": {
     "discord.js": "^11.3.2"
-  }
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "scripts": {
+    "clean": "rm -rf build && mkdir build",
+    "babel": "babel src --out-dir build",
+    "build": "npm run clean && npm run babel",
+    "start": "node ./build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjzxc/Sdorica-Bot.git"
+  },
+  "author": "Karen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kjzxc/Sdorica-Bot/issues"
+  },
+  "homepage": "https://github.com/kjzxc/Sdorica-Bot#readme"
 }
