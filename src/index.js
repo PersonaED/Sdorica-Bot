@@ -1,5 +1,5 @@
 import buckets from 'buckets-js';
-import { angelia } from './assets';
+import { angelia, yanbo } from './assets';
 import settings from './settings'
 
 const Discord = require("discord.js");
@@ -7,6 +7,7 @@ const client = new Discord.Client();
 const validTiers = ['n', 'r', 'sr', 'ssr']
 const charactersDB = {
   angelia,
+  "yan-bo": yanbo,
 };
 
 const compare = (a, b) => {
@@ -42,24 +43,24 @@ const sendMessage = (characterInfo, message) => {
       },
       "fields": [
         {
-          "name": "Passive:",
-          "value": characterInfo.passive || '-'
+          "name": `Passive: ${characterInfo.passive.name}`,
+          "value": characterInfo.passive.description || '-'
         },
         {
-          "name": "Advisor Skill:",
-          "value": characterInfo.advisor || '-'
+          "name": `Advisor Skill: ${characterInfo.advisor.name}`,
+          "value": characterInfo.advisor.description || '-'
         },
         {
-          "name": "1B:",
-          "value": characterInfo["1B"] || '-'
+          "name": `1B: ${characterInfo["1B"].name}`,
+          "value": characterInfo["1B"].description || '-'
         },
         {
-          "name": "2B:",
-          "value": characterInfo["2B"] || '-'
+          "name": `2B: ${characterInfo["2B"].name}`,
+          "value": characterInfo["2B"].description || '-'
         },
         {
-          "name": "4B:",
-          "value": characterInfo["4B"] || '-'
+          "name": `4B: ${characterInfo["4B"].name}`,
+          "value": characterInfo["4B"].description || '-'
         }
       ]
     }
