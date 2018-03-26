@@ -115,7 +115,7 @@ const sendMessage = (characterInfo, message) => {
 
 client.on("message", (message) => {
   const content = message.content.toLowerCase();
-  const splitContent = content.split(/[ ,]+/);
+  const splitContent = content.split(" ");
 
   // if missing !, ignore everything
   if (content.charAt(0) !== "!") {
