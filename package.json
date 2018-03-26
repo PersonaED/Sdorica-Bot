@@ -1,9 +1,0 @@
-{
-  "name": "Sdorica Bot",
-  "version": "1.0.0",
-  "description": "The sdorica bot",
-  "main": "bot.js",
-  "author": "Karen",
-  "private": true,
-  "dependencies": {}
-}
