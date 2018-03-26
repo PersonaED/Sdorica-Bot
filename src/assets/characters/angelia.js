@@ -47,7 +47,7 @@ export default {
     "tier": "ssr",
     "sprite": "https://i.imgur.com/sETzJmO.png",
     "block": "white",
-    "name": "Angelia Skin: Daybreak Darling",
+    "name": "Angelia Skill Book: Daybreak Darling",
     "passive": "Upon cast Armor, if target has Exhaust/Vulnerability, trigger target 1 block skill. \n_Exhaust: Skill power decreased by 30% for each stack. 3 stacks max._ \n_Vulnerability: Upon incoming Attack, damage increased by 30% for each stack. 3 stacks max_",
     "advisor": "Trigger front row ally 1 block skill. (CD: 3)",
     "1B": "Grant front row ally (x 0.6) Armor, trigger 1 block skill",
