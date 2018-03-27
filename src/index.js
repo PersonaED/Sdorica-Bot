@@ -7,6 +7,7 @@ import {
   dylan,
   hestia,
   experiment,
+  golemwalt,
   yamitsuki,
   yanbo,
 } from './assets';
@@ -24,6 +25,7 @@ const characterMap = {
   dylan,
   hestia,
   experiment,
+  golemwalt,
   yamitsuki,
   "yan-bo": yanbo,
 };
