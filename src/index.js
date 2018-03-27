@@ -1,5 +1,12 @@
 import buckets from 'buckets-js';
-import { angelia, yanbo, yamitsuki, crushfang } from './assets';
+import {
+  angelia,
+  aosta,
+  crushfang,
+  dylan,
+  yamitsuki,
+  yanbo,
+} from './assets';
 import settings from './settings'
 import { mapCharacterNames } from './commandMap';
 
@@ -8,9 +15,11 @@ const client = new Discord.Client();
 const validTiers = ['n', 'r', 'sr', 'ssr']
 const characterMap = {
   angelia,
-  "yan-bo": yanbo,
-  yamitsuki,
+  aosta,
   crushfang,
+  dylan,
+  yamitsuki,
+  "yan-bo": yanbo,
 };
 
 const compare = (a, b) => {

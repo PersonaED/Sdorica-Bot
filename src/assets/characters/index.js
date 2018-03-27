@@ -1,11 +1,15 @@
 import angelia from './angelia.js';
-import yanbo from './yanbo.js';
-import yamitsuki from './yamitsuki.js';
+import aosta from './aosta.js';
 import crushfang from './crushfang.js';
+import dylan from './dylan.js';
+import yamitsuki from './yamitsuki.js';
+import yanbo from './yanbo.js';
 
 export {
   angelia,
-  yanbo,
-  yamitsuki,
+  aosta,
   crushfang,
+  dylan,
+  yamitsuki,
+  yanbo,
 }

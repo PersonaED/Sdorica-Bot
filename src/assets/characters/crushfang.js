@@ -111,7 +111,7 @@ export default {
     },
     "4B": {
       "name": "Rumble In The Jungle",
-      "description": "Attack (:crossed_swords: x 1.2) selected enemy, then attack all enemy characters (Attack power Icon x 1.2). Grant self (:crossed_swords: x 0.6) Armor"
+      "description": "Attack (:crossed_swords: x 1.2) selected enemy, then attack all enemy characters (:crossed_swords: x 1.2). Grant self (:crossed_swords: x 0.6) Armor"
     },
     "status": [],
   },
