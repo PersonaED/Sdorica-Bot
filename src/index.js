@@ -1,5 +1,5 @@
 import buckets from 'buckets-js';
-import { angelia, yanbo, yamitsuki } from './assets';
+import { angelia, yanbo, yamitsuki, crushfang } from './assets';
 import settings from './settings'
 import { mapCharacterNames } from './commandMap';
 
@@ -10,6 +10,7 @@ const characterMap = {
   angelia,
   "yan-bo": yanbo,
   yamitsuki,
+  crushfang,
 };
 
 const compare = (a, b) => {
