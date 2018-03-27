@@ -34,7 +34,7 @@ client.on("ready", () => {
 });
 
 const sendMessage = (characterInfo, message) => {
-  const { tier, block } = characterInfo;
+  const { tier, block, status } = characterInfo;
   const messageTemplate = {
     "embed": {
       "thumbnail": {
@@ -66,6 +66,21 @@ const sendMessage = (characterInfo, message) => {
         }
       ]
     }
+  }
+
+  if (status && status.length !== 0) {
+    let statusString = "";
+    status.forEach((effect) => {
+      const discordStyled = `\n\n_${effect}_`;
+      statusString = `${statusString}${discordStyled}`;
+    })
+    const statusEffects = {
+      "name": "_",
+      "value": statusString
+    }
+    const currentFields = [... messageTemplate.embed.fields];
+    currentFields.push(statusEffects);
+    messageTemplate.embed.fields = currentFields;
   }
 
   if (block) {
