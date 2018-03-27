@@ -15,7 +15,8 @@ import { mapCharacterNames } from './commandMap';
 
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const validTiers = ['n', 'r', 'sr', 'ssr']
+const validTiers = ['n', 'r', 'sr', 'ssr'];
+const validInfuse = ['n', 'r', 'sr'];
 const characterMap = {
   angelia,
   aosta,
@@ -27,6 +28,7 @@ const characterMap = {
   "yan-bo": yanbo,
 };
 
+// Comparison function used for BST
 const compare = (a, b) => {
   if (a < b) {
      return -1;
@@ -36,6 +38,7 @@ const compare = (a, b) => {
   return 0;
 }
 
+// BST to store valid commands for characters
 const searchPointer = new buckets.BSTree(compare);
 Object.keys(characterMap).forEach((characterInfo) => {
   const charType = Object.keys(characterMap[characterInfo]);
@@ -43,6 +46,15 @@ Object.keys(characterMap).forEach((characterInfo) => {
     searchPointer.add(keyName);
   })
 })
+
+// Array of valid infuse characters (N, R, SR)
+const infuseCharacters = [];
+searchPointer.forEach((character) => {
+  const charactersSplit = character.split(" ");
+  if (validInfuse.includes(charactersSplit[1].toLowerCase())) {
+    infuseCharacters.push(character);
+  }
+});
 
 client.on("ready", () => {
   console.log("I am ready!");
@@ -179,9 +191,8 @@ client.on("message", (message) => {
   }
 
   if (splitContent[0] === "!summon" || splitContent[0] === "!infuse") {
-    const allCharacters = searchPointer.toArray();
-    const numberRan = getRandomInt(0, allCharacters.length);
-    const selectedChar = allCharacters[numberRan];
+    const numberRan = getRandomInt(0, infuseCharacters.length);
+    const selectedChar = infuseCharacters[numberRan];
     const splitChar = selectedChar.split(" ");
     sendMessage(characterMap[splitChar[0]][selectedChar], message);
   }
