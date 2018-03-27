@@ -20,7 +20,7 @@ export default {
     },
     "2B": {
       "name": "Let Us Pray",
-      "description": "Grant all allies (x0.72) Armor"
+      "description": "Grant all allies (x 0.72) Armor"
     },
     "4B": {
       "name": "Prayer Player",
@@ -46,7 +46,7 @@ export default {
     },
     "2B": {
       "name": "Let Us Pray",
-      "description": "Grant all allies (x0.72) Armor"
+      "description": "Grant all allies (x 0.72) Armor"
     },
     "4B": {
       "name": "Prayer Player",
@@ -72,7 +72,7 @@ export default {
     },
     "2B": {
       "name": "Let Us Pray",
-      "description": "Grant all allies (x0.72) Armor"
+      "description": "Grant all allies (x 0.72) Armor"
     },
     "4B": {
       "name": "Prayer Player",
@@ -98,7 +98,7 @@ export default {
     },
     "2B": {
       "name": "Let Us Pray",
-      "description": "Grant all allies (x0.72) Armor, grant Damage Reduction. \n_Damage Reduction: Upon incoming Attack, damage decreased by 30% for each stack. 3 stacks max_"
+      "description": "Grant all allies (x 0.72) Armor, grant Damage Reduction. \n_Damage Reduction: Upon incoming Attack, damage decreased by 30% for each stack. 3 stacks max_"
     },
     "4B": {
       "name": "Prayer Player",
