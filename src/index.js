@@ -1,11 +1,12 @@
 import buckets from 'buckets-js';
 import { angelia, yanbo } from './assets';
 import settings from './settings'
+import { mapCharacterNames } from './commandMap';
 
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const validTiers = ['n', 'r', 'sr', 'ssr']
-const charactersDB = {
+const characterMap = {
   angelia,
   "yan-bo": yanbo,
 };
@@ -20,8 +21,8 @@ const compare = (a, b) => {
 }
 
 const searchPointer = new buckets.BSTree(compare);
-Object.keys(charactersDB).forEach((characterInfo) => {
-  const charType = Object.keys(charactersDB[characterInfo]);
+Object.keys(characterMap).forEach((characterInfo) => {
+  const charType = Object.keys(characterMap[characterInfo]);
   charType.forEach((keyName) => {
     searchPointer.add(keyName);
   })
@@ -125,11 +126,12 @@ client.on("message", (message) => {
 
   // send message for particular sdorica hero character
   if (splitContent.length >= 2) {
-    const name = splitContent[0].replace("!", "").toLowerCase();
-    const type = splitContent[1].toLowerCase();
+    const mappedNamesArray = mapCharacterNames(splitContent);
+    const name = mappedNamesArray[0].replace("!", "").toLowerCase();
+    const type = mappedNamesArray[1].toLowerCase();
     const joinedMessage = `${name} ${type}`;
     if (searchPointer.contains(joinedMessage)) {
-      sendMessage(charactersDB[name][joinedMessage], message);
+      sendMessage(characterMap[name][joinedMessage], message);
     }
   }
 });
