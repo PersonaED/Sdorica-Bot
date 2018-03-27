@@ -16,16 +16,20 @@ export default {
     },
     "1B": {
       "name": "Live On Air",
-      "description": "Grant self Enhance. Switch mode. \n_Enhance: Skill power increased by 30% for each stack. 3 stacks max_"
+      "description": "Grant self Enhance. Switch mode"
     },
     "2B": {
       "name": "Dead Beat Air",
-      "description": "If ranged offense mode, Attack (:crossed_swords: x 1) all non front row enemies. If single offense mode, Attack (:crossed_swords: x 3) front row enemy, grant self 3 stacks Exhaust for 3 turns. \n_Exhaust: Skill power decreased by 30% for each stack. 3 stacks max_"
+      "description": "If ranged offense mode, Attack (:crossed_swords: x 1) all non front row enemies. If single offense mode, Attack (:crossed_swords: x 3) front row enemy, grant self 3 stacks Exhaust for 3 turns"
     },
     "4B": {
       "name": "Airbrush Gush",
       "description": "Attack (:crossed_swords: x 3) front row enemy"
     },
+    "status": [
+      "Enhance: Skill power increased by 30% for each stack. 3 stacks max",
+      "Exhaust: Skill power decreased by 30% for each stack. 3 stacks max"
+    ],
   },
   "yan-bo sr": {
     "tier": "sr",
@@ -34,7 +38,7 @@ export default {
     "name": "Yan-Bo SR: Zenith In Zen",
     "passive": {
       "name": "Free Spirit",
-      "description": "Upon receive Heal, remove Exhaust. \n_Exhaust: Skill power decreased by 30% for each stack. 3 stacks max_"
+      "description": "Upon receive Heal, remove Exhaust"
     },
     "advisor": {
       "name": "Psyche Relic",
@@ -42,16 +46,20 @@ export default {
     },
     "1B": {
       "name": "Live On Air",
-      "description": "Grant self Enhance for 2 turns. Switch mode. \n_Enhance: Skill power increased by 30% for each stack. 3 stacks max_"
+      "description": "Grant self Enhance for 2 turns. Switch mode"
     },
     "2B": {
       "name": "Dead Beat Air",
-      "description": "If ranged offense mode, Attack (:crossed_swords: x 1) all non front row enemies. If single offense mode, Attack (:crossed_swords: x 3) front row enemy, grant self 3 stacks Exhaust for 3 turns. \n_Exhaust: Skill power decreased by 30% for each stack. 3 stacks max_"
+      "description": "If ranged offense mode, Attack (:crossed_swords: x 1) all non front row enemies. If single offense mode, Attack (:crossed_swords: x 3) front row enemy, grant self 3 stacks Exhaust for 3 turns"
     },
     "4B": {
       "name": "Airbrush Gush",
       "description": "Attack (:crossed_swords: x 3) front row enemy"
     },
+    "status": [
+      "Enhance: Skill power increased by 30% for each stack. 3 stacks max",
+      "Exhaust: Skill power decreased by 30% for each stack. 3 stacks max"
+    ],
   },
   "yan-bo ssr": {
     "tier": "ssr",
@@ -60,7 +68,7 @@ export default {
     "name": "Yan-Bo SSR: Celestial Mortal",
     "passive": {
       "name": "Free Spirit",
-      "description": "Upon receive Heal/Armor, remove Exhaust. \n_Exhaust: Skill power decreased by 30% for each stack. 3 stacks max_"
+      "description": "Upon receive Heal/Armor, remove Exhaust"
     },
     "advisor": {
       "name": "Psyche Relic",
@@ -68,16 +76,20 @@ export default {
     },
     "1B": {
       "name": "Live On Air",
-      "description": "Grant self Enhance for 3 turns. Switch mode. \n_Enhance: Skill power increased by 30% for each stack. 3 stacks max_"
+      "description": "Grant self Enhance for 3 turns. Switch mode"
     },
     "2B": {
       "name": "Dead Beat Air",
-      "description": "If ranged offense mode, Attack (:crossed_swords: x 1) all non front row enemies. If single offense mode, Attack (:crossed_swords: x 3) front row enemy, grant self 3 stacks Exhaust for 3 turns. \n_Exhaust: Skill power decreased by 30% for each stack. 3 stacks max_"
+      "description": "If ranged offense mode, Attack (:crossed_swords: x 1) all non front row enemies. If single offense mode, Attack (:crossed_swords: x 3) front row enemy, grant self 3 stacks Exhaust for 3 turns"
     },
     "4B": {
       "name": "Airbrush Gush",
       "description": "Attack (:crossed_swords: x 3) front row enemy"
     },
+    "status": [
+      "Enhance: Skill power increased by 30% for each stack. 3 stacks max",
+      "Exhaust: Skill power decreased by 30% for each stack. 3 stacks max"
+    ],
   },
   "yan-bo skin": {
     "tier": "ssr",
@@ -104,5 +116,6 @@ export default {
       "name": "Deep Breathing",
       "description": "Grant self 3 stacks High Qi"
     },
+    "status": [],
   }
 };
