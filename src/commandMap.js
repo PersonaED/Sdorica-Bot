@@ -5,9 +5,14 @@
 const mapCharacterNames = (messageArray) => {
   const copiedMessage = [... messageArray];
 
-  // convert yanbo to yan-bo
+  // yanbo/yan-bo
   if (copiedMessage[0] === "!yanbo") {
     copiedMessage[0] = "!yan-bo";
+  }
+
+  // angelia skin/black
+  if (copiedMessage[0] === "!angelia" && copiedMessage[1] === "black") {
+    copiedMessage[1] = "skin";
   }
   return copiedMessage;
 };

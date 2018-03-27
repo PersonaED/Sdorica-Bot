@@ -20,11 +20,11 @@ export default {
     },
     "2B": {
       "name": "Dead Beat Air",
-      "description": "If ranged offense mode, Attack (x 1) all non front row enemies. If single offense mode, Attack (x 3) front row enemy, grant self 3 stacks Exhaust for 3 turns. \n_Exhaust: Skill power decreased by 30% for each stack. 3 stacks max_"
+      "description": "If ranged offense mode, Attack (:crossed_swords: x 1) all non front row enemies. If single offense mode, Attack (:crossed_swords: x 3) front row enemy, grant self 3 stacks Exhaust for 3 turns. \n_Exhaust: Skill power decreased by 30% for each stack. 3 stacks max_"
     },
     "4B": {
       "name": "Airbrush Gush",
-      "description": "Attack (x 3) front row enemy"
+      "description": "Attack (:crossed_swords: x 3) front row enemy"
     },
   },
   "yan-bo sr": {
@@ -46,11 +46,11 @@ export default {
     },
     "2B": {
       "name": "Dead Beat Air",
-      "description": "If ranged offense mode, Attack (x 1) all non front row enemies. If single offense mode, Attack (x 3) front row enemy, grant self 3 stacks Exhaust for 3 turns. \n_Exhaust: Skill power decreased by 30% for each stack. 3 stacks max_"
+      "description": "If ranged offense mode, Attack (:crossed_swords: x 1) all non front row enemies. If single offense mode, Attack (:crossed_swords: x 3) front row enemy, grant self 3 stacks Exhaust for 3 turns. \n_Exhaust: Skill power decreased by 30% for each stack. 3 stacks max_"
     },
     "4B": {
       "name": "Airbrush Gush",
-      "description": "Attack (x 3) front row enemy"
+      "description": "Attack (:crossed_swords: x 3) front row enemy"
     },
   },
   "yan-bo ssr": {
@@ -72,11 +72,11 @@ export default {
     },
     "2B": {
       "name": "Dead Beat Air",
-      "description": "If ranged offense mode, Attack (x 1) all non front row enemies. If single offense mode, Attack (x 3) front row enemy, grant self 3 stacks Exhaust for 3 turns. \n_Exhaust: Skill power decreased by 30% for each stack. 3 stacks max_"
+      "description": "If ranged offense mode, Attack (:crossed_swords: x 1) all non front row enemies. If single offense mode, Attack (:crossed_swords: x 3) front row enemy, grant self 3 stacks Exhaust for 3 turns. \n_Exhaust: Skill power decreased by 30% for each stack. 3 stacks max_"
     },
     "4B": {
       "name": "Airbrush Gush",
-      "description": "Attack (x 3) front row enemy"
+      "description": "Attack (:crossed_swords: x 3) front row enemy"
     },
   },
   "yan-bo skin": {
@@ -86,7 +86,7 @@ export default {
     "name": "Yan-Bo Skill Book: Enlightened One",
     "passive": {
       "name": "Unlimited Power",
-      "description": "Upon turn, if have 5 stacks High Qi. Attack (x 1) all enemies. Upon cast 1/2/4 block skill, reset High Qi stacks"
+      "description": "Upon turn, if have 5 stacks High Qi. Attack (:crossed_swords: x 1) all enemies. Upon cast 1/2/4 block skill, reset High Qi stacks"
     },
     "advisor": {
       "name": "Spirit Enhancement",

@@ -12,19 +12,19 @@ export default {
     },
     "advisor": {
       "name": "Angelic Aura",
-      "description": "Grant front row ally (x 0.6) Armor (CD: 3)"
+      "description": "Grant front row ally (:crossed_swords: x 0.6) Armor (CD: 3)"
     },
     "1B": {
       "name": "Wing and Prayer",
-      "description": "Grant front row ally (x 0.6) Armor, trigger 1 block skill"
+      "description": "Grant front row ally (:crossed_swords: x 0.6) Armor, trigger 1 block skill"
     },
     "2B": {
       "name": "Let Us Pray",
-      "description": "Grant all allies (x 0.72) Armor"
+      "description": "Grant all allies (:crossed_swords: x 0.72) Armor"
     },
     "4B": {
       "name": "Prayer Player",
-      "description": "Heal (x 1.8) front row ally"
+      "description": "Heal (:crossed_swords: x 1.8) front row ally"
     },
   },
   "angelia r": {
@@ -38,19 +38,19 @@ export default {
     },
     "advisor": {
       "name": "Angelic Aura",
-      "description": "Grant front row ally (x 0.6) Armor (CD: 3)"
+      "description": "Grant front row ally (:crossed_swords: x 0.6) Armor (CD: 3)"
     },
     "1B": {
       "name": "Wing and Prayer",
-      "description": "Grant front row ally (x 0.6) Armor, trigger 1 block skill"
+      "description": "Grant front row ally (:crossed_swords: x 0.6) Armor, trigger 1 block skill"
     },
     "2B": {
       "name": "Let Us Pray",
-      "description": "Grant all allies (x 0.72) Armor"
+      "description": "Grant all allies (:crossed_swords: x 0.72) Armor"
     },
     "4B": {
       "name": "Prayer Player",
-      "description": "Heal (x 1.8) front row ally, grant Exhaust, trigger 2 block skill. \n_Exhaust: Skill power decreased by 30% for each stack. 3 stacks max_"
+      "description": "Heal (:crossed_swords: x 1.8) front row ally, grant Exhaust, trigger 2 block skill. \n_Exhaust: Skill power decreased by 30% for each stack. 3 stacks max_"
     },
   },
   "angelia sr": {
@@ -64,19 +64,19 @@ export default {
     },
     "advisor": {
       "name": "Angelic Aura",
-      "description": "Grant front row ally (x 0.6) Armor (CD: 2)"
+      "description": "Grant front row ally (:crossed_swords: x 0.6) Armor (CD: 2)"
     },
     "1B": {
       "name": "Wing and Prayer",
-      "description": "Grant front row ally (x 0.6) Armor, trigger 1 block skill"
+      "description": "Grant front row ally (:crossed_swords: x 0.6) Armor, trigger 1 block skill"
     },
     "2B": {
       "name": "Let Us Pray",
-      "description": "Grant all allies (x 0.72) Armor"
+      "description": "Grant all allies (:crossed_swords: x 0.72) Armor"
     },
     "4B": {
       "name": "Prayer Player",
-      "description": "Heal (x 1.8) front row ally, grant Exhaust, trigger 2 block skill. \n_Exhaust: Skill power decreased by 30% for each stack. 3 stacks max_"
+      "description": "Heal (:crossed_swords: x 1.8) front row ally, grant Exhaust, trigger 2 block skill. \n_Exhaust: Skill power decreased by 30% for each stack. 3 stacks max_"
     },
   },
   "angelia ssr": {
@@ -90,19 +90,19 @@ export default {
     },
     "advisor": {
       "name": "Angelic Aura",
-      "description": "Grant front row ally (x 0.6) Armor (CD: 1)"
+      "description": "Grant front row ally (:crossed_swords: x 0.6) Armor (CD: 1)"
     },
     "1B": {
       "name": "Wing and Prayer",
-      "description": "Grant front row ally (x 0.6) Armor, trigger 1 block skill"
+      "description": "Grant front row ally (:crossed_swords: x 0.6) Armor, trigger 1 block skill"
     },
     "2B": {
       "name": "Let Us Pray",
-      "description": "Grant all allies (x 0.72) Armor, grant Damage Reduction. \n_Damage Reduction: Upon incoming Attack, damage decreased by 30% for each stack. 3 stacks max_"
+      "description": "Grant all allies (:crossed_swords: x 0.72) Armor, grant Damage Reduction. \n_Damage Reduction: Upon incoming Attack, damage decreased by 30% for each stack. 3 stacks max_"
     },
     "4B": {
       "name": "Prayer Player",
-      "description": "Heal (x 1.8) front row ally, grant Exhaust, trigger 2 block skill. \n_Exhaust: Skill power decreased by 30% for each stack. 3 stacks max_"
+      "description": "Heal (:crossed_swords: x 1.8) front row ally, grant Exhaust, trigger 2 block skill. \n_Exhaust: Skill power decreased by 30% for each stack. 3 stacks max_"
     },
   },
   "angelia skin": {
@@ -120,15 +120,15 @@ export default {
     },
     "1B": {
       "name": "Stand Tall",
-      "description": "Grant front row ally (x 0.6) Armor, trigger 1 block skill"
+      "description": "Grant front row ally (:crossed_swords: x 0.6) Armor, trigger 1 block skill"
     },
     "2B": {
       "name": "Glowing Prayer",
-      "description": "Grant all allies (x 0.72) Armor and Tank Up for 2 turns. \n_Tank Up: Upon incoming Attack, grant self Armor equal to 10% max Armor for each attack. 3 stacks max_"
+      "description": "Grant all allies (:crossed_swords: x 0.72) Armor and Tank Up for 2 turns. \n_Tank Up: Upon incoming Attack, grant self Armor equal to 10% max Armor for each attack. 3 stacks max_"
     },
     "4B": {
       "name": "Luminious Radiance",
-      "description": "Heal (x 1.8) front row ally, grant Exhaust, trigger 2 block skill 2 times. \n_Exhaust: Skill power decreased by 30% for each stack. 3 stacks max_"
+      "description": "Heal (:crossed_swords: x 1.8) front row ally, grant Exhaust, trigger 2 block skill 2 times. \n_Exhaust: Skill power decreased by 30% for each stack. 3 stacks max_"
     },
   },
   "angelia sp": {
