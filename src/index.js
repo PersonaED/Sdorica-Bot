@@ -1,5 +1,5 @@
 import buckets from 'buckets-js';
-import { angelia, yanbo } from './assets';
+import { angelia, yanbo, yamitsuki } from './assets';
 import settings from './settings'
 import { mapCharacterNames } from './commandMap';
 
@@ -9,6 +9,7 @@ const validTiers = ['n', 'r', 'sr', 'ssr']
 const characterMap = {
   angelia,
   "yan-bo": yanbo,
+  yamitsuki,
 };
 
 const compare = (a, b) => {
