@@ -12,7 +12,7 @@ export default {
     },
     "advisor": {
       "name": "Psyche Relic",
-      "description": "Allies 4 Block skill power increased by 20%"
+      "description": "Increase skill power of ally's 4 block skill by 20%"
     },
     "1B": {
       "name": "Live On Air",
@@ -24,7 +24,7 @@ export default {
     },
     "4B": {
       "name": "Airbrush Gush",
-      "description": "Attack (:crossed_swords: x 3) front row enemy"
+      "description": "Attack (:crossed_swords: x 3) front row enemy, grant stun"
     },
     "status": [
       "Enhance: Skill power increased by 30% for each stack. 3 stacks max",
@@ -38,11 +38,11 @@ export default {
     "name": "Yan-Bo SR: Zenith In Zen",
     "passive": {
       "name": "Free Spirit",
-      "description": "Upon receive Heal, remove Exhaust"
+      "description": "Upon receive Heal/Armor, remove Exhaust"
     },
     "advisor": {
       "name": "Psyche Relic",
-      "description": "Allies 4 Block skill power increased by 25%"
+      "description": "Increase skill power of ally's 4 block skill by 25%"
     },
     "1B": {
       "name": "Live On Air",
@@ -54,7 +54,7 @@ export default {
     },
     "4B": {
       "name": "Airbrush Gush",
-      "description": "Attack (:crossed_swords: x 3) front row enemy"
+      "description": "Attack (:crossed_swords: x 3) front row enemy, grant stun"
     },
     "status": [
       "Enhance: Skill power increased by 30% for each stack. 3 stacks max",
@@ -68,11 +68,11 @@ export default {
     "name": "Yan-Bo SSR: Celestial Mortal",
     "passive": {
       "name": "Free Spirit",
-      "description": "Upon receive Heal/Armor, remove Exhaust"
+      "description": "Upon receive Heal, Armor or Enhance, remove Exhaust"
     },
     "advisor": {
       "name": "Psyche Relic",
-      "description": "Allies 4 Block skill power increased by 30%"
+      "description": "Increase skill power of ally's 4 block skill by 30%"
     },
     "1B": {
       "name": "Live On Air",
@@ -84,7 +84,7 @@ export default {
     },
     "4B": {
       "name": "Airbrush Gush",
-      "description": "Attack (:crossed_swords: x 3) front row enemy"
+      "description": "Attack (:crossed_swords: x 3) front row enemy, grant stun"
     },
     "status": [
       "Enhance: Skill power increased by 30% for each stack. 3 stacks max",
