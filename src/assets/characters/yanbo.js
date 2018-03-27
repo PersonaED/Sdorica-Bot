@@ -3,7 +3,7 @@ import { BLACK } from '../constants.js';
 export default {
   "yan-bo r": {
     "tier": "r",
-    "sprite": "https://i.imgur.com/sT1bN2g.png",
+    "sprite": "https://i.imgur.com/ftzyvnQ.png",
     "block": BLACK,
     "name": "Yan-Bo R: Hidden Figure",
     "passive": {
@@ -29,7 +29,7 @@ export default {
   },
   "yan-bo sr": {
     "tier": "sr",
-    "sprite": "https://i.imgur.com/sT1bN2g.png",
+    "sprite": "https://i.imgur.com/OjjllDt.png",
     "block": BLACK,
     "name": "Yan-Bo SR: Zenith In Zen",
     "passive": {
@@ -53,9 +53,9 @@ export default {
       "description": "Attack (x3) front row enemy"
     },
   },
-  "yan-bo srr": {
+  "yan-bo ssr": {
     "tier": "ssr",
-    "sprite": "https://i.imgur.com/sT1bN2g.png",
+    "sprite": "https://i.imgur.com/nqFdlPM.png",
     "block": BLACK,
     "name": "Yan-Bo SSR: Celestial Mortal",
     "passive": {
@@ -81,7 +81,7 @@ export default {
   },
   "yan-bo skin": {
     "tier": "ssr",
-    "sprite": "https://i.imgur.com/sT1bN2g.png",
+    "sprite": "https://i.imgur.com/JFtASJS.png",
     "block": BLACK,
     "name": "Yan-Bo Skill Book: Enlightened One",
     "passive": {
