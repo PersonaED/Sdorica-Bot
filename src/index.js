@@ -70,7 +70,9 @@ const sendMessage = (characterInfo, message) => {
 
   if (status && status.length !== 0) {
     let statusString = "";
-    status.forEach((effect) => {
+
+    const sortedStatus = [... status].sort();
+    sortedStatus.forEach((effect) => {
       const discordStyled = `\n\n_${effect}_`;
       statusString = `${statusString}${discordStyled}`;
     })
