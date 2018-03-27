@@ -37,7 +37,7 @@ export default {
     "name": "Yamitsuki SR: Nevermore Ninja",
     "passive": {
       "name": "Insult To Injury",
-      "description": "Upon cast Attack, if target has Vulnerability, skill power increased by 50% for this turn"
+      "description": "Upon cast damage skill, if target has Vulnerability, increase skill power by 50% for this turn"
     },
     "advisor": {
       "name": "After Dark",
@@ -69,7 +69,7 @@ export default {
     "name": "Yamitsuki SSR: Twin Of Twilight",
     "passive": {
       "name": "Insult To Injury",
-      "description": "Upon cast Attack, if target has Vulnerability/Exhaust, skill power increased by 50% for this turn"
+      "description": "Upon cast damage skill, if target has Vulnerability/Exhaust, increase skill power by 50% for this turn"
     },
     "advisor": {
       "name": "After Dark",
