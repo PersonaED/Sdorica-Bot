@@ -5,9 +5,10 @@ import {
   aosta,
   crushfang,
   dylan,
-  hestia,
   experiment,
   golemwalt,
+  hestia,
+  jahan,
   yamitsuki,
   yanbo,
 } from './assets';
@@ -23,9 +24,10 @@ const characterMap = {
   aosta,
   crushfang,
   dylan,
-  hestia,
   experiment,
   golemwalt,
+  hestia,
+  jahan,
   yamitsuki,
   "yan-bo": yanbo,
 };

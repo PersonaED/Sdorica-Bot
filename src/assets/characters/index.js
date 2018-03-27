@@ -5,6 +5,7 @@ import dylan from './dylan.js';
 import experiment from './experiment.js';
 import golemwalt from './golemwalt.js';
 import hestia from './hestia.js';
+import jahan from './jahan.js';
 import yamitsuki from './yamitsuki.js';
 import yanbo from './yanbo.js';
 
@@ -13,9 +14,10 @@ export {
   aosta,
   crushfang,
   dylan,
-  hestia,
   experiment,
   golemwalt,
+  hestia,
+  jahan,
   yamitsuki,
   yanbo,
 }
