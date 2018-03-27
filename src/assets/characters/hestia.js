@@ -84,7 +84,9 @@ export default {
       "name": "Variation Chords",
       "description": "Armor Penetration (:crossed_swords: x 2.25) selected enemy."
     },
-    "status": [],
+    "status": [
+    "Regen: Upon turn, heal self 10% max HP for each stack. 3 stacks max. Remove upon incoming damage skill",
+    ],
   },
   "hestia ssr": {
     "tier": "ssr",
@@ -111,6 +113,8 @@ export default {
       "name": "Variation Chords",
       "description": "Armor Penetration (:crossed_swords: x 2.25) selected enemy, heal (:crossed_swords: x 0.9) target "
     },
-    "status": [],
+    "status": [
+    "Regen: Upon turn, heal self 10% max HP for each stack. 3 stacks max. Remove upon incoming damage skill",
+    ],
   },
 };
