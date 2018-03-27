@@ -93,7 +93,7 @@ export default {
     "name": "Angelia SSR: Virtue Virtuoso",
     "passive": {
       "name": "Helpful Halo",
-      "description": "Upon cast Armor, if target has Exhaust/Vulnerability, skill power increased by 100%"
+      "description": "Upon cast Armor, if target has Exhaust/Vulnerability, increase skill power by 100%"
     },
     "advisor": {
       "name": "Angelic Aura",
@@ -109,7 +109,7 @@ export default {
     },
     "4B": {
       "name": "Prayer Player",
-      "description": "Heal (:crossed_swords: x 1.8) front row ally, grant Exhaust, trigger 2 block skill"
+      "description": "Heal (:crossed_swords: x 1.8) front row ally, grant Exhaust, trigger 4 block skill"
     },
     "status": [
       "Exhaust: Skill power decreased by 30% for each stack. 3 stacks max",
