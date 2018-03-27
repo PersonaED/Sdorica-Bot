@@ -68,7 +68,7 @@ export default {
     "name": "Aosta SSR: Mind Over Latter",
     "passive": {
       "name": "Super Au Natural",
-      "description": "Upon cast Heal, if target has Enhance, skill power increased by 100%."
+      "description": "Upon cast Heal, if target has Enhance, increase Heal effect by 100%."
     },
     "advisor": {
       "name": "Diss Engaged",
@@ -76,7 +76,7 @@ export default {
     },
     "1B": {
       "name": "Fresh Flesh",
-      "description": "Heal (:crossed_swords: x 1.35) selected ally. Clear 1 White block."
+      "description": "Heal (:crossed_swords: x 1.35) selected ally. Clear 2 White blocks."
     },
     "2B": {
       "name": "Flesh Hook Up",
