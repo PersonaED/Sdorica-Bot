@@ -38,7 +38,7 @@ export default {
     "name": "Aosta SR: Heart Of Marigold",
     "passive": {
       "name": "Super Au Natural",
-      "description": "Upon cast Heal, if target has Enhance, skill power increased by 50%"
+      "description": "Upon cast Heal, if target has Enhance, increase Heal effect by 50%"
     },
     "advisor": {
       "name": "Diss Engaged",
