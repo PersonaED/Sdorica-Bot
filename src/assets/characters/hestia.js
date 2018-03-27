@@ -37,7 +37,7 @@ export default {
     "name": "Hestia R: Aqua La Diva",
     "passive": {
       "name": "Happy Harmony",
-      "description": "Upon cast Heal, if target has full debuff(s), grant Regen."
+      "description": "Upon cast Heal, if target has debuff(s), grant Regen."
     },
     "advisor": {
       "name": "Magic Melody",
@@ -66,7 +66,7 @@ export default {
     "name": "Hestia SR: Riverbank Maiden",
     "passive": {
       "name": "Happy Harmony",
-      "description": "Upon cast Heal, if target has full debuff(s), grant Regen for 2 turns."
+      "description": "Upon cast Heal, if target has debuff(s), grant Regen for 2 turns."
     },
     "advisor": {
       "name": "Magic Melody",
@@ -95,7 +95,7 @@ export default {
     "name": "Hestia SSR: Bride Of The Sea",
     "passive": {
       "name": "Happy Harmony",
-      "description": "Upon cast Heal, if target has full debuff(s), grant Regen for 3 turns."
+      "description": "Upon cast Heal, if target has debuff(s), grant Regen for 3 turns."
     },
     "advisor": {
       "name": "Magic Melody",
