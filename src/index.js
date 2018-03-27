@@ -1,10 +1,12 @@
 import buckets from 'buckets-js';
+import { getRandomInt } from './helper.js';
 import {
   angelia,
   aosta,
   crushfang,
   dylan,
   hestia,
+  experiment,
   yamitsuki,
   yanbo,
 } from './assets';
@@ -20,6 +22,7 @@ const characterMap = {
   crushfang,
   dylan,
   hestia,
+  experiment,
   yamitsuki,
   "yan-bo": yanbo,
 };
@@ -173,6 +176,14 @@ client.on("message", (message) => {
     if (charactersArray.includes(name)) {
       message.channel.send(`Enter in a tier of n/r/sr/ssr/skin/sp. \n\nExample: !${name} ssr`);
     }
+  }
+
+  if (splitContent[0] === "!summon" || splitContent[0] === "!infuse") {
+    const allCharacters = searchPointer.toArray();
+    const numberRan = getRandomInt(0, allCharacters.length);
+    const selectedChar = allCharacters[numberRan];
+    const splitChar = selectedChar.split(" ");
+    sendMessage(characterMap[splitChar[0]][selectedChar], message);
   }
 });
 
