@@ -152,6 +152,16 @@ client.on("message", (message) => {
     if (searchPointer.contains(joinedMessage)) {
       sendMessage(characterMap[name][joinedMessage], message);
     }
+  } else {
+    // check if missing the n/r/sr/srr/skin/sp part
+    // does not check if second param is incorrectly named
+    const mappedNamesArray = mapCharacterNames(splitContent);
+    const name = mappedNamesArray[0].replace("!", "").toLowerCase();
+    const charactersArray = Object.keys(characterMap);
+
+    if (charactersArray.includes(name)) {
+      message.channel.send(`Enter in a tier of n/r/sr/ssr/skin/sp. \n\nExample: !${name} ssr`);
+    }
   }
 });
 
