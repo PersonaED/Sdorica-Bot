@@ -1,5 +1,5 @@
 import { BLACK, WHITE, GOLD } from '../constants.js';
-import { EXHAST, DAMAGEREDUCTION, VULNERABILITY, TANKUP, ENHANCE, TEAR, SHOCKLOCK } from '../constants.js';
+import { EXHAUST, DAMAGEREDUCTION, VULNERABILITY, TANKUP, ENHANCE, TEAR, SHOCKLOCK } from '../constants.js';
 import { TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants.js';
 
 export default {
@@ -56,7 +56,7 @@ export default {
       "description": "Heal (:crossed_swords: x 1.8) front row ally, grant Exhaust, trigger 2 block skill"
     },
     "status": [
-      EXHAST,
+      EXHAUST,
     ],
   },
   "angelia sr": {
@@ -85,7 +85,7 @@ export default {
       "description": "Heal (:crossed_swords: x 1.8) front row ally, grant Exhaust, trigger 2 block skill"
     },
     "status": [
-      EXHAST,
+      EXHAUST,
     ],
   },
   "angelia ssr": {
@@ -114,7 +114,7 @@ export default {
       "description": "Heal (:crossed_swords: x 1.8) front row ally, grant Exhaust, trigger 4 block skill"
     },
     "status": [
-      EXHAST,
+      EXHAUST,
       DAMAGEREDUCTION,
       VULNERABILITY,
     ],
@@ -145,7 +145,7 @@ export default {
       "description": "Heal (:crossed_swords: x 1.8) front row ally, grant Exhaust, trigger 2 block skill 2 times"
     },
     "status": [
-      EXHAST,
+      EXHAUST,
       VULNERABILITY,
       TANKUP,
     ],

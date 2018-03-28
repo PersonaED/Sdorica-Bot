@@ -1,5 +1,5 @@
 import { BLACK, WHITE, GOLD } from '../constants.js';
-import { EXHAST, DAMAGEREDUCTION, VULNERABILITY, TANKUP, ENHANCE, TEAR, SHOCKLOCK, VIGILANCE } from '../constants.js';
+import { EXHAUST, DAMAGEREDUCTION, VULNERABILITY, TANKUP, ENHANCE, TEAR, SHOCKLOCK, VIGILANCE } from '../constants.js';
 import { TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants.js';
 
 export default {
@@ -88,7 +88,7 @@ export default {
     },
     "status": [
       VIGILANCE,
-      EXHAST,
+      EXHAUST,
       ENHANCE,
     ],
   },
@@ -119,7 +119,7 @@ export default {
     },
     "status": [
       VIGILANCE,
-      EXHAST,
+      EXHAUST,
       ENHANCE,
     ],
   },

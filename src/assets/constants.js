@@ -4,7 +4,7 @@ export const WHITE = 'white';
 export const GOLD = 'gold';
 
 // status effects
-export const EXHAST = 'Exhaust: Decrease skill power by 30% for each stack. 3 stacks max';
+export const EXHAUST = 'Exhaust: Decrease skill power by 30% for each stack. 3 stacks max';
 export const DAMAGEREDUCTION = 'Damage Reduction: Upon incoming damage skill, decrease damage taken by 30% for each stack. 3 stacks max';
 export const VULNERABILITY = 'Vulnerability: Upon incoming damage skill, increase damage taken by 30% for each stack. 3 stacks max';
 export const TANKUP = 'Tank Up: Upon incoming damage skill, grant self Armor equal to 10% max Armor for each stack. 3 stacks max';
@@ -15,6 +15,7 @@ export const REGEN = 'Regen: Upon turn, heal self 10% max HP for each stack. 3 s
 export const POISON = 'Poison: Upon turn, lose 10% of current HP for each stack. 3 stacks max. Remove upon receive Heal';
 export const VIGILANCE = 'Vigilance: Upon incoming damage skill, 30% chance to evade damage for each stack. 3 stacks max';
 export const WINDEDUP = 'Winded Up: Upon 4 stacks, grant 1 extra attack for next skill';
+export const STUN = 'Stun: Can\'t cast skill. Remove upon incoming damage skill';
 
 // tier level
 export const TIER_N = 'n';

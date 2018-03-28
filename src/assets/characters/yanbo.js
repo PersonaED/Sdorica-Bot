@@ -1,5 +1,5 @@
 import { BLACK, WHITE, GOLD } from '../constants.js';
-import { EXHAST, DAMAGEREDUCTION, VULNERABILITY, TANKUP, ENHANCE, TEAR, SHOCKLOCK } from '../constants.js';
+import { EXHAUST, DAMAGEREDUCTION, VULNERABILITY, TANKUP, ENHANCE, TEAR, SHOCKLOCK, STUN } from '../constants.js';
 import { TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants.js';
 
 export default {
@@ -30,7 +30,8 @@ export default {
     },
     "status": [
       ENHANCE,
-      EXHAST
+      EXHAUST,
+      STUN
     ],
   },
   "yan-bo sr": {
@@ -60,7 +61,8 @@ export default {
     },
     "status": [
       ENHANCE,
-      EXHAST
+      EXHAUST,
+      STUN
     ],
   },
   "yan-bo ssr": {
@@ -90,7 +92,8 @@ export default {
     },
     "status": [
       ENHANCE,
-      EXHAST
+      EXHAUST,
+      STUN
     ],
   },
   "yan-bo skin": {

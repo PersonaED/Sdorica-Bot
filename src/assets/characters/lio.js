@@ -1,5 +1,5 @@
 import { BLACK, WHITE, GOLD } from '../constants.js';
-import { EXHAST, DAMAGEREDUCTION, VULNERABILITY, TANKUP, ENHANCE, TEAR, SHOCKLOCK, POISON } from '../constants.js';
+import { EXHAUST, DAMAGEREDUCTION, VULNERABILITY, TANKUP, ENHANCE, TEAR, SHOCKLOCK, POISON } from '../constants.js';
 import { TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants.js';
 
 export default {
@@ -29,7 +29,7 @@ export default {
       "description": "Armor Penetration (:crossed_swords: x 2.4) back row enemy."
     },
     "status": [
-      EXHAST,
+      EXHAUST,
     ],
   },
   "lio sr": {
@@ -58,7 +58,7 @@ export default {
       "description": "Armor Penetration (:crossed_swords: x 2.4) back row enemy."
     },
     "status": [
-      EXHAST,
+      EXHAUST,
     ],
   },
   "lio ssr": {
@@ -87,7 +87,7 @@ export default {
       "description": "Armor Penetration (:crossed_swords: x 2.4) back row enemy."
     },
     "status": [
-      EXHAST,
+      EXHAUST,
     ],
   },
   "lio skin": {
