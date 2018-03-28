@@ -187,6 +187,43 @@ client.on('message', (message) => {
   }
 
   if (splitContent[0] === '!summon' || splitContent[0] === '!infuse') {
+    if (splitContent.length > 1 && splitContent[1] === '10') {
+      const infuseTen = {};
+      const infuseAggregate = [];
+      for (let i = 0; i < 10; i += 1) {
+        const infuseResult = rwc(summonTable);
+        if (infuseTen[infuseResult] === undefined) {
+          infuseTen[infuseResult] = 1;
+        } else {
+          infuseTen[infuseResult] += 1;
+        }
+      }
+      Object.keys(infuseTen).forEach((key) => {
+        infuseAggregate.push(`${key} (x${infuseTen[key]})`);
+      });
+      infuseAggregate.sort();
+      message.channel.send(infuseAggregate.join(', '));
+      return;
+    }
+    if (splitContent.length > 1 && splitContent[1] === '100') {
+      const infuseHundred = {};
+      const infuseAggregate = [];
+      for (let i = 0; i < 100; i += 1) {
+        const infuseResult = rwc(summonTable);
+        if (infuseHundred[infuseResult] === undefined) {
+          infuseHundred[infuseResult] = 1;
+        } else {
+          infuseHundred[infuseResult] += 1;
+        }
+      }
+      Object.keys(infuseHundred).forEach((key) => {
+        infuseAggregate.push(`${key} (x${infuseHundred[key]})`);
+      });
+      infuseAggregate.sort();
+      message.channel.send(infuseAggregate.join(', '));
+      return;
+    }
+
     const selectedChar = rwc(summonTable);
     const splitChar = selectedChar.split(' ');
     // check if json object exists for given character
