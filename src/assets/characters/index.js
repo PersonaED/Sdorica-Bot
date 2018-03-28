@@ -11,6 +11,8 @@ import koll from './koll';
 import lio from './lio';
 import nigel from './nigel';
 import pang from './pang';
+import roger from './roger';
+import sione from './sione';
 import yamitsuki from './yamitsuki';
 import yanbo from './yanbo';
 
@@ -28,6 +30,8 @@ export {
   lio,
   nigel,
   pang,
+  roger,
+  sione,
   yamitsuki,
   yanbo,
 };
