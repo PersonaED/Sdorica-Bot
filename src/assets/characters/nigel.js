@@ -5,7 +5,7 @@ export default {
     "tier": "r",
     "sprite": "https://i.imgur.com/0upjO2Y.png",
     "block": GOLD,
-    "name": "Hack and Clash",
+    "name": "Nigel N: Hack and Clash",
     "passive": {
       "name": "Stay Strong",
       "description": "Upon Tier SR, unlock passive skill"
@@ -32,7 +32,7 @@ export default {
     "tier": "sr",
     "sprite": "https://i.imgur.com/z213deW.png",
     "block": GOLD,
-    "name": "Hack and Clash",
+    "name": "Nigel SR: Carved in Bone",
     "passive": {
       "name": "Stay Strong",
       "description": "Upon receive Armor, grant self Taunt"
@@ -59,7 +59,7 @@ export default {
     "tier": "ssr",
     "sprite": "https://i.imgur.com/lMeaHLZ.png",
     "block": GOLD,
-    "name": "Hack and Clash",
+    "name": "Nigel SSR: Shockblade Scourge",
     "passive": {
       "name": "Stay Strong",
       "description": "Upon receive Armor, grant self Taunt for 2 Turns"
