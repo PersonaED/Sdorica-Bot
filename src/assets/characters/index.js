@@ -7,7 +7,10 @@ import golemwalt from './golemwalt.js';
 import hestia from './hestia.js';
 import jahan from './jahan.js';
 import karnulla from './karnulla.js';
+import koll from './koll.js';
+import lio from './lio.js';
 import nigel from './nigel.js';
+import pang from './pang.js';
 import yamitsuki from './yamitsuki.js';
 import yanbo from './yanbo.js';
 
@@ -21,7 +24,10 @@ export {
   hestia,
   jahan,
   karnulla,
+  koll,
+  lio,
   nigel,
+  pang,
   yamitsuki,
   yanbo,
 }

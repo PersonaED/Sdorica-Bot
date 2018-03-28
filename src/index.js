@@ -1,4 +1,5 @@
 import buckets from 'buckets-js';
+import stringSimilarity from 'string-similarity';
 import { getRandomInt } from './helper.js';
 import {
   angelia,
@@ -10,7 +11,10 @@ import {
   hestia,
   jahan,
   karnulla,
+  koll,
+  lio,
   nigel,
+  pang,
   yamitsuki,
   yanbo,
 } from './assets';
@@ -31,7 +35,10 @@ const characterMap = {
   hestia,
   jahan,
   karnulla,
+  koll,
+  lio,
   nigel,
+  pang,
   yamitsuki,
   "yan-bo": yanbo,
 };
@@ -203,6 +210,12 @@ client.on("message", (message) => {
     const selectedChar = infuseCharacters[numberRan];
     const splitChar = selectedChar.split(" ");
     sendMessage(characterMap[splitChar[0]][selectedChar], message);
+  }
+
+  console.log(stringSimilarity.compareTwoStrings(content, "!who is the best boy"));
+  if (stringSimilarity.compareTwoStrings(content, "!who is the best boy") >= 0.65) {
+    message.channel.send(`Koll is the best boy!`);
+    // sendMessage(koll["koll ssr"], message);
   }
 });
 
