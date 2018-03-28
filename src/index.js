@@ -1,5 +1,4 @@
 import buckets from 'buckets-js';
-import stringSimilarity from 'string-similarity';
 import { getRandomInt } from './helper.js';
 import {
   angelia,
@@ -212,10 +211,10 @@ client.on("message", (message) => {
     sendMessage(characterMap[splitChar[0]][selectedChar], message);
   }
 
-  if (stringSimilarity.compareTwoStrings(content, "!who is the best boy") >= 0.65) {
-    message.channel.send(`Koll is the best boy!`);
-    // sendMessage(koll["koll ssr"], message);
-  }
+  // if (stringSimilarity.compareTwoStrings(content, "!who is the best boy") >= 0.65) {
+  //   message.channel.send(`Koll is the best boy!`);
+  //   // sendMessage(koll["koll ssr"], message);
+  // }
 });
 
 client.login(settings.token);
