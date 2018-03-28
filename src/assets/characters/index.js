@@ -1,18 +1,18 @@
-import angelia from './angelia.js';
-import aosta from './aosta.js';
-import crushfang from './crushfang.js';
-import dylan from './dylan.js';
-import experiment from './experiment.js';
-import golemwalt from './golemwalt.js';
-import hestia from './hestia.js';
-import jahan from './jahan.js';
-import karnulla from './karnulla.js';
-import koll from './koll.js';
-import lio from './lio.js';
-import nigel from './nigel.js';
-import pang from './pang.js';
-import yamitsuki from './yamitsuki.js';
-import yanbo from './yanbo.js';
+import angelia from './angelia';
+import aosta from './aosta';
+import crushfang from './crushfang';
+import dylan from './dylan';
+import experiment from './experiment';
+import golemwalt from './golemwalt';
+import hestia from './hestia';
+import jahan from './jahan';
+import karnulla from './karnulla';
+import koll from './koll';
+import lio from './lio';
+import nigel from './nigel';
+import pang from './pang';
+import yamitsuki from './yamitsuki';
+import yanbo from './yanbo';
 
 export {
   angelia,
@@ -30,4 +30,4 @@ export {
   pang,
   yamitsuki,
   yanbo,
-}
+};
