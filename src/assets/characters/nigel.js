@@ -111,7 +111,7 @@ export default {
   },
   'nigel skin-unreleased': {
     tier: TIER_SSR,
-    sprite: 'https://i.imgur.com/2D00IVa.png',
+    sprite: 'https://i.imgur.com/425bBQZ.png',
     block: GOLD,
     name: '?????',
     passive: {
