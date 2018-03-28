@@ -5,7 +5,7 @@ export default {
     "tier": "r",
     "sprite": "https://i.imgur.com/0upjO2Y.png",
     "block": GOLD,
-    "name": "Nigel N: Hack and Clash",
+    "name": "Nigel R: Hack and Clash",
     "passive": {
       "name": "Stay Strong",
       "description": "Upon Tier SR, unlock passive skill"
