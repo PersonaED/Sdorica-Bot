@@ -84,7 +84,7 @@ export default {
   },
   'nigel sp-unreleased': {
     tier: TIER_SSR,
-    sprite: 'https://i.imgur.com/425bBQZ.png',
+    sprite: 'https://i.imgur.com/YFtmC85.png',
     block: GOLD,
     name: '?????',
     passive: {
