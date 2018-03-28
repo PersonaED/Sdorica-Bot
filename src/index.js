@@ -9,6 +9,8 @@ import {
   golemwalt,
   hestia,
   jahan,
+  karnulla,
+  nigel,
   yamitsuki,
   yanbo,
 } from './assets';
@@ -28,6 +30,8 @@ const characterMap = {
   golemwalt,
   hestia,
   jahan,
+  karnulla,
+  nigel,
   yamitsuki,
   "yan-bo": yanbo,
 };

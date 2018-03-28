@@ -6,6 +6,8 @@ import experiment from './experiment.js';
 import golemwalt from './golemwalt.js';
 import hestia from './hestia.js';
 import jahan from './jahan.js';
+import karnulla from './karnulla.js';
+import nigel from './nigel.js';
 import yamitsuki from './yamitsuki.js';
 import yanbo from './yanbo.js';
 
@@ -18,6 +20,8 @@ export {
   golemwalt,
   hestia,
   jahan,
+  karnulla,
+  nigel,
   yamitsuki,
   yanbo,
 }
