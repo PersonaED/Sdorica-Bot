@@ -1,47 +1,35 @@
 import buckets from 'buckets-js';
 import Discord from 'discord.js';
+import rwc from 'random-weighted-choice';
 
 import { getRandomInt } from './helper';
-import {
-  angelia,
-  aosta,
-  crushfang,
-  dylan,
-  experiment,
-  golemwalt,
-  hestia,
-  jahan,
-  karnulla,
-  koll,
-  lio,
-  nigel,
-  pang,
-  yamitsuki,
-  yanbo,
-} from './assets';
+import { characters as JSONcharacter, summon } from './assets';
 import settings from './settings';
 import { mapCharacterNames } from './commandMap';
 
 const client = new Discord.Client();
 const validTiers = ['n', 'r', 'sr', 'ssr'];
 const validInfuse = ['n', 'r', 'sr'];
+
+const { yanbo, ...rest } = JSONcharacter;
 const characterMap = {
-  angelia,
-  aosta,
-  crushfang,
-  dylan,
-  experiment,
-  golemwalt,
-  hestia,
-  jahan,
-  karnulla,
-  koll,
-  lio,
-  nigel,
-  pang,
-  yamitsuki,
+  ...rest,
   'yan-bo': yanbo,
 };
+
+// table for million infuse
+const summonTable = [];
+
+Object.keys(summon.million).forEach((tier) => {
+  Object.keys(summon.million[tier]).forEach((characterKey) => {
+    const charName = `${characterKey} ${tier}`;
+    const characterProbability = {
+      weight: summon.million[tier][characterKey],
+      id: charName,
+    };
+    summonTable.push(characterProbability);
+  });
+});
 
 // Comparison function used for BST
 const compare = (a, b) => {
@@ -60,15 +48,6 @@ Object.keys(characterMap).forEach((characterInfo) => {
   charType.forEach((keyName) => {
     searchPointer.add(keyName);
   });
-});
-
-// Array of valid infuse characters (N, R, SR)
-const infuseCharacters = [];
-searchPointer.forEach((character) => {
-  const charactersSplit = character.split(' ');
-  if (validInfuse.includes(charactersSplit[1].toLowerCase())) {
-    infuseCharacters.push(character);
-  }
 });
 
 client.on('ready', () => {
@@ -208,10 +187,30 @@ client.on('message', (message) => {
   }
 
   if (splitContent[0] === '!summon' || splitContent[0] === '!infuse') {
-    const numberRan = getRandomInt(0, infuseCharacters.length);
-    const selectedChar = infuseCharacters[numberRan];
+    const selectedChar = rwc(summonTable);
     const splitChar = selectedChar.split(' ');
-    sendMessage(characterMap[splitChar[0]][selectedChar], message);
+    // check if json object exists for given character
+    const jsonInfuse = characterMap[splitChar[0]];
+    if (jsonInfuse === undefined) {
+      message.channel.send(`Your million infuse was: ${selectedChar}`);
+    } else {
+      const infuseResult = characterMap[splitChar[0]][selectedChar];
+      // check if key is present in character file
+      if (infuseResult === undefined) {
+        message.channel.send(`Your million infuse was: ${selectedChar}`);
+      } else {
+        sendMessage(infuseResult, message);
+      }
+    }
+  }
+
+  if (splitContent[0] === '!best' && splitContent[1] === 'doggo') {
+    message.channel.send(':dog: :fire: Koll is the best fire doggo');
+  }
+
+  // FIXME: Remove this once found, easter egg
+  if (splitContent[0] === '!best' && splitContent[1] === 'chengkor') {
+    message.channel.send('https://cdn.discordapp.com/attachments/378408289748385797/428523939350708224/image.jpg');
   }
 });
 

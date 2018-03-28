@@ -10,6 +10,10 @@ const mapCharacterNames = (messageArray) => {
     copiedMessage[0] = '!yan-bo';
   }
 
+  if (copiedMessage[0] === '!yami') {
+    copiedMessage[0] = '!yamitsuki';
+  }
+
   // angelia skin/black
   if (copiedMessage[0] === '!angelia' && copiedMessage[1] === 'black') {
     copiedMessage[1] = 'skin';

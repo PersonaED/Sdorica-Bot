@@ -1,3 +1,7 @@
-import infuse from './infuse';
+import million from './million';
+import banner from './banner';
 
-export default infuse;
+export {
+  million,
+  banner,
+};
