@@ -1,8 +1,10 @@
-import { GOLD, BLACK } from '../constants.js';
+import { BLACK, WHITE, GOLD } from '../constants.js';
+import { EXHAST, DAMAGEREDUCTION, VULNERABILITY, TANKUP, ENHANCE, TEAR, SHOCKLOCK } from '../constants.js';
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants.js';
 
 export default {
  "dylan n": {
-    "tier": "n",
+    "tier": TIER_N,
     "sprite": "https://i.imgur.com/UC9zsaH.png",
     "block": GOLD,
     "name": "Dylan N: Spark Knight",
@@ -29,7 +31,7 @@ export default {
     "status": [],
   },
  "dylan r": {
-    "tier": "r",
+    "tier": TIER_R,
     "sprite": "https://i.imgur.com/UC9zsaH.png",
     "block": GOLD,
     "name": "Dylan R: Glad Die Later",
@@ -54,11 +56,11 @@ export default {
       "description": "Grant self (:crossed_swords: x 3.6) Armor. Trigger ally 1 block skill"
     },
     "status": [
-      "Vulnerability: Upon incoming damage skill, increase damage taken by 30% for each stack. 3 stacks max",
+      VULNERABILITY,
     ],
   },
  "dylan sr": {
-    "tier": "sr",
+    "tier": TIER_SR,
     "sprite": "https://i.imgur.com/UC9zsaH.png",
     "block": GOLD,
     "name": "Dylan SR: Renegade Repeller",
@@ -85,7 +87,7 @@ export default {
     "status": [],
   },
  "dylan ssr": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/4QjQFWm.png",
     "block": GOLD,
     "name": "Dylan SSR: Warden of War",
@@ -112,7 +114,7 @@ export default {
     "status": [],
   },
  "dylan sp": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/DxE8mMU.png",
     "block": BLACK,
     "name": "Dylan SP: Refined Blaze",
@@ -137,11 +139,11 @@ export default {
       "description": "Trigger death of all enemies with lower HP than this character"
     },
     "status": [
-      "Tear: Upon cast skill, lose 10% current HP for each stack. 3 stacks max",
+      TEAR,
     ],
   },
  "dylan skin": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://media.discordapp.net/attachments/426413392799203329/428039568655384587/LOL.png",
     "block": GOLD,
     "name": "Dylan Skillbook: Obsidian Bulwark",
@@ -166,7 +168,7 @@ export default {
       "description": "Grant self (:crossed_swords: x 2.4) Armor, trigger black character 4 block skill"
     },
     "status": [
-      "Vulnerability: Upon incoming damage skill, increase damage taken by 30% for each stack. 3 stacks max",
+      VULNERABILITY,
     ],
   },
 };

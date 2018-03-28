@@ -1,8 +1,10 @@
-import { WHITE, BLACK } from '../constants.js';
+import { BLACK, WHITE, GOLD } from '../constants.js';
+import { EXHAST, DAMAGEREDUCTION, VULNERABILITY, TANKUP, ENHANCE, TEAR, SHOCKLOCK } from '../constants.js';
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants.js';
 
 export default {
   "angelia n": {
-    "tier": "n",
+    "tier": TIER_N,
     "sprite": "https://i.imgur.com/sT1bN2g.png",
     "block": WHITE,
     "name": "Angelia N: Thy Fair Lady",
@@ -29,7 +31,7 @@ export default {
     "status": [],
   },
   "angelia r": {
-    "tier": "r",
+    "tier": TIER_R,
     "sprite": "https://i.imgur.com/sT1bN2g.png",
     "block": WHITE,
     "name": "Angelia R: Shy Sweetheart",
@@ -54,11 +56,11 @@ export default {
       "description": "Heal (:crossed_swords: x 1.8) front row ally, grant Exhaust, trigger 2 block skill"
     },
     "status": [
-      "Exhaust: Skill power decreased by 30% for each stack. 3 stacks max",
+      EXHAST,
     ],
   },
   "angelia sr": {
-    "tier": "sr",
+    "tier": TIER_SR,
     "sprite": "https://i.imgur.com/dxxHkc0.png",
     "block": WHITE,
     "name": "Angelia SR: Unfazed Dame",
@@ -83,11 +85,11 @@ export default {
       "description": "Heal (:crossed_swords: x 1.8) front row ally, grant Exhaust, trigger 2 block skill"
     },
     "status": [
-      "Exhaust: Skill power decreased by 30% for each stack. 3 stacks max",
+      EXHAST,
     ],
   },
   "angelia ssr": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/7vEcX1i.png",
     "block": WHITE,
     "name": "Angelia SSR: Virtue Virtuoso",
@@ -112,13 +114,13 @@ export default {
       "description": "Heal (:crossed_swords: x 1.8) front row ally, grant Exhaust, trigger 4 block skill"
     },
     "status": [
-      "Exhaust: Skill power decreased by 30% for each stack. 3 stacks max",
-      "Damage Reduction: Upon incoming Attack, damage decreased by 30% for each stack. 3 stacks max",
-      "Vulnerability: Upon incoming Attack, damage increased by 30% for each stack. 3 stacks max",
+      EXHAST,
+      DAMAGEREDUCTION,
+      VULNERABILITY,
     ],
   },
   "angelia skin": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/sETzJmO.png",
     "block": WHITE,
     "name": "Angelia Skill Book: Daybreak Darling",
@@ -143,13 +145,13 @@ export default {
       "description": "Heal (:crossed_swords: x 1.8) front row ally, grant Exhaust, trigger 2 block skill 2 times"
     },
     "status": [
-      "Exhaust: Skill power decreased by 30% for each stack. 3 stacks max",
-      "Vulnerability: Upon incoming Attack, damage increased by 30% for each stack. 3 stacks max",
-      "Tank Up: Upon incoming Attack, grant self Armor equal to 10% max Armor for each attack. 3 stacks max",
+      EXHAST,
+      VULNERABILITY,
+      TANKUP,
     ],
   },
   "angelia sp": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/4rIox7p.png",
     "block": BLACK,
     "name": "Angelia SP: Enchantress of Fate",
@@ -174,7 +176,7 @@ export default {
       "description": "Trigger 4 block skill of all allies with Tank up"
     },
     "status": [
-      "Tank Up: Upon incoming Attack, grant self Armor equal to 10% max Armor for each attack. 3 stacks max",
+      TANKUP,
     ],
   }
 };

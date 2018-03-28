@@ -1,8 +1,10 @@
-import { GOLD } from '../constants.js';
+import { BLACK, WHITE, GOLD } from '../constants.js';
+import { EXHAST, DAMAGEREDUCTION, VULNERABILITY, TANKUP, ENHANCE, TEAR, SHOCKLOCK } from '../constants.js';
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants.js';
 
 export default {
  "golemwalt n": {
-    "tier": "n",
+    "tier": TIER_N,
     "sprite": "https://i.imgur.com/Pa15VUA.png",
     "block": GOLD,
     "name": "Golemwalt N: Pebble Pusher",
@@ -27,11 +29,11 @@ export default {
       "description": "Armor Penetration (:crossed_swords: x 1.87) all enemies and (:crossed_swords: x 0.75) all allies"
     },
     "status": [
-      "Enhance: Skill power increased by 30% for each stack. 3 stacks max",
+      ENHANCE,
     ],
   },
  "golemwalt r": {
-    "tier": "r",
+    "tier": TIER_R,
     "sprite": "https://i.imgur.com/Pa15VUA.png",
     "block": GOLD,
     "name": "Golemwalt R: Boulder Brute",
@@ -56,11 +58,11 @@ export default {
       "description": "Armor Penetration (:crossed_swords: x 1.87) all enemies and (:crossed_swords: x 0.75) all allies"
     },
     "status": [
-      "Enhance: Skill power increased by 30% for each stack. 3 stacks max",
+      ENHANCE,
     ],
   },
  "golemwalt sr": {
-    "tier": "sr",
+    "tier": TIER_SR,
     "sprite": "https://i.imgur.com/vZqGsc4.png",
     "block": GOLD,
     "name": "Golemwalt SR: Shrine Stone",
@@ -85,11 +87,11 @@ export default {
       "description": "Armor Penetration (:crossed_swords: x 1.87) all enemies and (:crossed_swords: x 0.75) all allies"
     },
     "status": [
-      "Enhance: Skill power increased by 30% for each stack. 3 stacks max",
+      ENHANCE,
     ],
   },
  "golemwalt ssr": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/G8k9lKO.png",
     "block": GOLD,
     "name": "Golemwalt SSR: Monolith of Myth",
@@ -114,11 +116,11 @@ export default {
       "description": "Armor Penetration (:crossed_swords: x 1.87) all enemies and (:crossed_swords: x 0.75) all allies.  If have Armor, Armor Penetration (:crossed_swords: x 1.8) all enemies instead"
     },
     "status": [
-      "Enhance: Skill power increased by 30% for each stack. 3 stacks max",
+      ENHANCE,
     ],
   },
  "golemwalt skin-unreleased": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/z8IODWI.png",
     "block": GOLD,
     "name": "?????",

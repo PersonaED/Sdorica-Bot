@@ -1,8 +1,10 @@
-import { GOLD } from '../constants.js';
+import { BLACK, WHITE, GOLD } from '../constants.js';
+import { EXHAST, DAMAGEREDUCTION, VULNERABILITY, TANKUP, ENHANCE, TEAR, SHOCKLOCK } from '../constants.js';
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants.js';
 
 export default {
  "crushfang r": {
-    "tier": "r",
+    "tier": TIER_R,
     "sprite": "https://i.imgur.com/5uoQiEX.png",
     "block": GOLD,
     "name": "Crushfang R: Abe Ruthless",
@@ -27,11 +29,11 @@ export default {
       "description": "Attack (:crossed_swords: x 1.6) all enemies"
     },
     "status": [
-      "Enhance: Skill power increased by 30% for each stack. 3 stacks max",
+      ENHANCE,
     ],
   },
  "crushfang sr": {
-    "tier": "sr",
+    "tier": TIER_SR,
     "sprite": "https://i.imgur.com/kOb2zL0.png",
     "block": GOLD,
     "name": "Crushfang SR: Lumberjack the Ripper",
@@ -56,11 +58,11 @@ export default {
       "description": "Attack (:crossed_swords: x 1.6) all enemies. Grant self (:crossed_swords: x 0.6) Armor"
     },
     "status": [
-      "Enhance: Skill power increased by 30% for each stack. 3 stacks max",
+      ENHANCE,
     ],
   },
  "crushfang ssr": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/eRhIva6.png",
     "block": GOLD,
     "name": "Crushfang SSR: Jungle Juggernaut",
@@ -85,11 +87,11 @@ export default {
       "description": "Attack (:crossed_swords: x 1.6) all enemies. Grant self (:crossed_swords: x 0.6) Armor"
     },
     "status": [
-      "Enhance: Skill power increased by 30% for each stack. 3 stacks max",
+      ENHANCE,
     ],
   },
   "crushfang skin": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/zjRFkE9.png",
     "block": GOLD,
     "name": "Crushfang Skill Book: Lord of the Caves",

@@ -1,8 +1,10 @@
-import { WHITE } from '../constants.js';
+import { BLACK, WHITE, GOLD } from '../constants.js';
+import { EXHAST, DAMAGEREDUCTION, VULNERABILITY, TANKUP, ENHANCE, TEAR, SHOCKLOCK } from '../constants.js';
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants.js';
 
 export default {
   "koll n": {
-    "tier": "n",
+    "tier": TIER_N,
     "sprite": "https://i.imgur.com/j2j9nyX.png",
     "block": WHITE,
     "name": "Koll N: Flame Boy Chant",
@@ -29,7 +31,7 @@ export default {
     "status": [],
   },
   "koll r": {
-    "tier": "r",
+    "tier": TIER_R,
     "sprite": "https://i.imgur.com/j2j9nyX.png",
     "block": WHITE,
     "name": "Koll R: Fear The Sear",
@@ -54,11 +56,11 @@ export default {
       "description": "Attack (:crossed_swords: x 2.5) all enemies and (:crossed_swords: x 1) all allies."
     },
     "status": [
-      "Vulnerability: Upon incoming Attack, damage increased by 30% for each stack. 3 stacks max.",
+      VULNERABILITY,
     ],
   },
   "koll sr": {
-    "tier": "sr",
+    "tier": TIER_SR,
     "sprite": "https://i.imgur.com/ZHcIUfy.png",
     "block": WHITE,
     "name": "Koll SR: Unchained Smoker",
@@ -83,11 +85,11 @@ export default {
       "description": "Attack (:crossed_swords: x 2.5) all enemies and (:crossed_swords: x 1) all allies."
     },
     "status": [
-      "Vulnerability: Upon incoming Attack, damage increased by 30% for each stack. 3 stacks max.",
+      VULNERABILITY,
     ],
   },
   "koll ssr": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/fbjIc87.png",
     "block": WHITE,
     "name": "Koll SSR: Entrails Blazer",
@@ -112,12 +114,12 @@ export default {
       "description": "Attack (:crossed_swords: x 2.5) all enemies and (:crossed_swords: x 1) all allies."
     },
     "status": [
-      "Vulnerability: Upon incoming Attack, damage increased by 30% for each stack. 3 stacks max.",
-      "Damage Reduction: Upon incoming Attack, damage decreased by 30% for each stack. 3 stacks max.",
+      VULNERABILITY,
+      DAMAGEREDUCTION,
     ],
   },
   "koll skin-unreleased": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/2JX1l4z.png",
     "block": WHITE,
     "name": "Koll Skill Book: ?????",

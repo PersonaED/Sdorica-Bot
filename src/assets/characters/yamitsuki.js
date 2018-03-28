@@ -1,8 +1,10 @@
-import { BLACK } from '../constants.js';
+import { BLACK, WHITE, GOLD } from '../constants.js';
+import { EXHAST, DAMAGEREDUCTION, VULNERABILITY, TANKUP, ENHANCE, TEAR, SHOCKLOCK, VIGILANCE } from '../constants.js';
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants.js';
 
 export default {
   "yamitsuki r": {
-    "tier": "r",
+    "tier": TIER_R,
     "sprite": "https://i.imgur.com/gxp5MYV.png",
     "block": BLACK,
     "name": "Yamitsuki R: Shadow Walker",
@@ -27,11 +29,11 @@ export default {
       "description": "Armor Penetration (:crossed_swords: x 2.4) selected enemy"
     },
     "status": [
-      "Damage Reduction: Upon incoming Attack, damage decreased by 30% for each stack. 3 stacks max"
+      DAMAGEREDUCTION
     ],
   },
   "yamitsuki sr": {
-    "tier": "sr",
+    "tier": TIER_SR,
     "sprite": "https://i.imgur.com/soxgPHa.png",
     "block": BLACK,
     "name": "Yamitsuki SR: Nevermore Ninja",
@@ -56,14 +58,14 @@ export default {
       "description": "Armor Penetration (:crossed_swords: x 2.4) selected enemy"
     },
     "status": [
-      "Vulnerability: Upon incoming Attack, damage increased by 30% for each stack. 3 stacks max",
-      "Damage Reduction: Upon incoming Attack, damage decreased by 30% for each stack. 3 stacks max",
-      "Enhance: Skill power increased by 30% for each stack. 3 stacks max",
-      "Vigilance: Upon incoming Attack, chance for evading damage by 30% for each stack. 3 stacks max"
+      VULNERABILITY,
+      DAMAGEREDUCTION,
+      ENHANCE,
+      VIGILANCE
     ],
   },
   "yamitsuki ssr": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/PEDEMmr.png",
     "block": BLACK,
     "name": "Yamitsuki SSR: Twin Of Twilight",
@@ -88,11 +90,11 @@ export default {
       "description": "Armor Penetration (:crossed_swords: x 2.4) selected enemy, grant 2 stacks Vulnerability and 2 stacks Exhaust for 2 turns"
     },
     "status": [
-      "Vulnerability: Upon incoming Attack, damage increased by 30% for each stack. 3 stacks max",
-      "Exhaust: Skill power decreased by 30% for each stack. 3 stacks max",
-      "Damage Reduction: Upon incoming Attack, damage decreased by 30% for each stack. 3 stacks max",
-      "Enhance: Skill power increased by 30% for each stack. 3 stacks max",
-      "Vigilance: Upon incoming Attack, chance for evading damage by 30% for each stack. 3 stacks max"
+      VULNERABILITY,
+      EXHAST,
+      DAMAGEREDUCTION,
+      ENHANCE,
+      VIGILANCE
     ],
   },
 }

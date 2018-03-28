@@ -1,8 +1,10 @@
-import { GOLD } from '../constants.js';
+import { BLACK, WHITE, GOLD } from '../constants.js';
+import { EXHAST, DAMAGEREDUCTION, VULNERABILITY, TANKUP, ENHANCE, TEAR, SHOCKLOCK, VIGILANCE } from '../constants.js';
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants.js';
 
 export default {
  "karnulla n": {
-    "tier": "n",
+    "tier": TIER_N,
     "sprite": "https://i.imgur.com/7SO2zs8.png",
     "block": GOLD,
     "name": "Karnulla N: Mouth of Madness",
@@ -27,11 +29,11 @@ export default {
       "description": "Grant self 3 stacks Vigilance. Reset all enemies CD"
     },
     "status": [
-      "Vigilance: Upon incoming damage skill, 30% chance to evade damage for each stack. 3 stacks max",
+      VIGILANCE,
     ],
   },
  "karnulla r": {
-    "tier": "r",
+    "tier": TIER_R,
     "sprite": "https://i.imgur.com/7SO2zs8.png",
     "block": GOLD,
     "name": "Karnulla R: Crocodile Dummy",
@@ -56,11 +58,11 @@ export default {
       "description": "Grant self Taunt and 3 stacks Vigilance. Reset all enemies CD"
     },
     "status": [
-      "Vigilance: Upon incoming damage skill, 30% chance to evade damage for each stack. 3 stacks max",
+      VIGILANCE,
     ],
   },
  "karnulla sr": {
-    "tier": "sr",
+    "tier": TIER_SR,
     "sprite": "https://i.imgur.com/V78vDwv.png",
     "block": GOLD,
     "name": "Karnulla SR: Greater Alligator",
@@ -85,13 +87,13 @@ export default {
       "description": "Grant self Taunt and 3 stacks Vigilance. Reset all enemies CD"
     },
     "status": [
-      "Vigilance: Upon incoming damage skill, 30% chance to evade damage for each stack. 3 stacks max",
-      "Exhaust: Decrease skill power by 30% for each stack. 3 stacks max",
-      "Enhance: Increase skill power by 30% for each stack. 3 stacks max",
+      VIGILANCE,
+      EXHAST,
+      ENHANCE,
     ],
   },
  "karnulla ssr": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/WzSB5FA.png",
     "block": GOLD,
     "name": "Karnulla SSR: Apex Predator",
@@ -116,13 +118,13 @@ export default {
       "description": "Grant self Taunt and 3 stacks Vigilance. Reset all enemies CD"
     },
     "status": [
-      "Vigilance: Upon incoming damage skill, 30% chance to evade damage for each stack. 3 stacks max",
-      "Exhaust: Decrease skill power by 30% for each stack. 3 stacks max",
-      "Enhance: Increase skill power by 30% for each stack. 3 stacks max",
+      VIGILANCE,
+      EXHAST,
+      ENHANCE,
     ],
   },
  "karnulla skin-unreleased": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/93ioJnW.png",
     "block": GOLD,
     "name": "?????",

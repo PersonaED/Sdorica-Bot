@@ -1,8 +1,10 @@
-import { GOLD } from '../constants.js';
+import { BLACK, WHITE, GOLD } from '../constants.js';
+import { EXHAST, DAMAGEREDUCTION, VULNERABILITY, TANKUP, ENHANCE, TEAR, SHOCKLOCK } from '../constants.js';
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants.js';
 
 export default {
  "experiment r": {
-    "tier": "r",
+    "tier": TIER_R,
     "sprite": "https://i.imgur.com/UVLqhfR.png",
     "block": GOLD,
     "name": "Experiment R: Enigma Ignite",
@@ -27,11 +29,11 @@ export default {
       "description": "Attack (:crossed_swords: x 3) all enemies. Grant self Shock Lock. If have Shock Lock, cannot cast skill."
     },
     "status": [
-      "Shock Lock: Upon turn, grant self 3 stacks Vulnerability and Exhaust",
+      SHOCKLOCK,
     ],
   },
  "experiment sr": {
-    "tier": "sr",
+    "tier": TIER_SR,
     "sprite": "https://i.imgur.com/Zb4twiP.png",
     "block": GOLD,
     "name": "Experiment SR: Evolution Module",
@@ -56,11 +58,11 @@ export default {
       "description": "Attack (:crossed_swords: x 3) all enemies. Grant self Shock Lock. If have Shock Lock, cannot cast skill."
     },
     "status": [
-      "Shock Lock: Upon turn, grant self 3 stacks Vulnerability and Exhaust",
+      SHOCKLOCK,
     ],
   },
   "experiment ssr": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/dv3zV4F.png",
     "block": GOLD,
     "name": "Experiment SSR: Genesis Module",
@@ -85,11 +87,11 @@ export default {
       "description": "Attack (:crossed_swords: x 3) all enemies. Grant self Shock Lock. If have Shock Lock, cannot cast skill."
     },
     "status": [
-      "Shock Lock: Upon turn, grant self 3 stacks Vulnerability and Exhaust",
+      SHOCKLOCK,
     ],
   },
   "experiment skin-unreleased": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/nVEmdL3.png",
     "block": GOLD,
     "name": "?????",

@@ -212,7 +212,6 @@ client.on("message", (message) => {
     sendMessage(characterMap[splitChar[0]][selectedChar], message);
   }
 
-  console.log(stringSimilarity.compareTwoStrings(content, "!who is the best boy"));
   if (stringSimilarity.compareTwoStrings(content, "!who is the best boy") >= 0.65) {
     message.channel.send(`Koll is the best boy!`);
     // sendMessage(koll["koll ssr"], message);

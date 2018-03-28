@@ -1,8 +1,10 @@
-import { GOLD } from '../constants.js';
+import { BLACK, WHITE, GOLD } from '../constants.js';
+import { EXHAST, DAMAGEREDUCTION, VULNERABILITY, TANKUP, ENHANCE, TEAR, SHOCKLOCK } from '../constants.js';
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants.js';
 
 export default {
  "nigel r": {
-    "tier": "r",
+    "tier": TIER_R,
     "sprite": "https://i.imgur.com/0upjO2Y.png",
     "block": GOLD,
     "name": "Nigel R: Hack and Clash",
@@ -29,7 +31,7 @@ export default {
     "status": [],
   },
  "nigel sr": {
-    "tier": "sr",
+    "tier": TIER_SR,
     "sprite": "https://i.imgur.com/z213deW.png",
     "block": GOLD,
     "name": "Nigel SR: Carved in Bone",
@@ -56,7 +58,7 @@ export default {
     "status": [],
   },
  "nigel ssr": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/lMeaHLZ.png",
     "block": GOLD,
     "name": "Nigel SSR: Shockblade Scourge",
@@ -83,7 +85,7 @@ export default {
     "status": [],
   },
  "nigel sp-unreleased": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/YFtmC85.png",
     "block": GOLD,
     "name": "?????",
@@ -110,7 +112,7 @@ export default {
     "status": [],
   },
  "nigel skin-unreleased": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/2D00IVa.png",
     "block": GOLD,
     "name": "?????",

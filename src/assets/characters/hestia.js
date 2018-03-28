@@ -1,8 +1,10 @@
-import { WHITE } from '../constants.js';
+import { BLACK, WHITE, GOLD } from '../constants.js';
+import { EXHAST, DAMAGEREDUCTION, VULNERABILITY, TANKUP, ENHANCE, TEAR, SHOCKLOCK, REGEN } from '../constants.js';
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants.js';
 
 export default {
   "hestia n": {
-    "tier": "n",
+    "tier": TIER_N,
     "sprite": "https://i.imgur.com/3WvBX0Z.png",
     "block": WHITE,
     "name": "Hestia N: Splash Sprite",
@@ -27,11 +29,11 @@ export default {
       "description": "Armor Penetration (:crossed_swords: x 2.25) selected enemy."
     },
     "status": [
-      "Regen: Upon turn, heal self 10% max HP for each stack. 3 stacks max. Remove upon incoming damage skill",
+      REGEN,
     ],
   },
   "hestia r": {
-    "tier": "r",
+    "tier": TIER_R,
     "sprite": "https://i.imgur.com/3WvBX0Z.png",
     "block": WHITE,
     "name": "Hestia R: Aqua La Diva",
@@ -56,11 +58,11 @@ export default {
       "description": "Armor Penetration (:crossed_swords: x 2.25) selected enemy."
     },
     "status": [
-      "Regen: Upon turn, heal self 10% max HP for each stack. 3 stacks max. Remove upon incoming damage skill",
+      REGEN,
     ],
   },
   "hestia sr": {
-    "tier": "sr",
+    "tier": TIER_SR,
     "sprite": "https://i.imgur.com/zvR0Hzm.png",
     "block": WHITE,
     "name": "Hestia SR: Riverbank Maiden",
@@ -85,11 +87,11 @@ export default {
       "description": "Armor Penetration (:crossed_swords: x 2.25) selected enemy."
     },
     "status": [
-    "Regen: Upon turn, heal self 10% max HP for each stack. 3 stacks max. Remove upon incoming damage skill",
+      REGEN,
     ],
   },
   "hestia ssr": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/HNTNTGt.png",
     "block": WHITE,
     "name": "Hestia SSR: Bride Of The Sea",
@@ -114,7 +116,7 @@ export default {
       "description": "Armor Penetration (:crossed_swords: x 2.25) selected enemy, heal (:crossed_swords: x 0.9) target "
     },
     "status": [
-    "Regen: Upon turn, heal self 10% max HP for each stack. 3 stacks max. Remove upon incoming damage skill",
+      REGEN,
     ],
   },
 };

@@ -1,8 +1,10 @@
-import { BLACK } from '../constants.js';
+import { BLACK, WHITE, GOLD } from '../constants.js';
+import { EXHAST, DAMAGEREDUCTION, VULNERABILITY, TANKUP, ENHANCE, TEAR, SHOCKLOCK } from '../constants.js';
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants.js';
 
 export default {
   "yan-bo r": {
-    "tier": "r",
+    "tier": TIER_R,
     "sprite": "https://i.imgur.com/ftzyvnQ.png",
     "block": BLACK,
     "name": "Yan-Bo R: Hidden Figure",
@@ -27,12 +29,12 @@ export default {
       "description": "Attack (:crossed_swords: x 3) front row enemy, grant stun"
     },
     "status": [
-      "Enhance: Skill power increased by 30% for each stack. 3 stacks max",
-      "Exhaust: Skill power decreased by 30% for each stack. 3 stacks max"
+      ENHANCE,
+      EXHAST
     ],
   },
   "yan-bo sr": {
-    "tier": "sr",
+    "tier": TIER_SR,
     "sprite": "https://i.imgur.com/OjjllDt.png",
     "block": BLACK,
     "name": "Yan-Bo SR: Zenith In Zen",
@@ -57,12 +59,12 @@ export default {
       "description": "Attack (:crossed_swords: x 3) front row enemy, grant stun"
     },
     "status": [
-      "Enhance: Skill power increased by 30% for each stack. 3 stacks max",
-      "Exhaust: Skill power decreased by 30% for each stack. 3 stacks max"
+      ENHANCE,
+      EXHAST
     ],
   },
   "yan-bo ssr": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/nqFdlPM.png",
     "block": BLACK,
     "name": "Yan-Bo SSR: Celestial Mortal",
@@ -87,12 +89,12 @@ export default {
       "description": "Attack (:crossed_swords: x 3) front row enemy, grant stun"
     },
     "status": [
-      "Enhance: Skill power increased by 30% for each stack. 3 stacks max",
-      "Exhaust: Skill power decreased by 30% for each stack. 3 stacks max"
+      ENHANCE,
+      EXHAST
     ],
   },
   "yan-bo skin": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/JFtASJS.png",
     "block": BLACK,
     "name": "Yan-Bo Skill Book: Enlightened One",

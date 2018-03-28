@@ -1,8 +1,10 @@
-import { WHITE } from '../constants.js';
+import { BLACK, WHITE, GOLD } from '../constants.js';
+import { EXHAST, DAMAGEREDUCTION, VULNERABILITY, TANKUP, ENHANCE, TEAR, SHOCKLOCK } from '../constants.js';
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants.js';
 
 export default {
   "aosta r": {
-    "tier": "r",
+    "tier": TIER_R,
     "sprite": "https://i.imgur.com/DUMp67M.png",
     "block": WHITE,
     "name": "Aosta R: Cloaker Face",
@@ -27,12 +29,12 @@ export default {
       "description": "Grant selected ally 3 stacks Enhance and 3 stacks Damage Reduction."
     },
     "status": [
-      "Enhance: Skill power increased by 30% for each stack. 3 stacks max",
-      "Damage Reduction: Upon incoming Attack, damage decreased by 30% for each stack. 3 stacks max",
+      ENHANCE,
+      DAMAGEREDUCTION,
     ],
   },
   "aosta sr": {
-    "tier": "sr",
+    "tier": TIER_SR,
     "sprite": "https://i.imgur.com/JEUmIfC.png",
     "block": WHITE,
     "name": "Aosta SR: Heart Of Marigold",
@@ -57,12 +59,12 @@ export default {
       "description": "Grant selected ally 3 stacks Enhance and 3 stacks Damage Reduction."
     },
     "status": [
-      "Enhance: Skill power increased by 30% for each stack. 3 stacks max",
-      "Damage Reduction: Upon incoming Attack, damage decreased by 30% for each stack. 3 stacks max",
+      ENHANCE,
+      DAMAGEREDUCTION,
     ],
   },
   "aosta ssr": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/VgB1P4P.png",
     "block": WHITE,
     "name": "Aosta SSR: Mind Over Latter",
@@ -87,8 +89,8 @@ export default {
       "description": "Grant selected ally 3 stacks Enhance and 3 stacks Damage Reduction."
     },
     "status": [
-      "Enhance: Skill power increased by 30% for each stack. 3 stacks max",
-      "Damage Reduction: Upon incoming Attack, damage decreased by 30% for each stack. 3 stacks max",
+      ENHANCE,
+      DAMAGEREDUCTION,
     ],
   }
 };

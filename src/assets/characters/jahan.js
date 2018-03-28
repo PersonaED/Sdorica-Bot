@@ -1,8 +1,10 @@
-import { GOLD } from '../constants.js';
+import { BLACK, WHITE, GOLD } from '../constants.js';
+import { EXHAST, DAMAGEREDUCTION, VULNERABILITY, TANKUP, ENHANCE, TEAR, SHOCKLOCK, POISON } from '../constants.js';
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants.js';
 
 export default {
  "jahan r": {
-    "tier": "r",
+    "tier": TIER_R,
     "sprite": "https://i.imgur.com/z8l1ITW.png",
     "block": GOLD,
     "name": "Jahan R: Aristocrat Brat",
@@ -27,11 +29,11 @@ export default {
       "description": "Attack (:crossed_swords: x 3) selected enemy"
     },
     "status": [
-      "Damage Reduction: Upon incoming Attack, damage decreased by 30% for each stack. 3 stacks max",
+      DAMAGEREDUCTION,
     ],
   },
  "jahan sr": {
-    "tier": "sr",
+    "tier": TIER_SR,
     "sprite": "https://i.imgur.com/xAggLI4.png",
     "block": GOLD,
     "name": "Jahan SR: Charms and Noble",
@@ -56,11 +58,11 @@ export default {
       "description": "Attack (:crossed_swords: x 4) selected enemy, reset target CD"
     },
     "status": [
-      "Damage Reduction: Upon incoming Attack, damage decreased by 30% for each stack. 3 stacks max",
+      DAMAGEREDUCTION,
     ],
   },
  "jahan ssr": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/Qz7idrT.png",
     "block": GOLD,
     "name": "Jahan SSR: Sir Dance a Lot",
@@ -85,12 +87,12 @@ export default {
       "description": "Attack (:crossed_swords: x 4) selected enemy, reset target CD"
     },
     "status": [
-      "Damage Reduction: Upon incoming Attack, damage decreased by 30% for each stack. 3 stacks max",
-      "Poison: Upon turn, lose 10% current HP for each stack, 3 stacks max",
+      DAMAGEREDUCTION,
+      POISON,
     ],
   },
  "jahan skin": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/fKrWzaV.png",
     "block": GOLD,
     "name": "Jahan Skillbook: Shiny Derpy Pinky",
@@ -115,9 +117,9 @@ export default {
       "description": "True Damage (:crossed_swords: x 4) selected enemy, reset all enemies CD"
     },
     "status": [
-      "Damage Reduction: Upon incoming Attack, damage decreased by 30% for each stack. 3 stacks max",
-      "Exhaust: Skill power decreased by 30% for each stack. 3 stacks max",
-      "Tear: Upon cast skill, lose HP equal to 30% skill power for each stack. 3 stacks max",
+      DAMAGEREDUCTION,
+      EXHAST,
+      TEAR,
     ],
   },
 };

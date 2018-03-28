@@ -1,8 +1,10 @@
-import { WHITE } from '../constants.js';
+import { BLACK, WHITE, GOLD } from '../constants.js';
+import { EXHAST, DAMAGEREDUCTION, VULNERABILITY, TANKUP, ENHANCE, TEAR, SHOCKLOCK, POISON } from '../constants.js';
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants.js';
 
 export default {
   "lio r": {
-    "tier": "r",
+    "tier": TIER_R,
     "sprite": "https://i.imgur.com/Me0Jhgr.png",
     "block": WHITE,
     "name": "Lio R: Gallant Scout",
@@ -27,11 +29,11 @@ export default {
       "description": "Armor Penetration (:crossed_swords: x 2.4) back row enemy."
     },
     "status": [
-      "Exhaust: Skill power decreased by 30% for each stack. 3 stacks max.",
+      EXHAST,
     ],
   },
   "lio sr": {
-    "tier": "sr",
+    "tier": TIER_SR,
     "sprite": "https://i.imgur.com/uJa3NaQ.png",
     "block": WHITE,
     "name": "Lio SR: Ace Cadet",
@@ -56,11 +58,11 @@ export default {
       "description": "Armor Penetration (:crossed_swords: x 2.4) back row enemy."
     },
     "status": [
-      "Exhaust: Skill power decreased by 30% for each stack. 3 stacks max.",
+      EXHAST,
     ],
   },
   "lio ssr": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/eEi1zGu.png",
     "block": WHITE,
     "name": "Lio SSR: Homeland In Security",
@@ -85,11 +87,11 @@ export default {
       "description": "Armor Penetration (:crossed_swords: x 2.4) back row enemy."
     },
     "status": [
-      "Exhaust: Skill power decreased by 30% for each stack. 3 stacks max.",
+      EXHAST,
     ],
   },
   "lio skin": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/teiwY8c.png",
     "block": WHITE,
     "name": "Lio Skill Book: Mandora Shooter",
@@ -114,7 +116,7 @@ export default {
       "description": "Armor Penetration (:crossed_swords: x 2.25) selected enemy. 50% chance to trigger target CD+3"
     },
     "status": [
-      "Poison: Upon turn, lose 10% of current HP for each stack. 3 stacks max. Remove upon receive Heal.",
+      POISON,
     ],
   },
 };

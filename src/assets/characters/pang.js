@@ -1,8 +1,10 @@
-import { GOLD } from '../constants.js';
+import { BLACK, WHITE, GOLD } from '../constants.js';
+import { EXHAST, DAMAGEREDUCTION, VULNERABILITY, TANKUP, ENHANCE, TEAR, SHOCKLOCK, WINDEDUP } from '../constants.js';
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants.js';
 
 export default {
  "pang n": {
-    "tier": "n",
+    "tier": TIER_N,
     "sprite": "https://i.imgur.com/IgajiVH.png",
     "block": GOLD,
     "name": "Pang N: Amateur Hour",
@@ -27,11 +29,11 @@ export default {
       "description": "Attack (:crossed_swords: x 3) front row enemy"
     },
    "status": [
-      "Damage Reduction: Upon incoming damage skill, decrease damage taken by 30% for each stack. 3 stacks max",
+      DAMAGEREDUCTION,
     ],
   },
  "pang r": {
-    "tier": "r",
+    "tier": TIER_R,
     "sprite": "https://i.imgur.com/IgajiVH.png",
     "block": GOLD,
     "name": "Pang R: Self Made Fan",
@@ -56,13 +58,13 @@ export default {
       "description": "Attack (:crossed_swords: x 3) front row enemy. Grant self 2 stacks Enhance for 3 turns"
     },
    "status": [
-      "Damage Reduction: Upon incoming damage skill, decrease damage taken by 30% for each stack. 3 stacks max",
-      "Winded Up: Upon 4 stacks, grant 1 extra attack for next skill",
-      "Enhance: Increase skill power by 30% for each stack. 3 stacks max",
+      DAMAGEREDUCTION,
+      WINDEDUP,
+      ENHANCE,
     ],
   },
  "pang sr": {
-    "tier": "sr",
+    "tier": TIER_SR,
     "sprite": "https://i.imgur.com/noYW61K.png",
     "block": GOLD,
     "name": "Pang SR: Notice Me Sensei",
@@ -87,13 +89,13 @@ export default {
       "description": "Attack (:crossed_swords: x 3) front row enemy. Grant self 2 stacks Enhance for 3 turns"
     },
    "status": [
-      "Damage Reduction: Upon incoming damage skill, decrease damage taken by 30% for each stack. 3 stacks max",
-      "Winded Up: Upon 4 stacks, grant 1 extra attack for next skill",
-      "Enhance: Increase skill power by 30% for each stack. 3 stacks max",
+      DAMAGEREDUCTION,
+      WINDEDUP,
+      ENHANCE,
     ],
   },
  "pang ssr": {
-    "tier": "ssr",
+    "tier": TIER_SSR,
     "sprite": "https://i.imgur.com/0xe5c0K.png",
     "block": GOLD,
     "name": "Pang SSR: Shaolin Templar",
@@ -118,9 +120,9 @@ export default {
       "description": "Attack (:crossed_swords: x 3) front row enemy. Grant self 2 stacks Enhance for 3 turns"
     },
    "status": [
-      "Damage Reduction: Upon incoming damage skill, decrease damage taken by 30% for each stack. 3 stacks max",
-      "Winded Up: Upon 4 stacks, grant 1 extra attack for next skill",
-      "Enhance: Increase skill power by 30% for each stack. 3 stacks max",
+      DAMAGEREDUCTION,
+      WINDEDUP,
+      ENHANCE,
     ],
   },
 };
