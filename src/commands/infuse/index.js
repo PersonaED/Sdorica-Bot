@@ -3,6 +3,7 @@ import { summon } from '../../assets';
 import { characterMap } from '../constants';
 import { sendCharacterInfo } from '../characters';
 import { standardPrefix } from '../../config';
+import { capitalizeFirstLetter } from '../helper';
 
 // table for million infuse
 const millionInfuseTable = [];
@@ -24,12 +25,12 @@ const rollOne = (message, summonTable) => {
   // check if json object exists for given character
   const jsonInfuse = characterMap[splitChar[0]];
   if (jsonInfuse === undefined) {
-    message.channel.send(`${sender}, you have infused: ${selectedChar}`);
+    message.channel.send(`${sender}, you have infused: ${capitalizeFirstLetter(splitChar[0])} ${splitChar[1].toUpperCase()}`);
   } else {
     const infuseResult = characterMap[splitChar[0]][selectedChar];
     // check if key is present in character file
     if (infuseResult === undefined) {
-      message.channel.send(`${sender}, you have infused: ${selectedChar}`);
+      message.channel.send(`${sender}, you have infused: ${capitalizeFirstLetter(splitChar[0])} ${splitChar[1].toUpperCase()}`);
     } else {
       sendCharacterInfo(infuseResult, message, true);
     }
@@ -49,7 +50,10 @@ const rollMany = (message, summonTable, count) => {
     }
   }
   Object.keys(infuseMany).forEach((key) => {
-    infuseAggregate.push(`${key} (x${infuseMany[key]})`);
+    const keySplit = key.split(' ');
+    const name = capitalizeFirstLetter(keySplit[0]);
+    const tier = keySplit[1].toUpperCase();
+    infuseAggregate.push(`${name} ${tier} (x${infuseMany[key]})`);
   });
   infuseAggregate.sort();
   message.channel.send(`${sender}, you have infused: \n\n${infuseAggregate.join(', ')}`);
