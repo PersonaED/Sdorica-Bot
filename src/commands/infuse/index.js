@@ -18,24 +18,26 @@ Object.keys(summon.million).forEach((tier) => {
 });
 
 const rollOne = (message, summonTable) => {
+  const sender = `**${message.author.username}**`;
   const selectedChar = rwc(summonTable);
   const splitChar = selectedChar.split(' ');
   // check if json object exists for given character
   const jsonInfuse = characterMap[splitChar[0]];
   if (jsonInfuse === undefined) {
-    message.channel.send(`Your million infuse was: ${selectedChar}`);
+    message.channel.send(`${sender}, you have infused: ${selectedChar}`);
   } else {
     const infuseResult = characterMap[splitChar[0]][selectedChar];
     // check if key is present in character file
     if (infuseResult === undefined) {
-      message.channel.send(`Your million infuse was: ${selectedChar}`);
+      message.channel.send(`${sender}, you have infused: ${selectedChar}`);
     } else {
-      sendCharacterInfo(infuseResult, message);
+      sendCharacterInfo(infuseResult, message, true);
     }
   }
 };
 
 const rollMany = (message, summonTable, count) => {
+  const sender = `**${message.author.username}**`;
   const infuseMany = {};
   const infuseAggregate = [];
   for (let i = 0; i < count; i += 1) {
@@ -50,7 +52,7 @@ const rollMany = (message, summonTable, count) => {
     infuseAggregate.push(`${key} (x${infuseMany[key]})`);
   });
   infuseAggregate.sort();
-  message.channel.send(infuseAggregate.join(', '));
+  message.channel.send(`${sender}, you have infused: \n\n${infuseAggregate.join(', ')}`);
 };
 
 export const millionInfuseCommand = (message, splitContent) => {

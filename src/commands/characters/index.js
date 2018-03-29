@@ -21,7 +21,7 @@ Object.keys(characterMap).forEach((characterInfo) => {
   });
 });
 
-export const sendCharacterInfo = (characterInfo, message) => {
+export const sendCharacterInfo = (characterInfo, message, infuse) => {
   const { tier, block, status } = characterInfo;
   const messageTemplate = {
     embed: {
@@ -120,7 +120,12 @@ export const sendCharacterInfo = (characterInfo, message) => {
       }
     }
   }
-  message.channel.send(messageTemplate);
+  if (infuse) {
+    const sender = `**${message.author.username}**`;
+    message.channel.send(`${sender}, you have infused: ${characterInfo.name}\n`, messageTemplate);
+  } else {
+    message.channel.send(messageTemplate);
+  }
 };
 
 
