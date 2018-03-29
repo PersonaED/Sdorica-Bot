@@ -132,6 +132,7 @@ export const characterInfoCommand = (message, splitContent) => {
     const characterKey = `${name} ${type}`;
     if (searchPointer.contains(characterKey)) {
       sendCharacterInfo(characterMap[name][characterKey], message);
+      return true;
     }
   } else {
     const standardNameArray = mapCharacterNames(splitContent);
@@ -139,7 +140,53 @@ export const characterInfoCommand = (message, splitContent) => {
     const charactersArray = Object.keys(characterMap);
 
     if (charactersArray.includes(name)) {
-      message.channel.send(`Enter in a tier of n/r/sr/ssr/skin/sp. \n\nExample: ${standardPrefix}${name} ssr`);
+      // if name is valid, then check if the tier is correct
+      const orderArray = [];
+      const topLine = `**Options for ${name} - **`;
+      orderArray.push(topLine);
+
+      const options = Object.keys(characterMap[name]).map((keyChar) => {
+        const styledKey = `\`${keyChar}\``;
+        return styledKey;
+      });
+      const filteredOptions = options.filter(phrase => !phrase.includes('unreleased'));
+      orderArray.push(filteredOptions.join(', '));
+      let finalString = '';
+      orderArray.forEach((item) => {
+        finalString = `${finalString} ${item}`;
+      });
+      message.channel.send(finalString);
+      return true;
     }
   }
+  return false;
+};
+
+export const characterCommand = (message, splitContent) => {
+  if (splitContent[0] === `${standardPrefix}characters` || splitContent[0] === `${standardPrefix}character`) {
+    const orderArray = [];
+
+    const header = '```css\n `Character List` \n```';
+    orderArray.push(header);
+
+    const example = 'Use `![character] [tier]` to get character information. For example: `!angelia n`\n';
+    orderArray.push(example);
+
+    const char = Object.keys(characterMap).sort().map((keyChar) => {
+      const styledKey = `\`${keyChar}\``;
+      return styledKey;
+    });
+    orderArray.push(`${char.join(', ')}\n`);
+
+    const warning = '```\n # Don\'t include the brackets when using commands! \n\n # Tier options: n/r/sr/ssr/skin/sp \n```';
+    orderArray.push(warning);
+
+    let finalString = '';
+    orderArray.forEach((item) => {
+      finalString = `${finalString}\n${item}`;
+    });
+    message.channel.send(finalString);
+    return true;
+  }
+  return false;
 };

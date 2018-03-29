@@ -1,9 +1,11 @@
 import Discord from 'discord.js';
 import settings from './settings';
 import { standardPrefix } from './config';
-import { characterInfoCommand } from './commands/characters';
+import { characterInfoCommand, characterCommand } from './commands/characters';
 import { millionInfuseCommand } from './commands/infuse';
 import funCommand from './commands/fun';
+import helpCommand from './commands/help';
+import devCommand from './commands/dev';
 
 const client = new Discord.Client();
 
@@ -19,9 +21,22 @@ client.on('message', (message) => {
     return;
   }
 
-  characterInfoCommand(message, splitContent);
-  millionInfuseCommand(message, splitContent);
-  funCommand(message, splitContent);
+  if (characterInfoCommand(message, splitContent)) {
+    return;
+  }
+  if (millionInfuseCommand(message, splitContent)) {
+    return;
+  }
+  if (funCommand(message, splitContent)) {
+    return;
+  }
+  if (helpCommand(message, splitContent)) {
+    return;
+  }
+  if (characterCommand(message, splitContent)) {
+    return;
+  }
+  devCommand(message, splitContent);
 });
 
 client.login(settings.token);

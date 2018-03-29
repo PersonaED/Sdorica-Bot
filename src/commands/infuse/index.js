@@ -60,7 +60,9 @@ export const millionInfuseCommand = (message, splitContent) => {
     } else {
       rollOne(message, millionInfuseTable);
     }
+    return true;
   }
+  return false;
 };
 
 export const bannerInfuseCommand = () => {
