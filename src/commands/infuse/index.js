@@ -18,6 +18,16 @@ Object.keys(summon.million).forEach((tier) => {
   });
 });
 
+const millionInfuseSROnly = [];
+Object.keys(summon.million.sr).forEach((characterKey) => {
+  const charName = `${characterKey} sr`;
+  const characterProbability = {
+    weight: summon.million.sr[characterKey],
+    id: charName,
+  };
+  millionInfuseSROnly.push(characterProbability);
+});
+
 const rollOne = (message, summonTable) => {
   const sender = `**${message.author.username}**`;
   const selectedChar = rwc(summonTable);
@@ -37,11 +47,17 @@ const rollOne = (message, summonTable) => {
   }
 };
 
-const rollMany = (message, summonTable, count) => {
+const rollMany = (message, summonTable, count, guaranteeSR) => {
   const sender = `**${message.author.username}**`;
   const infuseMany = {};
   const infuseAggregate = [];
-  for (let i = 0; i < count; i += 1) {
+  let rollNumber = count;
+  if (guaranteeSR) {
+    rollNumber -= 1;
+    const infuseResult = rwc(millionInfuseSROnly);
+    infuseMany[infuseResult] = 1;
+  }
+  for (let i = 0; i < rollNumber; i += 1) {
     const infuseResult = rwc(summonTable);
     if (infuseMany[infuseResult] === undefined) {
       infuseMany[infuseResult] = 1;
@@ -62,7 +78,7 @@ const rollMany = (message, summonTable, count) => {
 export const millionInfuseCommand = (message, splitContent) => {
   if (splitContent[0] === `${standardPrefix}summon` || splitContent[0] === `${standardPrefix}infuse`) {
     if (splitContent.length > 1 && splitContent[1] === '10') {
-      rollMany(message, millionInfuseTable, 10);
+      rollMany(message, millionInfuseTable, 10, true);
     } else {
       rollOne(message, millionInfuseTable);
     }
