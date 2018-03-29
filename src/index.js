@@ -51,7 +51,7 @@ Object.keys(characterMap).forEach((characterInfo) => {
 });
 
 client.on('ready', () => {
-  console.log('I am ready!');
+  console.log('I\'m ready');
 });
 
 const sendMessage = (characterInfo, message) => {
@@ -205,24 +205,6 @@ client.on('message', (message) => {
       message.channel.send(infuseAggregate.join(', '));
       return;
     }
-    if (splitContent.length > 1 && splitContent[1] === '100') {
-      const infuseHundred = {};
-      const infuseAggregate = [];
-      for (let i = 0; i < 100; i += 1) {
-        const infuseResult = rwc(summonTable);
-        if (infuseHundred[infuseResult] === undefined) {
-          infuseHundred[infuseResult] = 1;
-        } else {
-          infuseHundred[infuseResult] += 1;
-        }
-      }
-      Object.keys(infuseHundred).forEach((key) => {
-        infuseAggregate.push(`${key} (x${infuseHundred[key]})`);
-      });
-      infuseAggregate.sort();
-      message.channel.send(infuseAggregate.join(', '));
-      return;
-    }
 
     const selectedChar = rwc(summonTable);
     const splitChar = selectedChar.split(' ');
@@ -245,9 +227,8 @@ client.on('message', (message) => {
     message.channel.send(':dog: :fire: Koll is the best fire doggo');
   }
 
-  // FIXME: Remove this once found, easter egg
-  if (splitContent[0] === '!best' && splitContent[1] === 'chengkor') {
-    message.channel.send('https://cdn.discordapp.com/attachments/378408289748385797/428523939350708224/image.jpg');
+  if (splitContent[0] === '!chenggod') {
+    message.channel.send('https://cdn.discordapp.com/attachments/427835062306865162/428588975058452490/chenggod.png');
   }
 });
 
