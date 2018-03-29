@@ -2,6 +2,7 @@ import rwc from 'random-weighted-choice';
 import { summon } from '../../assets';
 import { characterMap } from '../constants';
 import { sendCharacterInfo } from '../characters';
+import { standardPrefix } from '../../config';
 
 // table for million infuse
 const millionInfuseTable = [];
@@ -53,7 +54,7 @@ const rollMany = (message, summonTable, count) => {
 };
 
 export const millionInfuseCommand = (message, splitContent) => {
-  if (splitContent[0] === '!summon' || splitContent[0] === '!infuse') {
+  if (splitContent[0] === `${standardPrefix}summon` || splitContent[0] === `${standardPrefix}infuse`) {
     if (splitContent.length > 1 && splitContent[1] === '10') {
       rollMany(message, millionInfuseTable, 10);
     } else {

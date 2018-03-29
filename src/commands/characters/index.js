@@ -1,6 +1,7 @@
 import buckets from 'buckets-js';
 import { mapCharacterNames } from './commandMap';
 import { characterMap } from '../constants';
+import { standardPrefix } from '../../config';
 
 const validTiers = ['n', 'r', 'sr', 'ssr'];
 const compare = (a, b) => {
@@ -126,7 +127,7 @@ export const sendCharacterInfo = (characterInfo, message) => {
 export const characterInfoCommand = (message, splitContent) => {
   if (splitContent.length >= 2) {
     const standardNameArray = mapCharacterNames(splitContent);
-    const name = standardNameArray[0].replace('!', '').toLowerCase();
+    const name = standardNameArray[0].replace(standardPrefix, '').toLowerCase();
     const type = standardNameArray[1].toLowerCase();
     const characterKey = `${name} ${type}`;
     if (searchPointer.contains(characterKey)) {
@@ -134,11 +135,11 @@ export const characterInfoCommand = (message, splitContent) => {
     }
   } else {
     const standardNameArray = mapCharacterNames(splitContent);
-    const name = standardNameArray[0].replace('!', '').toLowerCase();
+    const name = standardNameArray[0].replace(standardPrefix, '').toLowerCase();
     const charactersArray = Object.keys(characterMap);
 
     if (charactersArray.includes(name)) {
-      message.channel.send(`Enter in a tier of n/r/sr/ssr/skin/sp. \n\nExample: !${name} ssr`);
+      message.channel.send(`Enter in a tier of n/r/sr/ssr/skin/sp. \n\nExample: ${standardPrefix}${name} ssr`);
     }
   }
 };

@@ -1,5 +1,6 @@
 import Discord from 'discord.js';
 import settings from './settings';
+import { standardPrefix } from './config';
 import { characterInfoCommand } from './commands/characters';
 import { millionInfuseCommand } from './commands/infuse';
 import funCommand from './commands/fun';
@@ -14,7 +15,7 @@ client.on('message', (message) => {
   const content = message.content.toLowerCase();
   const splitContent = content.split(' ');
 
-  if (content.charAt(0) !== '!') {
+  if (content.charAt(0) !== standardPrefix) {
     return;
   }
 
