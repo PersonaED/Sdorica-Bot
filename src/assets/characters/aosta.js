@@ -1,10 +1,20 @@
 import { WHITE, DAMAGEREDUCTION, ENHANCE, TIER_R, TIER_SR, TIER_SSR } from '../constants';
 
+const aosta = {
+  block: WHITE,
+  power: 2940,
+  health: 8822,
+  status: [
+    ENHANCE,
+    DAMAGEREDUCTION,
+  ],
+};
+
 export default {
   'aosta r': {
+    ...aosta,
     tier: TIER_R,
     sprite: 'https://i.imgur.com/DUMp67M.png',
-    block: WHITE,
     name: 'Aosta R: Cloaker Face',
     passive: {
       name: 'Super Au Natural',
@@ -26,15 +36,11 @@ export default {
       name: 'Win The Flesh',
       description: 'Grant selected ally 3 stacks Enhance and 3 stacks Damage Reduction.',
     },
-    status: [
-      ENHANCE,
-      DAMAGEREDUCTION,
-    ],
   },
   'aosta sr': {
+    ...aosta,
     tier: TIER_SR,
     sprite: 'https://i.imgur.com/JEUmIfC.png',
-    block: WHITE,
     name: 'Aosta SR: Heart Of Marigold',
     passive: {
       name: 'Super Au Natural',
@@ -56,15 +62,11 @@ export default {
       name: 'Win The Flesh',
       description: 'Grant selected ally 3 stacks Enhance and 3 stacks Damage Reduction.',
     },
-    status: [
-      ENHANCE,
-      DAMAGEREDUCTION,
-    ],
   },
   'aosta ssr': {
+    ...aosta,
     tier: TIER_SSR,
     sprite: 'https://i.imgur.com/VgB1P4P.png',
-    block: WHITE,
     name: 'Aosta SSR: Mind Over Latter',
     passive: {
       name: 'Super Au Natural',
@@ -86,9 +88,5 @@ export default {
       name: 'Win The Flesh',
       description: 'Grant selected ally 3 stacks Enhance and 3 stacks Damage Reduction.',
     },
-    status: [
-      ENHANCE,
-      DAMAGEREDUCTION,
-    ],
   },
 };
