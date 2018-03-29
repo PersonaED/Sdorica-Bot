@@ -79,6 +79,8 @@ export const millionInfuseCommand = (message, splitContent) => {
   if (splitContent[0] === `${standardPrefix}summon` || splitContent[0] === `${standardPrefix}infuse`) {
     if (splitContent.length > 1 && splitContent[1] === '10') {
       rollMany(message, millionInfuseTable, 10, true);
+    } else if (splitContent.length > 1 && splitContent[1] !== '10') {
+      message.channel.send('**Infuse commands - ** `infuse` `infuse 10`');
     } else {
       rollOne(message, millionInfuseTable);
     }
