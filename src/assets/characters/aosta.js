@@ -2,12 +2,15 @@ import { WHITE, DAMAGEREDUCTION, ENHANCE, TIER_R, TIER_SR, TIER_SSR } from '../c
 
 const aosta = {
   block: WHITE,
-  power: 2940,
-  health: 8822,
   status: [
     ENHANCE,
     DAMAGEREDUCTION,
   ],
+};
+
+const stat = {
+  power: 2940,
+  health: 8822,
 };
 
 export default {
@@ -78,7 +81,11 @@ export default {
     },
     '1B': {
       name: 'Fresh Flesh',
-      description: 'Heal (:crossed_swords: x 1.35) selected ally. Clear 2 White blocks.',
+      get description() {
+        return `Heal (:crossed_swords: x ${this.scaling[0]}) selected ally. Clear 2 White blocks.`;
+        // return `Heal (:boom: ${Math.round(this.scaling[0] * stat.power)}) selected ally. Clear 2 White blocks.`;
+      },
+      scaling: [1.35],
     },
     '2B': {
       name: 'Flesh Hook Up',
