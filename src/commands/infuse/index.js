@@ -1,7 +1,7 @@
 import rwc from 'random-weighted-choice';
 import { summon } from '../../assets';
 import { characterMap } from '../constants';
-import { sendCharacterInfo } from '../characters/characterInfo';
+import { sendCharacterInfo } from '../characters';
 
 // table for million infuse
 const summonTable = [];

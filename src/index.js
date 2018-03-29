@@ -1,7 +1,7 @@
 import Discord from 'discord.js';
 import settings from './settings';
-import { characterInfoCommand } from './commands/characters/characterInfo';
-import { millionInfuseCommand } from './commands/infuse/million';
+import { characterInfoCommand } from './commands/characters';
+import { millionInfuseCommand } from './commands/infuse';
 import funCommand from './commands/fun';
 
 const client = new Discord.Client();
