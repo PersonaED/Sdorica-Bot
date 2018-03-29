@@ -7,16 +7,16 @@ export const helpCommand = (message, splitContent) => {
     const header = '```css\n `Standard Commands List` \n```';
     orderArray.push(header);
 
-    const character = '**1. Character Options -** `!characters`';
+    const character = `**1. Character Options -** \`${standardPrefix}characters\``;
     orderArray.push(character);
 
-    const infuse = '**2. Gacha Infuse - ** `!infuse` `!infuse 10`';
+    const infuse = `**2. Gacha Infuse - ** \`${standardPrefix}infuse\` \`${standardPrefix}infuse 10\``;
     orderArray.push(infuse);
 
-    const fun = '**3. Fun - ** `!best doggo` `!chenggod`';
+    const fun = `**3. Fun - ** \`${standardPrefix}best doggo\` \`${standardPrefix}chenggod\``;
     orderArray.push(fun);
 
-    const credit = '**4. Dev - ** `!dev`';
+    const credit = `**4. Dev - ** \`${standardPrefix}dev\``;
     orderArray.push(credit);
 
     let finalString = '';

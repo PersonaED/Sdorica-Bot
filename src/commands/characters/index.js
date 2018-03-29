@@ -174,7 +174,7 @@ export const characterCommand = (message, splitContent) => {
     const header = '```css\n `Character List` \n```';
     orderArray.push(header);
 
-    const example = 'Use `![character] [tier]` to get character information. For example: `!angelia n`\n';
+    const example = `Use \`${standardPrefix}[character] [tier]\` to get character information. For example: \`!angelia n\`\n`;
     orderArray.push(example);
 
     const char = Object.keys(characterMap).sort().map((keyChar) => {

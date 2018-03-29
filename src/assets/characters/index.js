@@ -3,6 +3,7 @@ import aosta from './aosta';
 import crushfang from './crushfang';
 import dylan from './dylan';
 import experiment from './experiment';
+import fredrica from './fredrica';
 import golemwalt from './golemwalt';
 import hestia from './hestia';
 import jahan from './jahan';
@@ -22,6 +23,7 @@ export {
   crushfang,
   dylan,
   experiment,
+  fredrica,
   golemwalt,
   hestia,
   jahan,
