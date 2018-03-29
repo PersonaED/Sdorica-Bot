@@ -6,6 +6,7 @@ import { millionInfuseCommand } from './commands/infuse';
 import funCommand from './commands/fun';
 import helpCommand from './commands/help';
 import devCommand from './commands/dev';
+import guideCommand from './commands/guides';
 
 const client = new Discord.Client();
 
@@ -34,6 +35,9 @@ client.on('message', (message) => {
     return;
   }
   if (characterCommand(message, splitContent)) {
+    return;
+  }
+  if (guideCommand(message, splitContent)) {
     return;
   }
   devCommand(message, splitContent);
