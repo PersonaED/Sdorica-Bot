@@ -1,4 +1,5 @@
 import Discord from 'discord.js';
+import redis from 'redis';
 import settings from './settings';
 import { standardPrefix } from './config';
 import { characterInfoCommand, characterCommand } from './commands/characters';
@@ -9,38 +10,62 @@ import devCommand from './commands/dev';
 import guideCommand from './commands/guides';
 
 const client = new Discord.Client();
+const redisClient = redis.createClient();
 
 client.on('ready', () => {
   console.log('Sdorica Bot Ready');
 });
 
+redisClient.on('error', (err) => {
+  console.log(`RedisErr ${err}`);
+});
+
+const alignCommand = (message, splitContent) => {
+  if (characterInfoCommand(message, splitContent)) {
+    return true;
+  }
+  if (millionInfuseCommand(message, splitContent)) {
+    return true;
+  }
+  if (funCommand(message, splitContent)) {
+    return true;
+  }
+  if (helpCommand(message, splitContent)) {
+    return true;
+  }
+  if (characterCommand(message, splitContent)) {
+    return true;
+  }
+  if (guideCommand(message, splitContent)) {
+    return true;
+  }
+  if (devCommand(message, splitContent)) {
+    return true;
+  }
+  return false;
+};
+
 client.on('message', (message) => {
   const content = message.content.toLowerCase();
+  const userID = message.author.id;
   const splitContent = content.split(' ');
 
   if (content.charAt(0) !== standardPrefix) {
     return;
   }
 
-  if (characterInfoCommand(message, splitContent)) {
-    return;
-  }
-  if (millionInfuseCommand(message, splitContent)) {
-    return;
-  }
-  if (funCommand(message, splitContent)) {
-    return;
-  }
-  if (helpCommand(message, splitContent)) {
-    return;
-  }
-  if (characterCommand(message, splitContent)) {
-    return;
-  }
-  if (guideCommand(message, splitContent)) {
-    return;
-  }
-  devCommand(message, splitContent);
+  // Check if user allowed to call command
+  redisClient.ttl(`cooldown:${userID}`, (err, res) => {
+    if (res > 0) {
+      message.channel.send(`**${message.author.username}**, cooldown in (**${res}** sec)`)
+        .then((msg) => {
+          msg.delete(5000);
+        })
+        .catch();
+    } else if (alignCommand(message, splitContent)) {
+      redisClient.set(`cooldown:${userID}`, '', 'EX', 5);
+    }
+  });
 });
 
 client.login(settings.token);

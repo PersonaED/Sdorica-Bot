@@ -10,8 +10,10 @@ import jahan from './jahan';
 import karnulla from './karnulla';
 import koll from './koll';
 import lio from './lio';
+import lisa from './lisa';
 import nigel from './nigel';
 import pang from './pang';
+import puggi from './puggi';
 import roger from './roger';
 import sione from './sione';
 import yamitsuki from './yamitsuki';
@@ -30,8 +32,10 @@ export {
   karnulla,
   koll,
   lio,
+  lisa,
   nigel,
   pang,
+  puggi,
   roger,
   sione,
   yamitsuki,
