@@ -99,7 +99,7 @@ export default {
     },
     advisor: {
       name: 'Roll The Dice',
-      description: "Allies' Armor Penetration skills have 30% chance to trigger target CD+1.",
+      description: "Allies' Armor Penetration skills have 30% chance to trigger target CD +1.",
     },
     '1B': {
       name: 'Toxic Mandora',
@@ -107,11 +107,11 @@ export default {
     },
     '2B': {
       name: 'Carrot Cannon',
-      description: 'Armor Penetration (:crossed_swords: x 1.5) back row enemy. 50% chance to trigger target CD+1',
+      description: 'Armor Penetration (:crossed_swords: x 1.5) back row enemy. 50% chance to trigger target CD +1',
     },
     '4B': {
       name: 'Super Mandrake',
-      description: 'Armor Penetration (:crossed_swords: x 2.25) selected enemy. 50% chance to trigger target CD+3',
+      description: 'Armor Penetration (:crossed_swords: x 2.25) selected enemy. 50% chance to trigger target CD +3',
     },
     status: [
       POISON,
