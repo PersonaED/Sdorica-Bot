@@ -22,7 +22,8 @@ Object.keys(characterMap).forEach((characterInfo) => {
 });
 
 export const sendCharacterInfo = (characterInfo, message, infuse) => {
-  const { tier, block, status } = characterInfo;
+  const { tier, block, status, level } = characterInfo;
+
   const messageTemplate = {
     embed: {
       thumbnail: {
@@ -34,23 +35,33 @@ export const sendCharacterInfo = (characterInfo, message, infuse) => {
       fields: [
         {
           name: `Passive: ${characterInfo.passive.name}`,
-          value: characterInfo.passive.description || '-',
+          value: level ?
+            characterInfo.getSkillDescription('passive', level) :
+            characterInfo.passive.description || '-',
         },
         {
           name: `Advisor Skill: ${characterInfo.advisor.name}`,
-          value: characterInfo.advisor.description || '-',
+          value: level ?
+            characterInfo.getSkillDescription('advisor', level) :
+            characterInfo.advisor.description || '-',
         },
         {
           name: `1B: ${characterInfo['1B'].name}`,
-          value: characterInfo['1B'].description || '-',
+          value: level ?
+            characterInfo.getSkillDescription('1B', level) :
+            characterInfo['1B'].description || '-',
         },
         {
           name: `2B: ${characterInfo['2B'].name}`,
-          value: characterInfo['2B'].description || '-',
+          value: level ?
+            characterInfo.getSkillDescription('2B', level) :
+            characterInfo['2B'].description || '-',
         },
         {
           name: `4B: ${characterInfo['4B'].name}`,
-          value: characterInfo['4B'].description || '-',
+          value: level ?
+            characterInfo.getSkillDescription('4B', level) :
+            characterInfo['4B'].description || '-',
         },
       ],
     },
@@ -136,7 +147,11 @@ export const characterInfoCommand = (message, splitContent) => {
     const type = standardNameArray[1].toLowerCase();
     const characterKey = `${name} ${type}`;
     if (searchPointer.contains(characterKey)) {
-      sendCharacterInfo(characterMap[name][characterKey], message);
+      let level = '';
+      if (splitContent.length >= 3) {
+        level = splitContent[2];
+      }
+      sendCharacterInfo({ level, ...characterMap[name][characterKey] }, message);
       return true;
     }
   } else {

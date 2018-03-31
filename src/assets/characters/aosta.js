@@ -1,24 +1,11 @@
-import { WHITE, DAMAGEREDUCTION, ENHANCE, TIER_R, TIER_SR, TIER_SSR } from '../constants';
-
-const aosta = {
-  block: WHITE,
-  status: [
-    ENHANCE,
-    DAMAGEREDUCTION,
-  ],
-};
-
-const stat = {
-  power: 2940,
-  health: 8822,
-};
+import { TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import Aosta from './model/Aosta';
 
 export default {
-  'aosta r': {
-    ...aosta,
+  'aosta r': new Aosta({
     tier: TIER_R,
     sprite: 'https://i.imgur.com/DUMp67M.png',
-    name: 'Aosta R: Cloaker Face',
+    title: 'Cloaker Face',
     passive: {
       name: 'Super Au Natural',
       description: 'Upon Tier SR, unlock passive skill',
@@ -39,12 +26,11 @@ export default {
       name: 'Win The Flesh',
       description: 'Grant selected ally 3 stacks Enhance and 3 stacks Damage Reduction.',
     },
-  },
-  'aosta sr': {
-    ...aosta,
+  }),
+  'aosta sr': new Aosta({
     tier: TIER_SR,
     sprite: 'https://i.imgur.com/JEUmIfC.png',
-    name: 'Aosta SR: Heart Of Marigold',
+    title: 'Heart Of Marigold',
     passive: {
       name: 'Super Au Natural',
       description: 'Upon cast Heal, if target has Enhance, increase Heal effect by 50%',
@@ -65,12 +51,11 @@ export default {
       name: 'Win The Flesh',
       description: 'Grant selected ally 3 stacks Enhance and 3 stacks Damage Reduction.',
     },
-  },
-  'aosta ssr': {
-    ...aosta,
+  }),
+  'aosta ssr': new Aosta({
     tier: TIER_SSR,
     sprite: 'https://i.imgur.com/VgB1P4P.png',
-    name: 'Aosta SSR: Mind Over Latter',
+    title: 'Mind Over Latter',
     passive: {
       name: 'Super Au Natural',
       description: 'Upon cast Heal, if target has Enhance, increase Heal effect by 100%.',
@@ -95,5 +80,5 @@ export default {
       name: 'Win The Flesh',
       description: 'Grant selected ally 3 stacks Enhance and 3 stacks Damage Reduction.',
     },
-  },
+  }),
 };
