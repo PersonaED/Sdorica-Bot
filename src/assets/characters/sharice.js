@@ -1,4 +1,4 @@
-import { BLACK, EXHAUST, ENHANCE, STUN, TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import { BLACK, ENHANCE, TEAR, TIER_R, TIER_SR, TIER_SSR } from '../constants';
 
 export default {
   'sharice r': {
