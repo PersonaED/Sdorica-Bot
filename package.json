@@ -24,7 +24,8 @@
     "build": "npm run clean && npm run babel",
     "production": "npm run build && npm start",
     "start": "node ./build/index.js",
-    "lint": "eslint"
+    "lint": "eslint",
+    "launch": "npm run babel && npm run start"
   },
   "repository": {
     "type": "git",

@@ -1,3 +1,5 @@
+import Status from './Status';
+
 class BaseCharacter {
   constructor(name, stat, param) {
     this.name = name;
@@ -14,6 +16,8 @@ class BaseCharacter {
 
     this.format = this.format;
     this.getSkillDescription = this.getSkillDescription;
+
+    this.setCharStatus();
   }
 
   format(text, power) {
@@ -33,6 +37,37 @@ class BaseCharacter {
     }
 
     return this.format(this[skill].description, this.stat.power + (50 * offset));
+  }
+
+  setCharStatus() {
+    this.statusObj = {};
+    this.status = [];
+    Status.forEach((status) => {
+      this.replaceSkillDescription('1B', status);
+      this.replaceSkillDescription('2B', status);
+      this.replaceSkillDescription('4B', status);
+      this.replaceSkillDescription('advisor', status);
+      this.replaceSkillDescription('passive', status);
+    });
+
+    Object.keys(this.statusObj).forEach((key) => {
+      this.status.push(this.statusObj[key].description);
+    });
+  }
+  replaceSkillDescription(tag, status) {
+    this[tag] = {
+      name: this[tag].name,
+      description: this.insertStatusToSkillDesc(this[tag].description, status)
+    };
+  }
+  insertStatusToSkillDesc(description, status) {
+    const temp = description.split(status.code);
+
+    if (temp.length > 1) {
+      this.statusObj[status.code] = status;
+    }
+
+    return temp.join(status.label);
   }
 }
 

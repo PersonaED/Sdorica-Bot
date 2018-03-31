@@ -20,11 +20,11 @@ export default {
     },
     '2B': {
       name: 'Flesh Hook Up',
-      description: 'Grant selected ally 2 stacks Enhance.',
+      description: 'Grant selected ally 2 stacks :ENHANCE.',
     },
     '4B': {
       name: 'Win The Flesh',
-      description: 'Grant selected ally 3 stacks Enhance and 3 stacks Damage Reduction.',
+      description: 'Grant selected ally 3 stacks :ENHANCE and 3 stacks :DMGRED.',
     },
   }),
   'aosta sr': new Aosta({
@@ -33,7 +33,7 @@ export default {
     title: 'Heart Of Marigold',
     passive: {
       name: 'Super Au Natural',
-      description: 'Upon cast Heal, if target has Enhance, increase Heal effect by 50%',
+      description: 'Upon cast Heal, if target has :ENHANCE, increase Heal effect by 50%',
     },
     advisor: {
       name: 'Diss Engaged',
@@ -45,11 +45,11 @@ export default {
     },
     '2B': {
       name: 'Flesh Hook Up',
-      description: 'Grant selected ally 2 stacks Enhance and 2 stacks Damage Reduction. Clear 1 White block.',
+      description: 'Grant selected ally 2 stacks :ENHANCE and 2 stacks :DMGRED. Clear 1 White block.',
     },
     '4B': {
       name: 'Win The Flesh',
-      description: 'Grant selected ally 3 stacks Enhance and 3 stacks Damage Reduction.',
+      description: 'Grant selected ally 3 stacks :ENHANCE and 3 stacks :DMGRED.',
     },
   }),
   'aosta ssr': new Aosta({
@@ -58,7 +58,7 @@ export default {
     title: 'Mind Over Latter',
     passive: {
       name: 'Super Au Natural',
-      description: 'Upon cast Heal, if target has Enhance, increase Heal effect by 100%.',
+      description: 'Upon cast Heal, if target has :ENHANCE, increase Heal effect by 100%.',
     },
     advisor: {
       name: 'Diss Engaged',
@@ -68,17 +68,16 @@ export default {
       name: 'Fresh Flesh',
       get description() {
         return `Heal (:crossed_swords: x ${this.scaling[0]}) selected ally. Clear 2 White blocks.`;
-        // return `Heal (:boom: ${Math.round(this.scaling[0] * stat.power)}) selected ally. Clear 2 White blocks.`;
       },
       scaling: [1.35],
     },
     '2B': {
       name: 'Flesh Hook Up',
-      description: 'Grant selected ally 2 stacks Enhance and 2 stacks Damage Reduction. Clear 1 White block.',
+      description: 'Grant selected ally 2 stacks :ENHANCE and 2 stacks :DMGRED. Clear 1 White block.',
     },
     '4B': {
       name: 'Win The Flesh',
-      description: 'Grant selected ally 3 stacks Enhance and 3 stacks Damage Reduction.',
+      description: 'Grant selected ally 3 stacks :ENHANCE and 3 stacks :DMGRED.',
     },
   }),
 };
