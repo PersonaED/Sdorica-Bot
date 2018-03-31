@@ -15,7 +15,10 @@ import nigel from './nigel';
 import pang from './pang';
 import puggi from './puggi';
 import roger from './roger';
+import sherlock from './sherlock';
 import sione from './sione';
+import theodore from './theodore';
+import tica from './tica';
 import yamitsuki from './yamitsuki';
 import yanbo from './yanbo';
 
@@ -37,7 +40,10 @@ export {
   pang,
   puggi,
   roger,
+  sherlock,
   sione,
+  theodore,
+  tica,
   yamitsuki,
   yanbo,
 };

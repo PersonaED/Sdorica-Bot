@@ -1,4 +1,4 @@
-import { WHITE, ENHANCE, VULNERABILITY, TANKUP, TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import { WHITE, ENHANCE, VULNERABILITY, TANKUP, TIER_R, TIER_SR, TIER_SSR, EXHAUST } from '../constants';
 
 export default {
   'sherlock r': {
