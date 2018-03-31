@@ -9,6 +9,7 @@ import hestia from './hestia';
 import jahan from './jahan';
 import karnulla from './karnulla';
 import koll from './koll';
+import leah from './leah';
 import lio from './lio';
 import lisa from './lisa';
 import nigel from './nigel';
@@ -16,6 +17,7 @@ import pang from './pang';
 import puggi from './puggi';
 import roger from './roger';
 import sherlock from './sherlock';
+import sharice from './sharice';
 import sione from './sione';
 import theodore from './theodore';
 import tica from './tica';
@@ -34,12 +36,14 @@ export {
   jahan,
   karnulla,
   koll,
+  leah,
   lio,
   lisa,
   nigel,
   pang,
   puggi,
   roger,
+  sharice,
   sherlock,
   sione,
   theodore,
