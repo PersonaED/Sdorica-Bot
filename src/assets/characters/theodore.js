@@ -99,7 +99,7 @@ export default {
     },
     advisor: {
       name: 'Ruler\'s Glory',
-      description: 'Grant all allies (:crossed_swords: x 0.72) Armor, grant front row ally two stacks Enhance.',
+      description: 'Grant all allies (:crossed_swords: x 0.72) Armor, grant front row ally two stacks Enhance. (CD: 5)',
     },
     '1B': {
       name: 'Ruler\'s Decree',
