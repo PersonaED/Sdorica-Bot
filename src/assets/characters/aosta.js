@@ -66,10 +66,7 @@ export default {
     },
     '1B': {
       name: 'Fresh Flesh',
-      get description() {
-        return `Heal (:crossed_swords: x ${this.scaling[0]}) selected ally. Clear 2 White blocks.`;
-      },
-      scaling: [1.35],
+      description: 'Heal (:crossed_swords: x 1.35) selected ally. Clear 2 White blocks.',
     },
     '2B': {
       name: 'Flesh Hook Up',
