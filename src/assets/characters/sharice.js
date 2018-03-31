@@ -19,7 +19,7 @@ export default {
       description: 'Grant self 2 stacks Enhance. Grant all enemies Enhance',
     },
     '2B': {
-      name: 'Don't Call Me Short',
+      name: 'Don\'t Call Me Short',
       description: 'Attack (:crossed_swords: x 1.8) front row enemy. Grant taget Tear',
     },
     '4B': {
@@ -49,7 +49,7 @@ export default {
       description: 'Grant self 2 stacks Enhance. Grant all enemies Enhance',
     },
     '2B': {
-      name: 'Don't Call Me Short',
+      name: 'Don\'t Call Me Short',
       description: 'Attack (:crossed_swords: x 1.8) front row enemy. Grant taget Tear. If have Enhance, Attack (:crossed_swords: x 0.2) gold position ally and (:crossed_swords: x 2) front row enemy. Grant enemy Tear for 2 turns',
     },
     '4B': {
@@ -65,7 +65,7 @@ export default {
     tier: TIER_SSR,
     sprite: 'https://i.imgur.com/BOAS4Lh.png',
     block: BLACK,
-    name: 'Sharice SSR: Size Doesn't Matter',
+    name: 'Sharice SSR: Size Doesn\'t Matter',
     passive: {
       name: 'Now on Stage',
       description: 'Upon start of each better, trigger self 1 block skill and 2 block skill',
@@ -79,7 +79,7 @@ export default {
       description: 'Grant self 2 stacks Enhance. Grant all enemies Enhance',
     },
     '2B': {
-      name: 'Don't Call Me Short',
+      name: 'Don\'t Call Me Short',
       description: 'Attack (:crossed_swords: x 1.8) front row enemy. Grant taget Tear. If have Enhance, Attack (:crossed_swords: x 0.2) gold position ally and (:crossed_swords: x 2) front row enemy. Grant enemy Tear for 2 turns',
     },
     '4B': {
