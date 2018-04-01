@@ -142,7 +142,7 @@ export default {
   },
   'dylan skin': {
     tier: TIER_SSR,
-    sprite: 'https://media.discordapp.net/attachments/426413392799203329/428039568655384587/LOL.png',
+    sprite: 'https://i.imgur.com/b4m09D8.png',
     block: GOLD,
     name: 'Dylan Skillbook: Obsidian Bulwark',
     passive: {
