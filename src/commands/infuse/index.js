@@ -47,16 +47,22 @@ const rollOne = (message, summonTable) => {
   }
 };
 
-const rollMany = (message, summonTable, count, guaranteeSR) => {
+const rollMany = (message, summonTable, count, guaranteeSR, isChengkor) => {
   const sender = `**${message.author.username}**`;
   const infuseMany = {};
   const infuseAggregate = [];
   let rollNumber = count;
-  if (guaranteeSR) {
+
+  if (isChengkor) {
+    rollNumber -= 1;
+    rwc(millionInfuseSROnly);
+    infuseMany['yami sr'] = 1;
+  } else if (guaranteeSR) {
     rollNumber -= 1;
     const infuseResult = rwc(millionInfuseSROnly);
     infuseMany[infuseResult] = 1;
   }
+
   for (let i = 0; i < rollNumber; i += 1) {
     const infuseResult = rwc(summonTable);
     if (infuseMany[infuseResult] === undefined) {
@@ -65,6 +71,7 @@ const rollMany = (message, summonTable, count, guaranteeSR) => {
       infuseMany[infuseResult] += 1;
     }
   }
+
   Object.keys(infuseMany).forEach((key) => {
     const keySplit = key.split(' ');
     const name = capitalizeFirstLetter(keySplit[0]);
@@ -76,9 +83,11 @@ const rollMany = (message, summonTable, count, guaranteeSR) => {
 };
 
 export const millionInfuseCommand = (message, splitContent) => {
-  if (splitContent[0] === `${standardPrefix}summon` || splitContent[0] === `${standardPrefix}infuse`) {
+  if (splitContent[0] === `${standardPrefix}summon` ||
+      splitContent[0] === `${standardPrefix}infuse` ||
+      splitContent[0] === `${standardPrefix}god-infuse`) {
     if (splitContent.length > 1 && splitContent[1] === '10') {
-      rollMany(message, millionInfuseTable, 10, true);
+      rollMany(message, millionInfuseTable, 10, true, (splitContent[0] === `${standardPrefix}god-infuse`));
     } else if (splitContent.length > 1 && splitContent[1] !== '10') {
       message.channel.send('**Infuse commands - ** `infuse` `infuse 10`');
     } else {

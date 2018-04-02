@@ -20,13 +20,13 @@ class BaseCharacter {
     this.setCharStatus();
   }
 
-  format(text, power) {
+  static format(text, power) {
     return text.replace(/:crossed_swords: x (\d+(\.\d+)?)/g, (match, number) => {
       if (Number.isNaN(Number.parseFloat(number))) {
         return match;
       }
 
-      return Math.round(Number.parseFloat(number) * power);
+      return `:boom:${Math.round(Number.parseFloat(number) * power)}`;
     });
   }
 
@@ -36,7 +36,7 @@ class BaseCharacter {
       offset = Number.parseInt(level.substring(1), 10);
     }
 
-    return this.format(this[skill].description, this.stat.power + (50 * offset));
+    return BaseCharacter.format(this[skill].description, this.stat.power + (50 * offset));
   }
 
   setCharStatus() {
