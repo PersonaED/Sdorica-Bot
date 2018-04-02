@@ -1,11 +1,12 @@
-import { BLACK, WHITE, EXHAUST, DAMAGEREDUCTION, VULNERABILITY, TANKUP, TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR, SKILL_BOOK, SP } from '../constants';
+import Angelia from './model/Angelia';
+import AngeliaSP from './model/AngeliaSP';
 
 export default {
-  'angelia n': {
+  'angelia n': new Angelia({
     tier: TIER_N,
     sprite: 'https://i.imgur.com/sT1bN2g.png',
-    block: WHITE,
-    name: 'Angelia N: Thy Fair Lady',
+    title: 'Thy Fair Lady',
     passive: {
       name: 'Helpful Halo',
       description: 'Upon Tier SR, unlock passive skill',
@@ -26,13 +27,11 @@ export default {
       name: 'Prayer Player',
       description: 'Heal (:crossed_swords: x 1.8) front row ally',
     },
-    status: [],
-  },
-  'angelia r': {
+  }),
+  'angelia r': new Angelia({
     tier: TIER_R,
     sprite: 'https://i.imgur.com/sT1bN2g.png',
-    block: WHITE,
-    name: 'Angelia R: Shy Sweetheart',
+    title: 'Shy Sweetheart',
     passive: {
       name: 'Helpful Halo',
       description: 'Upon Tier SR, unlock passive skill',
@@ -51,20 +50,16 @@ export default {
     },
     '4B': {
       name: 'Prayer Player',
-      description: 'Heal (:crossed_swords: x 1.8) front row ally, grant Exhaust, trigger 2 block skill',
+      description: 'Heal (:crossed_swords: x 1.8) front row ally, grant :EXH, trigger 2 block skill',
     },
-    status: [
-      EXHAUST,
-    ],
-  },
-  'angelia sr': {
+  }),
+  'angelia sr': new Angelia({
     tier: TIER_SR,
     sprite: 'https://i.imgur.com/dxxHkc0.png',
-    block: WHITE,
-    name: 'Angelia SR: Unfazed Dame',
+    title: 'Unfazed Dame',
     passive: {
       name: 'Helpful Halo',
-      description: 'Upon cast Armor, if target has Exhaust, skill power increased by 100%',
+      description: 'Upon cast Armor, if target has :EXH, skill power increased by 100%',
     },
     advisor: {
       name: 'Angelic Aura',
@@ -80,20 +75,16 @@ export default {
     },
     '4B': {
       name: 'Prayer Player',
-      description: 'Heal (:crossed_swords: x 1.8) front row ally, grant Exhaust, trigger 2 block skill',
+      description: 'Heal (:crossed_swords: x 1.8) front row ally, grant :EXH, trigger 2 block skill',
     },
-    status: [
-      EXHAUST,
-    ],
-  },
-  'angelia ssr': {
+  }),
+  'angelia ssr': new Angelia({
     tier: TIER_SSR,
     sprite: 'https://i.imgur.com/7vEcX1i.png',
-    block: WHITE,
-    name: 'Angelia SSR: Virtue Virtuoso',
+    title: 'Virtue Virtuoso',
     passive: {
       name: 'Helpful Halo',
-      description: 'Upon cast Armor, if target has Exhaust/Vulnerability, increase skill power by 100%',
+      description: 'Upon cast Armor, if target has :EXH/:VUL, increase skill power by 100%',
     },
     advisor: {
       name: 'Angelic Aura',
@@ -105,26 +96,20 @@ export default {
     },
     '2B': {
       name: 'Let Us Pray',
-      description: 'Grant all allies (:crossed_swords: x 0.72) Armor, grant Damage Reduction',
+      description: 'Grant all allies (:crossed_swords: x 0.72) Armor, grant :DMGRED',
     },
     '4B': {
       name: 'Prayer Player',
-      description: 'Heal (:crossed_swords: x 1.8) front row ally, grant Exhaust, trigger 4 block skill',
+      description: 'Heal (:crossed_swords: x 1.8) front row ally, grant :EXH, trigger 4 block skill',
     },
-    status: [
-      EXHAUST,
-      DAMAGEREDUCTION,
-      VULNERABILITY,
-    ],
-  },
-  'angelia skin': {
-    tier: TIER_SSR,
+  }),
+  'angelia skin': new Angelia({
+    tier: SKILL_BOOK,
     sprite: 'https://i.imgur.com/sETzJmO.png',
-    block: WHITE,
-    name: 'Angelia Skill Book: Daybreak Darling',
+    title: 'Daybreak Darling',
     passive: {
       name: "Empress' Order",
-      description: 'Upon cast Armor, if target has Exhaust/Vulnerability, trigger target 1 block skill',
+      description: 'Upon cast Armor, if target has :EXH/:VUL:VUL, trigger target 1 block skill',
     },
     advisor: {
       name: 'For The Kingdom',
@@ -136,34 +121,28 @@ export default {
     },
     '2B': {
       name: 'Glowing Prayer',
-      description: 'Grant all allies (:crossed_swords: x 0.72) Armor and Tank Up for 2 turns',
+      description: 'Grant all allies (:crossed_swords: x 0.72) Armor and :TANKU for 2 turns',
     },
     '4B': {
       name: 'Luminious Radiance',
-      description: 'Heal (:crossed_swords: x 1.8) front row ally, grant Exhaust, trigger 2 block skill 2 times',
+      description: 'Heal (:crossed_swords: x 1.8) front row ally, grant :EXH, trigger 2 block skill 2 times',
     },
-    status: [
-      EXHAUST,
-      VULNERABILITY,
-      TANKUP,
-    ],
-  },
-  'angelia sp': {
-    tier: TIER_SSR,
+  }),
+  'angelia sp': new AngeliaSP({
+    tier: SP,
     sprite: 'https://i.imgur.com/4rIox7p.png',
-    block: BLACK,
-    name: 'Angelia SP: Enchantress of Fate',
+    title: 'Enchantress of Fate',
     passive: {
       name: 'Be My Shield',
-      description: 'Upon 0 Armor of front row ally, grant Tank Up for 3 turns',
+      description: 'Upon 0 Armor of front row ally, grant :TANKU for 3 turns',
     },
     advisor: {
       name: 'Emergency Command',
-      description: 'Grant selected ally Tank Up for 3 turns. (CD: 5)',
+      description: 'Grant selected ally :TANKU for 3 turns. (CD: 5)',
     },
     '1B': {
       name: 'Prepare For Combat',
-      description: 'Grant selected ally Tank Up for 3 turns',
+      description: 'Grant selected ally :TANKU for 3 turns',
     },
     '2B': {
       name: 'Assault Order',
@@ -171,10 +150,7 @@ export default {
     },
     '4B': {
       name: 'Annihilation Order',
-      description: 'Trigger 4 block skill of all allies with Tank up',
+      description: 'Trigger 4 block skill of all allies with :TANKU',
     },
-    status: [
-      TANKUP,
-    ],
-  },
+  }),
 };

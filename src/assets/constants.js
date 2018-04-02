@@ -18,7 +18,9 @@ export const WINDEDUP = 'Winded Up: Upon 4 stacks, grant 1 extra attack for next
 export const STUN = 'Stun: Can\'t cast skill. Remove upon incoming damage skill';
 
 // tier level
-export const TIER_N = 'n';
-export const TIER_R = 'r';
-export const TIER_SR = 'sr';
-export const TIER_SSR = 'ssr';
+export const TIER_N = 'N';
+export const TIER_R = 'R';
+export const TIER_SR = 'SR';
+export const TIER_SSR = 'SSR';
+export const SKILL_BOOK = 'Skill Book';
+export const SP = 'SP';
