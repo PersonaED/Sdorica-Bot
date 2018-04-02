@@ -1,11 +1,11 @@
-import { GOLD, ENHANCE, TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import { GOLD, ENHANCE, TIER_R, TIER_SR, TIER_SSR, SKILL_BOOK } from '../constants';
+import Crushfang from './model/Crushfang';
 
 export default {
-  'crushfang r': {
+  'crushfang r': new Crushfang({
     tier: TIER_R,
     sprite: 'https://i.imgur.com/5uoQiEX.png',
-    block: GOLD,
-    name: 'Crushfang R: Abe Ruthless',
+    title: 'Abe Ruthless',
     passive: {
       name: 'Run After Stun',
       description: 'Upon Tier SR, unlock passive skill',
@@ -16,7 +16,7 @@ export default {
     },
     '1B': {
       name: 'Break Cover',
-      description: 'Attack (:crossed_swords: x 0.5) all enemies. Grant self Enhance',
+      description: 'Attack (:crossed_swords: x 0.5) all enemies. Grant self :ENHANCE',
     },
     '2B': {
       name: 'Hit The Breaks',
@@ -26,15 +26,11 @@ export default {
       name: 'Break And Enter',
       description: 'Attack (:crossed_swords: x 1.6) all enemies',
     },
-    status: [
-      ENHANCE,
-    ],
-  },
-  'crushfang sr': {
+  }),
+  'crushfang sr': new Crushfang({
     tier: TIER_SR,
     sprite: 'https://i.imgur.com/kOb2zL0.png',
-    block: GOLD,
-    name: 'Crushfang SR: Lumberjack the Ripper',
+    title: 'Lumberjack the Ripper',
     passive: {
       name: 'Run After Stun',
       description: 'Upon 0 Armor, trigger 1 block skill 1 time.',
@@ -45,7 +41,7 @@ export default {
     },
     '1B': {
       name: 'Break Cover',
-      description: 'Attack (:crossed_swords: x 0.5) all enemies. Grant self Enhance',
+      description: 'Attack (:crossed_swords: x 0.5) all enemies. Grant self :ENHANCE',
     },
     '2B': {
       name: 'Hit The Breaks',
@@ -55,15 +51,11 @@ export default {
       name: 'Break And Enter',
       description: 'Attack (:crossed_swords: x 1.6) all enemies. Grant self (:crossed_swords: x 0.6) Armor',
     },
-    status: [
-      ENHANCE,
-    ],
-  },
-  'crushfang ssr': {
+  }),
+  'crushfang ssr': new Crushfang({
     tier: TIER_SSR,
     sprite: 'https://i.imgur.com/eRhIva6.png',
-    block: GOLD,
-    name: 'Crushfang SSR: Jungle Juggernaut',
+    title: 'Jungle Juggernaut',
     passive: {
       name: 'Run After Stun',
       description: 'Upon 0 Armor, trigger 1 block skill 2 times.',
@@ -74,7 +66,7 @@ export default {
     },
     '1B': {
       name: 'Break Cover',
-      description: 'Attack (:crossed_swords: x 0.5) all enemies. Grant self Enhance',
+      description: 'Attack (:crossed_swords: x 0.5) all enemies. Grant self :ENHANCE',
     },
     '2B': {
       name: 'Hit The Breaks',
@@ -84,15 +76,11 @@ export default {
       name: 'Break And Enter',
       description: 'Attack (:crossed_swords: x 1.6) all enemies. Grant self (:crossed_swords: x 0.6) Armor',
     },
-    status: [
-      ENHANCE,
-    ],
-  },
-  'crushfang skin': {
-    tier: TIER_SSR,
+  }),
+  'crushfang skin': new Crushfang({
+    tier: SKILL_BOOK,
     sprite: 'https://i.imgur.com/zjRFkE9.png',
-    block: GOLD,
-    name: 'Crushfang Skill Book: Lord of the Caves',
+    title: 'Lord of the Caves',
     passive: {
       name: 'Shattered Armor',
       description: 'Upon 0 Armor, trigger 2 block skill 1 time',
@@ -113,6 +101,5 @@ export default {
       name: 'Rumble In The Jungle',
       description: 'Attack (:crossed_swords: x 1.2) selected enemy, then attack all enemy characters (:crossed_swords: x 1.2). Grant self (:crossed_swords: x 0.6) Armor',
     },
-    status: [],
-  },
+  }),
 };
