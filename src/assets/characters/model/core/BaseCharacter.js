@@ -26,7 +26,7 @@ class BaseCharacter {
         return match;
       }
 
-      return `:boom:${Math.round(Number.parseFloat(number) * power)}`;
+      return `:boom:${Number.parseInt(Number.parseFloat(number) * power, 10)}`;
     });
   }
 
