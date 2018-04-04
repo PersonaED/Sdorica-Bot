@@ -71,6 +71,12 @@ const Status = [
     label: 'Stun',
     description: 'Stun: Can\'t cast skill. Remove upon incoming damage skill',
   },
+  {
+    code: ':REFLECT',
+    oldCode: 'REFLECT',
+    label: 'Reflect',
+    description: 'Upon incoming damage skill, attacker takes damage equal to the amount of Armor lost.',
+  },
 ];
 
 export default Status;
