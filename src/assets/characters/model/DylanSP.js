@@ -2,11 +2,11 @@ import BaseCharacter from './core/BaseCharacter';
 import CharStat from './core/CharStat';
 import { BLACK } from '../../constants';
 
-class AngeliaSP extends BaseCharacter {
+class DylanSP extends BaseCharacter {
   constructor(param) {
-    super('Angelia', new CharStat(2309, 12603, BLACK), param);
+    super('Dylan', new CharStat(2309, 12603, BLACK), param);
     this.block = this.stat.block;
   }
 }
 
-export default AngeliaSP;
+export default DylanSP;
