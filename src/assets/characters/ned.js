@@ -1,4 +1,4 @@
-import { BLACK, ENHANCE, RANTRAVE, TEAR, TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import { BLACK, ENHANCE, RANTRAVE, TEAR, TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants';
 
 export default {
   'ned n': {
@@ -7,12 +7,12 @@ export default {
     block: BLACK,
     name: 'Ned N: Lone Ranger',
     passive: {
-      name: 'What's For Desert',
+      name: 'What\'s For Desert',
       description: 'Upon Tier R, unlock passive skill',
     },
     advisor: {
       name: 'Up To Parched',
-      description: "Attack (:crossed_swords: x 1.5) selected enemy. (CD: 7)",
+      description: 'Attack (:crossed_swords: x 1.5) selected enemy. (CD: 7)',
     },
     '1B': {
       name: 'Tamper Sand',
@@ -36,12 +36,12 @@ export default {
     block: BLACK,
     name: 'Ned R: Dune Chaser',
     passive: {
-      name: 'What's For Desert',
+      name: 'What\'s For Desert',
       description: 'Upon death of any character, grant self Rant Rave',
     },
     advisor: {
       name: 'Up To Parched',
-      description: "Attack (:crossed_swords: x 1.5) selected enemy. (CD: 7)",
+      description: 'Attack (:crossed_swords: x 1.5) selected enemy. (CD: 7)',
     },
     '1B': {
       name: 'Tamper Sand',
@@ -65,12 +65,12 @@ export default {
     block: BLACK,
     name: 'Ned SR: Horror Harvester',
     passive: {
-      name: 'What's For Desert',
+      name: 'What\'s For Desert',
       description: 'Upon death of any character, grant self Rant Rave for 2 turns',
     },
     advisor: {
       name: 'Up To Parched',
-      description: "Attack (:crossed_swords: x 1.5) selected enemy. (CD: 6)",
+      description: 'Attack (:crossed_swords: x 1.5) selected enemy. (CD: 6)',
     },
     '1B': {
       name: 'Tamper Sand',
@@ -94,12 +94,12 @@ export default {
     block: BLACK,
     name: 'Ned SSR: Death Collector',
     passive: {
-      name: 'What's For Desert',
+      name: 'What\'s For Desert',
       description: 'Upon death of any character, grant self Rant Rave for 3 turns',
     },
     advisor: {
       name: 'Up To Parched',
-      description: "Attack (:crossed_swords: x 1.5) selected enemy. (CD: 5)",
+      description: 'Attack (:crossed_swords: x 1.5) selected enemy. (CD: 5)',
     },
     '1B': {
       name: 'Tamper Sand',
@@ -127,7 +127,7 @@ export default {
       description: 'Upon receive Enhance, cast Attack (:crossed_swords: x 0.5) that grant all characters Tear',
     },
     advisor: {
-      name: 'Predator's Imprint',
+      name: 'Predator\'s Imprint',
       description: "Allies' Attack skills grant target Tear",
     },
     '1B': {

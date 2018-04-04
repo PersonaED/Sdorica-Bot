@@ -1,4 +1,4 @@
-import { GOLD, ENHANCE, TIER_R, TIER_SR, TIER_SSR, SKILL_BOOK } from '../constants';
+import { TIER_R, TIER_SR, TIER_SSR, SKILL_BOOK } from '../constants';
 import Crushfang from './model/Crushfang';
 
 export default {

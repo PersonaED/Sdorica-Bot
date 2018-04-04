@@ -1,11 +1,12 @@
-import { BLACK, GOLD, VULNERABILITY, TEAR, TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR, SP, SKILL_BOOK } from '../constants';
+import Dylan from './model/Dylan';
+import DylanSP from './model/DylanSP';
 
 export default {
-  'dylan n': {
+  'dylan n': new Dylan({
     tier: TIER_N,
     sprite: 'https://i.imgur.com/UC9zsaH.png',
-    block: GOLD,
-    name: 'Dylan N: Spark Knight',
+    title: 'Spark Knight',
     passive: {
       name: 'Iron Man',
       description: 'Upon Tier SR, unlock passive skill',
@@ -26,16 +27,14 @@ export default {
       name: 'Steel Shield Steal',
       description: 'Grant self (:crossed_swords: x 3.6) Armor. Trigger ally 1 block skill',
     },
-    status: [],
-  },
-  'dylan r': {
+  }),
+  'dylan r': new Dylan({
     tier: TIER_R,
     sprite: 'https://i.imgur.com/UC9zsaH.png',
-    block: GOLD,
-    name: 'Dylan R: Glad Die Later',
+    title: 'Glad Die Later',
     passive: {
       name: 'Iron Man',
-      description: 'Upon full Armor, trigger ally 1 block skill, grant Vulnerability',
+      description: 'Upon full Armor, trigger ally 1 block skill, grant :VUL',
     },
     advisor: {
       name: 'For Justice',
@@ -53,15 +52,11 @@ export default {
       name: 'Steel Shield Steal',
       description: 'Grant self (:crossed_swords: x 3.6) Armor. Trigger ally 1 block skill',
     },
-    status: [
-      VULNERABILITY,
-    ],
-  },
-  'dylan sr': {
+  }),
+  'dylan sr': new Dylan({
     tier: TIER_SR,
     sprite: 'https://i.imgur.com/UC9zsaH.png',
-    block: GOLD,
-    name: 'Dylan SR: Renegade Repeller',
+    title: 'Renegade Repeller',
     passive: {
       name: 'Iron Man',
       description: 'Upon full Armor, trigger ally 1 block skill',
@@ -82,13 +77,11 @@ export default {
       name: 'Steel Shield Steal',
       description: 'Grant self (:crossed_swords: x 3.6) Armor. Trigger ally 1 block skill',
     },
-    status: [],
-  },
-  'dylan ssr': {
+  }),
+  'dylan ssr': new Dylan({
     tier: TIER_SSR,
     sprite: 'https://i.imgur.com/4QjQFWm.png',
-    block: GOLD,
-    name: 'Dylan SSR: Warden of War',
+    title: 'Warden of War',
     passive: {
       name: 'Iron Man',
       description: "Upon full Armor, trigger all allies' 1 block skill",
@@ -109,13 +102,11 @@ export default {
       name: 'Steel Shield Steal',
       description: 'Grant self (:crossed_swords: x 3.6) Armor. Trigger all ally 1 block skill',
     },
-    status: [],
-  },
-  'dylan sp': {
-    tier: TIER_SSR,
+  }),
+  'dylan sp': new DylanSP({
+    tier: SP,
     sprite: 'https://i.imgur.com/DxE8mMU.png',
-    block: BLACK,
-    name: 'Dylan SP: Refined Blaze',
+    title: 'Refined Blaze',
     passive: {
       name: 'You Shall Not Pass',
       description: 'Has Taunt for all turns. Upon receive Heal, trigger 1 block skill',
@@ -126,7 +117,7 @@ export default {
     },
     '1B': {
       name: 'Quick Resupply',
-      description: 'Heal (:crossed_swords: x 0.45) self, grant selected enemy Tear',
+      description: 'Heal (:crossed_swords: x 0.45) self, grant selected enemy :TEAR',
     },
     '2B': {
       name: 'Burning Bash',
@@ -136,15 +127,11 @@ export default {
       name: 'Glory To The Sun !',
       description: 'Trigger death of all enemies with lower HP than this character',
     },
-    status: [
-      TEAR,
-    ],
-  },
-  'dylan skin': {
-    tier: TIER_SSR,
+  }),
+  'dylan skin': new Dylan({
+    tier: SKILL_BOOK,
     sprite: 'https://i.imgur.com/6oBTiCi.png',
-    block: GOLD,
-    name: 'Dylan Skillbook: Obsidian Bulwark',
+    title: 'Obsidian Bulwark',
     passive: {
       name: 'Armor Reborn',
       description: 'Upon start of each battle, grant self full Armor',
@@ -159,14 +146,11 @@ export default {
     },
     '2B': {
       name: 'Aegis Smash',
-      description: 'Attack (:crossed_swords: x 2) front row enemy, remove self Armor. Upon cast skill, if Dylan has over 30%/60%/90% of Armor, grant target 1/2/3 stacks of Vulnerability for 3 turns',
+      description: 'Attack (:crossed_swords: x 2) front row enemy, remove self Armor. Upon cast skill, if Dylan has over 30%/60%/90% of Armor, grant target 1/2/3 stacks of :VUL for 3 turns',
     },
     '4B': {
       name: 'Charge Assault',
       description: 'Grant self (:crossed_swords: x 2.4) Armor, trigger black character 4 block skill',
     },
-    status: [
-      VULNERABILITY,
-    ],
-  },
+  }),
 };
