@@ -1,11 +1,11 @@
-import { GOLD, ENHANCE, TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR, SKILL_BOOK } from '../constants';
+import Golemwalt from './model/Golemwalt';
 
 export default {
-  'golemwalt n': {
+  'golemwalt n': new Golemwalt({
     tier: TIER_N,
     sprite: 'https://i.imgur.com/Pa15VUA.png',
-    block: GOLD,
-    name: 'Golemwalt N: Pebble Pusher',
+    title: 'Pebble Pusher',
     passive: {
       name: "Won't Cave In",
       description: 'Upon Tier R, unlock passive skill',
@@ -16,7 +16,7 @@ export default {
     },
     '1B': {
       name: 'On The Rocks',
-      description: 'Grant self (:crossed_swords: x 0.36) Armor and Enhance for 3 turns',
+      description: 'Grant self (:crossed_swords: x 0.36) Armor and :ENHANCE for 3 turns',
     },
     '2B': {
       name: "Rock N' Roll",
@@ -26,15 +26,11 @@ export default {
       name: 'Rocky Horror Show',
       description: 'Armor Penetration (:crossed_swords: x 1.87) all enemies and (:crossed_swords: x 0.75) all allies',
     },
-    status: [
-      ENHANCE,
-    ],
-  },
-  'golemwalt r': {
+  }),
+  'golemwalt r': new Golemwalt({
     tier: TIER_R,
     sprite: 'https://i.imgur.com/Pa15VUA.png',
-    block: GOLD,
-    name: 'Golemwalt R: Boulder Brute',
+    title: 'Boulder Brute',
     passive: {
       name: "Won't Cave In",
       description: 'Upon death of any enemy, grant self (:crossed_swords: x 0.6) Armor',
@@ -45,7 +41,7 @@ export default {
     },
     '1B': {
       name: 'On The Rocks',
-      description: 'Grant self (:crossed_swords: x 0.36) Armor and Enhance for 3 turns. If have Armor, grant all allies Enhance for 3 turns instead',
+      description: 'Grant self (:crossed_swords: x 0.36) Armor and :ENHANCE for 3 turns. If have Armor, grant all allies :ENHANCE for 3 turns instead',
     },
     '2B': {
       name: "Rock N' Roll",
@@ -55,15 +51,11 @@ export default {
       name: 'Rocky Horror Show',
       description: 'Armor Penetration (:crossed_swords: x 1.87) all enemies and (:crossed_swords: x 0.75) all allies',
     },
-    status: [
-      ENHANCE,
-    ],
-  },
-  'golemwalt sr': {
+  }),
+  'golemwalt sr': new Golemwalt({
     tier: TIER_SR,
     sprite: 'https://i.imgur.com/vZqGsc4.png',
-    block: GOLD,
-    name: 'Golemwalt SR: Shrine Stone',
+    title: 'Shrine Stone',
     passive: {
       name: "Won't Cave In",
       description: 'Upon death of any character, grant self (:crossed_swords: x 0.6) Armor',
@@ -74,7 +66,7 @@ export default {
     },
     '1B': {
       name: 'On The Rocks',
-      description: 'Grant self (:crossed_swords: x 0.36) Armor and Enhance for 3 turns. If have Armor, grant all allies Enhance for 3 turns instead',
+      description: 'Grant self (:crossed_swords: x 0.36) Armor and :ENHANCE for 3 turns. If have Armor, grant all allies :ENHANCE for 3 turns instead',
     },
     '2B': {
       name: "Rock N' Roll",
@@ -84,15 +76,11 @@ export default {
       name: 'Rocky Horror Show',
       description: 'Armor Penetration (:crossed_swords: x 1.87) all enemies and (:crossed_swords: x 0.75) all allies',
     },
-    status: [
-      ENHANCE,
-    ],
-  },
-  'golemwalt ssr': {
+  }),
+  'golemwalt ssr': new Golemwalt({
     tier: TIER_SSR,
     sprite: 'https://i.imgur.com/G8k9lKO.png',
-    block: GOLD,
-    name: 'Golemwalt SSR: Monolith of Myth',
+    title: 'Monolith of Myth',
     passive: {
       name: "Won't Cave In",
       description: 'Upon death of any character, grant self (:crossed_swords: x 1.2) Armor',
@@ -103,7 +91,7 @@ export default {
     },
     '1B': {
       name: 'On The Rocks',
-      description: 'Grant self (:crossed_swords: x 0.36) Armor and Enhance for 3 turns. If have Armor, grant all allies Enhance for 3 turns instead',
+      description: 'Grant self (:crossed_swords: x 0.36) Armor and :ENHANCE for 3 turns. If have Armor, grant all allies :ENHANCE for 3 turns instead',
     },
     '2B': {
       name: "Rock N' Roll",
@@ -111,17 +99,13 @@ export default {
     },
     '4B': {
       name: 'Rocky Horror Show',
-      description: 'Armor Penetration (:crossed_swords: x 1.87) all enemies and (:crossed_swords: x 0.75) all allies.  If have Armor, Armor Penetration (:crossed_swords: x 1.8) all enemies instead',
+      description: 'Armor Penetration (:crossed_swords: x 1.875) all enemies and (:crossed_swords: x 0.75) all allies.  If have Armor, Armor Penetration (:crossed_swords: x 1.875) all enemies instead',
     },
-    status: [
-      ENHANCE,
-    ],
-  },
-  'golemwalt skin-unreleased': {
-    tier: TIER_SSR,
+  }),
+  'golemwalt skin-unreleased': new Golemwalt({
+    tier: SKILL_BOOK,
     sprite: 'https://i.imgur.com/z8IODWI.png',
-    block: GOLD,
-    name: '?????',
+    title: '?????',
     passive: {
       name: '?????',
       description: '?????',
@@ -142,6 +126,5 @@ export default {
       name: '?????',
       description: '?????',
     },
-    status: [],
-  },
+  }),
 };
