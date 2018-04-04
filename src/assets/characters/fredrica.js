@@ -1,11 +1,11 @@
-import { WHITE, EXHAUST, STUN, TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import { TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import Fredrica from './model/Fredrica';
 
 export default {
-  'fredrica r': {
+  'fredrica r': new Fredrica({
     tier: TIER_R,
     sprite: 'https://i.imgur.com/NYVNYs9.png',
-    block: WHITE,
-    name: 'Fredrica R: Tasty Eye Candy',
+    title: 'Tasty Eye Candy',
     passive: {
       name: 'Reward\'s A Kiss',
       description: 'Upon Tier SR, unlock passive skill',
@@ -26,13 +26,11 @@ export default {
       name: 'Tears Of Joy',
       description: 'Heal (:crossed_swords: x 1.44) all allies. Clear all white blocks.',
     },
-    status: [],
-  },
-  'fredrica sr': {
+  }),
+  'fredrica sr': new Fredrica({
     tier: TIER_SR,
     sprite: 'https://i.imgur.com/fMpFoXJ.png',
-    block: WHITE,
-    name: 'Fredrica SR: Drop-Dead Gorgeous',
+    title: 'Drop-Dead Gorgeous',
     passive: {
       name: 'Reward\'s A Kiss',
       description: 'Upon death of target by ally, heal (:crossed_swords: x 1.08) ally.',
@@ -47,22 +45,17 @@ export default {
     },
     '2B': {
       name: 'Burning Love',
-      description: 'Attack (:crossed_swords: x 0.8) all enemies. Grant Exhaust or Stun. ',
+      description: 'Attack (:crossed_swords: x 0.8) all enemies. Grant :EXH or :STUN. ',
     },
     '4B': {
       name: 'Tears Of Joy',
       description: 'Heal (:crossed_swords: x 1.44) all allies. Clear all white blocks.',
     },
-    status: [
-      EXHAUST,
-      STUN,
-    ],
-  },
-  'fredrica ssr': {
+  }),
+  'fredrica ssr': new Fredrica({
     tier: TIER_SSR,
     sprite: 'https://i.imgur.com/68ecdMS.png',
-    block: WHITE,
-    name: 'Fredrica SSR: Bewitched Beauty',
+    title: 'Bewitched Beauty',
     passive: {
       name: 'Reward\'s A Kiss',
       description: 'Upon death of target by ally, heal (:crossed_swords: x 1.8) ally, grant stun for 2 turns.',
@@ -73,19 +66,15 @@ export default {
     },
     '1B': {
       name: 'Love Is Blind',
-      description: 'Attack (:crossed_swords: x 0.8) selected enemy. Grant Exhaust or Stun.',
+      description: 'Attack (:crossed_swords: x 0.8) selected enemy. Grant :EXH or :STUN.',
     },
     '2B': {
       name: 'Burning Love',
-      description: 'Attack (:crossed_swords: x 0.8) all enemies. Grant Exhaust or Stun.',
+      description: 'Attack (:crossed_swords: x 0.8) all enemies. Grant :EXH or :STUN.',
     },
     '4B': {
       name: 'Tears Of Joy',
       description: 'Heal (:crossed_swords: x 1.44) all allies. Clear all white blocks.',
     },
-    status: [
-      STUN,
-      EXHAUST,
-    ],
-  },
+  }),
 };
