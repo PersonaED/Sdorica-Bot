@@ -36,6 +36,7 @@ class BaseCharacter {
       offset = Number.parseInt(level.substring(1), 10);
       if (!offset) offset = 0;
       else if (offset > 10) offset = 10;
+      else if (offset < 0) offset = 0;
     }
 
     return BaseCharacter.format(this[skill].description, this.stat.power + (50 * offset));
