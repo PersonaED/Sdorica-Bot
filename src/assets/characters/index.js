@@ -12,6 +12,7 @@ import koll from './koll';
 import leah from './leah';
 import lio from './lio';
 import lisa from './lisa';
+import ned from './ned';
 import nigel from './nigel';
 import pang from './pang';
 import puggi from './puggi';
@@ -39,6 +40,7 @@ export {
   leah,
   lio,
   lisa,
+  ned,
   nigel,
   pang,
   puggi,
