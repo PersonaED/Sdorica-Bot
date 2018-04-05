@@ -7,7 +7,7 @@ const fun = (message, splitContent) => {
   }
 
   if (splitContent[0] === `${standardPrefix}chenggod`) {
-    message.channel.send('https://cdn.discordapp.com/attachments/427835062306865162/428588975058452490/chenggod.png');
+    message.channel.sendFile('https://cdn.discordapp.com/attachments/427835062306865162/428588975058452490/chenggod.png');
     return true;
   }
   return false;
