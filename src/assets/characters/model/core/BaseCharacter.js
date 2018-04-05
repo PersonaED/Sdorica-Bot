@@ -34,6 +34,8 @@ class BaseCharacter {
     let offset = 0;
     if (level.startsWith('+')) {
       offset = Number.parseInt(level.substring(1), 10);
+      if (!offset) offset = 0;
+      else if (offset > 10) offset = 10;
     }
 
     return BaseCharacter.format(this[skill].description, this.stat.power + (50 * offset));
