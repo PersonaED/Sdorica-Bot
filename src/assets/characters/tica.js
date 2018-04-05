@@ -1,11 +1,11 @@
-import { WHITE, DAMAGEREDUCTION, ENHANCE, TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR, SKILL_BOOK } from '../constants';
+import Tica from './model/Tica';
 
 export default {
-  'tica n': {
+  'tica n': new Tica({
     tier: TIER_N,
     sprite: 'https://i.imgur.com/aBjWhez.png',
-    block: WHITE,
-    name: 'Tica N: Fortune Rookie',
+    title: 'Fortune Rookie',
     passive: {
       name: 'Rune Roll',
       description: 'Upon Tier SR, unlock passive skill.',
@@ -16,7 +16,7 @@ export default {
     },
     '1B': {
       name: 'High Light',
-      description: 'Heal (:crossed_swords: x 0.45) selected ally, grant Enhance for 2 turns.',
+      description: 'Heal (:crossed_swords: x 0.45) selected ally, grant :ENHANCE for 2 turns.',
     },
     '2B': {
       name: 'Flash Light',
@@ -26,15 +26,11 @@ export default {
       name: 'Let There Be Light',
       description: 'Heal (:crossed_swords: x 2.25) ally with lowest HP %.',
     },
-    status: [
-      ENHANCE,
-    ],
-  },
-  'tica r': {
+  }),
+  'tica r': new Tica({
     tier: TIER_R,
     sprite: 'https://i.imgur.com/aBjWhez.png',
-    block: WHITE,
-    name: 'Tica R: Whizz Kid',
+    title: 'Whizz Kid',
     passive: {
       name: 'Rune Roll',
       description: 'Upon Tier SR, unlock passive skill.',
@@ -45,7 +41,7 @@ export default {
     },
     '1B': {
       name: 'High Light',
-      description: 'Heal (:crossed_swords: x 0.45) selected ally, grant Enhance for 2 turns.',
+      description: 'Heal (:crossed_swords: x 0.45) selected ally, grant :ENHANCE for 2 turns.',
     },
     '2B': {
       name: 'Flash Light',
@@ -53,18 +49,13 @@ export default {
     },
     '4B': {
       name: 'Let There Be Light',
-      description: 'Heal (:crossed_swords: x 2.25) ally with lowest HP %, grant Damage Reduction for 3 turns.',
+      description: 'Heal (:crossed_swords: x 2.25) ally with lowest HP %, grant :DMGRED for 3 turns.',
     },
-    status: [
-      ENHANCE,
-      DAMAGEREDUCTION,
-    ],
-  },
-  'tica sr': {
+  }),
+  'tica sr': new Tica({
     tier: TIER_SR,
     sprite: 'https://i.imgur.com/rntaxhW.png',
-    block: WHITE,
-    name: 'Tica SR: Dream Snatcher',
+    title: 'Dream Snatcher',
     passive: {
       name: 'Rune Roll',
       description: 'Upon cast 2 block skill continuously 2 times, trigger 2 block skill 1 time.',
@@ -75,7 +66,7 @@ export default {
     },
     '1B': {
       name: 'High Light',
-      description: 'Heal (:crossed_swords: x 0.45) selected ally, grant Enhance for 2 turns.',
+      description: 'Heal (:crossed_swords: x 0.45) selected ally, grant :ENHANCE for 2 turns.',
     },
     '2B': {
       name: 'Flash Light',
@@ -83,18 +74,13 @@ export default {
     },
     '4B': {
       name: 'Let There Be Light',
-      description: 'Heal (:crossed_swords: x 2.25) ally with lowest HP %, grant Damage Reduction for 3 turns.',
+      description: 'Heal (:crossed_swords: x 2.25) ally with lowest HP %, grant :DMGRED for 3 turns.',
     },
-    status: [
-      ENHANCE,
-      DAMAGEREDUCTION,
-    ],
-  },
-  'tica ssr': {
+  }),
+  'tica ssr': new Tica({
     tier: TIER_SSR,
     sprite: 'https://i.imgur.com/3CpQ0Mi.png',
-    block: WHITE,
-    name: 'Tica SSR: Miracle Maker',
+    title: 'Miracle Maker',
     passive: {
       name: 'Rune Roll',
       description: 'Upon cast 2 block skill continuously 2 times, trigger 2 block skill 2 times.',
@@ -105,7 +91,7 @@ export default {
     },
     '1B': {
       name: 'High Light',
-      description: 'Heal (:crossed_swords: x 0.45) selected ally, grant Enhance for 2 turns.',
+      description: 'Heal (:crossed_swords: x 0.45) selected ally, grant :ENHANCE for 2 turns.',
     },
     '2B': {
       name: 'Flash Light',
@@ -113,18 +99,13 @@ export default {
     },
     '4B': {
       name: 'Let There Be Light',
-      description: 'Heal (:crossed_swords: x 2.25) selected ally, grant Damage Reduction for 3 turns.',
+      description: 'Heal (:crossed_swords: x 2.25) selected ally, grant :DMGRED for 3 turns.',
     },
-    status: [
-      ENHANCE,
-      DAMAGEREDUCTION,
-    ],
-  },
-  'tica skin-unreleased': {
-    tier: TIER_SSR,
+  }),
+  'tica skin-unreleased': new Tica({
+    tier: SKILL_BOOK,
     sprite: 'https://i.imgur.com/IYEa3Me.png',
-    block: WHITE,
-    name: 'Tica Skill Book: ?????',
+    title: '?????',
     passive: {
       name: '?????',
       description: '?????',
@@ -145,6 +126,5 @@ export default {
       name: '?????',
       description: '?????',
     },
-    status: [],
-  },
+  }),
 };

@@ -1,49 +1,23 @@
-import { GOLD, WHITE, VULNERABILITY, DAMAGEREDUCTION, ENHANCE, TEAR, TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import { TIER_R, TIER_SR, TIER_SSR, SKILL_BOOK, SP } from '../constants';
+import Sione from './model/Sione';
+import SioneSP from './model/SioneSP';
 
 export default {
-  'angelia n': {
-    tier: TIER_N,
-    sprite: 'https://i.imgur.com/sT1bN2g.png',
-    block: WHITE,
-    name: 'Angelia N: Thy Fair Lady',
-    passive: {
-      name: 'Helpful Halo',
-      description: 'Upon Tier SR, unlock passive skill',
-    },
-    advisor: {
-      name: 'Angelic Aura',
-      description: 'Grant front row ally (:crossed_swords: x 0.6) Armor (CD: 3)',
-    },
-    '1B': {
-      name: 'Wing and Prayer',
-      description: 'Grant front row ally (:crossed_swords: x 0.6) Armor, trigger 1 block skill',
-    },
-    '2B': {
-      name: 'Let Us Pray',
-      description: 'Grant all allies (:crossed_swords: x 0.72) Armor',
-    },
-    '4B': {
-      name: 'Prayer Player',
-      description: 'Heal (:crossed_swords: x 1.8) front row ally',
-    },
-    status: [],
-  },
-  'sione r': {
+  'sione r': new Sione({
     tier: TIER_R,
     sprite: 'https://i.imgur.com/WcDx6NE.png',
-    block: GOLD,
-    name: 'Sione R: Clearcut Lass',
+    title: 'Clearcut Lass',
     passive: {
       name: 'Stellar Stamina',
-      description: 'Upon incoming damage skill, if have Damage Reduction, grant self Enhance',
+      description: 'Upon incoming damage skill, if have :DMGRED, grant self :ENHANCE',
     },
     advisor: {
       name: 'Tell Lore Swift',
-      description: 'If ally has Damage Reduction, increase skill power by 20%',
+      description: 'If ally has :DMGRED, increase skill power by 20%',
     },
     '1B': {
       name: 'High Roller Blade',
-      description: 'Grant self Damage Reduction for 3 turns',
+      description: 'Grant self :DMGRED for 3 turns',
     },
     '2B': {
       name: 'Blade Runner',
@@ -53,129 +27,105 @@ export default {
       name: 'Blades of Glory',
       description: 'True Damage (:crossed_swords: x 1) all enemies',
     },
-    status: [
-      DAMAGEREDUCTION,
-      ENHANCE,
-    ],
-  },
-  'sione sr': {
+  }),
+  'sione sr': new Sione({
     tier: TIER_SR,
     sprite: 'https://i.imgur.com/rFPasHF.png',
-    block: GOLD,
-    name: 'Sione SR: Pierce the Frail',
+    title: 'Pierce the Frail',
     passive: {
       name: 'Stellar Stamina',
-      description: 'Upon incoming damage skill, if have Damage Reduction, grant self Enhance for 2 turns',
+      description: 'Upon incoming damage skill, if have :DMGRED, grant self :ENHANCE for 2 turns',
     },
     advisor: {
       name: 'Tell Lore Swift',
-      description: 'If ally has Damage Reduction, increase skill power by 25%',
+      description: 'If ally has :DMGRED, increase skill power by 25%',
     },
     '1B': {
       name: 'High Roller Blade',
-      description: 'Grant self Damage Reduction for 3 turns',
+      description: 'Grant self :DMGRED for 3 turns',
     },
     '2B': {
       name: 'Blade Runner',
-      description: 'True Damage (:crossed_swords: x 1) front row enemy. If have Damage Reduction, True Damage (:crossed_swords: x 1) selected enemy instead',
+      description: 'True Damage (:crossed_swords: x 1) front row enemy. If have :DMGRED, True Damage (:crossed_swords: x 1) selected enemy instead',
     },
     '4B': {
       name: 'Blades of Glory',
       description: 'True Damage (:crossed_swords: x 1) all enemies',
     },
-    status: [
-      DAMAGEREDUCTION,
-      ENHANCE,
-    ],
-  },
-  'sione ssr': {
+  }),
+  'sione ssr': new Sione({
     tier: TIER_SSR,
     sprite: 'https://i.imgur.com/SS78H98.png',
-    block: GOLD,
-    name: 'Sione SSR: Vorpal Vortex',
+    title: 'Vorpal Vortex',
     passive: {
       name: 'Stellar Stamina',
-      description: 'Upon incoming damage skill, if have Damage Reduction, grant self Enhance for 3 turns',
+      description: 'Upon incoming damage skill, if have :DMGRED, grant self :ENHANCE for 3 turns',
     },
     advisor: {
       name: 'Tell Lore Swift',
-      description: 'If ally has Damage Reduction, increase skill power by 30%',
+      description: 'If ally has :DMGRED, increase skill power by 30%',
     },
     '1B': {
       name: 'High Roller Blade',
-      description: 'Grant self Taunt and Damage Reduction for 3 turns',
+      description: 'Grant self Taunt and :DMGRED for 3 turns',
     },
     '2B': {
       name: 'Blade Runner',
-      description: 'True Damage (:crossed_swords: x 1) front row enemy. If have Damage Reduction, True Damage (:crossed_swords: x 1) selected enemy instead',
+      description: 'True Damage (:crossed_swords: x 1) front row enemy. If have :DMGRED, True Damage (:crossed_swords: x 1) selected enemy instead',
     },
     '4B': {
       name: 'Blades of Glory',
       description: 'True Damage (:crossed_swords: x 1) all enemies',
     },
-    status: [
-      DAMAGEREDUCTION,
-      ENHANCE,
-    ],
-  },
-  'sione skin': {
-    tier: TIER_SSR,
+  }),
+  'sione skin': new Sione({
+    tier: SKILL_BOOK,
     sprite: 'https://i.imgur.com/t6mjJGv.png',
-    block: GOLD,
-    name: 'Sione Skillbook: Fiery Blue Rapier',
+    title: 'Fiery Blue Rapier',
     passive: {
       name: 'Blade Break',
-      description: 'If more than 2 enemies are present, ally damage skill grant Vulnerability for 2 turns',
+      description: 'If more than 2 enemies are present, ally damage skill grant :VUL for 2 turns',
     },
     advisor: {
       name: 'Sword Flash',
-      description: 'If more than 2 enemies are present, ally damage skill grant Vulnerability for 2 turns',
+      description: 'If more than 2 enemies are present, ally damage skill grant :VUL for 2 turns',
     },
     '1B': {
       name: 'Cool, Calm, Collected',
-      description: 'Grant self Taunt and Damage Reduction for 3 turns',
+      description: 'Grant self Taunt and :DMGRED for 3 turns',
     },
     '2B': {
       name: 'Flying Swallow Slash',
-      description: 'True Damage (:crossed_swords: x 1.25) enemy with highest HP. If target has Vulnerability, trigger self 1 block skill',
+      description: 'True Damage (:crossed_swords: x 1.25) enemy with highest HP. If target has :VUL, trigger self 1 block skill',
     },
     '4B': {
       name: 'Dancing Flames',
-      description: 'True Damage (:crossed_swords: x 1) all enemies. If target has Vulnerability, grant Vulnerability for 2 extra turns',
+      description: 'True Damage (:crossed_swords: x 1) all enemies. If target has :VUL, grant :VUL for 2 extra turns',
     },
-    status: [
-      VULNERABILITY,
-      DAMAGEREDUCTION,
-    ],
-  },
-  'sione sp': {
-    tier: TIER_SSR,
+  }),
+  'sione sp': new SioneSP({
+    tier: SP,
     sprite: 'https://i.imgur.com/EK7hOm1.png',
-    block: WHITE,
-    name: 'Sione SP: Shall We Dance',
+    title: 'Shall We Dance',
     passive: {
       name: 'A Fine Blade',
-      description: 'Upon cast damage skill by ally, if have Enhance, grant target Tear',
+      description: 'Upon cast damage skill by ally, if have :ENHANCE, grant target :TEAR',
     },
     advisor: {
       name: 'Sound of Silence',
-      description: 'Upon cast damage skill by ally, if have Enhance, grant target Tear',
+      description: 'Upon cast damage skill by ally, if have :ENHANCE, grant target :TEAR',
     },
     '1B': {
       name: 'Fluttering Blades',
-      description: 'Grant selected enemy Tear for 6 turns',
+      description: 'Grant selected enemy :TEAR for 6 turns',
     },
     '2B': {
       name: 'Luminescence Slash',
-      description: 'True Damage (:crossed_swords: x 1) all enemies who are not at full HP. If all enemies are at full HP, grant selected ally (:crossed_swords: x 1.8) Armor and Enhance for 6 turns',
+      description: 'True Damage (:crossed_swords: x 1) all enemies who are not at full HP. If all enemies are at full HP, grant selected ally (:crossed_swords: x 1.8) Armor and :ENHANCE for 6 turns',
     },
     '4B': {
       name: 'Moonlight Waltz',
-      description: 'True Damage (:crossed_swords: x 1.5) all enemies who are not at full HP, grant Tear for 6 turns. If all enemies are at full HP, grant all allies (:crossed_swords: x 1.8) Armor and Enhance for 6 turns',
+      description: 'True Damage (:crossed_swords: x 1.5) all enemies who are not at full HP, grant :TEAR for 6 turns. If all enemies are at full HP, grant all allies (:crossed_swords: x 1.8) Armor and :ENHANCE for 6 turns',
     },
-    status: [
-      TEAR,
-      ENHANCE,
-    ],
-  },
+  }),
 };

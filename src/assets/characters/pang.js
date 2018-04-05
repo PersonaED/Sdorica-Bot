@@ -1,11 +1,11 @@
-import { GOLD, DAMAGEREDUCTION, ENHANCE, WINDEDUP, TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import Pang from './model/Pang';
 
 export default {
-  'pang n': {
+  'pang n': new Pang({
     tier: TIER_N,
     sprite: 'https://i.imgur.com/IgajiVH.png',
-    block: GOLD,
-    name: 'Pang N: Amateur Hour',
+    title: 'Amateur Hour',
     passive: {
       name: 'Merciless Meridians',
       description: 'Upon Tier SR, unlock passive skill',
@@ -16,7 +16,7 @@ export default {
     },
     '1B': {
       name: 'One Paw Man',
-      description: 'Attack (:crossed_swords: x 0.75) front row enemy. Grant self Damage Reduction for 2 turns',
+      description: 'Attack (:crossed_swords: x 0.75) front row enemy. Grant self :DMGRED for 2 turns',
     },
     '2B': {
       name: 'Powerful Punch',
@@ -26,15 +26,11 @@ export default {
       name: "Paws Won't Pause",
       description: 'Attack (:crossed_swords: x 3) front row enemy',
     },
-    status: [
-      DAMAGEREDUCTION,
-    ],
-  },
-  'pang r': {
+  }),
+  'pang r': new Pang({
     tier: TIER_R,
     sprite: 'https://i.imgur.com/IgajiVH.png',
-    block: GOLD,
-    name: 'Pang R: Self Made Fan',
+    title: 'Self Made Fan',
     passive: {
       name: 'Merciless Meridians',
       description: 'Upon Tier SR, unlock passive skill',
@@ -45,30 +41,24 @@ export default {
     },
     '1B': {
       name: 'One Paw Man',
-      description: 'Attack (:crossed_swords: x 0.75) front row enemy. Grant self Damage Reduction for 2 turns',
+      description: 'Attack (:crossed_swords: x 0.75) front row enemy. Grant self :DMGRED for 2 turns',
     },
     '2B': {
       name: 'Powerful Punch',
-      description: 'Attack (:crossed_swords: x 1.5) front row enemy. Grant self 1 stack Winded Up',
+      description: 'Attack (:crossed_swords: x 1.5) front row enemy. Grant self 1 stack :WINDU',
     },
     '4B': {
       name: "Paws Won't Pause",
-      description: 'Attack (:crossed_swords: x 3) front row enemy. Grant self 2 stacks Enhance for 3 turns',
+      description: 'Attack (:crossed_swords: x 3) front row enemy. Grant self 2 stacks :ENHANCE for 3 turns',
     },
-    status: [
-      DAMAGEREDUCTION,
-      WINDEDUP,
-      ENHANCE,
-    ],
-  },
-  'pang sr': {
+  }),
+  'pang sr': new Pang({
     tier: TIER_SR,
     sprite: 'https://i.imgur.com/noYW61K.png',
-    block: GOLD,
-    name: 'Pang SR: Notice Me Sensei',
+    title: 'Notice Me Sensei',
     passive: {
       name: 'Merciless Meridians',
-      description: 'Upon receive Damage Reduction, grant self 1 stack Winded Up',
+      description: 'Upon receive :DMGRED, grant self 1 stack :WINDU',
     },
     advisor: {
       name: 'Acupoint Attack',
@@ -76,30 +66,24 @@ export default {
     },
     '1B': {
       name: 'One Paw Man',
-      description: 'Attack (:crossed_swords: x 0.75) front row enemy. Grant self Damage Reduction for 2 turns',
+      description: 'Attack (:crossed_swords: x 0.75) front row enemy. Grant self :DMGRED for 2 turns',
     },
     '2B': {
       name: 'Powerful Punch',
-      description: 'Attack (:crossed_swords: x 1.5) front row enemy. Grant self 1 stack Winded Up',
+      description: 'Attack (:crossed_swords: x 1.5) front row enemy. Grant self 1 stack :WINDU',
     },
     '4B': {
       name: "Paws Won't Pause",
-      description: 'Attack (:crossed_swords: x 3) front row enemy. Grant self 2 stacks Enhance for 3 turns',
+      description: 'Attack (:crossed_swords: x 3) front row enemy. Grant self 2 stacks :ENHANCE for 3 turns',
     },
-    status: [
-      DAMAGEREDUCTION,
-      WINDEDUP,
-      ENHANCE,
-    ],
-  },
-  'pang ssr': {
+  }),
+  'pang ssr': new Pang({
     tier: TIER_SSR,
     sprite: 'https://i.imgur.com/0xe5c0K.png',
-    block: GOLD,
-    name: 'Pang SSR: Shaolin Templar',
+    title: 'Shaolin Templar',
     passive: {
       name: 'Merciless Meridians',
-      description: 'Upon receive Damage Reduction, grant self 1 or 2 stacks Winded Up',
+      description: 'Upon receive :DMGRED, grant self 1 or 2 stacks :WINDU',
     },
     advisor: {
       name: 'Acupoint Attack',
@@ -107,20 +91,15 @@ export default {
     },
     '1B': {
       name: 'One Paw Man',
-      description: 'Attack (:crossed_swords: x 0.75) front row enemy. Grant self Damage Reduction for 2 turns',
+      description: 'Attack (:crossed_swords: x 0.75) front row enemy. Grant self :DMGRED for 2 turns',
     },
     '2B': {
       name: 'Powerful Punch',
-      description: 'Attack (:crossed_swords: x 1.5) front row enemy. Grant self 1 or 2 stacks Winded Up',
+      description: 'Attack (:crossed_swords: x 1.5) front row enemy. Grant self 1 or 2 stacks :WINDU',
     },
     '4B': {
       name: "Paws Won't Pause",
-      description: 'Attack (:crossed_swords: x 3) front row enemy. Grant self 2 stacks Enhance for 3 turns',
+      description: 'Attack (:crossed_swords: x 3) front row enemy. Grant self 2 stacks :ENHANCE for 3 turns',
     },
-    status: [
-      DAMAGEREDUCTION,
-      WINDEDUP,
-      ENHANCE,
-    ],
-  },
+  }),
 };

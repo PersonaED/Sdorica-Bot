@@ -1,11 +1,11 @@
-import { GOLD, TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import { TIER_R, TIER_SR, TIER_SSR, SP, SKILL_BOOK } from '../constants';
+import Nigel from './model/Nigel';
 
 export default {
-  'nigel r': {
+  'nigel r': new Nigel({
     tier: TIER_R,
     sprite: 'https://i.imgur.com/0upjO2Y.png',
-    block: GOLD,
-    name: 'Nigel R: Hack and Clash',
+    title: 'Hack and Clash',
     passive: {
       name: 'Stay Strong',
       description: 'Upon Tier SR, unlock passive skill',
@@ -26,13 +26,11 @@ export default {
       name: 'Follow My Lead',
       description: 'Attack (:crossed_swords: x 4) front row enemy',
     },
-    status: [],
-  },
-  'nigel sr': {
+  }),
+  'nigel sr': new Nigel({
     tier: TIER_SR,
     sprite: 'https://i.imgur.com/z213deW.png',
-    block: GOLD,
-    name: 'Nigel SR: Carved in Bone',
+    title: 'Carved in Bone',
     passive: {
       name: 'Stay Strong',
       description: 'Upon receive Armor, grant self Taunt',
@@ -53,13 +51,11 @@ export default {
       name: 'Follow My Lead',
       description: 'Attack (:crossed_swords: x 4) front row enemy',
     },
-    status: [],
-  },
-  'nigel ssr': {
+  }),
+  'nigel ssr': new Nigel({
     tier: TIER_SSR,
     sprite: 'https://i.imgur.com/lMeaHLZ.png',
-    block: GOLD,
-    name: 'Nigel SSR: Shockblade Scourge',
+    title: 'Shockblade Scourge',
     passive: {
       name: 'Stay Strong',
       description: 'Upon receive Armor, grant self Taunt for 2 Turns',
@@ -80,13 +76,11 @@ export default {
       name: 'Follow My Lead',
       description: 'Attack (:crossed_swords: x 4) front row enemy. If target less than 50% HP, increase skill power by 50% for this turn',
     },
-    status: [],
-  },
-  'nigel sp-unreleased': {
-    tier: TIER_SSR,
+  }),
+  'nigel sp-unreleased': new Nigel({
+    tier: SP,
     sprite: 'https://i.imgur.com/YFtmC85.png',
-    block: GOLD,
-    name: '?????',
+    title: '?????',
     passive: {
       name: '?????',
       description: '?????',
@@ -107,13 +101,11 @@ export default {
       name: '?????',
       description: '?????',
     },
-    status: [],
-  },
-  'nigel skin-unreleased': {
-    tier: TIER_SSR,
+  }),
+  'nigel skin-unreleased': new Nigel({
+    tier: SKILL_BOOK,
     sprite: 'https://i.imgur.com/2D00IVa.png',
-    block: GOLD,
-    name: '?????',
+    skin: '?????',
     passive: {
       name: '?????',
       description: '?????',
@@ -134,6 +126,5 @@ export default {
       name: '?????',
       description: '?????',
     },
-    status: [],
-  },
+  }),
 };

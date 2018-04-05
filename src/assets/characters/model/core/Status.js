@@ -77,6 +77,18 @@ const Status = [
     label: 'Reflect',
     description: 'Upon incoming damage skill, attacker takes damage equal to the amount of Armor lost.',
   },
+  {
+    code: ':RAVE',
+    oldCode: 'RANTRAVE',
+    label: 'Rant Rave',
+    description: 'TBD.',
+  },
+  {
+    code: ':TAUNT',
+    oldCode: 'TAUNT',
+    label: 'Taunt',
+    description: 'TBD.',
+  },
 ];
 
 export default Status;

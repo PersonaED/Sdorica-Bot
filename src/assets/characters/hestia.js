@@ -1,11 +1,11 @@
-import { WHITE, REGEN, TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import Hestia from './model/Hestia';
 
 export default {
-  'hestia n': {
+  'hestia n': new Hestia({
     tier: TIER_N,
     sprite: 'https://i.imgur.com/3WvBX0Z.png',
-    block: WHITE,
-    name: 'Hestia N: Splash Sprite',
+    title: 'Splash Sprite',
     passive: {
       name: 'Happy Harmony',
       description: 'Upon Tier R, unlock passive skill',
@@ -16,7 +16,7 @@ export default {
     },
     '1B': {
       name: 'Etude Chords',
-      description: 'Heal (:crossed_swords: x 1.08) selected ally, grant Regen.',
+      description: 'Heal (:crossed_swords: x 1.08) selected ally, grant :REGEN.',
     },
     '2B': {
       name: 'Serenade Chords',
@@ -26,18 +26,14 @@ export default {
       name: 'Variation Chords',
       description: 'Armor Penetration (:crossed_swords: x 2.25) selected enemy.',
     },
-    status: [
-      REGEN,
-    ],
-  },
-  'hestia r': {
+  }),
+  'hestia r': new Hestia({
     tier: TIER_R,
     sprite: 'https://i.imgur.com/3WvBX0Z.png',
-    block: WHITE,
-    name: 'Hestia R: Aqua La Diva',
+    title: 'Aqua La Diva',
     passive: {
       name: 'Happy Harmony',
-      description: 'Upon cast Heal, if target has debuff(s), grant Regen.',
+      description: 'Upon cast Heal, if target has debuff(s), grant :REGEN.',
     },
     advisor: {
       name: 'Magic Melody',
@@ -45,7 +41,7 @@ export default {
     },
     '1B': {
       name: 'Etude Chords',
-      description: 'Heal (:crossed_swords: x 1.08) selected ally, grant Regen.',
+      description: 'Heal (:crossed_swords: x 1.08) selected ally, grant :REGEN.',
     },
     '2B': {
       name: 'Serenade Chords',
@@ -55,18 +51,14 @@ export default {
       name: 'Variation Chords',
       description: 'Armor Penetration (:crossed_swords: x 2.25) selected enemy.',
     },
-    status: [
-      REGEN,
-    ],
-  },
-  'hestia sr': {
+  }),
+  'hestia sr': new Hestia({
     tier: TIER_SR,
     sprite: 'https://i.imgur.com/zvR0Hzm.png',
-    block: WHITE,
-    name: 'Hestia SR: Riverbank Maiden',
+    title: 'Riverbank Maiden',
     passive: {
       name: 'Happy Harmony',
-      description: 'Upon cast Heal, if target has debuff(s), grant Regen for 2 turns.',
+      description: 'Upon cast Heal, if target has debuff(s), grant :REGEN for 2 turns.',
     },
     advisor: {
       name: 'Magic Melody',
@@ -74,7 +66,7 @@ export default {
     },
     '1B': {
       name: 'Etude Chords',
-      description: 'Heal (:crossed_swords: x 1.08) selected ally, grant Regen for 2 turns.',
+      description: 'Heal (:crossed_swords: x 1.08) selected ally, grant :REGEN for 2 turns.',
     },
     '2B': {
       name: 'Serenade Chords',
@@ -84,18 +76,14 @@ export default {
       name: 'Variation Chords',
       description: 'Armor Penetration (:crossed_swords: x 2.25) selected enemy.',
     },
-    status: [
-      REGEN,
-    ],
-  },
-  'hestia ssr': {
+  }),
+  'hestia ssr': new Hestia({
     tier: TIER_SSR,
     sprite: 'https://i.imgur.com/HNTNTGt.png',
-    block: WHITE,
-    name: 'Hestia SSR: Bride Of The Sea',
+    title: 'Bride Of The Sea',
     passive: {
       name: 'Happy Harmony',
-      description: 'Upon cast Heal, if target has debuff(s), grant Regen for 3 turns.',
+      description: 'Upon cast Heal, if target has debuff(s), grant :REGEN for 3 turns.',
     },
     advisor: {
       name: 'Magic Melody',
@@ -103,7 +91,7 @@ export default {
     },
     '1B': {
       name: 'Etude Chords',
-      description: 'Heal (:crossed_swords: x 1.08) selected ally, grant Regen for 2 turns.',
+      description: 'Heal (:crossed_swords: x 1.08) selected ally, grant :REGEN for 2 turns.',
     },
     '2B': {
       name: 'Serenade Chords',
@@ -113,8 +101,5 @@ export default {
       name: 'Variation Chords',
       description: 'Armor Penetration (:crossed_swords: x 2.25) selected enemy, heal (:crossed_swords: x 0.9) target ',
     },
-    status: [
-      REGEN,
-    ],
-  },
+  }),
 };

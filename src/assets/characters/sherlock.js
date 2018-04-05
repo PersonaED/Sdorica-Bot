@@ -1,11 +1,11 @@
-import { WHITE, ENHANCE, VULNERABILITY, TANKUP, TIER_R, TIER_SR, TIER_SSR, EXHAUST } from '../constants';
+import { TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import Sherlock from './model/Sherlock';
 
 export default {
-  'sherlock r': {
+  'sherlock r': new Sherlock({
     tier: TIER_R,
     sprite: 'https://i.imgur.com/W66g5NB.png',
-    block: WHITE,
-    name: 'Sherlock R: Sly Trader',
+    title: 'Sly Trader',
     passive: {
       name: 'Transformer Horror',
       description: 'Upon Tier SR, unlock passive skill',
@@ -26,16 +26,14 @@ export default {
       name: 'Command No. 66',
       description: 'If offense mode, Attack (:crossed_swords: x 3) selected enemy. If support mode, Heal (:crossed_swords: x 2.7) selected ally.',
     },
-    status: [],
-  },
-  'sherlock sr': {
+  }),
+  'sherlock sr': new Sherlock({
     tier: TIER_SR,
     sprite: 'https://i.imgur.com/5pHvDDq.png',
-    block: WHITE,
-    name: 'Sherlock SR: Mean Moneybags',
+    title: 'Mean Moneybags',
     passive: {
       name: 'Transformer Horror',
-      description: 'Upon cast skill by ally, if block board is altered, grant Enhance.',
+      description: 'Upon cast skill by ally, if block board is altered, grant :ENHANCE.',
     },
     advisor: {
       name: 'Avant Guard',
@@ -47,25 +45,20 @@ export default {
     },
     '2B': {
       name: 'Command No. 42',
-      description: 'If offense mode, Armor Penetration (:crossed_swords: x 1.125) selected enemy, grant Vulnerability for 2 turns. If support mode, grant selected ally (:crossed_swords: x 1.8) Armor.',
+      description: 'If offense mode, Armor Penetration (:crossed_swords: x 1.125) selected enemy, grant :VUL for 2 turns. If support mode, grant selected ally (:crossed_swords: x 1.8) Armor.',
     },
     '4B': {
       name: 'Command No. 66',
       description: 'If offense mode, Attack (:crossed_swords: x 3) selected enemy. If support mode, Heal (:crossed_swords: x 2.7) selected ally.',
     },
-    status: [
-      ENHANCE,
-      VULNERABILITY,
-    ],
-  },
-  'sherlock ssr': {
+  }),
+  'sherlock ssr': new Sherlock({
     tier: TIER_SSR,
     sprite: 'https://i.imgur.com/1eDUb5s.png',
-    block: WHITE,
-    name: 'Sherlock SSR: Profit Prophet',
+    title: 'Profit Prophet',
     passive: {
       name: 'Transformer Horror',
-      description: 'Upon cast skill by ally, if block board is altered, grant Enhance for 2 turns.',
+      description: 'Upon cast skill by ally, if block board is altered, grant :ENHANCE for 2 turns.',
     },
     advisor: {
       name: 'Avant Guard',
@@ -77,16 +70,11 @@ export default {
     },
     '2B': {
       name: 'Command No. 42',
-      description: 'If offense mode, Armor Penetration (:crossed_swords: x 1.125) selected enemy, grant Vulnerability for 2 turns. If support mode, grant selected ally (:crossed_swords: x 1.8) Armor and Tank Up for 2 turns.',
+      description: 'If offense mode, Armor Penetration (:crossed_swords: x 1.125) selected enemy, grant :VUL for 2 turns. If support mode, grant selected ally (:crossed_swords: x 1.8) Armor and :TANKU for 2 turns.',
     },
     '4B': {
       name: 'Command No. 66',
       description: 'If offense mode, Attack (:crossed_swords: x 3) selected enemy. If support mode, Heal (:crossed_swords: x 2.7) selected ally.',
     },
-    status: [
-      ENHANCE,
-      EXHAUST,
-      TANKUP,
-    ],
-  },
+  }),
 };

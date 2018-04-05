@@ -1,11 +1,11 @@
-import { BLACK, EXHAUST, DAMAGEREDUCTION, VULNERABILITY, ENHANCE, VIGILANCE, TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import { TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import Yamitsuki from './model/Yamitsuki';
 
 export default {
-  'yamitsuki r': {
+  'yamitsuki r': new Yamitsuki({
     tier: TIER_R,
     sprite: 'https://i.imgur.com/gxp5MYV.png',
-    block: BLACK,
-    name: 'Yamitsuki R: Shadow Walker',
+    title: 'Shadow Walker',
     passive: {
       name: 'Insult To Injury',
       description: 'Upon Tier SR, unlock passive skill',
@@ -16,7 +16,7 @@ export default {
     },
     '1B': {
       name: 'Just Beat It',
-      description: 'Armor Penetration (:crossed_swords: x 0.6) selected enemy, remove Taunt and Damage Reduction',
+      description: 'Armor Penetration (:crossed_swords: x 0.6) selected enemy, remove Taunt and :DMGRED',
     },
     '2B': {
       name: 'Beat The Hush',
@@ -26,18 +26,14 @@ export default {
       name: 'Beat And Defeat',
       description: 'Armor Penetration (:crossed_swords: x 2.4) selected enemy',
     },
-    status: [
-      DAMAGEREDUCTION,
-    ],
-  },
-  'yamitsuki sr': {
+  }),
+  'yamitsuki sr': new Yamitsuki({
     tier: TIER_SR,
     sprite: 'https://i.imgur.com/soxgPHa.png',
-    block: BLACK,
-    name: 'Yamitsuki SR: Nevermore Ninja',
+    title: 'Nevermore Ninja',
     passive: {
       name: 'Insult To Injury',
-      description: 'Upon cast damage skill, if target has Vulnerability, increase skill power by 50% for this turn',
+      description: 'Upon cast damage skill, if target has :VUL, increase skill power by 50% for this turn',
     },
     advisor: {
       name: 'After Dark',
@@ -45,31 +41,24 @@ export default {
     },
     '1B': {
       name: 'Just Beat It',
-      description: 'Armor Penetration (:crossed_swords: x 0.6) selected enemy, remove Taunt and Damage Reduction',
+      description: 'Armor Penetration (:crossed_swords: x 0.6) selected enemy, remove Taunt and :DMGRED',
     },
     '2B': {
       name: 'Beat The Hush',
-      description: 'Armor Penetration (:crossed_swords: x 1.3) selected enemy, remove Enhance and Vigilance',
+      description: 'Armor Penetration (:crossed_swords: x 1.3) selected enemy, remove :ENHANCE and :VIGIL',
     },
     '4B': {
       name: 'Beat And Defeat',
       description: 'Armor Penetration (:crossed_swords: x 2.4) selected enemy',
     },
-    status: [
-      VULNERABILITY,
-      DAMAGEREDUCTION,
-      ENHANCE,
-      VIGILANCE,
-    ],
-  },
-  'yamitsuki ssr': {
+  }),
+  'yamitsuki ssr': new Yamitsuki({
     tier: TIER_SSR,
     sprite: 'https://i.imgur.com/PEDEMmr.png',
-    block: BLACK,
-    name: 'Yamitsuki SSR: Twin Of Twilight',
+    title: 'Twin Of Twilight',
     passive: {
       name: 'Insult To Injury',
-      description: 'Upon cast damage skill, if target has Vulnerability/Exhaust, increase skill power by 50% for this turn',
+      description: 'Upon cast damage skill, if target has :VUL/:EXH, increase skill power by 50% for this turn',
     },
     advisor: {
       name: 'After Dark',
@@ -77,22 +66,15 @@ export default {
     },
     '1B': {
       name: 'Just Beat It',
-      description: 'Armor Penetration (:crossed_swords: x 0.6) selected enemy, remove Taunt and Damage Reduction',
+      description: 'Armor Penetration (:crossed_swords: x 0.6) selected enemy, remove Taunt and :DMGRED',
     },
     '2B': {
       name: 'Beat The Hush',
-      description: 'Armor Penetration (:crossed_swords: x 1.3) selected enemy, remove Enhance and Vigilance',
+      description: 'Armor Penetration (:crossed_swords: x 1.3) selected enemy, remove :ENHANCE and :VIGIL',
     },
     '4B': {
       name: 'Beat And Defeat',
-      description: 'Armor Penetration (:crossed_swords: x 2.4) selected enemy, grant 2 stacks Vulnerability and 2 stacks Exhaust for 2 turns',
+      description: 'Armor Penetration (:crossed_swords: x 2.4) selected enemy, grant 2 stacks :VUL and 2 stacks :EXH for 2 turns',
     },
-    status: [
-      VULNERABILITY,
-      EXHAUST,
-      DAMAGEREDUCTION,
-      ENHANCE,
-      VIGILANCE,
-    ],
-  },
+  }),
 };

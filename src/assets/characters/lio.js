@@ -1,11 +1,11 @@
-import { WHITE, EXHAUST, POISON, TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import { TIER_R, TIER_SR, TIER_SSR, SKILL_BOOK } from '../constants';
+import Lio from './model/Lio';
 
 export default {
-  'lio r': {
+  'lio r': new Lio({
     tier: TIER_R,
     sprite: 'https://i.imgur.com/Me0Jhgr.png',
-    block: WHITE,
-    name: 'Lio R: Gallant Scout',
+    title: 'Gallant Scout',
     passive: {
       name: 'Base Booster',
       description: 'Upon Tier SR, unlock passive skill.',
@@ -16,7 +16,7 @@ export default {
     },
     '1B': {
       name: 'Junk Food',
-      description: 'Heal (:crossed_swords: x 0.9) selected ally, grant Exhaust for 3 turns.',
+      description: 'Heal (:crossed_swords: x 0.9) selected ally, grant :EXH for 3 turns.',
     },
     '2B': {
       name: 'Food Aid',
@@ -26,15 +26,11 @@ export default {
       name: 'Food Lay Waste',
       description: 'Armor Penetration (:crossed_swords: x 2.4) back row enemy.',
     },
-    status: [
-      EXHAUST,
-    ],
-  },
-  'lio sr': {
+  }),
+  'lio sr': new Lio({
     tier: TIER_SR,
     sprite: 'https://i.imgur.com/uJa3NaQ.png',
-    block: WHITE,
-    name: 'Lio SR: Ace Cadet',
+    title: 'Ace Cadet',
     passive: {
       name: 'Base Booster',
       description: 'Upon turn, grant self 1 stack. Upon 4 stacks, increase skill power by 50% for next skill, reset stacks.',
@@ -45,7 +41,7 @@ export default {
     },
     '1B': {
       name: 'Junk Food',
-      description: 'Heal (:crossed_swords: x 0.9) selected ally, grant Exhaust for 2 turns.',
+      description: 'Heal (:crossed_swords: x 0.9) selected ally, grant :EXH for 2 turns.',
     },
     '2B': {
       name: 'Food Aid',
@@ -55,15 +51,11 @@ export default {
       name: 'Food Lay Waste',
       description: 'Armor Penetration (:crossed_swords: x 2.4) back row enemy.',
     },
-    status: [
-      EXHAUST,
-    ],
-  },
-  'lio ssr': {
+  }),
+  'lio ssr': new Lio({
     tier: TIER_SSR,
     sprite: 'https://i.imgur.com/eEi1zGu.png',
-    block: WHITE,
-    name: 'Lio SSR: Homeland In Security',
+    title: 'Homeland In Security',
     passive: {
       name: 'Base Booster',
       description: 'Upon turn, grant self 1 stack. Upon 3 stacks, increase skill power by 50% for next skill, reset stacks.',
@@ -74,7 +66,7 @@ export default {
     },
     '1B': {
       name: 'Junk Food',
-      description: 'Heal (:crossed_swords: x 0.9) selected ally, grant Exhaust.',
+      description: 'Heal (:crossed_swords: x 0.9) selected ally, grant :EXH.',
     },
     '2B': {
       name: 'Food Aid',
@@ -84,15 +76,11 @@ export default {
       name: 'Food Lay Waste',
       description: 'Armor Penetration (:crossed_swords: x 2.4) back row enemy.',
     },
-    status: [
-      EXHAUST,
-    ],
-  },
-  'lio skin': {
-    tier: TIER_SSR,
+  }),
+  'lio skin': new Lio({
+    tier: SKILL_BOOK,
     sprite: 'https://i.imgur.com/teiwY8c.png',
-    block: WHITE,
-    name: 'Lio Skill Book: Mandora Shooter',
+    title: 'Mandora Shooter',
     passive: {
       name: 'Well-timed Support',
       description: 'Upon start of each battle, heal allies to full HP.',
@@ -103,7 +91,7 @@ export default {
     },
     '1B': {
       name: 'Toxic Mandora',
-      description: 'Grant selected character Poison.',
+      description: 'Grant selected character :POIS.',
     },
     '2B': {
       name: 'Carrot Cannon',
@@ -113,8 +101,5 @@ export default {
       name: 'Super Mandrake',
       description: 'Armor Penetration (:crossed_swords: x 2.25) selected enemy. 50% chance to trigger target CD +3',
     },
-    status: [
-      POISON,
-    ],
-  },
+  }),
 };

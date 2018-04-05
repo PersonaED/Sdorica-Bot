@@ -1,11 +1,11 @@
-import { BLACK, ENHANCE, TEAR, TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import { TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import Sharice from './model/Sharice';
 
 export default {
-  'sharice r': {
+  'sharice r': new Sharice({
     tier: TIER_R,
     sprite: 'https://i.imgur.com/jCOTCqg.png',
-    block: BLACK,
-    name: 'Sharice R: Dunce Trooper',
+    title: 'Dunce Trooper',
     passive: {
       name: 'Now on Stage',
       description: 'Upon Tier SR, unlock passive skill',
@@ -16,26 +16,21 @@ export default {
     },
     '1B': {
       name: 'Suck on This',
-      description: 'Grant self 2 stacks Enhance. Grant all enemies Enhance',
+      description: 'Grant self 2 stacks :ENHANCE. Grant all enemies :ENHANCE',
     },
     '2B': {
       name: 'Don\'t Call Me Short',
-      description: 'Attack (:crossed_swords: x 1.8) front row enemy. Grant taget Tear',
+      description: 'Attack (:crossed_swords: x 1.8) front row enemy. Grant taget :TEAR',
     },
     '4B': {
       name: 'G.O.A.T',
-      description: 'Attack (:crossed_swords: x 1.4) all enemies. Grant Tear for 2 turns',
+      description: 'Attack (:crossed_swords: x 1.4) all enemies. Grant :TEAR for 2 turns',
     },
-    status: [
-      ENHANCE,
-      TEAR,
-    ],
-  },
-  'sharice sr': {
+  }),
+  'sharice sr': new Sharice({
     tier: TIER_SR,
     sprite: 'https://i.imgur.com/eAJv7OZ.png',
-    block: BLACK,
-    name: 'Sharice SR: Horseless Cavalry',
+    title: 'Horseless Cavalry',
     passive: {
       name: 'Now on Stage',
       description: 'Upon start of each better, trigger self 2 block skill',
@@ -46,26 +41,21 @@ export default {
     },
     '1B': {
       name: 'Suck on This',
-      description: 'Grant self 2 stacks Enhance. Grant all enemies Enhance',
+      description: 'Grant self 2 stacks :ENHANCE. Grant all enemies :ENHANCE',
     },
     '2B': {
       name: 'Don\'t Call Me Short',
-      description: 'Attack (:crossed_swords: x 1.8) front row enemy. Grant taget Tear. If have Enhance, Attack (:crossed_swords: x 0.2) gold position ally and (:crossed_swords: x 2) front row enemy. Grant enemy Tear for 2 turns',
+      description: 'Attack (:crossed_swords: x 1.8) front row enemy. Grant taget :TEAR. If have :ENHANCE, Attack (:crossed_swords: x 0.2) gold position ally and (:crossed_swords: x 2) front row enemy. Grant enemy :TEAR for 2 turns',
     },
     '4B': {
       name: 'G.O.A.T',
-      description: 'Attack (:crossed_swords: x 1.4) all enemies. Grant Tear for 2 turns',
+      description: 'Attack (:crossed_swords: x 1.4) all enemies. Grant :TEAR for 2 turns',
     },
-    status: [
-      ENHANCE,
-      TEAR,
-    ],
-  },
-  'sharice ssr': {
+  }),
+  'sharice ssr': new Sharice({
     tier: TIER_SSR,
     sprite: 'https://i.imgur.com/BOAS4Lh.png',
-    block: BLACK,
-    name: 'Sharice SSR: Size Doesn\'t Matter',
+    title: 'Size Doesn\'t Matter',
     passive: {
       name: 'Now on Stage',
       description: 'Upon start of each better, trigger self 1 block skill and 2 block skill',
@@ -76,19 +66,15 @@ export default {
     },
     '1B': {
       name: 'Suck on This',
-      description: 'Grant self 2 stacks Enhance. Grant all enemies Enhance',
+      description: 'Grant self 2 stacks :ENHANCE. Grant all enemies :ENHANCE',
     },
     '2B': {
       name: 'Don\'t Call Me Short',
-      description: 'Attack (:crossed_swords: x 1.8) front row enemy. Grant taget Tear. If have Enhance, Attack (:crossed_swords: x 0.2) gold position ally and (:crossed_swords: x 2) front row enemy. Grant enemy Tear for 2 turns',
+      description: 'Attack (:crossed_swords: x 1.8) front row enemy. Grant taget :TEAR. If have :ENHANCE, Attack (:crossed_swords: x 0.2) gold position ally and (:crossed_swords: x 2) front row enemy. Grant enemy :TEAR for 2 turns',
     },
     '4B': {
       name: 'G.O.A.T',
-      description: 'Attack (:crossed_swords: x 2) all enemies. Grant Tear for 2 turns. Then attack (:crossed_swords: x 1) gold position ally',
+      description: 'Attack (:crossed_swords: x 2) all enemies. Grant :TEAR for 2 turns. Then attack (:crossed_swords: x 1) gold position ally',
     },
-    status: [
-      ENHANCE,
-      TEAR,
-    ],
-  },
+  }),
 };

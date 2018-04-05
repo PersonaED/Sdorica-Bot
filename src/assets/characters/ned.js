@@ -1,11 +1,11 @@
-import { BLACK, ENHANCE, RANTRAVE, TEAR, TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR, SKILL_BOOK } from '../constants';
+import Ned from './model/Ned';
 
 export default {
-  'ned n': {
+  'ned n': new Ned({
     tier: TIER_N,
     sprite: 'https://i.imgur.com/ip0iAsg.png',
-    block: BLACK,
-    name: 'Ned N: Lone Ranger',
+    title: 'Lone Ranger',
     passive: {
       name: 'What\'s For Desert',
       description: 'Upon Tier R, unlock passive skill',
@@ -16,28 +16,24 @@ export default {
     },
     '1B': {
       name: 'Tamper Sand',
-      description: 'Grant self Rant Rave',
+      description: 'Grant self :RAVE',
     },
     '2B': {
       name: 'Quick Sand',
-      description: 'Attack (:crossed_swords: x 1.5) selected enemy. If have Rant Rave, Attack (:crossed_swords: x 2.25) random enemy instead',
+      description: 'Attack (:crossed_swords: x 1.5) selected enemy. If have :RAVE, Attack (:crossed_swords: x 2.25) random enemy instead',
     },
     '4B': {
       name: 'Delude Sandstorm',
-      description: 'Attack (:crossed_swords: x 3) selected enemy. If have Rant Rave, Attack (:crossed_swords: x 4.5) random enemy instead',
+      description: 'Attack (:crossed_swords: x 3) selected enemy. If have :RAVE, Attack (:crossed_swords: x 4.5) random enemy instead',
     },
-    status: [
-      RANTRAVE,
-    ],
-  },
-  'ned r': {
+  }),
+  'ned r': new Ned({
     tier: TIER_R,
     sprite: 'https://i.imgur.com/GMZLgW3.png',
-    block: BLACK,
-    name: 'Ned R: Dune Chaser',
+    title: 'Dune Chaser',
     passive: {
       name: 'What\'s For Desert',
-      description: 'Upon death of any character, grant self Rant Rave',
+      description: 'Upon death of any character, grant self :RAVE',
     },
     advisor: {
       name: 'Up To Parched',
@@ -45,28 +41,24 @@ export default {
     },
     '1B': {
       name: 'Tamper Sand',
-      description: 'Grant self Rant Rave for 3 turns',
+      description: 'Grant self :RAVE for 3 turns',
     },
     '2B': {
       name: 'Quick Sand',
-      description: 'Attack (:crossed_swords: x 1.5) selected enemy. If have Rant Rave, Attack (:crossed_swords: x 2.25) random enemy instead',
+      description: 'Attack (:crossed_swords: x 1.5) selected enemy. If have :RAVE, Attack (:crossed_swords: x 2.25) random enemy instead',
     },
     '4B': {
       name: 'Delude Sandstorm',
-      description: 'Attack (:crossed_swords: x 3) selected enemy. If have Rant Rave, Attack (:crossed_swords: x 4.5) random enemy instead',
+      description: 'Attack (:crossed_swords: x 3) selected enemy. If have :RAVE, Attack (:crossed_swords: x 4.5) random enemy instead',
     },
-    status: [
-      RANTRAVE,
-    ],
-  },
-  'ned sr': {
+  }),
+  'ned sr': new Ned({
     tier: TIER_SR,
     sprite: 'https://i.imgur.com/GMZLgW3.png',
-    block: BLACK,
-    name: 'Ned SR: Horror Harvester',
+    title: 'Horror Harvester',
     passive: {
       name: 'What\'s For Desert',
-      description: 'Upon death of any character, grant self Rant Rave for 2 turns',
+      description: 'Upon death of any character, grant self :RAVE for 2 turns',
     },
     advisor: {
       name: 'Up To Parched',
@@ -74,28 +66,24 @@ export default {
     },
     '1B': {
       name: 'Tamper Sand',
-      description: 'Grant self Rant Rave for 3 turns',
+      description: 'Grant self :RAVE for 3 turns',
     },
     '2B': {
       name: 'Quick Sand',
-      description: 'Attack (:crossed_swords: x 1.5) selected enemy. If target less than 50% HP, increase skll power by 50% for this turn. If have Rant Rave, Attack (:crossed_swords: x 2.25) random enemy instead',
+      description: 'Attack (:crossed_swords: x 1.5) selected enemy. If target less than 50% HP, increase skll power by 50% for this turn. If have :RAVE, Attack (:crossed_swords: x 2.25) random enemy instead',
     },
     '4B': {
       name: 'Delude Sandstorm',
-      description: 'Attack (:crossed_swords: x 3) selected enemy. If have Rant Rave, Attack (:crossed_swords: x 4.5) random enemy instead',
+      description: 'Attack (:crossed_swords: x 3) selected enemy. If have :RAVE, Attack (:crossed_swords: x 4.5) random enemy instead',
     },
-    status: [
-      RANTRAVE,
-    ],
-  },
-  'ned ssr': {
+  }),
+  'ned ssr': new Ned({
     tier: TIER_SSR,
     sprite: 'https://i.imgur.com/XkW0cPi.png',
-    block: BLACK,
-    name: 'Ned SSR: Death Collector',
+    title: 'Death Collector',
     passive: {
       name: 'What\'s For Desert',
-      description: 'Upon death of any character, grant self Rant Rave for 3 turns',
+      description: 'Upon death of any character, grant self :RAVE for 3 turns',
     },
     advisor: {
       name: 'Up To Parched',
@@ -103,48 +91,40 @@ export default {
     },
     '1B': {
       name: 'Tamper Sand',
-      description: 'Grant self Rant Rave for 3 turns',
+      description: 'Grant self :RAVE for 3 turns',
     },
     '2B': {
       name: 'Quick Sand',
-      description: 'Attack (:crossed_swords: x 1.5) selected enemy. If target less than 50% HP, increase skll power by 50% for this turn. If have Rant Rave, Attack (:crossed_swords: x 2.25) random enemy instead',
+      description: 'Attack (:crossed_swords: x 1.5) selected enemy. If target less than 50% HP, increase skll power by 50% for this turn. If have :RAVE, Attack (:crossed_swords: x 2.25) random enemy instead',
     },
     '4B': {
       name: 'Delude Sandstorm',
-      description: 'Attack (:crossed_swords: x 3) selected enemy. If not trigger death of target, trigger self 2 block skill 1 time. If have Rant Rave, Attack (:crossed_swords: x 4.5) random enemy instead',
+      description: 'Attack (:crossed_swords: x 3) selected enemy. If not trigger death of target, trigger self 2 block skill 1 time. If have :RAVE, Attack (:crossed_swords: x 4.5) random enemy instead',
     },
-    status: [
-      RANTRAVE,
-    ],
-  },
-  'ned skin': {
-    tier: TIER_SSR,
+  }),
+  'ned skin': new Ned({
+    tier: SKILL_BOOK,
     sprite: 'https://i.imgur.com/gjHxf2d.png',
-    block: BLACK,
-    name: 'Ned Skillbook: Azure Predator',
+    title: 'Azure Predator',
     passive: {
       name: 'Mind of a Hunter',
-      description: 'Upon receive Enhance, cast Attack (:crossed_swords: x 0.5) that grant all characters Tear',
+      description: 'Upon receive :ENHANCE, cast Attack (:crossed_swords: x 0.5) that grant all characters :TEAR',
     },
     advisor: {
       name: 'Predator\'s Imprint',
-      description: "Allies' Attack skills grant target Tear",
+      description: "Allies' Attack skills grant target :TEAR",
     },
     '1B': {
       name: 'Blazing Soul',
-      description: 'Grant self Enhance for 3 turns',
+      description: 'Grant self :ENHANCE for 3 turns',
     },
     '2B': {
       name: 'Deadly Pursuit',
-      description: 'Attack (:crossed_swords: x 1.8) back row enemy. Grant Tear for 3 turns',
+      description: 'Attack (:crossed_swords: x 1.8) back row enemy. Grant :TEAR for 3 turns',
     },
     '4B': {
       name: 'Designated Target',
-      description: 'Attack (:crossed_swords: x 3) selected enemy. Grant Tear for all turns',
+      description: 'Attack (:crossed_swords: x 3) selected enemy. Grant :TEAR for all turns',
     },
-    status: [
-      ENHANCE,
-      TEAR,
-    ],
-  },
+  }),
 };

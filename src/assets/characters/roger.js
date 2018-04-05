@@ -1,11 +1,11 @@
-import { GOLD, VULNERABILITY, TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR, SKILL_BOOK } from '../constants';
+import Roger from './model/Roger';
 
 export default {
-  'roger n': {
+  'roger n': new Roger({
     tier: TIER_N,
     sprite: 'https://i.imgur.com/tJKyEXz.png',
-    block: GOLD,
-    name: "Roger N: Robbin' Good",
+    title: "Robbin' Good",
     passive: {
       name: 'Roar Reversal',
       description: 'Upon Tier SR, unlock passive skill',
@@ -20,21 +20,17 @@ export default {
     },
     '2B': {
       name: 'Cutting Pledge',
-      description: 'Attack (:crossed_swords: x 2) front row enemy. Grant self Vulnerability',
+      description: 'Attack (:crossed_swords: x 2) front row enemy. Grant self :VUL',
     },
     '4B': {
       name: 'Cut Core Nerves',
       description: 'Attack (:crossed_swords: x 4) front row enemy',
     },
-    status: [
-      VULNERABILITY,
-    ],
-  },
-  'roger r': {
+  }),
+  'roger r': new Roger({
     tier: TIER_R,
     sprite: 'https://i.imgur.com/tJKyEXz.png',
-    block: GOLD,
-    name: 'Roger R: Raw Outlaw',
+    title: 'Raw Outlaw',
     passive: {
       name: 'Roar Reversal',
       description: 'Upon Tier SR, unlock passive skill',
@@ -49,21 +45,17 @@ export default {
     },
     '2B': {
       name: 'Cutting Pledge',
-      description: 'Attack (:crossed_swords: x 2.5) front row enemy. Grant self Vulnerability for 3 turns',
+      description: 'Attack (:crossed_swords: x 2.5) front row enemy. Grant self :VUL for 3 turns',
     },
     '4B': {
       name: 'Cut Core Nerves',
       description: 'Attack (:crossed_swords: x 4) front row enemy',
     },
-    status: [
-      VULNERABILITY,
-    ],
-  },
-  'roger sr': {
+  }),
+  'roger sr': new Roger({
     tier: TIER_SR,
     sprite: 'https://i.imgur.com/kMTLy3b.png',
-    block: GOLD,
-    name: 'Roger SR: Plunder Plus',
+    title: 'Plunder Plus',
     passive: {
       name: 'Roar Reversal',
       description: 'Upon less than 80/50% HP, increase skill power of 1/2 block skill by 50%',
@@ -78,21 +70,17 @@ export default {
     },
     '2B': {
       name: 'Cutting Pledge',
-      description: 'Attack (:crossed_swords: x 2.5) front row enemy. Grant self Vulnerability for 3 turns',
+      description: 'Attack (:crossed_swords: x 2.5) front row enemy. Grant self :VUL for 3 turns',
     },
     '4B': {
       name: 'Cut Core Nerves',
       description: 'Attack (:crossed_swords: x 4) front row enemy',
     },
-    status: [
-      VULNERABILITY,
-    ],
-  },
-  'roger ssr': {
+  }),
+  'roger ssr': new Roger({
     tier: TIER_SSR,
     sprite: 'https://i.imgur.com/HeG55pv.png',
-    block: GOLD,
-    name: 'Roger SSR: Armed Berserker',
+    title: 'Armed Berserker',
     passive: {
       name: 'Roar Reversal',
       description: 'Upon less than 80/50/20% HP, increase skill power of 1/2/4 block skill by 50%',
@@ -107,21 +95,17 @@ export default {
     },
     '2B': {
       name: 'Cutting Pledge',
-      description: 'Attack (:crossed_swords: x 2.5) front row enemy. Grant self Vulnerability for 3 turns',
+      description: 'Attack (:crossed_swords: x 2.5) front row enemy. Grant self :VUL for 3 turns',
     },
     '4B': {
       name: 'Cut Core Nerves',
       description: 'Attack (:crossed_swords: x 6) front row enemy. Trigger death of self',
     },
-    status: [
-      VULNERABILITY,
-    ],
-  },
-  'roger skin-unreleased': {
-    tier: TIER_SSR,
+  }),
+  'roger skin-unreleased': new Roger({
+    tier: SKILL_BOOK,
     sprite: 'https://i.imgur.com/jac4Bu8.png',
-    block: GOLD,
-    name: '?????',
+    title: '?????',
     passive: {
       name: '?????',
       description: '?????',
@@ -142,6 +126,5 @@ export default {
       name: '?????',
       description: '?????',
     },
-    status: [],
-  },
+  }),
 };

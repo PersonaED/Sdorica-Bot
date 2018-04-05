@@ -1,100 +1,86 @@
-import { WHITE, ENHANCE, VIGILANCE, TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import { TIER_R, TIER_SR, TIER_SSR, SKILL_BOOK } from '../constants';
+import Lisa from './model/Lisa';
 
 export default {
-  'lisa r': {
+  'lisa r': new Lisa({
     tier: TIER_R,
     sprite: 'https://i.imgur.com/vV17MmK.png',
-    block: WHITE,
-    name: 'Lisa R: Step Spinner',
+    title: 'Step Spinner',
     passive: {
       name: 'Love End War',
-      description: 'If ally has Enhance, increase skill power by 10% for each ally with Enhance.',
+      description: 'If ally has :ENHANCE, increase skill power by 10% for each ally with :ENHANCE.',
     },
     advisor: {
       name: 'The Pink Imprint',
-      description: 'Grant all allies 3 stacks Enhance for 2 turns (CD: 12)',
+      description: 'Grant all allies 3 stacks :ENHANCE for 2 turns (CD: 12)',
     },
     '1B': {
       name: 'Dancing With Costars',
-      description: 'Grant selected ally (:crossed_swords: x 0.6) Armor and Enhance for 2 turns.',
+      description: 'Grant selected ally (:crossed_swords: x 0.6) Armor and :ENHANCE for 2 turns.',
     },
     '2B': {
       name: 'Care To Dance',
-      description: 'Heal (:crossed_swords: x 0.54) all allies, grant Enhance.',
+      description: 'Heal (:crossed_swords: x 0.54) all allies, grant :ENHANCE.',
     },
     '4B': {
       name: 'Dancing Queen',
-      description: 'Grant all allies 3 stacks Enhance for 2 turns.',
+      description: 'Grant all allies 3 stacks :ENHANCE for 2 turns.',
     },
-    status: [
-      ENHANCE,
-    ],
-  },
-  'lisa sr': {
+  }),
+  'lisa sr': new Lisa({
     tier: TIER_SR,
     sprite: 'https://i.imgur.com/82hbe5h.png',
-    block: WHITE,
-    name: 'Lisa SR: Frisky Missy',
+    title: 'Frisky Missy',
     passive: {
       name: 'Love End War',
-      description: 'If ally has Enhance, increase skill power by 20% for each ally with Enhance.',
+      description: 'If ally has :ENHANCE, increase skill power by 20% for each ally with :ENHANCE.',
     },
     advisor: {
       name: 'The Pink Imprint',
-      description: 'Grant all allies 3 stacks Enhance for 2 turns (CD: 11)',
+      description: 'Grant all allies 3 stacks :ENHANCE for 2 turns (CD: 11)',
     },
     '1B': {
       name: 'Dancing With Costars',
-      description: 'Grant selected ally (:crossed_swords: x 0.6) Armor and Enhance for 2 turns.',
+      description: 'Grant selected ally (:crossed_swords: x 0.6) Armor and :ENHANCE for 2 turns.',
     },
     '2B': {
       name: 'Care To Dance',
-      description: 'Heal (:crossed_swords: x 0.54) all allies, grant Enhance and Vigilance',
+      description: 'Heal (:crossed_swords: x 0.54) all allies, grant :ENHANCE and :VIGIL',
     },
     '4B': {
       name: 'Dancing Queen',
-      description: 'Grant all allies 3 stacks Enhance for 2 turns.',
+      description: 'Grant all allies 3 stacks :ENHANCE for 2 turns.',
     },
-    status: [
-      ENHANCE,
-      VIGILANCE,
-    ],
-  },
-  'lisa ssr': {
+  }),
+  'lisa ssr': new Lisa({
     tier: TIER_SSR,
     sprite: 'https://i.imgur.com/05Ilj8G.png',
-    block: WHITE,
-    name: 'Lisa SSR: Show Go Girl',
+    title: 'Show Go Girl',
     passive: {
       name: 'Love End War',
-      description: 'If ally has Enhance, increase skill power by 30% for each ally with Enhance.',
+      description: 'If ally has :ENHANCE, increase skill power by 30% for each ally with :ENHANCE.',
     },
     advisor: {
       name: 'The Pink Imprint',
-      description: 'Grant all allies 3 stacks Enhance for 2 turns (CD: 10)',
+      description: 'Grant all allies 3 stacks :ENHANCE for 2 turns (CD: 10)',
     },
     '1B': {
       name: 'Dancing With Costars',
-      description: 'Grant selected ally (:crossed_swords: x 0.6) Armor and Enhance for 2 turns.',
+      description: 'Grant selected ally (:crossed_swords: x 0.6) Armor and :ENHANCE for 2 turns.',
     },
     '2B': {
       name: 'Care To Dance',
-      description: 'Heal (:crossed_swords: x 0.54) all allies, grant Enhance and Vigilance for 2 turns',
+      description: 'Heal (:crossed_swords: x 0.54) all allies, grant :ENHANCE and :VIGIL for 2 turns',
     },
     '4B': {
       name: 'Dancing Queen',
-      description: 'Grant all allies 3 stacks Enhance for 2 turns.',
+      description: 'Grant all allies 3 stacks :ENHANCE for 2 turns.',
     },
-    status: [
-      ENHANCE,
-      VIGILANCE,
-    ],
-  },
-  'lisa skin-unreleased': {
-    tier: TIER_SSR,
+  }),
+  'lisa skin-unreleased': new Lisa({
+    tier: SKILL_BOOK,
     sprite: 'https://i.imgur.com/0NhJjZG.png',
-    block: WHITE,
-    name: 'Lisa Skill Book: ?????',
+    title: '?????',
     passive: {
       name: '?????',
       description: '?????',
@@ -115,6 +101,5 @@ export default {
       name: '?????',
       description: '?????',
     },
-    status: [],
-  },
+  }),
 };
