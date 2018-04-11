@@ -39,6 +39,7 @@ export {
   dagger,
   dylan,
   experiment,
+  fatima,
   fredrica,
   golemwalt,
   hestia,
