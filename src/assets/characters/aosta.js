@@ -87,7 +87,7 @@ export default {
     },
     advisor: {
       name: 'Behind Closed Doors',
-      description: 'Grant selecetd ally 2 stacks :ENHANCE, grant selected enemy 2 stacks of :VUL',
+      description: 'Grant selecetd ally 2 stacks :ENHANCE, grant selected enemy 2 stacks of :VUL. (CD: 5)',
     },
     '1B': {
       name: 'Double-Cross',
