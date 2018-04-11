@@ -1,85 +1,110 @@
-import { TIER_R, TIER_SR, TIER_SSR, SKILL_BOOK } from '../constants';
+import { TIER_R, TIER_SR, TIER_SSR, SKILL_BOOK, TIER_N } from '../constants';
 import Kittyeyes from './model/Kittyeyes';
 
 export default {
-  'kittyeyes r': new Kittyeyes({
-    tier: TIER_R,
-    sprite: 'https://i.imgur.com/Od4n8Rt.png',
-    title: 'Stunt Trouble',
+  'kittyeyes n': new Kittyeyes({
+    tier: TIER_N,
+    sprite: 'https://i.imgur.com/ex4n4Gu.png',
+    title: 'Cat Burglar',
     passive: {
-      name: 'Hare Raising',
+      name: 'Cheshire Hire',
       description: 'Upon Tier SR, unlock passive skill',
     },
     advisor: {
-      name: 'Funny Bunny',
-      description: 'Allies Attack effects increase by 20%',
+      name: 'Curiosity Killer',
+      description: 'True Damage (:crossed_swords: x 1) selected enemy. (CD: 7)',
     },
     '1B': {
-      name: 'Bad Egg',
-      description: 'Attack (:crossed_swords: x 1) random enemy',
+      name: 'Start From Scratch',
+      description: 'True Damage (:crossed_swords: x 0.5) random enemy',
     },
     '2B': {
-      name: 'The Egg Chick',
-      description: 'Attack (:crossed_swords: x 1) random enemy 2 times',
+      name: 'Scratch That',
+      description: 'True Damage (:crossed_swords: x 1) selected enemy',
     },
     '4B': {
-      name: 'Eggs Over Easy',
-      description: 'Attack (:crossed_swords: x 1) random enemy 4 times',
+      name: 'Cat Scratch Fever',
+      description: 'True Damage (:crossed_swords: x 1) all enemies',
+    },
+  }),
+  'kittyeyes r': new Kittyeyes({
+    tier: TIER_R,
+    sprite: 'https://i.imgur.com/ex4n4Gu.png',
+    title: 'Stunt Trouble',
+    passive: {
+      name: 'Cheshire Hire',
+      description: 'Upon Tier SR, unlock passive skill',
+    },
+    advisor: {
+      name: 'Curiosity Killer',
+      description: 'True Damage (:crossed_swords: x 1) selected enemy. (CD: 7)',
+    },
+    '1B': {
+      name: 'Start From Scratch',
+      description: 'True Damage (:crossed_swords: x 0.5) random enemy',
+    },
+    '2B': {
+      name: 'Scratch That',
+      description: 'True Damage (:crossed_swords: x 1) selected enemy, grant :VUL',
+    },
+    '4B': {
+      name: 'Cat Scratch Fever',
+      description: 'True Damage (:crossed_swords: x 1) all enemies',
     },
   }),
   'kittyeyes sr': new Kittyeyes({
     tier: TIER_SR,
-    sprite: 'https://i.imgur.com/XBGb3G4.png',
+    sprite: 'https://i.imgur.com/jfeTw2X.png',
     title: 'Con Adolescent',
     passive: {
-      name: 'Hare Raising',
-      description: 'Upon turn, grant self 1 stack. Upon 4 stacks, increase skill power by 50% for next skill, reset stacks',
+      name: 'Cheshire Hire',
+      description: 'Upon turn, target enemy with Game Tag to True Damage (:crossed swords: x 0.2), grant :VUL',
     },
     advisor: {
-      name: 'Funny Bunny',
-      description: 'Allies Attack effects increase by 25%',
+      name: 'Curiosity Killer',
+      description: 'True Damage (:crossed_swords: x 1) selected enemy. (CD: 6)',
     },
     '1B': {
-      name: 'Bad Egg',
-      description: 'Attack (:crossed_swords: x 1) random enemy, grant Taunt',
+      name: 'Start From Scratch',
+      description: 'True Damage (:crossed_swords: x 0.5) random enemy, grant Game Tag',
     },
     '2B': {
-      name: 'The Egg Chick',
-      description: 'Attack (:crossed_swords: x 1) random enemy 2 times',
+      name: 'Scratch That',
+      description: 'True Damage (:crossed_swords: x 1) selected enemy, grant :VUL',
     },
     '4B': {
-      name: 'Eggs Over Easy',
-      description: 'Attack (:crossed_swords: x 1) random enemy 4 times',
+      name: 'Cat Scratch Fever',
+      description: 'True Damage (:crossed_swords: x 1) all enemies',
     },
   }),
   'kittyeyes ssr': new Kittyeyes({
     tier: TIER_SSR,
-    sprite: 'https://i.imgur.com/oQaE8qI.png',
+    sprite: 'https://i.imgur.com/hBhGtEH.png',
     title: 'Original Prankster',
     passive: {
-      name: 'Hare Raising',
-      description: 'Upon turn, grant self 1 stack. Upon 3 stacks, increase skill power by 50% for next skill, reset stacks',
+      name: 'Cheshire Hire',
+      description: 'Upon turn, target enemy with Game Tag to True Damage (:crossed swords: x 0.2), grant :VUL for 2 turns',
     },
     advisor: {
-      name: 'Funny Bunny',
-      description: 'Allies Attack effects increase by 30%',
+      name: 'Curiosity Killer',
+      description: 'True Damage (:crossed_swords: x 1) selected enemy. (CD: 5)',
     },
     '1B': {
-      name: 'Bad Egg',
-      description: 'Attack (:crossed_swords: x 1) random enemy, grant Taunt',
+      name: 'Start From Scratch',
+      description: 'True Damage (:crossed_swords: x 0.5) random enemy, grant Game Tag',
     },
     '2B': {
-      name: 'The Egg Chick',
-      description: 'Attack (:crossed_swords: x 1) random enemy 2 times',
+      name: 'Scratch That',
+      description: 'True Damage (:crossed_swords: x 1) selected enemy, grant :VUL',
     },
     '4B': {
-      name: 'Eggs Over Easy',
-      description: 'Attack (:crossed_swords: x 1) random enemy 4 times with last hit dealing bonus damage (:crossed_swords: x 0.5), grant :EXH',
+      name: 'Cat Scratch Fever',
+      description: 'True Damage (:crossed_swords: x 1) all enemies, grant Game Tag',
     },
   }),
   'kittyeyes skin-unreleased': new Kittyeyes({
     tier: SKILL_BOOK,
-    sprite: 'https://i.imgur.com/Zc0bSfR.png',
+    sprite: 'https://i.imgur.com/q9GUXN2.png',
     title: '?????',
     passive: {
       name: '?????',

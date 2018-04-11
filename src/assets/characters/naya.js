@@ -1,85 +1,110 @@
-import { TIER_R, TIER_SR, TIER_SSR, SKILL_BOOK } from '../constants';
+import { TIER_R, TIER_SR, TIER_SSR, SKILL_BOOK, TIER_N } from '../constants';
 import Naya from './model/Naya';
 
 export default {
-  'naya r': new Naya({
-    tier: TIER_R,
-    sprite: 'https://i.imgur.com/Od4n8Rt.png',
-    title: 'Stunt Trouble',
+  'naya n': new Naya({
+    tier: TIER_N,
+    sprite: 'https://i.imgur.com/IGvNDUS.png',
+    title: 'Shiver Quiver',
     passive: {
-      name: 'Hare Raising',
+      name: 'Bullseye',
       description: 'Upon Tier SR, unlock passive skill',
     },
     advisor: {
-      name: 'Funny Bunny',
-      description: 'Allies Attack effects increase by 20%',
+      name: 'Bolt Down',
+      description: 'Attack (:crossed_swords: x 0.6) selected enemy, grant :VUL for 2 turns (CD: 7)',
     },
     '1B': {
-      name: 'Bad Egg',
-      description: 'Attack (:crossed_swords: x 1) random enemy',
+      name: 'Hot Shot',
+      description: 'Attack (:crossed_swords: x 0.6) selected enemy, grant :VUL for 2 turns',
     },
     '2B': {
-      name: 'The Egg Chick',
-      description: 'Attack (:crossed_swords: x 1) random enemy 2 times',
+      name: 'Blood Shot',
+      description: 'Attack (:crossed_swords: x 1.2) selected enemy. 20% chance for a Critical Strike that does 2x Damage',
     },
     '4B': {
-      name: 'Eggs Over Easy',
-      description: 'Attack (:crossed_swords: x 1) random enemy 4 times',
+      name: 'Skyfall Shot',
+      description: 'Attack (:crossed_swords: x 2.5) selected enemy',
+    },
+  }),
+  'naya r': new Naya({
+    tier: TIER_R,
+    sprite: 'https://i.imgur.com/IGvNDUS.png',
+    title: 'Right Won Target',
+    passive: {
+      name: 'Bullseye',
+      description: 'Upon Tier SR, unlock passive skill',
+    },
+    advisor: {
+      name: 'Bolt Down',
+      description: 'Attack (:crossed_swords: x 0.6) selected enemy, grant :VUL for 2 turns (CD: 7)',
+    },
+    '1B': {
+      name: 'Hot Shot',
+      description: 'Attack (:crossed_swords: x 0.6) selected enemy, grant :VUL for 2 turns',
+    },
+    '2B': {
+      name: 'Blood Shot',
+      description: 'Attack (:crossed_swords: x 1.2) selected enemy. 20% chance for a Critical Strike that does 2x Damage',
+    },
+    '4B': {
+      name: 'Skyfall Shot',
+      description: 'Attack (:crossed_swords: x 2.5) selected enemy. 20% chance for a Critical Strike that does 2x Damage',
     },
   }),
   'naya sr': new Naya({
     tier: TIER_SR,
-    sprite: 'https://i.imgur.com/XBGb3G4.png',
-    title: 'Con Adolescent',
+    sprite: 'https://i.imgur.com/oIENnng.png',
+    title: 'Volley Fall',
     passive: {
-      name: 'Hare Raising',
-      description: 'Upon turn, grant self 1 stack. Upon 4 stacks, increase skill power by 50% for next skill, reset stacks',
+      name: 'Bullseye',
+      description: 'Upon cast Attack, if target has :VUL, increase Critical Strike Chance',
     },
     advisor: {
-      name: 'Funny Bunny',
-      description: 'Allies Attack effects increase by 25%',
+      name: 'Bolt Down',
+      description: 'Attack (:crossed_swords: x 0.6) selected enemy, grant :VUL for 2 turns (CD: 6)',
     },
     '1B': {
-      name: 'Bad Egg',
-      description: 'Attack (:crossed_swords: x 1) random enemy, grant Taunt',
+      name: 'Hot Shot',
+      description: 'Attack (:crossed_swords: x 0.6) selected enemy, grant :VUL for 2 turns',
     },
     '2B': {
-      name: 'The Egg Chick',
-      description: 'Attack (:crossed_swords: x 1) random enemy 2 times',
+      name: 'Blood Shot',
+      description: 'Attack (:crossed_swords: x 1.2) selected enemy. 20% chance to trigger self 4 block skill instead',
     },
     '4B': {
-      name: 'Eggs Over Easy',
-      description: 'Attack (:crossed_swords: x 1) random enemy 4 times',
+      name: 'Skyfall Shot',
+      description: 'Attack (:crossed_swords: x 2.5) selected enemy. 20% chance for a Critical Strike that does 2x Damage',
     },
   }),
   'naya ssr': new Naya({
     tier: TIER_SSR,
-    sprite: 'https://i.imgur.com/oQaE8qI.png',
-    title: 'Original Prankster',
+    sprite: 'https://i.imgur.com/Atr869v.png',
+    title: 'Cascade Of Curses',
     passive: {
-      name: 'Hare Raising',
-      description: 'Upon turn, grant self 1 stack. Upon 3 stacks, increase skill power by 50% for next skill, reset stacks',
+      name: 'Bullseye',
+      description: 'Upon cast Attack, if target has :VUL, increase Critical Strike Chance',
     },
     advisor: {
-      name: 'Funny Bunny',
-      description: 'Allies Attack effects increase by 30%',
+      name: 'Bolt Down',
+      description: 'Attack (:crossed_swords: x 0.6) selected enemy, grant :VUL for 2 turns (CD: 5)',
     },
     '1B': {
-      name: 'Bad Egg',
-      description: 'Attack (:crossed_swords: x 1) random enemy, grant Taunt',
+      name: 'Hot Shot',
+      description: 'Attack (:crossed_swords: x 0.6) selected enemy, grant :VUL for 2 turns',
     },
     '2B': {
-      name: 'The Egg Chick',
-      description: 'Attack (:crossed_swords: x 1) random enemy 2 times',
+      name: 'Blood Shot',
+      description: 'Attack (:crossed_swords: x 1.2) selected enemy. 20% chance to trigger self 4 block skill instead',
     },
     '4B': {
-      name: 'Eggs Over Easy',
-      description: 'Attack (:crossed_swords: x 1) random enemy 4 times with last hit dealing bonus damage (:crossed_swords: x 0.5), grant :EXH',
+      name: 'Skyfall Shot',
+      description: 'Attack (:crossed_swords: x 2.5) selected enemy. 20% chance for a Critical Strike that does 3x Damage',
     },
   }),
   'naya skin-unreleased': new Naya({
     tier: SKILL_BOOK,
-    sprite: 'https://i.imgur.com/Zc0bSfR.png',
+    sprite: 'https://i.imgur.com/uzTM4DB.png',
     title: '?????',
     passive: {
       name: '?????',

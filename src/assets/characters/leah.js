@@ -12,7 +12,7 @@ export default {
     },
     advisor: {
       name: 'Funny Bunny',
-      description: 'Allies Attack effects increase by 20%',
+      description: 'Allies\' Attack effects increase by 20%',
     },
     '1B': {
       name: 'Bad Egg',
@@ -37,7 +37,7 @@ export default {
     },
     advisor: {
       name: 'Funny Bunny',
-      description: 'Allies Attack effects increase by 25%',
+      description: 'Allies\' Attack effects increase by 25%',
     },
     '1B': {
       name: 'Bad Egg',
@@ -62,7 +62,7 @@ export default {
     },
     advisor: {
       name: 'Funny Bunny',
-      description: 'Allies Attack effects increase by 30%',
+      description: 'Allies\' Attack effects increase by 30%',
     },
     '1B': {
       name: 'Bad Egg',
