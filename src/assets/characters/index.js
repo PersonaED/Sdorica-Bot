@@ -31,13 +31,6 @@ import tica from './tica';
 import yamitsuki from './yamitsuki';
 import yanbo from './yanbo';
 
-import dagger from './dagger';
-import kittyeyes from './kittyeyes';
-import charle from './charle';
-import fatima from './fatima';
-import nolva from './nolva';
-import naya from './naya';
-
 export {
   angelia,
   aosta,
@@ -70,11 +63,4 @@ export {
   tica,
   yamitsuki,
   yanbo,
-
-  charle,
-  dagger,
-  fatima,
-  kittyeyes,
-  naya,
-  nolva,
 };
