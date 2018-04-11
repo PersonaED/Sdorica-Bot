@@ -1,4 +1,4 @@
-import { TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import { TIER_R, TIER_SR, TIER_SSR, SKILL_BOOK } from '../constants';
 import Aosta from './model/Aosta';
 
 export default {
@@ -75,6 +75,31 @@ export default {
     '4B': {
       name: 'Win The Flesh',
       description: 'Grant selected ally 3 stacks :ENHANCE and 3 stacks :DMGRED.',
+    },
+  }),
+  'aosta skin': new Aosta({
+    tier: SKILL_BOOK,
+    sprite: 'https://i.imgur.com/VgB1P4P.png',
+    title: 'Insidious Mastery',
+    passive: {
+      name: 'Wishful Thinking',
+      description: 'Upon death of full HP target by ally, grant ally full HP',
+    },
+    advisor: {
+      name: 'Behind Closed Doors',
+      description: 'Grant selecetd ally 2 stacks :ENHANCE, grant selected enemy 2 stacks of :VUL',
+    },
+    '1B': {
+      name: 'Double-Cross',
+      description: 'Heal all enemies to full HP, grant :STUN',
+    },
+    '2B': {
+      name: 'Fair And Square',
+      description: 'Grant ally 2 stacks of :ENHANCE, grant selected enemy 2 stacks of :VUL',
+    },
+    '4B': {
+      name: 'Supreme Interference',
+      description: 'Grant selected ally :ENHANCE for all turns, grant selected enemy :VUL for all turns',
     },
   }),
 };
