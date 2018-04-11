@@ -91,7 +91,7 @@ export default {
     },
     '1B': {
       name: 'Double-Cross',
-      description: 'Heal all enemies to full HP, grant :STUN',
+      description: 'Heal selected enemy to full HP, grant :STUN',
     },
     '2B': {
       name: 'Fair And Square',
