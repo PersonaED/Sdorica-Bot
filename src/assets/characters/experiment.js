@@ -74,32 +74,32 @@ export default {
     },
     '4B': {
       name: 'Mind Your Manners',
-      description: 'Attack (:crossed_swords: x 3) all enemies. Grant self :SHOCKL. If have :SHOCKL, cannot cast skill.',
+      description: 'Attack (:crossed_swords: x 3) all enemies. Grant self :SHOCKL. If have :SHOCKL, cannot cast skill',
     },
   }),
-  'experiment skin-unreleased': new Experiment({
+  'experiment skin': new Experiment({
     tier: SKILL_BOOK,
     sprite: 'https://i.imgur.com/nVEmdL3.png',
-    title: '?????',
+    title: 'Overcharge Module',
     passive: {
-      name: '?????',
-      description: '?????',
+      name: 'Upgrade Ready',
+      description: 'Upon Resurrection, grant self full HP and :ENHANCE for all turns',
     },
     advisor: {
-      name: '?????',
-      description: '?????',
+      name: 'Pressurize',
+      description: 'Upon Resurrection of gold character, grant full HP and :ENHANCE for all turns',
     },
     '1B': {
-      name: '?????',
-      description: '?????',
+      name: 'Transformation',
+      description: 'Grant self :ENHANCE for all turns, lose half of current HP. If have :SHOCKL, remove :SHOCKL',
     },
     '2B': {
-      name: '?????',
-      description: '?????',
+      name: 'Short Circuit',
+      description: 'Attack (:crossed_swords: x 3.5) front row enemy. Grant self :EXH for all turns. If have :SHOCKL, cannot cast skill',
     },
     '4B': {
-      name: '?????',
-      description: '?????',
+      name: 'High Voltage Bellow',
+      description: 'Attack (:crossed_swords: x 3) all enemies. Grant self :SHOCKL. If have :SHOCKL, cannot cast skill',
     },
   }),
 };
