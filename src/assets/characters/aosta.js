@@ -79,7 +79,7 @@ export default {
   }),
   'aosta skin': new Aosta({
     tier: SKILL_BOOK,
-    sprite: 'https://i.imgur.com/VgB1P4P.png',
+    sprite: 'https://i.imgur.com/SgrRnKG.png',
     title: 'Insidious Mastery',
     passive: {
       name: 'Wishful Thinking',
