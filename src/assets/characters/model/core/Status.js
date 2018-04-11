@@ -81,7 +81,7 @@ const Status = [
     code: ':RAVE',
     oldCode: 'RANTRAVE',
     label: 'Rant Rave',
-    description: 'TBD.',
+    description: 'Select random enemy to Attack instead, increase skill power by 50%.',
   },
   {
     code: ':TAUNT',
