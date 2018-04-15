@@ -12,7 +12,7 @@ export default {
     },
     advisor: {
       name: 'Collision Course',
-      description: 'Armor Penetration (:crossed_swords: x 1.87) all enemies and (:crossed_swords: x 0.75) all allies (CD: 12)',
+      description: 'Armor Penetration (:crossed_swords: x 1.875) all enemies and (:crossed_swords: x 0.75) all allies (CD: 12)',
     },
     '1B': {
       name: 'On The Rocks',
@@ -24,7 +24,7 @@ export default {
     },
     '4B': {
       name: 'Rocky Horror Show',
-      description: 'Armor Penetration (:crossed_swords: x 1.87) all enemies and (:crossed_swords: x 0.75) all allies',
+      description: 'Armor Penetration (:crossed_swords: x 1.875) all enemies and (:crossed_swords: x 0.75) all allies',
     },
   }),
   'golemwalt r': new Golemwalt({
@@ -37,7 +37,7 @@ export default {
     },
     advisor: {
       name: 'Collision Course',
-      description: 'Armor Penetration (:crossed_swords: x 1.87) all enemies and (:crossed_swords: x 0.75) all allies (CD: 12)',
+      description: 'Armor Penetration (:crossed_swords: x 1.875) all enemies and (:crossed_swords: x 0.75) all allies (CD: 12)',
     },
     '1B': {
       name: 'On The Rocks',
@@ -49,7 +49,7 @@ export default {
     },
     '4B': {
       name: 'Rocky Horror Show',
-      description: 'Armor Penetration (:crossed_swords: x 1.87) all enemies and (:crossed_swords: x 0.75) all allies',
+      description: 'Armor Penetration (:crossed_swords: x 1.875) all enemies and (:crossed_swords: x 0.75) all allies',
     },
   }),
   'golemwalt sr': new Golemwalt({
@@ -62,7 +62,7 @@ export default {
     },
     advisor: {
       name: 'Collision Course',
-      description: 'Armor Penetration (:crossed_swords: x 1.87) all enemies and (:crossed_swords: x 0.75) all allies (CD: 11)',
+      description: 'Armor Penetration (:crossed_swords: x 1.875) all enemies and (:crossed_swords: x 0.75) all allies (CD: 11)',
     },
     '1B': {
       name: 'On The Rocks',
@@ -74,7 +74,7 @@ export default {
     },
     '4B': {
       name: 'Rocky Horror Show',
-      description: 'Armor Penetration (:crossed_swords: x 1.87) all enemies and (:crossed_swords: x 0.75) all allies',
+      description: 'Armor Penetration (:crossed_swords: x 1.875) all enemies and (:crossed_swords: x 0.75) all allies',
     },
   }),
   'golemwalt ssr': new Golemwalt({
@@ -87,7 +87,7 @@ export default {
     },
     advisor: {
       name: 'Collision Course',
-      description: 'Armor Penetration (:crossed_swords: x 1.87) all enemies and (:crossed_swords: x 0.75) all allies (CD: 10)',
+      description: 'Armor Penetration (:crossed_swords: x 1.875) all enemies and (:crossed_swords: x 0.75) all allies (CD: 10)',
     },
     '1B': {
       name: 'On The Rocks',
