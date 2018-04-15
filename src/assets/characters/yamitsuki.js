@@ -79,7 +79,7 @@ export default {
   }),
   'yamitsuki skin': new Yamitsuki({
     tier: SKILL_BOOK,
-    sprite: 'https://i.imgur.com/PEDEMmr.png',
+    sprite: 'https://i.imgur.com/ZctlAIN.png',
     title: 'Dawnblade Killer',
     passive: {
       name: 'In Broad Daylight',

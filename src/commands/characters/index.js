@@ -46,19 +46,19 @@ export const sendCharacterInfo = (characterInfo, message, infuse) => {
             characterInfo.advisor.description || '-',
         },
         {
-          name: `1B: ${characterInfo['1B'].name}`,
+          name: `1-orb: ${characterInfo['1B'].name}`,
           value: level ?
             characterInfo.getSkillDescription('1B', level) :
             characterInfo['1B'].description || '-',
         },
         {
-          name: `2B: ${characterInfo['2B'].name}`,
+          name: `2-orb: ${characterInfo['2B'].name}`,
           value: level ?
             characterInfo.getSkillDescription('2B', level) :
             characterInfo['2B'].description || '-',
         },
         {
-          name: `4B: ${characterInfo['4B'].name}`,
+          name: `4-orb: ${characterInfo['4B'].name}`,
           value: level ?
             characterInfo.getSkillDescription('4B', level) :
             characterInfo['4B'].description || '-',

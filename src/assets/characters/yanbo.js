@@ -8,7 +8,7 @@ export default {
     title: 'Hidden Figure',
     passive: {
       name: 'Free Spirit',
-      description: 'Upon Tier SR, unlock passive skill',
+      description: 'Upon receive Heal, remove :EXH',
     },
     advisor: {
       name: 'Psyche Relic',

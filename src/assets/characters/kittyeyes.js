@@ -30,7 +30,7 @@ export default {
   'kittyeyes r': new Kittyeyes({
     tier: TIER_R,
     sprite: 'https://i.imgur.com/ex4n4Gu.png',
-    title: 'Stunt Trouble',
+    title: 'Darling Thief',
     passive: {
       name: 'Cheshire Hire',
       description: 'Upon Tier SR, unlock passive skill',
@@ -55,7 +55,7 @@ export default {
   'kittyeyes sr': new Kittyeyes({
     tier: TIER_SR,
     sprite: 'https://i.imgur.com/jfeTw2X.png',
-    title: 'Con Adolescent',
+    title: 'Meadow Mercenary',
     passive: {
       name: 'Cheshire Hire',
       description: 'Upon turn, target enemy with Game Tag to True Damage (:crossed swords: x 0.2), grant :VUL',
@@ -80,7 +80,7 @@ export default {
   'kittyeyes ssr': new Kittyeyes({
     tier: TIER_SSR,
     sprite: 'https://i.imgur.com/hBhGtEH.png',
-    title: 'Original Prankster',
+    title: 'Pasture Prima Donna',
     passive: {
       name: 'Cheshire Hire',
       description: 'Upon turn, target enemy with Game Tag to True Damage (:crossed swords: x 0.2), grant :VUL for 2 turns',
