@@ -51,18 +51,9 @@ const rollMany = (message, summonTable, count, guaranteeSR, isChengkor) => {
   const sender = `**${message.author.username}**`;
   const infuseMany = {};
   const infuseAggregate = [];
-  let rollNumber = count;
+  const rollNumber = count - 1;
 
-  if (isChengkor) {
-    rollNumber -= 1;
-    rwc(millionInfuseSROnly);
-    infuseMany['yami sr'] = 1;
-  } else if (guaranteeSR) {
-    rollNumber -= 1;
-    const infuseResult = rwc(millionInfuseSROnly);
-    infuseMany[infuseResult] = 1;
-  }
-
+  // roll X normal
   for (let i = 0; i < rollNumber; i += 1) {
     const infuseResult = rwc(summonTable);
     if (infuseMany[infuseResult] === undefined) {
@@ -70,6 +61,30 @@ const rollMany = (message, summonTable, count, guaranteeSR, isChengkor) => {
     } else {
       infuseMany[infuseResult] += 1;
     }
+  }
+
+  let rollSR = true;
+  Object.keys(infuseMany).forEach((infuse) => {
+    const res = infuse.split(' ');
+    // if already have sr, roll from normal table and prevent 100% chance for extra SR
+    if (res[1].toLowerCase() === 'sr' && rollSR === true) {
+      rollSR = false;
+      const infuseResult = rwc(summonTable);
+      if (infuseMany[infuseResult] === undefined) {
+        infuseMany[infuseResult] = 1;
+      } else {
+        infuseMany[infuseResult] += 1;
+      }
+    }
+  });
+
+  if (isChengkor) {
+    rwc(millionInfuseSROnly);
+    infuseMany['yami sr'] = 1;
+    // if not have SR, roll from SR table
+  } else if (guaranteeSR && rollSR === true) {
+    const infuseResult = rwc(millionInfuseSROnly);
+    infuseMany[infuseResult] = 1;
   }
 
   Object.keys(infuseMany).forEach((key) => {
