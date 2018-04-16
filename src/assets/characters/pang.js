@@ -19,7 +19,7 @@ export default {
       description: 'Attack (:crossed_swords: x 0.75) front row enemy. Grant self :DMGRED for 2 turns',
     },
     '2B': {
-      name: 'Powerful Punch',
+      name: 'Pawerful Punch',
       description: 'Attack (:crossed_swords: x 1.5) front row enemy',
     },
     '4B': {
@@ -44,7 +44,7 @@ export default {
       description: 'Attack (:crossed_swords: x 0.75) front row enemy. Grant self :DMGRED for 2 turns',
     },
     '2B': {
-      name: 'Powerful Punch',
+      name: 'Pawerful Punch',
       description: 'Attack (:crossed_swords: x 1.5) front row enemy. Grant self 1 stack :WINDU',
     },
     '4B': {
@@ -69,7 +69,7 @@ export default {
       description: 'Attack (:crossed_swords: x 0.75) front row enemy. Grant self :DMGRED for 2 turns',
     },
     '2B': {
-      name: 'Powerful Punch',
+      name: 'Pawerful Punch',
       description: 'Attack (:crossed_swords: x 1.5) front row enemy. Grant self 1 stack :WINDU',
     },
     '4B': {
@@ -94,7 +94,7 @@ export default {
       description: 'Attack (:crossed_swords: x 0.75) front row enemy. Grant self :DMGRED for 2 turns',
     },
     '2B': {
-      name: 'Powerful Punch',
+      name: 'Pawerful Punch',
       description: 'Attack (:crossed_swords: x 1.5) front row enemy. Grant self 1 or 2 stacks :WINDU',
     },
     '4B': {
