@@ -55,12 +55,12 @@ function pieceImages(arr, idx, bg, msg, io) {
         console.log(err);
         pieceImages(arr, idx + 1, bg, msg, io);
       } else {
-        pieceImages(arr, idx + 1, bg.composite(img, (idx % 5) * 255, 365 * parseInt(idx / 5, 10)), msg, io);
+        pieceImages(arr, idx + 1, bg.composite(img, (idx % 5) * 305, 415 * parseInt(idx / 5, 10)), msg, io);
       }
     });
   } else {
     // bg.write('./output.png');
-    bg.resize(700, 425).quality(50).getBuffer(Jimp.MIME_PNG, (error, buffer) => {
+    bg.resize(900, 475).quality(50).getBuffer(Jimp.MIME_PNG, (error, buffer) => {
       io.sendFile(buffer, '', msg);
     });
   }
@@ -121,7 +121,7 @@ const rollMany = (message, summonTable, count, guaranteeSR, isChengkor) => {
   infuseAggregate.sort();
   // message.channel.send(`${sender}, you have infused: \n\n${infuseAggregate.join(', ')}`);
 
-  const bg = new Jimp(1400, 850, 0x00000000, (err, bgx) => {
+  const bg = new Jimp(1800, 950, 0x00000000, (err, bgx) => {
     pieceImages(rollSnaps, 0, bgx, `${sender}, you have infused: \n\n${infuseAggregate.join(', ')}`, message.channel);
   });
 };
