@@ -61,7 +61,11 @@ function pieceImages(arr, idx, bg, msg, io) {
   } else {
     // bg.write('./output.png');
     bg.resize(700, 425).quality(50).getBuffer(Jimp.MIME_PNG, (error, buffer) => {
-      io.sendFile(buffer, '', msg);
+      io.send(`${msg}`, {
+        files: [
+          buffer,
+        ],
+      });
     });
   }
 }
