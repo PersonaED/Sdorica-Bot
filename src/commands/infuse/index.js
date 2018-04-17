@@ -61,7 +61,11 @@ function pieceImages(arr, idx, bg, msg, io, artPack = 'default') {
   } else {
     // bg.write('./output.png');
     bg.resize(900, 475).quality(50).getBuffer(Jimp.MIME_PNG, (error, buffer) => {
-      io.sendFile(buffer, '', msg);
+      io.send(`${msg}`, {
+        files: [
+          buffer,
+        ],
+      });
     });
   }
 }
@@ -130,7 +134,10 @@ export const millionInfuseCommand = (message, splitContent) => {
   if (splitContent[0] === `${standardPrefix}summon` ||
       splitContent[0] === `${standardPrefix}infuse` ||
       splitContent[0] === `${standardPrefix}god-infuse`) {
-    if (splitContent.length > 1 && splitContent[1] === '10') {
+    if (splitContent.length > 1 && splitContent[1] === 'chenggod') {
+      const sender = `**${message.author.username}**`;
+      message.channel.send(`:pray: ${sender} has called for chenggod. He blesses you with Yami luck`, { files: ['https://media.discordapp.net/attachments/427835062306865162/435825797841027085/chenggodsummon.png'] });
+    } else if (splitContent.length > 1 && splitContent[1] === '10') {
       rollMany(message, millionInfuseTable, 10, true, (splitContent[0] === `${standardPrefix}god-infuse`), splitContent[2]);
     } else if (splitContent.length > 1 && splitContent[1] !== '10') {
       message.channel.send('**Infuse commands - ** `infuse` `infuse 10`');
