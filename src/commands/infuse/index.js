@@ -4,6 +4,7 @@ import { characterMap } from '../constants';
 import { sendCharacterInfo } from '../characters';
 import { standardPrefix } from '../../config';
 import { capitalizeFirstLetter } from '../helper';
+import Jimp from 'jimp';
 
 // table for million infuse
 const millionInfuseTable = [];
@@ -47,15 +48,36 @@ const rollOne = (message, summonTable) => {
   }
 };
 
+function pieceImages(arr, idx, bg, msg, io) {
+  if (idx < 10) {
+    Jimp.read(`./art_pack/default/${arr[idx]}.png`, (err, img) => {
+      if (err) {
+        console.log(err);
+        pieceImages(arr, idx + 1, bg, msg, io);
+      } else {
+        pieceImages(arr, idx + 1, bg.composite(img, (idx % 5) * 255, 365 * parseInt(idx / 5, 10)), msg, io);
+      }
+    });
+  } else {
+    // bg.write('./output.png');
+    bg.resize(700, 425).quality(50).getBuffer(Jimp.MIME_PNG, (error, buffer) => {
+      io.sendFile(buffer, '', msg);
+    });
+  }
+}
+
 const rollMany = (message, summonTable, count, guaranteeSR, isChengkor) => {
   const sender = `**${message.author.username}**`;
   const infuseMany = {};
   const infuseAggregate = [];
   const rollNumber = count - 1;
 
+  let rollSnaps = [];
+
   // roll X normal
   for (let i = 0; i < rollNumber; i += 1) {
     const infuseResult = rwc(summonTable);
+    rollSnaps.push(infuseResult.replace(' ', '_'));
     if (infuseMany[infuseResult] === undefined) {
       infuseMany[infuseResult] = 1;
     } else {
@@ -70,6 +92,7 @@ const rollMany = (message, summonTable, count, guaranteeSR, isChengkor) => {
     if (res[1].toLowerCase() === 'sr' && rollSR === true) {
       rollSR = false;
       const infuseResult = rwc(summonTable);
+      rollSnaps.push(infuseResult.replace(' ', '_'));
       if (infuseMany[infuseResult] === undefined) {
         infuseMany[infuseResult] = 1;
       } else {
@@ -81,10 +104,12 @@ const rollMany = (message, summonTable, count, guaranteeSR, isChengkor) => {
   if (isChengkor) {
     rwc(millionInfuseSROnly);
     infuseMany['yami sr'] = 1;
+    rollSnaps.push('yami_sr');
     // if not have SR, roll from SR table
   } else if (guaranteeSR && rollSR === true) {
     const infuseResult = rwc(millionInfuseSROnly);
     infuseMany[infuseResult] = 1;
+    rollSnaps.push(infuseResult.replace(' ', '_'));
   }
 
   Object.keys(infuseMany).forEach((key) => {
@@ -94,7 +119,11 @@ const rollMany = (message, summonTable, count, guaranteeSR, isChengkor) => {
     infuseAggregate.push(`${name} ${tier} (x${infuseMany[key]})`);
   });
   infuseAggregate.sort();
-  message.channel.send(`${sender}, you have infused: \n\n${infuseAggregate.join(', ')}`);
+  // message.channel.send(`${sender}, you have infused: \n\n${infuseAggregate.join(', ')}`);
+
+  const bg = new Jimp(1400, 850, 0x00000000, (err, bgx) => {
+    pieceImages(rollSnaps, 0, bgx, `${sender}, you have infused: \n\n${infuseAggregate.join(', ')}`, message.channel);
+  });
 };
 
 export const millionInfuseCommand = (message, splitContent) => {
