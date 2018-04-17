@@ -48,14 +48,14 @@ const rollOne = (message, summonTable) => {
   }
 };
 
-function pieceImages(arr, idx, bg, msg, io) {
+function pieceImages(arr, idx, bg, msg, io, artPack = 'default') {
   if (idx < 10) {
-    Jimp.read(`./art_pack/default/${arr[idx]}.png`, (err, img) => {
+    Jimp.read(`./art_pack/${artPack}/${arr[idx]}.png`, (err, img) => {
       if (err) {
         console.log(err);
-        pieceImages(arr, idx + 1, bg, msg, io);
+        pieceImages(arr, idx + 1, bg, msg, io, artPack);
       } else {
-        pieceImages(arr, idx + 1, bg.composite(img, (idx % 5) * 305, 415 * parseInt(idx / 5, 10)), msg, io);
+        pieceImages(arr, idx + 1, bg.composite(img, (idx % 5) * 305, 415 * parseInt(idx / 5, 10)), msg, io, artPack);
       }
     });
   } else {
@@ -66,7 +66,7 @@ function pieceImages(arr, idx, bg, msg, io) {
   }
 }
 
-const rollMany = (message, summonTable, count, guaranteeSR, isChengkor) => {
+const rollMany = (message, summonTable, count, guaranteeSR, isChengkor, artPack) => {
   const sender = `**${message.author.username}**`;
   const infuseMany = {};
   const infuseAggregate = [];
@@ -103,8 +103,8 @@ const rollMany = (message, summonTable, count, guaranteeSR, isChengkor) => {
 
   if (isChengkor) {
     rwc(millionInfuseSROnly);
-    infuseMany['yami sr'] = 1;
-    rollSnaps.push('yami_sr');
+    infuseMany['yamitsuki sr'] = 1;
+    rollSnaps.push('yamitsuki_sr');
     // if not have SR, roll from SR table
   } else if (guaranteeSR && rollSR === true) {
     const infuseResult = rwc(millionInfuseSROnly);
@@ -122,7 +122,7 @@ const rollMany = (message, summonTable, count, guaranteeSR, isChengkor) => {
   // message.channel.send(`${sender}, you have infused: \n\n${infuseAggregate.join(', ')}`);
 
   const bg = new Jimp(1800, 950, 0x00000000, (err, bgx) => {
-    pieceImages(rollSnaps, 0, bgx, `${sender}, you have infused: \n\n${infuseAggregate.join(', ')}`, message.channel);
+    pieceImages(rollSnaps, 0, bgx, `${sender}, you have infused: \n\n${infuseAggregate.join(', ')}`, message.channel, artPack);
   });
 };
 
@@ -131,7 +131,7 @@ export const millionInfuseCommand = (message, splitContent) => {
       splitContent[0] === `${standardPrefix}infuse` ||
       splitContent[0] === `${standardPrefix}god-infuse`) {
     if (splitContent.length > 1 && splitContent[1] === '10') {
-      rollMany(message, millionInfuseTable, 10, true, (splitContent[0] === `${standardPrefix}god-infuse`));
+      rollMany(message, millionInfuseTable, 10, true, (splitContent[0] === `${standardPrefix}god-infuse`), splitContent[2]);
     } else if (splitContent.length > 1 && splitContent[1] !== '10') {
       message.channel.send('**Infuse commands - ** `infuse` `infuse 10`');
     } else {
