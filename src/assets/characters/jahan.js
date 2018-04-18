@@ -12,7 +12,7 @@ export default {
     },
     advisor: {
       name: 'Trick Is Treat',
-      description: 'Upon incoming damage skill against ally, if ally have Taunt, 20% chance to trigger target 4 block skill',
+      description: 'Upon incoming damage skill against ally, if ally have Taunt, 20% chance to trigger target 4-orb skill',
     },
     '1B': {
       name: 'Dead Giveaway',
@@ -37,7 +37,7 @@ export default {
     },
     advisor: {
       name: 'Trick Is Treat',
-      description: 'Upon incoming damage skill against ally, if ally have Taunt, 25% chance to trigger target 4 block skill',
+      description: 'Upon incoming damage skill against ally, if ally have Taunt, 25% chance to trigger target 4-orb skill',
     },
     '1B': {
       name: 'Dead Giveaway',
@@ -62,7 +62,7 @@ export default {
     },
     advisor: {
       name: 'Trick Is Treat',
-      description: 'Upon incoming damage skill against ally, if ally have Taunt, 30% chance to trigger target 4 block skill',
+      description: 'Upon incoming damage skill against ally, if ally have Taunt, 30% chance to trigger target 4-orb skill',
     },
     '1B': {
       name: 'Dead Giveaway',
@@ -83,7 +83,7 @@ export default {
     title: 'Shiny Derpy Pinky',
     passive: {
       name: 'Borrowed Steel',
-      description: 'Upon incoming damage skill, if have Taunt, trigger random ally 1 block skill',
+      description: 'Upon incoming damage skill, if have Taunt, trigger random ally 1-orb skill',
     },
     advisor: {
       name: 'Tactical Taunting',

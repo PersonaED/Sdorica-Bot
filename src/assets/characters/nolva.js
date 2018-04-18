@@ -12,7 +12,7 @@ export default {
     },
     advisor: {
       name: 'Incur Mission',
-      description: 'Clear 4 selected black blocks. (CD: 7)',
+      description: 'Clear 4 selected black orbs. (CD: 7)',
     },
     '1B': {
       name: 'Sob Scene',
@@ -37,7 +37,7 @@ export default {
     },
     advisor: {
       name: 'Incur Mission',
-      description: 'Clear 4 selected black blocks. (CD: 6)',
+      description: 'Clear 4 selected black orbs. (CD: 6)',
     },
     '1B': {
       name: 'Sob Scene',
@@ -45,7 +45,7 @@ export default {
     },
     '2B': {
       name: 'Love Scene Awry',
-      description: 'True Damage (:crossed_swords: x 1.5) front row enemy. Clear 1 black block',
+      description: 'True Damage (:crossed_swords: x 1.5) front row enemy. Clear 1 black orb',
     },
     '4B': {
       name: 'Remake A Scene',
@@ -62,7 +62,7 @@ export default {
     },
     advisor: {
       name: 'Incur Mission',
-      description: 'Clear 4 selected black blocks. (CD: 5)',
+      description: 'Clear 4 selected black orbs. (CD: 5)',
     },
     '1B': {
       name: 'Sob Scene',
@@ -70,7 +70,7 @@ export default {
     },
     '2B': {
       name: 'Love Scene Awry',
-      description: 'True Damage (:crossed_swords: x 1.5) front row enemy. Clear 1 black block',
+      description: 'True Damage (:crossed_swords: x 1.5) front row enemy. Clear 1 black orb',
     },
     '4B': {
       name: 'Remake A Scene',

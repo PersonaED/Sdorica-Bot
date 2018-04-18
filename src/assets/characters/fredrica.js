@@ -24,7 +24,7 @@ export default {
     },
     '4B': {
       name: 'Tears Of Joy',
-      description: 'Heal (:crossed_swords: x 1.44) all allies. Clear all white blocks.',
+      description: 'Heal (:crossed_swords: x 1.44) all allies. Clear all white orbs.',
     },
   }),
   'fredrica sr': new Fredrica({
@@ -49,7 +49,7 @@ export default {
     },
     '4B': {
       name: 'Tears Of Joy',
-      description: 'Heal (:crossed_swords: x 1.44) all allies. Clear all white blocks.',
+      description: 'Heal (:crossed_swords: x 1.44) all allies. Clear all white orbs.',
     },
   }),
   'fredrica ssr': new Fredrica({
@@ -74,7 +74,7 @@ export default {
     },
     '4B': {
       name: 'Tears Of Joy',
-      description: 'Heal (:crossed_swords: x 1.44) all allies. Clear all white blocks.',
+      description: 'Heal (:crossed_swords: x 1.44) all allies. Clear all white orbs.',
     },
   }),
 };

@@ -25,7 +25,7 @@ export default {
     },
     '4B': {
       name: 'Steel Shield Steal',
-      description: 'Grant self (:crossed_swords: x 3.6) Armor. Trigger ally 1 block skill',
+      description: 'Grant self (:crossed_swords: x 3.6) Armor. Trigger ally 1-orb skill',
     },
   }),
   'dylan r': new Dylan({
@@ -34,7 +34,7 @@ export default {
     title: 'Glad Die Later',
     passive: {
       name: 'Iron Man',
-      description: 'Upon full Armor, trigger ally 1 block skill, grant :VUL',
+      description: 'Upon full Armor, trigger ally 1-orb skill, grant :VUL',
     },
     advisor: {
       name: 'For Justice',
@@ -50,7 +50,7 @@ export default {
     },
     '4B': {
       name: 'Steel Shield Steal',
-      description: 'Grant self (:crossed_swords: x 3.6) Armor. Trigger ally 1 block skill',
+      description: 'Grant self (:crossed_swords: x 3.6) Armor. Trigger ally 1-orb skill',
     },
   }),
   'dylan sr': new Dylan({
@@ -59,7 +59,7 @@ export default {
     title: 'Renegade Repeller',
     passive: {
       name: 'Iron Man',
-      description: 'Upon full Armor, trigger ally 1 block skill',
+      description: 'Upon full Armor, trigger ally 1-orb skill',
     },
     advisor: {
       name: 'For Justice',
@@ -75,7 +75,7 @@ export default {
     },
     '4B': {
       name: 'Steel Shield Steal',
-      description: 'Grant self (:crossed_swords: x 3.6) Armor. Trigger ally 1 block skill',
+      description: 'Grant self (:crossed_swords: x 3.6) Armor. Trigger ally 1-orb skill',
     },
   }),
   'dylan ssr': new Dylan({
@@ -84,7 +84,7 @@ export default {
     title: 'Warden of War',
     passive: {
       name: 'Iron Man',
-      description: "Upon full Armor, trigger all allies' 1 block skill",
+      description: "Upon full Armor, trigger all allies' 1-orb skill",
     },
     advisor: {
       name: 'For Justice',
@@ -100,7 +100,7 @@ export default {
     },
     '4B': {
       name: 'Steel Shield Steal',
-      description: 'Grant self (:crossed_swords: x 3.6) Armor. Trigger all ally 1 block skill',
+      description: 'Grant self (:crossed_swords: x 3.6) Armor. Trigger all ally 1-orb skill',
     },
   }),
   'dylan sp': new DylanSP({
@@ -109,7 +109,7 @@ export default {
     title: 'Refined Blaze',
     passive: {
       name: 'You Shall Not Pass',
-      description: 'Has Taunt for all turns. Upon receive Heal, trigger 1 block skill',
+      description: 'Has Taunt for all turns. Upon receive Heal, trigger 1-orb skill',
     },
     advisor: {
       name: 'Indestructible Arms',
@@ -142,7 +142,7 @@ export default {
     },
     '1B': {
       name: 'Cover Command',
-      description: 'Grant self (:crossed_swords: x 1.2) Armor, trigger black character 1 block skill',
+      description: 'Grant self (:crossed_swords: x 1.2) Armor, trigger black character 1-orb skill',
     },
     '2B': {
       name: 'Aegis Smash',
@@ -150,7 +150,7 @@ export default {
     },
     '4B': {
       name: 'Charge Assault',
-      description: 'Grant self (:crossed_swords: x 2.4) Armor, trigger black character 4 block skill',
+      description: 'Grant self (:crossed_swords: x 2.4) Armor, trigger black character 4-orb skill',
     },
   }),
 };

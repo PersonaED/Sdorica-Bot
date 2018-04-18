@@ -12,7 +12,7 @@ export default {
     },
     advisor: {
       name: 'Psyche Relic',
-      description: "Increase skill power of ally's 4 block skill by 20%",
+      description: "Increase skill power of ally's 4-orb skill by 20%",
     },
     '1B': {
       name: 'Live On Air',
@@ -37,7 +37,7 @@ export default {
     },
     advisor: {
       name: 'Psyche Relic',
-      description: "Increase skill power of ally's 4 block skill by 25%",
+      description: "Increase skill power of ally's 4-orb skill by 25%",
     },
     '1B': {
       name: 'Live On Air',
@@ -62,7 +62,7 @@ export default {
     },
     advisor: {
       name: 'Psyche Relic',
-      description: "Increase skill power of ally's 4 block skill by 30%",
+      description: "Increase skill power of ally's 4-orb skill by 30%",
     },
     '1B': {
       name: 'Live On Air',
@@ -83,11 +83,11 @@ export default {
     title: 'Enlightened One',
     passive: {
       name: 'Unlimited Power',
-      description: 'Upon turn, if have 5 stacks High Qi. Attack (:crossed_swords: x 1) all enemies. Upon cast 1/2/4 block skill, reset High Qi stacks',
+      description: 'Upon turn, if have 5 stacks High Qi. Attack (:crossed_swords: x 1) all enemies. Upon cast 1/2/4-orb skill, reset High Qi stacks',
     },
     advisor: {
       name: 'Spirit Enhancement',
-      description: 'Upon Turn if front row ally has 3 stacks of any buff, trigger 2 block skill',
+      description: 'Upon Turn if front row ally has 3 stacks of any buff, trigger 2-orb skill',
     },
     '1B': {
       name: 'Feel The Force',

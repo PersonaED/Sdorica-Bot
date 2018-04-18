@@ -17,7 +17,7 @@ export default {
     },
     '1B': {
       name: 'Wing and Prayer',
-      description: 'Grant front row ally (:crossed_swords: x 0.6) Armor, trigger 1 block skill',
+      description: 'Grant front row ally (:crossed_swords: x 0.6) Armor, trigger 1-orb skill',
     },
     '2B': {
       name: 'Let Us Pray',
@@ -42,7 +42,7 @@ export default {
     },
     '1B': {
       name: 'Wing and Prayer',
-      description: 'Grant front row ally (:crossed_swords: x 0.6) Armor, trigger 1 block skill',
+      description: 'Grant front row ally (:crossed_swords: x 0.6) Armor, trigger 1-orb skill',
     },
     '2B': {
       name: 'Let Us Pray',
@@ -50,7 +50,7 @@ export default {
     },
     '4B': {
       name: 'Prayer Player',
-      description: 'Heal (:crossed_swords: x 1.8) front row ally, grant :EXH, trigger 2 block skill',
+      description: 'Heal (:crossed_swords: x 1.8) front row ally, grant :EXH, trigger 2-orb skill',
     },
   }),
   'angelia sr': new Angelia({
@@ -67,7 +67,7 @@ export default {
     },
     '1B': {
       name: 'Wing and Prayer',
-      description: 'Grant front row ally (:crossed_swords: x 0.6) Armor, trigger 1 block skill',
+      description: 'Grant front row ally (:crossed_swords: x 0.6) Armor, trigger 1-orb skill',
     },
     '2B': {
       name: 'Let Us Pray',
@@ -75,7 +75,7 @@ export default {
     },
     '4B': {
       name: 'Prayer Player',
-      description: 'Heal (:crossed_swords: x 1.8) front row ally, grant :EXH, trigger 2 block skill',
+      description: 'Heal (:crossed_swords: x 1.8) front row ally, grant :EXH, trigger 2-orb skill',
     },
   }),
   'angelia ssr': new Angelia({
@@ -92,7 +92,7 @@ export default {
     },
     '1B': {
       name: 'Wing and Prayer',
-      description: 'Grant front row ally (:crossed_swords: x 0.6) Armor, trigger 1 block skill',
+      description: 'Grant front row ally (:crossed_swords: x 0.6) Armor, trigger 1-orb skill',
     },
     '2B': {
       name: 'Let Us Pray',
@@ -100,7 +100,7 @@ export default {
     },
     '4B': {
       name: 'Prayer Player',
-      description: 'Heal (:crossed_swords: x 1.8) front row ally, grant :EXH, trigger 4 block skill',
+      description: 'Heal (:crossed_swords: x 1.8) front row ally, grant :EXH, trigger 4-orb skill',
     },
   }),
   'angelia skin': new Angelia({
@@ -109,15 +109,15 @@ export default {
     title: 'Daybreak Darling',
     passive: {
       name: "Empress' Order",
-      description: 'Upon cast Armor, if target has :EXH/:VUL:VUL, trigger target 1 block skill',
+      description: 'Upon cast Armor, if target has :EXH/:VUL:VUL, trigger target 1-orb skill',
     },
     advisor: {
       name: 'For The Kingdom',
-      description: 'Trigger front row ally 1 block skill. (CD: 3)',
+      description: 'Trigger front row ally 1-orb skill. (CD: 3)',
     },
     '1B': {
       name: 'Stand Tall',
-      description: 'Grant front row ally (:crossed_swords: x 0.6) Armor, trigger 1 block skill',
+      description: 'Grant front row ally (:crossed_swords: x 0.6) Armor, trigger 1-orb skill',
     },
     '2B': {
       name: 'Glowing Prayer',
@@ -125,7 +125,7 @@ export default {
     },
     '4B': {
       name: 'Luminious Radiance',
-      description: 'Heal (:crossed_swords: x 1.8) front row ally, grant :EXH, trigger 2 block skill 2 times',
+      description: 'Heal (:crossed_swords: x 1.8) front row ally, grant :EXH, trigger 2-orb skill 2 times',
     },
   }),
   'angelia sp': new AngeliaSP({
@@ -146,11 +146,11 @@ export default {
     },
     '2B': {
       name: 'Assault Order',
-      description: 'Trigger 2 block skill of all allies with Armor',
+      description: 'Trigger 2-orb skill of all allies with Armor',
     },
     '4B': {
       name: 'Annihilation Order',
-      description: 'Trigger 4 block skill of all allies with :TANKU',
+      description: 'Trigger 4-orb skill of all allies with :TANKU',
     },
   }),
 };

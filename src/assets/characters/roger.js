@@ -12,7 +12,7 @@ export default {
     },
     advisor: {
       name: 'Empower Ranger',
-      description: 'If ally has less than 50% HP, increase skill power of 1 block skill by 50%',
+      description: 'If ally has less than 50% HP, increase skill power of 1-orb skill by 50%',
     },
     '1B': {
       name: 'Cut and Waste',
@@ -37,7 +37,7 @@ export default {
     },
     advisor: {
       name: 'Empower Ranger',
-      description: 'If ally has less than 50% HP, increase skill power of 1 block skill by 50%',
+      description: 'If ally has less than 50% HP, increase skill power of 1-orb skill by 50%',
     },
     '1B': {
       name: 'Cut and Waste',
@@ -58,11 +58,11 @@ export default {
     title: 'Plunder Plus',
     passive: {
       name: 'Roar Reversal',
-      description: 'Upon less than 80/50% HP, increase skill power of 1/2 block skill by 50%',
+      description: 'Upon less than 80/50% HP, increase skill power of 1/2-orb skill by 50%',
     },
     advisor: {
       name: 'Empower Ranger',
-      description: 'If ally has less than 50% HP, increase skill power of 1 block skill by 50%',
+      description: 'If ally has less than 50% HP, increase skill power of 1-orb skill by 50%',
     },
     '1B': {
       name: 'Cut and Waste',
@@ -83,11 +83,11 @@ export default {
     title: 'Armed Berserker',
     passive: {
       name: 'Roar Reversal',
-      description: 'Upon less than 80/50/20% HP, increase skill power of 1/2/4 block skill by 50%',
+      description: 'Upon less than 80/50/20% HP, increase skill power of 1/2/4-orb skill by 50%',
     },
     advisor: {
       name: 'Empower Ranger',
-      description: 'If ally has less than 80% HP, increase skill power of 1 block skill by 50%',
+      description: 'If ally has less than 80% HP, increase skill power of 1-orb skill by 50%',
     },
     '1B': {
       name: 'Cut and Waste',

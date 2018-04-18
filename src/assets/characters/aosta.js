@@ -12,11 +12,11 @@ export default {
     },
     advisor: {
       name: 'Diss Engaged',
-      description: 'Clear 2 selected White blocks. (CD: 7)',
+      description: 'Clear 2 selected White orbs. (CD: 7)',
     },
     '1B': {
       name: 'Fresh Flesh',
-      description: 'Heal (:crossed_swords: x 1.08) selected ally. Clear 1 White block.',
+      description: 'Heal (:crossed_swords: x 1.08) selected ally. Clear 1 White orb.',
     },
     '2B': {
       name: 'Flesh Hook Up',
@@ -37,15 +37,15 @@ export default {
     },
     advisor: {
       name: 'Diss Engaged',
-      description: 'Clear 2 selected White blocks. (CD: 6)',
+      description: 'Clear 2 selected White orbs. (CD: 6)',
     },
     '1B': {
       name: 'Fresh Flesh',
-      description: 'Heal (:crossed_swords: x 1.08) selected ally. Clear 1 White block.',
+      description: 'Heal (:crossed_swords: x 1.08) selected ally. Clear 1 White orb.',
     },
     '2B': {
       name: 'Flesh Hook Up',
-      description: 'Grant selected ally 2 stacks :ENHANCE and 2 stacks :DMGRED. Clear 1 White block.',
+      description: 'Grant selected ally 2 stacks :ENHANCE and 2 stacks :DMGRED. Clear 1 White orb.',
     },
     '4B': {
       name: 'Win The Flesh',
@@ -62,15 +62,15 @@ export default {
     },
     advisor: {
       name: 'Diss Engaged',
-      description: 'Clear 2 selected White blocks. (CD: 5)',
+      description: 'Clear 2 selected White orbs. (CD: 5)',
     },
     '1B': {
       name: 'Fresh Flesh',
-      description: 'Heal (:crossed_swords: x 1.35) selected ally. Clear 2 White blocks.',
+      description: 'Heal (:crossed_swords: x 1.35) selected ally. Clear 2 White orbs.',
     },
     '2B': {
       name: 'Flesh Hook Up',
-      description: 'Grant selected ally 2 stacks :ENHANCE and 2 stacks :DMGRED. Clear 1 White block.',
+      description: 'Grant selected ally 2 stacks :ENHANCE and 2 stacks :DMGRED. Clear 1 White orb.',
     },
     '4B': {
       name: 'Win The Flesh',

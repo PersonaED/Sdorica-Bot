@@ -12,7 +12,7 @@ export default {
     },
     advisor: {
       name: 'Myth Buster Move',
-      description: '2 blocks become black. (CD: 7)',
+      description: '2 orbs become black. (CD: 7)',
     },
     '1B': {
       name: 'Spell Blinder',
@@ -20,7 +20,7 @@ export default {
     },
     '2B': {
       name: 'Spelling Be Done',
-      description: 'Attack (:crossed_swords: x 1) all enemies. Clear 2 blocks',
+      description: 'Attack (:crossed_swords: x 1) all enemies. Clear 2 orbs',
     },
     '4B': {
       name: 'Spellcheck Mate',
@@ -33,19 +33,19 @@ export default {
     title: 'Passionate Scholar',
     passive: {
       name: 'Celeb And Flow',
-      description: 'Upon cast 2 block skill simultaneously, trigger 1 block skill 1 time',
+      description: 'Upon cast 2-orb skill simultaneously, trigger 1-orb skill 1 time',
     },
     advisor: {
       name: 'Myth Buster Move',
-      description: '2 blocks become black. (CD: 6)',
+      description: '2 orbs become black. (CD: 6)',
     },
     '1B': {
       name: 'Spell Blinder',
-      description: 'Attack (:crossed_swords: x 1) selected enemy. Clear 1 block',
+      description: 'Attack (:crossed_swords: x 1) selected enemy. Clear 1 orb',
     },
     '2B': {
       name: 'Spelling Be Done',
-      description: 'Attack (:crossed_swords: x 1) all enemies. Clear 2 blocks',
+      description: 'Attack (:crossed_swords: x 1) all enemies. Clear 2 orbs',
     },
     '4B': {
       name: 'Spellcheck Mate',
@@ -58,23 +58,23 @@ export default {
     title: 'Sage The Alumni',
     passive: {
       name: 'Celeb And Flow',
-      description: 'upon cast 2 block skill continuously, trigger 1 block skill 2 times',
+      description: 'upon cast 2-orb skill continuously, trigger 1-orb skill 2 times',
     },
     advisor: {
       name: 'Myth Buster Move',
-      description: '2 blocks become black. (CD: 5)',
+      description: '2 orbs become black. (CD: 5)',
     },
     '1B': {
       name: 'Spell Blinder',
-      description: 'Attack (:crossed_swords: x 1) selected enemy. Clear 1 block',
+      description: 'Attack (:crossed_swords: x 1) selected enemy. Clear 1 orb',
     },
     '2B': {
       name: 'Spelling Be Done',
-      description: 'Attack (:crossed_swords: x 1) all enemies. Clear 2 blocks',
+      description: 'Attack (:crossed_swords: x 1) all enemies. Clear 2 orbs',
     },
     '4B': {
       name: 'Spellcheck Mate',
-      description: 'Attack (:crossed_swords: x 2) all enemies. Clear 3 blocks',
+      description: 'Attack (:crossed_swords: x 2) all enemies. Clear 3 orbs',
     },
   }),
   'charle skin-unreleased': new Charle({

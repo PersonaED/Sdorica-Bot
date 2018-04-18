@@ -70,7 +70,7 @@ export default {
     },
     '2B': {
       name: 'Blood Shot',
-      description: 'Attack (:crossed_swords: x 1.2) selected enemy. 20% chance to trigger self 4 block skill instead',
+      description: 'Attack (:crossed_swords: x 1.2) selected enemy. 20% chance to trigger self 4-orb skill instead',
     },
     '4B': {
       name: 'Skyfall Shot',
@@ -95,7 +95,7 @@ export default {
     },
     '2B': {
       name: 'Blood Shot',
-      description: 'Attack (:crossed_swords: x 1.2) selected enemy. 20% chance to trigger self 4 block skill instead',
+      description: 'Attack (:crossed_swords: x 1.2) selected enemy. 20% chance to trigger self 4-orb skill instead',
     },
     '4B': {
       name: 'Skyfall Shot',

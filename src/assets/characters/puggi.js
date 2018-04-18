@@ -124,7 +124,7 @@ export default {
     },
     '4B': {
       name: 'All Hail Puggi!',
-      description: 'Trigger all allies 4 block skill. Reset all anemies CD',
+      description: 'Trigger all allies 4-orb skill. Reset all anemies CD',
     },
   }),
 };

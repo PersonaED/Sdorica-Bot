@@ -33,7 +33,7 @@ export default {
     title: 'Lumberjack the Ripper',
     passive: {
       name: 'Run After Stun',
-      description: 'Upon 0 Armor, trigger 1 block skill 1 time.',
+      description: 'Upon 0 Armor, trigger 1-orb skill 1 time.',
     },
     advisor: {
       name: 'Battle Rattle',
@@ -58,7 +58,7 @@ export default {
     title: 'Jungle Juggernaut',
     passive: {
       name: 'Run After Stun',
-      description: 'Upon 0 Armor, trigger 1 block skill 2 times.',
+      description: 'Upon 0 Armor, trigger 1-orb skill 2 times.',
     },
     advisor: {
       name: 'Battle Rattle',
@@ -83,11 +83,11 @@ export default {
     title: 'Lord of the Caves',
     passive: {
       name: 'Shattered Armor',
-      description: 'Upon 0 Armor, trigger 2 block skill 1 time',
+      description: 'Upon 0 Armor, trigger 2-orb skill 1 time',
     },
     advisor: {
       name: 'Declaration of War',
-      description: 'Upon 0 Armor of front row ally, trigger ally 2 block skill',
+      description: 'Upon 0 Armor of front row ally, trigger ally 2-orb skill',
     },
     '1B': {
       name: 'Timber Toss',

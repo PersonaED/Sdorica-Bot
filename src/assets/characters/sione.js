@@ -96,7 +96,7 @@ export default {
     },
     '2B': {
       name: 'Flying Swallow Slash',
-      description: 'True Damage (:crossed_swords: x 1.25) enemy with highest HP. If target has :VUL, trigger self 1 block skill',
+      description: 'True Damage (:crossed_swords: x 1.25) enemy with highest HP. If target has :VUL, trigger self 1-orb skill',
     },
     '4B': {
       name: 'Dancing Flames',

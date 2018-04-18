@@ -12,7 +12,7 @@ export default {
     },
     advisor: {
       name: 'Convert Alert',
-      description: '2 blocks become Gold (CD: 7)',
+      description: '2 orbs become Gold (CD: 7)',
     },
     '1B': {
       name: 'Manners Maketh Man',
@@ -37,7 +37,7 @@ export default {
     },
     advisor: {
       name: 'Convert Alert',
-      description: '2 blocks become Gold (CD: 6)',
+      description: '2 orbs become Gold (CD: 6)',
     },
     '1B': {
       name: 'Manners Maketh Man',
@@ -45,7 +45,7 @@ export default {
     },
     '2B': {
       name: 'Manner Of Whack',
-      description: 'Attack (:crossed_swords: x 2.5) front row enemy. Clear 1 block. If have :SHOCKL, cannot cast skill',
+      description: 'Attack (:crossed_swords: x 2.5) front row enemy. Clear 1 orb. If have :SHOCKL, cannot cast skill',
     },
     '4B': {
       name: 'Mind Your Manners',
@@ -62,7 +62,7 @@ export default {
     },
     advisor: {
       name: 'Convert Alert',
-      description: '2 blocks become Gold (CD: 5)',
+      description: '2 orbs become Gold (CD: 5)',
     },
     '1B': {
       name: 'Manners Maketh Man',
@@ -70,7 +70,7 @@ export default {
     },
     '2B': {
       name: 'Manner Of Whack',
-      description: 'Attack (:crossed_swords: x 3.5) front row enemy. Grant self :SHOCKL. Clear 1 block. If have :SHOCKL, cannot cast skill',
+      description: 'Attack (:crossed_swords: x 3.5) front row enemy. Grant self :SHOCKL. Clear 1 orb. If have :SHOCKL, cannot cast skill',
     },
     '4B': {
       name: 'Mind Your Manners',
