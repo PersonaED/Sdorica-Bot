@@ -6,6 +6,13 @@ import { standardPrefix } from '../../config';
 import { capitalizeFirstLetter } from '../helper';
 import Jimp from 'jimp';
 
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
 // table for million infuse
 const millionInfuseTable = [];
 Object.keys(summon.million).forEach((tier) => {
@@ -76,7 +83,7 @@ const rollMany = (message, summonTable, count, guaranteeSR, isChengkor, artPack)
   const infuseAggregate = [];
   const rollNumber = count - 1;
 
-  let rollSnaps = [];
+  const rollSnaps = [];
 
   // roll X normal
   for (let i = 0; i < rollNumber; i += 1) {
@@ -116,14 +123,14 @@ const rollMany = (message, summonTable, count, guaranteeSR, isChengkor, artPack)
     rollSnaps.push(infuseResult.replace(' ', '_'));
   }
 
-  Object.keys(infuseMany).forEach((key) => {
-    const keySplit = key.split(' ');
+  shuffleArray(rollSnaps);
+
+  rollSnaps.forEach((key) => {
+    const keySplit = key.split('_');
     const name = capitalizeFirstLetter(keySplit[0]);
     const tier = keySplit[1].toUpperCase();
-    infuseAggregate.push(`${name} ${tier} (x${infuseMany[key]})`);
+    infuseAggregate.push(`${name} ${tier}`);
   });
-  infuseAggregate.sort();
-  // message.channel.send(`${sender}, you have infused: \n\n${infuseAggregate.join(', ')}`);
 
   const bg = new Jimp(1800, 950, 0x00000000, (err, bgx) => {
     pieceImages(rollSnaps, 0, bgx, `${sender}, you have infused: \n\n${infuseAggregate.join(', ')}`, message.channel, artPack);
@@ -140,7 +147,7 @@ export const millionInfuseCommand = (message, splitContent) => {
     } else if (splitContent.length > 1 && splitContent[1] === '10') {
       rollMany(message, millionInfuseTable, 10, true, (splitContent[0] === `${standardPrefix}god-infuse`), splitContent[2]);
     } else if (splitContent.length > 1 && splitContent[1] !== '10') {
-      message.channel.send('**Infuse commands - ** `infuse` `infuse 10`');
+      message.channel.send('**Infuse commands - ** `infuse` `infuse 10` `infuse chenggod`');
     } else {
       rollOne(message, millionInfuseTable);
     }
