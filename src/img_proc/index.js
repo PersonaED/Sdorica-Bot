@@ -4,11 +4,11 @@ const outputPath = './art_pack/output/';
 const charlist = [
   'angelia', 'aosta', 'charle', 'crushfang', 'dagger',
   'dylan', 'experiment', 'fatima', 'fredrica', 'golemwalt',
-  'hestia', 'jahan', 'karnulla', 'kitty', 'koll',
+  'hestia', 'jahan', 'karnulla', 'kittyeyes', 'koll',
   'leah', 'lio', 'lisa', 'naya', 'ned',
   'nigel', 'nolva', 'pang', 'puggi', 'roger',
   'sharice', 'sherlock', 'sione', 'theodore', 'tica',
-  'yami', 'yan-bo',
+  'yamitsuki', 'yan-bo',
 ];
 
 const spCharlist = ['dylan_sp', 'angelia_sp', 'sione_sp'];
