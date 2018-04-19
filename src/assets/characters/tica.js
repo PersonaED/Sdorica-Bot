@@ -58,7 +58,7 @@ export default {
     title: 'Dream Snatcher',
     passive: {
       name: 'Rune Roll',
-      description: 'Upon cast 2 block skill continuously 2 times, trigger 2 block skill 1 time.',
+      description: 'Upon cast 2-orb skill continuously 2 times, trigger 2-orb skill 1 time.',
     },
     advisor: {
       name: 'Healing Vibes',
@@ -70,7 +70,7 @@ export default {
     },
     '2B': {
       name: 'Flash Light',
-      description: 'Attack (:crossed_swords: x 1.5) selected enemy. Clear 1 white block.',
+      description: 'Attack (:crossed_swords: x 1.5) selected enemy. Clear 1 white orb.',
     },
     '4B': {
       name: 'Let There Be Light',
@@ -83,7 +83,7 @@ export default {
     title: 'Miracle Maker',
     passive: {
       name: 'Rune Roll',
-      description: 'Upon cast 2 block skill continuously 2 times, trigger 2 block skill 2 times.',
+      description: 'Upon cast 2-orb skill continuously 2 times, trigger 2-orb skill 2 times.',
     },
     advisor: {
       name: 'Healing Vibes',
@@ -95,7 +95,7 @@ export default {
     },
     '2B': {
       name: 'Flash Light',
-      description: 'Attack (:crossed_swords: x 1.5) selected enemy. Clear 1 white block.',
+      description: 'Attack (:crossed_swords: x 1.5) selected enemy. Clear 1 white orb.',
     },
     '4B': {
       name: 'Let There Be Light',

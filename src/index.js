@@ -21,6 +21,14 @@ redisClient.on('error', (err) => {
 });
 
 const alignCommand = (message, splitContent) => {
+  if (splitContent[0] === `${standardPrefix}gnite`) {
+    message.channel.send('Gugubye!! :wave:');
+    return true;
+  }
+  if (splitContent[0] === `${standardPrefix}morning`) {
+    message.channel.send('Selamat puggi! :sleeping:');
+    return true;
+  }
   if (characterInfoCommand(message, splitContent)) {
     return true;
   }

@@ -12,7 +12,7 @@ export default {
     },
     advisor: {
       name: 'I Was Just Passing By',
-      description: "Upon start of each battle, trigger front row ally's 2 block skill, trigger front row enemy's skill",
+      description: "Upon start of each battle, trigger front row ally's 2-orb skill, trigger front row enemy's skill",
     },
     '1B': {
       name: 'Suck on This',
@@ -33,11 +33,11 @@ export default {
     title: 'Horseless Cavalry',
     passive: {
       name: 'Now on Stage',
-      description: 'Upon start of each better, trigger self 2 block skill',
+      description: 'Upon start of each better, trigger self 2-orb skill',
     },
     advisor: {
       name: 'I Was Just Passing By',
-      description: "Upon start of each battle, trigger back row ally's 2 block skill, trigger back row enemy's skill",
+      description: "Upon start of each battle, trigger back row ally's 2-orb skill, trigger back row enemy's skill",
     },
     '1B': {
       name: 'Suck on This',
@@ -58,11 +58,11 @@ export default {
     title: 'Size Doesn\'t Matter',
     passive: {
       name: 'Now on Stage',
-      description: 'Upon start of each better, trigger self 1 block skill and 2 block skill',
+      description: 'Upon start of each better, trigger self 1-orb skill and 2-orb skill',
     },
     advisor: {
       name: 'I Was Just Passing By',
-      description: "Upon start of each battle, trigger all allies' 1 block skill, trigger all enemies' skill",
+      description: "Upon start of each battle, trigger all allies' 1-orb skill, trigger all enemies' skill",
     },
     '1B': {
       name: 'Suck on This',

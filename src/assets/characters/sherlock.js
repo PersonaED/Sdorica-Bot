@@ -16,7 +16,7 @@ export default {
     },
     '1B': {
       name: 'Go Command Pro',
-      description: 'If offense mode, switch to support mode, clear all black blocks. If support mode, switch to offense mode, clear all gold blocks',
+      description: 'If offense mode, switch to support mode, clear all black orbs. If support mode, switch to offense mode, clear all gold orbs',
     },
     '2B': {
       name: 'Command No. 42',
@@ -33,7 +33,7 @@ export default {
     title: 'Mean Moneybags',
     passive: {
       name: 'Transformer Horror',
-      description: 'Upon cast skill by ally, if block board is altered, grant :ENHANCE.',
+      description: 'Upon cast skill by ally, if orb board is altered, grant :ENHANCE.',
     },
     advisor: {
       name: 'Avant Guard',
@@ -41,7 +41,7 @@ export default {
     },
     '1B': {
       name: 'Go Command Pro',
-      description: 'If offense mode, switch to support mode, clear all black blocks. If support mode, switch to offense mode, clear all gold blocks',
+      description: 'If offense mode, switch to support mode, clear all black orbs. If support mode, switch to offense mode, clear all gold orbs',
     },
     '2B': {
       name: 'Command No. 42',
@@ -58,7 +58,7 @@ export default {
     title: 'Profit Prophet',
     passive: {
       name: 'Transformer Horror',
-      description: 'Upon cast skill by ally, if block board is altered, grant :ENHANCE for 2 turns.',
+      description: 'Upon cast skill by ally, if orb board is altered, grant :ENHANCE for 2 turns.',
     },
     advisor: {
       name: 'Avant Guard',
@@ -66,7 +66,7 @@ export default {
     },
     '1B': {
       name: 'Go Command Pro',
-      description: 'If offense mode, switch to support mode, clear all black blocks. If support mode, switch to offense mode, clear all gold blocks',
+      description: 'If offense mode, switch to support mode, clear all black orbs. If support mode, switch to offense mode, clear all gold orbs',
     },
     '2B': {
       name: 'Command No. 42',

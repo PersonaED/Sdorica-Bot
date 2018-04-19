@@ -165,10 +165,17 @@ export const characterInfoCommand = (message, splitContent) => {
       const topLine = `**Options for ${name} - **`;
       orderArray.push(topLine);
 
-      const options = Object.keys(characterMap[name]).map((keyChar) => {
+      const options = Object.keys(characterMap[name]).reduce((array, keyChar) => {
         const styledKey = `\`${keyChar}\``;
-        return styledKey;
-      });
+        array.push(styledKey);
+        const re = /\bssr`$/;
+        if (re.test(styledKey)) {
+          const styledKeyPlus = `\`${keyChar} +1\``;
+          array.push(styledKeyPlus);
+        }
+        return array;
+      }, []);
+
       const filteredOptions = options.filter(phrase => !phrase.includes('unreleased'));
       orderArray.push(filteredOptions.join(', '));
       let finalString = '';
@@ -189,8 +196,11 @@ export const characterCommand = (message, splitContent) => {
     const header = '```css\n `Character List` \n```';
     orderArray.push(header);
 
-    const example = `Use \`${standardPrefix}[character] [tier]\` to get character information. For example: \`!angelia n\`\n`;
+    const example = `Use \`${standardPrefix}[character] [tier]\` to get character information. For example: \`${standardPrefix}angelia n\`\n`;
     orderArray.push(example);
+
+    const plus = `For SSR characters, can get damage with \`${standardPrefix}[character] ssr [+1-10]\`. For example: \`${standardPrefix}angelia ssr +1\`\n`;
+    orderArray.push(plus);
 
     const char = Object.keys(characterMap).sort().map((keyChar) => {
       const styledKey = `\`${keyChar}\``;

@@ -24,7 +24,7 @@ export default {
     },
     '4B': {
       name: 'Merry May King',
-      description: 'Grant front row ally (:crossed_swords: x 1.8) Armor, trigger 4 block skill.',
+      description: 'Grant front row ally (:crossed_swords: x 1.8) Armor, trigger 4-orb skill.',
     },
   }),
   'theodore sr': new Theodore({
@@ -49,7 +49,7 @@ export default {
     },
     '4B': {
       name: 'Merry May King',
-      description: 'Grant selected ally (:crossed_swords: x 1.8) Armor, trigger 4 block skill.',
+      description: 'Grant selected ally (:crossed_swords: x 1.8) Armor, trigger 4-orb skill.',
     },
   }),
   'theodore ssr': new Theodore({
@@ -66,7 +66,7 @@ export default {
     },
     '1B': {
       name: 'Sidetrack King',
-      description: 'Grant selected ally Taunt for 3 turns, trigger 1 block skill.',
+      description: 'Grant selected ally Taunt for 3 turns, trigger 1-orb skill.',
     },
     '2B': {
       name: 'King Pinned',
@@ -74,7 +74,7 @@ export default {
     },
     '4B': {
       name: 'Merry May King',
-      description: 'Grant selected ally (:crossed_swords: x 1.8) Armor, trigger 4 block skill.',
+      description: 'Grant selected ally (:crossed_swords: x 1.8) Armor, trigger 4-orb skill.',
     },
   }),
   'theodore skin': new Theodore({
@@ -91,7 +91,7 @@ export default {
     },
     '1B': {
       name: 'Ruler\'s Decree',
-      description: 'Grant selected ally Taunt for 3 turns, trigger 1 block skill.',
+      description: 'Grant selected ally Taunt for 3 turns, trigger 1-orb skill.',
     },
     '2B': {
       name: 'Ruler\'s Fortification',
@@ -99,7 +99,7 @@ export default {
     },
     '4B': {
       name: 'Ruler\'s Consecration',
-      description: 'Grant all allies (:crossed_swords: x 1.2) Armor, trigger front row ally 4 block skill.',
+      description: 'Grant all allies (:crossed_swords: x 1.2) Armor, trigger front row ally 4-orb skill.',
     },
   }),
 };

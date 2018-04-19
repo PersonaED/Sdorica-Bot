@@ -1,0 +1,6 @@
+before_script:
+  - npm run build
+
+sdorica:
+  script:
+    - npm start

@@ -99,7 +99,7 @@ export default {
     },
     '4B': {
       name: 'Delude Sandstorm',
-      description: 'Attack (:crossed_swords: x 3) selected enemy. If not trigger death of target, trigger self 2 block skill 1 time. If have :RAVE, Attack (:crossed_swords: x 4.5) random enemy instead',
+      description: 'Attack (:crossed_swords: x 3) selected enemy. If not trigger death of target, trigger self 2-orb skill 1 time. If have :RAVE, Attack (:crossed_swords: x 4.5) random enemy instead',
     },
   }),
   'ned skin': new Ned({
