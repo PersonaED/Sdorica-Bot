@@ -51,7 +51,7 @@ const rollOne = (message, summonTable, artPack = 'default') => {
     if (infuseResult === undefined) {
       message.channel.send(greeting);
     } else {
-      sendCharacterInfo(infuseResult, message, true);
+      // sendCharacterInfo(infuseResult, message, true);
       Jimp.read(`./art_pack/${artPack}/${splitChar[0]}_${splitChar[1]}.png`, (err, img) => {
         img.autocrop().scale(0.3).getBuffer(Jimp.MIME_PNG, (error, buffer) => {
           message.channel.send(`${greeting}`, {
