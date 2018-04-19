@@ -196,10 +196,10 @@ export const characterCommand = (message, splitContent) => {
     const header = '```css\n `Character List` \n```';
     orderArray.push(header);
 
-    const example = `Use \`${standardPrefix}[character] [tier]\` to get character information. For example: \`!angelia n\`\n`;
+    const example = `Use \`${standardPrefix}[character] [tier]\` to get character information. For example: \`${standardPrefix}angelia n\`\n`;
     orderArray.push(example);
 
-    const plus = `For SSR characters, can get damage with \`${standardPrefix}[character] ssr [+1-10]\`. For example: \`!angelia ssr +1\`\n`;
+    const plus = `For SSR characters, can get damage with \`${standardPrefix}[character] ssr [+1-10]\`. For example: \`${standardPrefix}angelia ssr +1\`\n`;
     orderArray.push(plus);
 
     const char = Object.keys(characterMap).sort().map((keyChar) => {
