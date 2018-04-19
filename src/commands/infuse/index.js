@@ -36,21 +36,31 @@ Object.keys(summon.million.sr).forEach((characterKey) => {
   millionInfuseSROnly.push(characterProbability);
 });
 
-const rollOne = (message, summonTable) => {
+const rollOne = (message, summonTable, artPack = 'default') => {
   const sender = `**${message.author.username}**`;
   const selectedChar = rwc(summonTable);
   const splitChar = selectedChar.split(' ');
   // check if json object exists for given character
   const jsonInfuse = characterMap[splitChar[0]];
+  const greeting = `${sender}, you have infused: ${capitalizeFirstLetter(splitChar[0])} ${splitChar[1].toUpperCase()}`;
   if (jsonInfuse === undefined) {
-    message.channel.send(`${sender}, you have infused: ${capitalizeFirstLetter(splitChar[0])} ${splitChar[1].toUpperCase()}`);
+    message.channel.send(greeting);
   } else {
     const infuseResult = characterMap[splitChar[0]][selectedChar];
     // check if key is present in character file
     if (infuseResult === undefined) {
-      message.channel.send(`${sender}, you have infused: ${capitalizeFirstLetter(splitChar[0])} ${splitChar[1].toUpperCase()}`);
+      message.channel.send(greeting);
     } else {
       sendCharacterInfo(infuseResult, message, true);
+      Jimp.read(`./art_pack/${artPack}/${splitChar[0]}_${splitChar[1]}.png`, (err, img) => {
+        img.autocrop().scale(0.3).getBuffer(Jimp.MIME_PNG, (error, buffer) => {
+          message.channel.send(`${greeting}`, {
+            files: [
+              buffer,
+            ],
+          });
+        });
+      });
     }
   }
 };
