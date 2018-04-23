@@ -16,11 +16,11 @@ export default {
     },
     '1B': {
       name: 'Etude Chords',
-      description: 'Heal (:crossed_swords: x 1.08) selected ally, grant :REGEN.',
+      description: 'Heal (:crossed_swords: x 0.45) selected ally, grant :REGEN.',
     },
     '2B': {
       name: 'Serenade Chords',
-      description: 'Heal (:crossed_swords: x 1.26) selected ally',
+      description: 'Heal (:crossed_swords: x 1.35) selected ally',
     },
     '4B': {
       name: 'Variation Chords',
@@ -41,11 +41,11 @@ export default {
     },
     '1B': {
       name: 'Etude Chords',
-      description: 'Heal (:crossed_swords: x 1.08) selected ally, grant :REGEN.',
+      description: 'Heal (:crossed_swords: x 0.45) selected ally, grant :REGEN.',
     },
     '2B': {
       name: 'Serenade Chords',
-      description: 'Heal (:crossed_swords: x 1.26) selected ally, remove debuffs.',
+      description: 'Heal (:crossed_swords: x 1.35) selected ally, remove debuffs.',
     },
     '4B': {
       name: 'Variation Chords',
@@ -66,11 +66,11 @@ export default {
     },
     '1B': {
       name: 'Etude Chords',
-      description: 'Heal (:crossed_swords: x 1.08) selected ally, grant :REGEN for 2 turns.',
+      description: 'Heal (:crossed_swords: x 0.45) selected ally, grant :REGEN for 2 turns.',
     },
     '2B': {
       name: 'Serenade Chords',
-      description: 'Heal (:crossed_swords: x 1.26) selected ally, remove debuffs.',
+      description: 'Heal (:crossed_swords: x 1.35) selected ally, remove debuffs.',
     },
     '4B': {
       name: 'Variation Chords',
@@ -91,15 +91,15 @@ export default {
     },
     '1B': {
       name: 'Etude Chords',
-      description: 'Heal (:crossed_swords: x 1.08) selected ally, grant :REGEN for 2 turns.',
+      description: 'Heal (:crossed_swords: x 0.45) selected ally, grant :REGEN for 2 turns.',
     },
     '2B': {
       name: 'Serenade Chords',
-      description: 'Heal (:crossed_swords: x 1.26) selected ally, remove debuffs.',
+      description: 'Heal (:crossed_swords: x 1.35) selected ally, remove debuffs.',
     },
     '4B': {
       name: 'Variation Chords',
-      description: 'Armor Penetration (:crossed_swords: x 2.25) selected enemy, heal (:crossed_swords: x 0.9) target ',
+      description: 'Armor Penetration (:crossed_swords: x 3) selected enemy, heal (:crossed_swords: x 0.9) target ',
     },
   }),
 };
