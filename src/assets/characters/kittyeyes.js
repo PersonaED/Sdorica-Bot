@@ -58,7 +58,7 @@ export default {
     title: 'Meadow Mercenary',
     passive: {
       name: 'Cheshire Hire',
-      description: 'Upon turn, target enemy with Game Tag to True Damage (:crossed swords: x 0.2), grant :VUL',
+      description: 'Upon turn, target enemy with Game Tag to True Damage (:crossed_swords: x 0.2), grant :VUL',
     },
     advisor: {
       name: 'Curiosity Killer',
@@ -83,7 +83,7 @@ export default {
     title: 'Pasture Prima Donna',
     passive: {
       name: 'Cheshire Hire',
-      description: 'Upon turn, target enemy with Game Tag to True Damage (:crossed swords: x 0.2), grant :VUL for 2 turns',
+      description: 'Upon turn, target enemy with Game Tag to True Damage (:crossed_swords: x 0.2), grant :VUL for 2 turns',
     },
     advisor: {
       name: 'Curiosity Killer',
