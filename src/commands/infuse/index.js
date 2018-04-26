@@ -36,6 +36,29 @@ Object.keys(summon.million.sr).forEach((characterKey) => {
   millionInfuseSROnly.push(characterProbability);
 });
 
+// harvest infuse table
+const harvestInfuseTable = [];
+Object.keys(summon.harvest).forEach((tier) => {
+  Object.keys(summon.harvest[tier]).forEach((characterKey) => {
+    const charName = `${characterKey} ${tier}`;
+    const characterProbability = {
+      weight: summon.harvest[tier][characterKey],
+      id: charName,
+    };
+    harvestInfuseTable.push(characterProbability);
+  });
+});
+
+const harvestInfuseTableSROnly = [];
+Object.keys(summon.harvest.sr).forEach((characterKey) => {
+  const charName = `${characterKey} sr`;
+  const characterProbability = {
+    weight: summon.harvest.sr[characterKey],
+    id: charName,
+  };
+  harvestInfuseTableSROnly.push(characterProbability);
+});
+
 const rollOne = (message, summonTable, artPack = 'default') => {
   const sender = `**${message.author.username}**`;
   const selectedChar = rwc(summonTable);
@@ -87,7 +110,7 @@ function pieceImages(arr, idx, bg, msg, io, artPack = 'default') {
   }
 }
 
-const rollMany = (message, summonTable, count, guaranteeSR, isChengkor, artPack) => {
+const rollMany = (message, summonTable, count, guaranteeSR, isChengkor, artPack, sumTableSROnly) => {
   const sender = `**${message.author.username}**`;
   const infuseMany = {};
   const infuseAggregate = [];
@@ -123,12 +146,12 @@ const rollMany = (message, summonTable, count, guaranteeSR, isChengkor, artPack)
   });
 
   if (isChengkor) {
-    rwc(millionInfuseSROnly);
+    rwc(sumTableSROnly);
     infuseMany['yamitsuki sr'] = 1;
     rollSnaps.push('yamitsuki_sr');
     // if not have SR, roll from SR table
   } else if (guaranteeSR && rollSR === true) {
-    const infuseResult = rwc(millionInfuseSROnly);
+    const infuseResult = rwc(sumTableSROnly);
     infuseMany[infuseResult] = 1;
     rollSnaps.push(infuseResult.replace(' ', '_'));
   }
@@ -155,11 +178,21 @@ export const millionInfuseCommand = (message, splitContent) => {
       const sender = `**${message.author.username}**`;
       message.channel.send(`:pray: ${sender} has called for chenggod. He blesses you with Yami luck`, { files: ['https://media.discordapp.net/attachments/427835062306865162/435825797841027085/chenggodsummon.png'] });
     } else if (splitContent.length > 1 && splitContent[1] === '10') {
-      rollMany(message, millionInfuseTable, 10, true, (splitContent[0] === `${standardPrefix}god-infuse`), splitContent[2]);
+      rollMany(message, millionInfuseTable, 10, true, (splitContent[0] === `${standardPrefix}god-infuse`), splitContent[2], millionInfuseSROnly);
     } else if (splitContent.length > 1 && splitContent[1] !== '10') {
       message.channel.send('**Infuse commands - ** `infuse` `infuse 10` `infuse chenggod`');
     } else {
       rollOne(message, millionInfuseTable);
+    }
+    return true;
+  }
+  if (splitContent[0] === `${standardPrefix}infuse-harvest`) {
+    if (splitContent.length > 1 && splitContent[1] === '10') {
+      console.log(harvestInfuseTable);
+      console.log(harvestInfuseTableSROnly);
+      rollMany(message, harvestInfuseTable, 10, true, false, splitContent[2], harvestInfuseTableSROnly);
+    } else {
+      rollOne(message, harvestInfuseTable);
     }
     return true;
   }

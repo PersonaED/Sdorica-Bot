@@ -10,7 +10,7 @@ export const helpCommand = (message, splitContent) => {
     const character = `**1. Character Options -** \`${standardPrefix}characters\``;
     orderArray.push(character);
 
-    const infuse = `**2. Gacha Infuse - ** \`${standardPrefix}infuse\` \`${standardPrefix}infuse 10\` \`${standardPrefix}infuse chenggod\``;
+    const infuse = `**2. Gacha Infuse - ** \`${standardPrefix}infuse\` \`${standardPrefix}infuse 10\` \`${standardPrefix}infuse-harvest\` \`${standardPrefix}infuse-harvest 10\` \`${standardPrefix}infuse chenggod\``;
     orderArray.push(infuse);
 
     const fun = `**3. Fun - ** \`${standardPrefix}best doggo\` \`${standardPrefix}chenggod\``;
