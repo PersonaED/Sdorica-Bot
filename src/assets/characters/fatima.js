@@ -108,7 +108,7 @@ export default {
     title: 'Crimson Bolt',
     passive: {
       name: 'Thirst for Blood',
-      description: 'Upon death of target, Heal (:crossed swords: x 0.9) self, grant self :ENHANCE for all turns this round',
+      description: 'Upon death of target, Heal (:crossed_swords: x 0.9) self, grant self :ENHANCE for all turns this round',
     },
     advisor: {
       name: 'Hunting Rites',
