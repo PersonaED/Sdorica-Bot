@@ -109,7 +109,7 @@ export default {
     title: 'Daybreak Darling',
     passive: {
       name: "Empress' Order",
-      description: 'Upon cast Armor, if target has :EXH/:VUL:VUL, trigger target 1-orb skill',
+      description: 'Upon cast Armor, if target has :EXH/:VUL, trigger target 1-orb skill',
     },
     advisor: {
       name: 'For The Kingdom',

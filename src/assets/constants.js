@@ -14,7 +14,7 @@ export const SHOCKLOCK = 'Shock Lock: Upon turn, grant self 3 stacks Vulnerabili
 export const REGEN = 'Regen: Upon turn, heal self 10% max HP for each stack. 3 stacks max. Remove upon incoming damage skill';
 export const POISON = 'Poison: Upon turn, lose 10% of current HP for each stack. 3 stacks max. Remove upon receive Heal';
 export const VIGILANCE = 'Vigilance: Upon incoming damage skill, 30% chance to evade damage for each stack. 3 stacks max';
-export const WINDEDUP = 'Winded Up: Upon 4 stacks, grant 1 extra attack for next skill';
+export const WINDEDUP = 'Winded Up: Upon 4 stacks, grant 1 extra attack (:crossed_swords: x 2.5) for next skill';
 export const STUN = 'Stun: Can\'t cast skill. Remove upon incoming damage skill';
 
 // tier level

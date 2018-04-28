@@ -72,7 +72,7 @@ export const sendCharacterInfo = (characterInfo, message, infuse) => {
 
     const sortedStatus = [...status].sort();
     sortedStatus.forEach((effect) => {
-      const discordStyled = `\n\n_${effect}_`;
+      const discordStyled = `\n\n*${effect}*`;
       statusString = `${statusString}${discordStyled}`;
     });
     const statusEffects = {
