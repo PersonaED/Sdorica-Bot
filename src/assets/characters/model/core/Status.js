@@ -63,7 +63,7 @@ const Status = [
     code: ':WINDU',
     oldCode: 'WINDEDUP',
     label: 'Winded Up',
-    description: 'Winded Up: Upon 4 stacks, grant 1 extra (:crossed_swords: x 2.5) for next skill',
+    description: 'Winded Up: Upon 4 stacks, grant 1 extra (:crossed_swords: x 2.5) attack for next skill',
   },
   {
     code: ':STUN',
