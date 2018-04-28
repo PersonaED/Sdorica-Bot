@@ -1,1 +1,1 @@
-export const standardPrefix = '!';
+export const standardPrefix = '-';
