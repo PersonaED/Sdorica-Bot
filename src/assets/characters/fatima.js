@@ -112,7 +112,7 @@ export default {
     },
     advisor: {
       name: 'Hunting Rites',
-      description: 'Allies\' True Damage effets increased by 30%',
+      description: 'Allies\' True Damage effects increased by 30%',
     },
     '1B': {
       name: 'Heart Seeker',
