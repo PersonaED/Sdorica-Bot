@@ -20,11 +20,11 @@ export default {
     },
     '2B': {
       name: 'Lethal Tap Dance',
-      description: 'True damage (:crossed_swords: x 1.2) selected enemy',
+      description: 'True damage (:crossed_swords: x 0.8) selected enemy',
     },
     '4B': {
       name: 'Shadow Pierce',
-      description: 'True damage (:crossed_swords: x 2) selected enemy',
+      description: 'True damage (:crossed_swords: x 1.6) selected enemy',
     },
   }),
   'shirley sr': new Shirley({
@@ -45,11 +45,11 @@ export default {
     },
     '2B': {
       name: 'Lethal Tap Dance',
-      description: 'True damage (:crossed_swords: x 1.2) selected enemy, grant :VUL and :TEAR',
+      description: 'True damage (:crossed_swords: x 0.8) selected enemy, grant :VUL and :TEAR',
     },
     '4B': {
       name: 'Shadow Pierce',
-      description: 'True damage (:crossed_swords: x 2) selected enemy, grant :VUL and :TEAR',
+      description: 'True damage (:crossed_swords: x 1.6) selected enemy, grant :VUL and :TEAR',
     },
   }),
   'shirley ssr': new Shirley({
@@ -58,7 +58,7 @@ export default {
     title: 'Feathering Starlight',
     passive: {
       name: 'From The Ashes',
-      description: 'Only requires 4 Resurrection orbs to Resurrect. Upon Ressurect, grant self 3 stacks :ENHANCE. When downed, upon turn, deal True Damage (:crossed_swords: x 0.6) to selected enemy',
+      description: 'Only requires 4 Resurrection orbs to Resurrect. Upon Ressurect, grant self 3 stacks :ENHANCE. When downed, upon turn, deal True Damage (:crossed_swords: x 0.4) to selected enemy',
     },
     advisor: {
       name: 'Feather Tribe\'s Gift',
@@ -70,11 +70,11 @@ export default {
     },
     '2B': {
       name: 'Phantom Dance',
-      description: 'True damage (:crossed_swords: x 1.2) selected enemy, grant :VUL and :TEAR',
+      description: 'True damage (:crossed_swords: x 0.8) selected enemy, grant :VUL and :TEAR',
     },
     '4B': {
       name: 'Soul Shattering Crush',
-      description: 'True damage (:crossed_swords: x 2) selected enemy, grant 2 stacks :VUL and 2 stacks :TEAR',
+      description: 'True damage (:crossed_swords: x 1.6) selected enemy, grant 2 stacks :VUL and 2 stacks :TEAR',
     },
   }),
 };
