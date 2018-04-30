@@ -83,7 +83,7 @@ export default {
     title: 'Entrails Blazer',
     passive: {
       name: 'Wolfgang Deus',
-      description: 'Upon death of front row ally, trigger self 4-orb skill.',
+      description: 'Upon death of ally, trigger self 4-orb skill.',
     },
     advisor: {
       name: 'Aware Wolf',
