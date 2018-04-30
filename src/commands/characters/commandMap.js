@@ -12,6 +12,11 @@ const mapCharacterNames = (messageArray) => {
     copiedMessage[0] = `${standardPrefix}yan-bo`;
   }
 
+  //angel/angelia
+  if (copiedMessage[0] === `${standardPrefix}angel`) {
+    copiedMessage[0] = `${standardPrefix}angelia`;
+  }
+
   //fred/fredrica
   if (copiedMessage[0] === `${standardPrefix}fred`) {
     copiedMessage[0] = `${standardPrefix}fredrica`;
