@@ -55,7 +55,7 @@ export default {
   'shirley ssr': new Shirley({
     tier: TIER_SSR,
     sprite: 'https://i.imgur.com/87zQ3oF.png',
-    title: 'Apex Predator',
+    title: 'Feathering Starlight',
     passive: {
       name: 'From The Ashes',
       description: 'Only requires 4 Resurrection orbs to Resurrect. Upon Ressurect, grant self 3 stacks :ENHANCE. When downed, upon turn, deal True Damage (:crossed_swords: x 0.6) to selected enemy',
