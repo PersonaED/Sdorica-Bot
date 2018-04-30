@@ -24,6 +24,7 @@ import pang from './pang';
 import puggi from './puggi';
 import roger from './roger';
 import sherlock from './sherlock';
+import shirley from './shirley';
 import sharice from './sharice';
 import sione from './sione';
 import theodore from './theodore';
@@ -59,6 +60,7 @@ export {
   roger,
   sharice,
   sherlock,
+  shirley,
   sione,
   theodore,
   tica,

@@ -12,7 +12,7 @@ export default {
     },
     advisor: {
       name: 'Feather Tribe\'s Gift',
-      description: "Upon death of Gold character, reduce Resurrection orbs required by 2",
+      description: 'Upon death of Gold character, reduce Resurrection orbs required by 2',
     },
     '1B': {
       name: 'Blood Sacrifice',
@@ -27,7 +27,7 @@ export default {
       description: 'True damage (:crossed_swords: x 2) selected enemy',
     },
   }),
-  'shirley': new Shirley({
+  'shirley sr': new Shirley({
     tier: TIER_SR,
     sprite: 'https://i.imgur.com/Asaq8Jx.png',
     title: 'Femme Fatale',
@@ -37,7 +37,7 @@ export default {
     },
     advisor: {
       name: 'Feather Tribe\'s Gift',
-      description: "Upon death of Gold character, reduce Resurrection orbs required by 3",
+      description: 'Upon death of Gold character, reduce Resurrection orbs required by 3',
     },
     '1B': {
       name: 'Blood Sacrifice',
@@ -62,7 +62,7 @@ export default {
     },
     advisor: {
       name: 'Feather Tribe\'s Gift',
-      description: "Upon death of Gold character, reduce Resurrection orbs required by 4",
+      description: 'Upon death of Gold character, reduce Resurrection orbs required by 4',
     },
     '1B': {
       name: 'Blood Sacrifice',
