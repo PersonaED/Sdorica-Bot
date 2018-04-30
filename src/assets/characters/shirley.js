@@ -65,15 +65,15 @@ export default {
       description: 'Upon death of Gold character, reduce Resurrection orbs required by 4',
     },
     '1B': {
-      name: 'Blood Sacrifice',
+      name: 'Spirit Sacrifice',
       description: 'Attack self (:crossed_swords: x 0.5), grant all allies (:crossed_swords: x 0.96) Armor',
     },
     '2B': {
-      name: 'Lethal Tap Dance',
+      name: 'Phantom Dance',
       description: 'True damage (:crossed_swords: x 1.2) selected enemy, grant :VUL and :TEAR',
     },
     '4B': {
-      name: 'Shadow Pierce',
+      name: 'Soul Shattering Crush',
       description: 'True damage (:crossed_swords: x 2) selected enemy, grant 2 stacks :VUL and 2 stacks :TEAR',
     },
   }),
