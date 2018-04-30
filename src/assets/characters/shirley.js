@@ -66,7 +66,7 @@ export default {
     },
     '1B': {
       name: 'Blood Sacrifice',
-      description: 'Grant self Taunt and 2 stacks :VIGIL. Reset front row enemy CD',
+      description: 'Attack self (:crossed_swords: x 0.5), grant all allies (:crossed_swords: x 0.96) Armor',
     },
     '2B': {
       name: 'Lethal Tap Dance',
