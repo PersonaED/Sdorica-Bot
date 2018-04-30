@@ -70,7 +70,7 @@ export default {
     },
     '2B': {
       name: 'Don\'t Call Me Short',
-      description: 'Attack (:crossed_swords: x 1.8) front row enemy. Grant taget :TEAR. If have :ENHANCE, Attack (:crossed_swords: x 0.2) gold position ally and (:crossed_swords: x 2) front row enemy. Grant enemy :TEAR for 2 turns',
+      description: 'Attack (:crossed_swords: x 1.8) front row enemy. Grant target :TEAR. If have :ENHANCE, Attack (:crossed_swords: x 0.2) gold position ally and (:crossed_swords: x 2) front row enemy. Grant enemy :TEAR for 2 turns',
     },
     '4B': {
       name: 'G.O.A.T',
