@@ -1,4 +1,5 @@
 import Status from './Status';
+import Multipliers from './Multipliers';
 
 class BaseCharacter {
   constructor(name, stat, param) {
@@ -32,14 +33,19 @@ class BaseCharacter {
 
   getSkillDescription(skill, level) {
     let offset = 0;
+    let { power } = this.stat;
     if (level.startsWith('+')) {
       offset = Number.parseInt(level.substring(1), 10);
       if (!offset) offset = 0;
       else if (offset > 10) offset = 10;
       else if (offset < 0) offset = 0;
+    } else if (!Number.isNaN(Number.parseInt(level, 10))) {
+      let levelVal = Number.parseInt(level, 10);
+      if (levelVal < 0) levelVal = 0;
+      power *= (Multipliers[this.tier][levelVal] / Multipliers.MAX);
     }
 
-    return BaseCharacter.format(this[skill].description, this.stat.power + (50 * offset));
+    return BaseCharacter.format(this[skill].description, power + (50 * offset));
   }
 
   setCharStatus() {
