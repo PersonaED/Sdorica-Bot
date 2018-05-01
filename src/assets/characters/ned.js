@@ -70,7 +70,7 @@ export default {
     },
     '2B': {
       name: 'Quick Sand',
-      description: 'Attack (:crossed_swords: x 1.5) selected enemy. If target less than 50% HP, increase skll power by 50% for this turn. If have :RAVE, Attack (:crossed_swords: x 2.25) random enemy instead',
+      description: 'Attack (:crossed_swords: x 1.5) selected enemy. If target less than 50% HP, increase skill power by 50% for this turn. If have :RAVE, Attack (:crossed_swords: x 2.25) random enemy instead',
     },
     '4B': {
       name: 'Delude Sandstorm',
@@ -95,7 +95,7 @@ export default {
     },
     '2B': {
       name: 'Quick Sand',
-      description: 'Attack (:crossed_swords: x 1.5) selected enemy. If target less than 50% HP, increase skll power by 50% for this turn. If have :RAVE, Attack (:crossed_swords: x 2.25) random enemy instead',
+      description: 'Attack (:crossed_swords: x 1.5) selected enemy. If target less than 50% HP, increase skill power by 50% for this turn. If have :RAVE, Attack (:crossed_swords: x 2.25) random enemy instead',
     },
     '4B': {
       name: 'Delude Sandstorm',
