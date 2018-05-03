@@ -12,7 +12,7 @@ export default {
     },
     advisor: {
       name: 'Nom Nom Nutrition',
-      description: 'Heal (:crossed_swords: x 1.5) selected ally. (CD: 7)',
+      description: 'Heal (:crossed_swords: x 1.35) selected ally. (CD: 7)',
     },
     '1B': {
       name: 'Junk Food',
@@ -37,7 +37,7 @@ export default {
     },
     advisor: {
       name: 'Nom Nom Nutrition',
-      description: 'Heal (:crossed_swords: x 1.5) selected ally. (CD: 6)',
+      description: 'Heal (:crossed_swords: x 1.35) selected ally. (CD: 6)',
     },
     '1B': {
       name: 'Junk Food',
@@ -62,7 +62,7 @@ export default {
     },
     advisor: {
       name: 'Nom Nom Nutrition',
-      description: 'Heal (:crossed_swords: x 1.5) selected ally. (CD: 5)',
+      description: 'Heal (:crossed_swords: x 1.35) selected ally. (CD: 5)',
     },
     '1B': {
       name: 'Junk Food',
