@@ -70,7 +70,7 @@ export default {
     },
     '2B': {
       name: "Rock N' Roll",
-      description: 'Armor Penetration (:crossed_swords: x 1.5) front row enemy',
+      description: 'Armor Penetration (:crossed_swords: x 1.5) front row enemy. If have Armor, Armor Penetration (:crossed_swords: x 1.5) selected enemy instead',
     },
     '4B': {
       name: 'Rocky Horror Show',
