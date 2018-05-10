@@ -95,7 +95,7 @@ export default {
     },
     '2B': {
       name: 'Ruler\'s Fortification',
-      description: 'Grant front all allies (:crossed_swords: x 0.72) Armor, grant front ally 2 stacks :ENHANCE.',
+      description: 'Grant all allies (:crossed_swords: x 0.72) Armor, grant front row ally 2 stacks :ENHANCE.',
     },
     '4B': {
       name: 'Ruler\'s Consecration',
