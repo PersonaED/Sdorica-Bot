@@ -75,7 +75,7 @@ export default {
     },
     '4B': {
       name: 'Prayer Player',
-      description: 'Heal (:crossed_swords: x 1.8) front row ally, grant :EXH, trigger 2-orb skill',
+      description: 'Heal (:crossed_swords: x 1.8) front row ally, grant :EXH, trigger 4-orb skill',
     },
   }),
   'angelia ssr': new Angelia({
