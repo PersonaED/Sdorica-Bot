@@ -116,11 +116,11 @@ export default {
     },
     '1B': {
       name: 'Frost Shot',
-      description: 'Armor Penetration (:crossed_swords: x 0.3749) selected enemy. If passive skill was triggered this turn, grant white ally :WARCRY as well',
+      description: 'Armor Penetration (:crossed_swords: x 0.375) selected enemy. If passive skill was triggered this turn, grant white ally :WARCRY as well',
     },
     '2B': {
       name: 'Chain Strike',
-      description: 'Armor Penetration (:crossed_swords: x 0.7369) selected enemy. If passive skill was triggered this turn, trigger white ally\'s 2-orb skill as well',
+      description: 'Armor Penetration (:crossed_swords: x 0.737) selected enemy. If passive skill was triggered this turn, trigger white ally\'s 2-orb skill as well',
     },
     '4B': {
       name: 'From the skies',
