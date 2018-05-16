@@ -89,6 +89,18 @@ const Status = [
     label: 'Taunt',
     description: 'TBD.',
   },
+  {
+    code: ':WARCRY',
+    oldCode: 'WARCRY',
+    label: 'War Cry',
+    description: 'War Cry: Increase skill power by 30% for each stack. 3 stacks max. Upon cast skill, grant self 1 stack.',
+  },
+  {
+    code: ':ARMORSHIFT',
+    oldCode: 'ARMORSHIFT',
+    label: 'Armor Shift',
+    description: 'Armor Shift: Upon turn, grant self HP equal to 30% of current Armor for each stack. 3 stacks max.',
+  },
 ];
 
 export default Status;
