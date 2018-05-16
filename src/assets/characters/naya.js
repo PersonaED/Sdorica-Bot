@@ -102,30 +102,29 @@ export default {
       description: 'Attack (:crossed_swords: x 2.5) selected enemy. 20% chance for a Critical Strike that does 3x Damage',
     },
   }),
-  'naya skin-unreleased': new Naya({
+  'naya skin': new Naya({
     tier: SKILL_BOOK,
     sprite: 'https://i.imgur.com/uzTM4DB.png',
-    title: '?????',
+    title: 'Chilling Arrows',
     passive: {
-      name: '?????',
-      description: '?????',
+      name: 'Pickoff Attempt',
+      description: 'Upon turn, deal 1 damage to enemies with CD:1, grant :EXH',
     },
     advisor: {
-      name: '?????',
-      description: '?????',
+      name: 'Warning Shot',
+      description: 'Upon turn, deal 1 damage to enemies with CD:1, grant :EXH',
     },
     '1B': {
-      name: '?????',
-      description: '?????',
+      name: 'Frost Shot',
+      description: 'Armor Penetration (:crossed_swords: x 0.3749) selected enemy. If passive skill was triggered this turn, grant white ally :WARCRY as well',
     },
     '2B': {
-      name: '?????',
-      description: '?????',
+      name: 'Chain Strike',
+      description: 'Armor Penetration (:crossed_swords: x 0.7369) selected enemy. If passive skill was triggered this turn, trigger white ally\'s 2-orb skill as well',
     },
     '4B': {
-      name: '?????',
-      description: '?????',
+      name: 'From the skies',
+      description: 'Armor Penetration (:crossed_swords: x 1.12) selected enemy. If passive skill was triggered this turn, grant white ally :WARCRY for all turns as well',
     },
-    status: [],
   }),
 };
