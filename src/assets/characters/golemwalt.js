@@ -102,29 +102,29 @@ export default {
       description: 'Armor Penetration (:crossed_swords: x 1.875) all enemies and (:crossed_swords: x 0.75) all allies.  If have Armor, Armor Penetration (:crossed_swords: x 1.875) all enemies instead',
     },
   }),
-  'golemwalt skin-unreleased': new Golemwalt({
+  'golemwalt skin': new Golemwalt({
     tier: SKILL_BOOK,
     sprite: 'https://i.imgur.com/z8IODWI.png',
-    title: '?????',
+    title: 'Runic Behemoth',
     passive: {
-      name: '?????',
-      description: '?????',
+      name: 'Summon The Beast',
+      description: 'Upon cast 2/4-orb skill with Armor Penetration by white character, trigger self 2/4-orb skill',
     },
     advisor: {
-      name: '?????',
-      description: '?????',
+      name: 'Friends',
+      description: 'Grant all allies Armor Shift (CD:3)',
     },
     '1B': {
-      name: '?????',
-      description: '?????',
+      name: 'Trembling Roar',
+      description: 'Grant all allies :TANKU for 2 turns. If have :TANKU, grant all allies :ARMORSHIFT for 2 turns instead',
     },
     '2B': {
-      name: '?????',
-      description: '?????',
+      name: 'Crystal Crunch',
+      description: 'Armor Penetration (:crossed_swords: x 0.56) all enemies, remove 2 gold orbs',
     },
     '4B': {
-      name: '?????',
-      description: '?????',
+      name: 'Ground Fissure',
+      description: 'Armor Penetration (:crossed_swords: x 1.12) all enemies, scramble the orbs',
     },
   }),
 };
