@@ -100,6 +100,31 @@ export default {
     '4B': {
       name: 'Variation Chords',
       description: 'Armor Penetration (:crossed_swords: x 3) selected enemy, heal (:crossed_swords: x 0.9) target ',
+     },
+  }),
+  'hestia skin': new Hestia({
+    tier: TIER_SSR,
+    sprite: 'https://i.imgur.com/GFWYlmm.png',
+    title: 'Flowers\' Whisper',
+    passive: {
+      name: 'Spring Solo',
+      description: 'Upon turn, grant self a random buff',
+    },
+    advisor: {
+      name: 'Summer Aria',
+      description: 'Grant selected ally a random buff (CD: 1)',
+    },
+    '1B': {
+      name: 'Fall Etude',
+      description: 'Grand self a random buff for 2 turns.',
+    },
+    '2B': {
+      name: 'Winter Fantasia',
+      description: 'Copy all buffs this character has, grant all allies 1 stack of the copied buffs for 2 turns',
+    },
+    '4B': {
+      name: 'Hestia\'s Four Seasons',
+      description: 'Copy all buffs this character has, grant all allies 3 stack of the copied buffs for 2 turns',
     },
   }),
 };
