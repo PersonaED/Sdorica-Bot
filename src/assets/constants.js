@@ -17,6 +17,7 @@ export const VIGILANCE = 'Vigilance: Upon incoming damage skill, 30% chance to e
 export const WINDEDUP = 'Winded Up: Upon 4 stacks, grant 1 extra attack (:crossed_swords: x 2.5) for next skill';
 export const STUN = 'Stun: Can\'t cast skill. Remove upon incoming damage skill';
 export const WARCRY = 'War Cry: Increase skill power by 30% for each stack. 3 stacks max. Upon cast skill, grant self 1 stack';
+export const ARMORSHIFT = 'Armor Shift: Upon turn, grant self HP equal to 30% of current Armor for each stack. 3 stacks max';
 
 // tier level
 export const TIER_N = 'N';
