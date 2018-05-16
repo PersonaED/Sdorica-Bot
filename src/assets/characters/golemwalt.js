@@ -120,11 +120,11 @@ export default {
     },
     '2B': {
       name: 'Crystal Crunch',
-      description: 'Armor Penetration (:crossed_swords: x 0.56) all enemies, remove 2 gold orbs',
+      description: 'Armor Penetration (:crossed_swords: x 0.5625) all enemies, remove 2 gold orbs',
     },
     '4B': {
       name: 'Ground Fissure',
-      description: 'Armor Penetration (:crossed_swords: x 1.12) all enemies, scramble the orbs',
+      description: 'Armor Penetration (:crossed_swords: x 1.125) all enemies, scramble the orbs',
     },
   }),
 };
