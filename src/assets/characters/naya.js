@@ -123,7 +123,7 @@ export default {
       description: 'Armor Penetration (:crossed_swords: x 0.75) selected enemy. If passive skill was triggered this turn, trigger white ally\'s 2-orb skill as well',
     },
     '4B': {
-      name: 'From the skies',
+      name: 'From The Skies',
       description: 'Armor Penetration (:crossed_swords: x 1.125) selected enemy. If passive skill was triggered this turn, grant white ally :WARCRY for all turns as well',
     },
   }),
