@@ -58,7 +58,7 @@ export default {
     title: 'Volley Fall',
     passive: {
       name: 'Bullseye',
-      description: 'Upon cast Attack, if target has :VUL, increase Critical Strike Chance',
+      description: 'Upon cast Attack, if target has :VUL, double Critical Strike Chance',
     },
     advisor: {
       name: 'Bolt Down',
@@ -83,7 +83,7 @@ export default {
     title: 'Cascade Of Curses',
     passive: {
       name: 'Bullseye',
-      description: 'Upon cast Attack, if target has :VUL, increase Critical Strike Chance',
+      description: 'Upon cast Attack, if target has :EXH/:VUL, double Critical Strike Chance',
     },
     advisor: {
       name: 'Bolt Down',
