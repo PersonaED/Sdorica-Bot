@@ -75,19 +75,19 @@ const Status = [
     code: ':REFLECT',
     oldCode: 'REFLECT',
     label: 'Reflect',
-    description: 'Upon incoming damage skill, attacker takes damage equal to the amount of Armor lost.',
+    description: 'Reflect: Upon incoming damage skill, attacker takes damage equal to the amount of Armor lost.',
   },
   {
     code: ':RAVE',
     oldCode: 'RANTRAVE',
     label: 'Rant Rave',
-    description: 'Select random enemy to Attack instead, increase skill power by 50%.',
+    description: 'Rant Rave: Select random enemy to Attack instead, increase skill power by 50%.',
   },
   {
     code: ':TAUNT',
     oldCode: 'TAUNT',
     label: 'Taunt',
-    description: 'TBD.',
+    description: 'Taunt: Become primary target.',
   },
   {
     code: ':WARCRY',
