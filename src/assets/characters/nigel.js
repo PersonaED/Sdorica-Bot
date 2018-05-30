@@ -1,5 +1,6 @@
 import { TIER_R, TIER_SR, TIER_SSR, SP, SKILL_BOOK } from '../constants';
 import Nigel from './model/Nigel';
+import NigelSP from './model/NigelSP';
 
 export default {
   'nigel r': new Nigel({
@@ -77,29 +78,29 @@ export default {
       description: 'Attack (:crossed_swords: x 4) front row enemy. If target less than 50% HP, increase skill power by 50% for this turn',
     },
   }),
-  'nigel sp-unreleased': new Nigel({
+  'nigel sp': new Nigel({
     tier: SP,
     sprite: 'https://i.imgur.com/YFtmC85.png',
-    title: '?????',
+    title: 'Tempest Wanderer',
     passive: {
-      name: '?????',
-      description: '?????',
+      name: 'Rebellious Nature',
+      description: 'Upon death of target, grant self :CHARISMA for 3 turns.',
     },
     advisor: {
-      name: '?????',
-      description: '?????',
+      name: 'Passionate Leader',
+      description: 'Upon death of target by ally, grant :CHARISMA for 3 turns.',
     },
     '1B': {
-      name: '?????',
-      description: '?????',
+      name: 'Crimson Slash',
+      description: 'Attack (:crossed_swords: x 0.6) front row and back row enemy.',
     },
     '2B': {
-      name: '?????',
-      description: '?????',
+      name: 'Twin Katana Strike',
+      description: 'Attack (:crossed_swords: x 1) enemy with highest and lowest HP.',
     },
     '4B': {
-      name: '?????',
-      description: '?????',
+      name: 'Blooming Blood Flower',
+      description: 'Armor Penetration (:crossed_swords: x 1.5) enemy with highest and lowest Armor.',
     },
   }),
   'nigel skin-unreleased': new Nigel({
