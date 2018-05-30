@@ -41,7 +41,7 @@ export default {
     },
     '1B': {
       name: 'Doom Bloom',
-      description: 'Grant self Taunt and 2 stacks :VIGIL. Reset front row enemy CD',
+      description: 'Grant self :TAUNT and 2 stacks :VIGIL. Reset front row enemy CD',
     },
     '2B': {
       name: 'Annihilate Bloomer',
@@ -49,7 +49,7 @@ export default {
     },
     '4B': {
       name: 'In Full Bloom',
-      description: 'Grant self Taunt and 3 stacks :VIGIL. Reset all enemies CD',
+      description: 'Grant self :TAUNT and 3 stacks :VIGIL. Reset all enemies CD',
     },
   }),
   'karnulla sr': new Karnulla({
@@ -66,7 +66,7 @@ export default {
     },
     '1B': {
       name: 'Doom Bloom',
-      description: 'Grant self Taunt and 2 stacks :VIGIL. Reset front row enemy CD',
+      description: 'Grant self :TAUNT and 2 stacks :VIGIL. Reset front row enemy CD',
     },
     '2B': {
       name: 'Annihilate Bloomer',
@@ -74,7 +74,7 @@ export default {
     },
     '4B': {
       name: 'In Full Bloom',
-      description: 'Grant self Taunt and 3 stacks :VIGIL. Reset all enemies CD',
+      description: 'Grant self :TAUNT and 3 stacks :VIGIL. Reset all enemies CD',
     },
   }),
   'karnulla ssr': new Karnulla({
@@ -91,7 +91,7 @@ export default {
     },
     '1B': {
       name: 'Doom Bloom',
-      description: 'Grant self Taunt and 2 stacks :VIGIL. Reset front row enemy CD',
+      description: 'Grant self :TAUNT and 2 stacks :VIGIL. Reset front row enemy CD',
     },
     '2B': {
       name: 'Annihilate Bloomer',
@@ -99,7 +99,7 @@ export default {
     },
     '4B': {
       name: 'In Full Bloom',
-      description: 'Grant self Taunt and 3 stacks :VIGIL. Reset all enemies CD',
+      description: 'Grant self :TAUNT and 3 stacks :VIGIL. Reset all enemies CD',
     },
   }),
   'karnulla skin-unreleased': new Karnulla({
