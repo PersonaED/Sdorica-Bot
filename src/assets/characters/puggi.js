@@ -12,7 +12,7 @@ export default {
     },
     advisor: {
       name: 'Motormouth',
-      description: 'Grant selected ally Taunt. (CD: 3)',
+      description: 'Grant selected ally :TAUNT. (CD: 3)',
     },
     '1B': {
       name: 'Mockingbird',
@@ -37,7 +37,7 @@ export default {
     },
     advisor: {
       name: 'Motormouth',
-      description: 'Grant selected ally Taunt. (CD: 3)',
+      description: 'Grant selected ally :TAUNT. (CD: 3)',
     },
     '1B': {
       name: 'Mockingbird',
@@ -62,7 +62,7 @@ export default {
     },
     advisor: {
       name: 'Motormouth',
-      description: 'Grant selected ally Taunt. (CD: 2)',
+      description: 'Grant selected ally :TAUNT. (CD: 2)',
     },
     '1B': {
       name: 'Mockingbird',
@@ -87,7 +87,7 @@ export default {
     },
     advisor: {
       name: 'Motormouth',
-      description: 'Grant selected ally Taunt. (CD: 1)',
+      description: 'Grant selected ally :TAUNT. (CD: 1)',
     },
     '1B': {
       name: 'Mockingbird',
