@@ -16,7 +16,7 @@ export default {
     },
     '1B': {
       name: 'Sidetrack King',
-      description: 'Grant selected ally Taunt for 3 turns.',
+      description: 'Grant selected ally :TAUNT for 3 turns.',
     },
     '2B': {
       name: 'King Pinned',
@@ -41,7 +41,7 @@ export default {
     },
     '1B': {
       name: 'Sidetrack King',
-      description: 'Grant selected ally Taunt for 3 turns.',
+      description: 'Grant selected ally :TAUNT for 3 turns.',
     },
     '2B': {
       name: 'King Pinned',
@@ -66,7 +66,7 @@ export default {
     },
     '1B': {
       name: 'Sidetrack King',
-      description: 'Grant selected ally Taunt for 3 turns, trigger 1-orb skill.',
+      description: 'Grant selected ally :TAUNT for 3 turns, trigger 1-orb skill.',
     },
     '2B': {
       name: 'King Pinned',
@@ -83,7 +83,7 @@ export default {
     title: 'Cunning Ruler',
     passive: {
       name: 'Ruler\'s Blessing',
-      description: 'Upon turn, if front row ally has over 20%/50%/80% Armor, grant ally Taunt/:TANKU/ :DMGRED.',
+      description: 'Upon turn, if front row ally has over 20%/50%/80% Armor, grant ally :TAUNT/:TANKU/ :DMGRED.',
     },
     advisor: {
       name: 'Ruler\'s Glory',
@@ -91,7 +91,7 @@ export default {
     },
     '1B': {
       name: 'Ruler\'s Decree',
-      description: 'Grant selected ally Taunt for 3 turns, trigger 1-orb skill.',
+      description: 'Grant selected ally :TAUNT for 3 turns, trigger 1-orb skill.',
     },
     '2B': {
       name: 'Ruler\'s Fortification',
