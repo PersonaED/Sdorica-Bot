@@ -80,7 +80,7 @@ export default {
   'puggi ssr': new Puggi({
     tier: TIER_SSR,
     sprite: 'https://i.imgur.com/7lFt0oG.png',
-    title: 'Puggi SSR: Seasoned Traveller',
+    title: 'Seasoned Traveller',
     passive: {
       name: 'False Bravado',
       description: 'Upon death of ally, grant self full HP and Armor.',
