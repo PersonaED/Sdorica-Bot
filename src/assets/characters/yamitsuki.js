@@ -105,7 +105,7 @@ export default {
   }),
   'yamitsuki sp': new Yamitsuki({
     tier: SP,
-    sprite: 'https://i.imgur.com/ZctlAIN.png',
+    sprite: 'https://i.imgur.com/zf1KJoJ.png',
     title: 'Nature\'s Beauty',
     passive: {
       name: 'Witching Hour',
