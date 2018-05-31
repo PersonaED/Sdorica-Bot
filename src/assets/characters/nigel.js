@@ -78,7 +78,7 @@ export default {
       description: 'Attack (:crossed_swords: x 4) front row enemy. If target less than 50% HP, increase skill power by 50% for this turn',
     },
   }),
-  'nigel sp': new Nigel({
+  'nigel sp': new NigelSP({
     tier: SP,
     sprite: 'https://i.imgur.com/YFtmC85.png',
     title: 'Tempest Wanderer',

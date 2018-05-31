@@ -103,7 +103,7 @@ export default {
       description: 'Armor Penetration (:crossed_swords: x 2.4) selected enemy, grant self :ENHANCE and :DMGRED for 3 turns.',
     },
   }),
-  'yamitsuki sp': new Yamitsuki({
+  'yamitsuki sp': new YamitsukiSP({
     tier: SP,
     sprite: 'https://i.imgur.com/zf1KJoJ.png',
     title: 'Nature\'s Beauty',
