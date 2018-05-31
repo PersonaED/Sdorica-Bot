@@ -101,6 +101,12 @@ const Status = [
     label: 'Armor Shift',
     description: 'Armor Shift: Upon turn, grant self HP equal to 30% of current Armor for each stack. 3 stacks max.',
   },
+  {
+    code: ':CHARISMA',
+    oldCode: 'CHARISMA',
+    label: 'Charisma',
+    description: 'Charisma: Increase all allies\' skill power by 30% for each stack. 3 stacks max.',
+  },
 ];
 
 export default Status;

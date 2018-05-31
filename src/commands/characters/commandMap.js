@@ -7,7 +7,7 @@ import { standardPrefix } from '../../config';
 const mapCharacterNames = (messageArray) => {
   const copiedMessage = [...messageArray];
 
-  // yanbo/yan-bo
+  //yanbo/yan-bo
   if (copiedMessage[0] === `${standardPrefix}yanbo`) {
     copiedMessage[0] = `${standardPrefix}yan-bo`;
   }
@@ -22,11 +22,17 @@ const mapCharacterNames = (messageArray) => {
     copiedMessage[0] = `${standardPrefix}fredrica`;
   }
 
+  //yami/yamitsuki
   if (copiedMessage[0] === `${standardPrefix}yami`) {
     copiedMessage[0] = `${standardPrefix}yamitsuki`;
   }
+  
+  //golem/golemwalt
+  if (copiedMessage[0] === `${standardPrefix}golem`) {
+    copiedMessage[0] = `${standardPrefix}golemwalt`;
+  }
 
-  // angelia skin/black
+  //angelia skin/black
   if (copiedMessage[0] === `${standardPrefix}angelia` && copiedMessage[1] === 'black') {
     copiedMessage[1] = 'skin';
   }

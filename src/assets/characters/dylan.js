@@ -42,7 +42,7 @@ export default {
     },
     '1B': {
       name: 'Shielded Stance',
-      description: 'Grant self (:crossed_swords: x 1.2) Armor and Taunt',
+      description: 'Grant self (:crossed_swords: x 1.2) Armor and :TAUNT',
     },
     '2B': {
       name: 'Shield Your Eyes',
@@ -67,7 +67,7 @@ export default {
     },
     '1B': {
       name: 'Shielded Stance',
-      description: 'Grant self (:crossed_swords: x 1.2) Armor and Taunt',
+      description: 'Grant self (:crossed_swords: x 1.2) Armor and :TAUNT',
     },
     '2B': {
       name: 'Shield Your Eyes',
@@ -92,7 +92,7 @@ export default {
     },
     '1B': {
       name: 'Shielded Stance',
-      description: 'Grant self (:crossed_swords: x 1.2) Armor and Taunt',
+      description: 'Grant self (:crossed_swords: x 1.2) Armor and :TAUNT',
     },
     '2B': {
       name: 'Shield Your Eyes',
@@ -109,7 +109,7 @@ export default {
     title: 'Refined Blaze',
     passive: {
       name: 'You Shall Not Pass',
-      description: 'Has Taunt for all turns. Upon receive Heal, trigger 1-orb skill',
+      description: 'Has :TAUNT for all turns. Upon receive Heal, trigger 1-orb skill',
     },
     advisor: {
       name: 'Indestructible Arms',

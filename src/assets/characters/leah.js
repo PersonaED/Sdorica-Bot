@@ -41,7 +41,7 @@ export default {
     },
     '1B': {
       name: 'Bad Egg',
-      description: 'Attack (:crossed_swords: x 1) random enemy, grant Taunt',
+      description: 'Attack (:crossed_swords: x 1) random enemy, grant :TAUNT',
     },
     '2B': {
       name: 'The Egg Chick',
@@ -66,7 +66,7 @@ export default {
     },
     '1B': {
       name: 'Bad Egg',
-      description: 'Attack (:crossed_swords: x 1) random enemy, grant Taunt',
+      description: 'Attack (:crossed_swords: x 1) random enemy, grant :TAUNT',
     },
     '2B': {
       name: 'The Egg Chick',

@@ -8,19 +8,19 @@ export default {
     title: 'Aristocrat Brat',
     passive: {
       name: 'Jump Grope',
-      description: 'Upon incoming damage skill, if have Taunt, retaliate with Attack (:crossed_swords: x 1) against selected enemy',
+      description: 'Upon incoming damage skill, if have :TAUNT, retaliate with Attack (:crossed_swords: x 1) against selected enemy',
     },
     advisor: {
       name: 'Trick Is Treat',
-      description: 'Upon incoming damage skill against ally, if ally have Taunt, 20% chance to trigger target 4-orb skill',
+      description: 'Upon incoming damage skill against ally, if ally have :TAUNT, 20% chance to trigger target 4-orb skill',
     },
     '1B': {
       name: 'Dead Giveaway',
-      description: 'Grant self Taunt for 5 turns. Reset front row enemy CD',
+      description: 'Grant self :TAUNT for 5 turns. Reset front row enemy CD',
     },
     '2B': {
       name: 'Dead Wait',
-      description: 'Grant self Taunt for 2 turns and :DMGRED. If have Taunt, Heal (:crossed_swords: x 1.8) self instead',
+      description: 'Grant self :TAUNT for 2 turns and :DMGRED. If have :TAUNT, Heal (:crossed_swords: x 1.8) self instead',
     },
     '4B': {
       name: "Knock 'Em Dead",
@@ -33,19 +33,19 @@ export default {
     title: 'Charms and Noble',
     passive: {
       name: 'Jump Grope',
-      description: 'Upon incoming damage skill, if have Taunt, retaliate with Attack (:crossed_swords: x 1.5) against selected enemy',
+      description: 'Upon incoming damage skill, if have :TAUNT, retaliate with Attack (:crossed_swords: x 1.5) against selected enemy',
     },
     advisor: {
       name: 'Trick Is Treat',
-      description: 'Upon incoming damage skill against ally, if ally have Taunt, 25% chance to trigger target 4-orb skill',
+      description: 'Upon incoming damage skill against ally, if ally have :TAUNT, 25% chance to trigger target 4-orb skill',
     },
     '1B': {
       name: 'Dead Giveaway',
-      description: 'Grant self Taunt for 5 turns. Reset front row enemy CD',
+      description: 'Grant self :TAUNT for 5 turns. Reset front row enemy CD',
     },
     '2B': {
       name: 'Dead Wait',
-      description: 'Grant self Taunt for 2 turns and 2 stacks :DMGRED. If have Taunt, Heal (:crossed_swords: x 1.8) self instead',
+      description: 'Grant self :TAUNT for 2 turns and 2 stacks :DMGRED. If have :TAUNT, Heal (:crossed_swords: x 1.8) self instead',
     },
     '4B': {
       name: "Knock 'Em Dead",
@@ -58,19 +58,19 @@ export default {
     title: 'Sir Dance a Lot',
     passive: {
       name: 'Jump Grope',
-      description: 'Upon incoming damage skill, if have Taunt, retaliate with Attack (:crossed_swords: x 1.5) against selected enemy, grant :POIS',
+      description: 'Upon incoming damage skill, if have :TAUNT, retaliate with Attack (:crossed_swords: x 1.5) against selected enemy, grant :POIS',
     },
     advisor: {
       name: 'Trick Is Treat',
-      description: 'Upon incoming damage skill against ally, if ally have Taunt, 30% chance to trigger target 4-orb skill',
+      description: 'Upon incoming damage skill against ally, if ally have :TAUNT, 30% chance to trigger target 4-orb skill',
     },
     '1B': {
       name: 'Dead Giveaway',
-      description: 'Grant self Taunt for 5 turns. Reset front row enemy CD',
+      description: 'Grant self :TAUNT for 5 turns. Reset front row enemy CD',
     },
     '2B': {
       name: 'Dead Wait',
-      description: 'Grant self Taunt for 2 turns and :DMGRED for 2 turns. If have Taunt, Heal (:crossed_swords: x 1.8) self instead',
+      description: 'Grant self :TAUNT for 2 turns and :DMGRED for 2 turns. If have :TAUNT, Heal (:crossed_swords: x 1.8) self instead',
     },
     '4B': {
       name: "Knock 'Em Dead",
@@ -83,7 +83,7 @@ export default {
     title: 'Shiny Derpy Pinky',
     passive: {
       name: 'Borrowed Steel',
-      description: 'Upon incoming damage skill, if have Taunt, trigger random ally 1-orb skill',
+      description: 'Upon incoming damage skill, if have :TAUNT, trigger random ally 1-orb skill',
     },
     advisor: {
       name: 'Tactical Taunting',
@@ -91,11 +91,11 @@ export default {
     },
     '1B': {
       name: 'Dead Giveaway',
-      description: 'Grant self Taunt for 5 turns. Reset front row enemy CD',
+      description: 'Grant self :TAUNT for 5 turns. Reset front row enemy CD',
     },
     '2B': {
       name: 'Mocking Jab',
-      description: 'Grant self Taunt for 2 turns and 2 stacks :DMGRED. If have Taunt, True Damage (:crossed_swords: x 1) all enemies, grant :EXH and :TEAR',
+      description: 'Grant self :TAUNT for 2 turns and 2 stacks :DMGRED. If have :TAUNT, True Damage (:crossed_swords: x 1) all enemies, grant :EXH and :TEAR',
     },
     '4B': {
       name: 'Pièce De Résistance ',

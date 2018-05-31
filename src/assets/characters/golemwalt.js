@@ -112,7 +112,7 @@ export default {
     },
     advisor: {
       name: 'Friends',
-      description: 'Grant all allies Armor Shift (CD:3)',
+      description: 'Grant all allies :ARMORSHIFT (CD: 3)',
     },
     '1B': {
       name: 'Trembling Roar',
