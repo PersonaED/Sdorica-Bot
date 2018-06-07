@@ -12,7 +12,7 @@ export default {
     },
     advisor: {
       name: 'The Pink Imprint',
-      description: 'Grant all allies 3 stacks :ENHANCE for 2 turns (CD: 12)',
+      description: 'Grant all player characters 3 stacks :ENHANCE for 2 turns (CD: 12)',
     },
     '1B': {
       name: 'Dancing With Costars',
@@ -20,11 +20,11 @@ export default {
     },
     '2B': {
       name: 'Care To Dance',
-      description: 'Heal (:crossed_swords: x 0.54) all allies, grant :ENHANCE.',
+      description: 'Heal (:crossed_swords: x 0.54) all player characters, grant :ENHANCE.',
     },
     '4B': {
       name: 'Dancing Queen',
-      description: 'Grant all allies 3 stacks :ENHANCE for 2 turns.',
+      description: 'Grant all player characters 3 stacks :ENHANCE for 2 turns.',
     },
   }),
   'lisa sr': new Lisa({
@@ -37,7 +37,7 @@ export default {
     },
     advisor: {
       name: 'The Pink Imprint',
-      description: 'Grant all allies 3 stacks :ENHANCE for 2 turns (CD: 11)',
+      description: 'Grant all player characters 3 stacks :ENHANCE for 2 turns (CD: 11)',
     },
     '1B': {
       name: 'Dancing With Costars',
@@ -45,11 +45,11 @@ export default {
     },
     '2B': {
       name: 'Care To Dance',
-      description: 'Heal (:crossed_swords: x 0.54) all allies, grant :ENHANCE and :VIGIL',
+      description: 'Heal (:crossed_swords: x 0.54) all player characters, grant :ENHANCE and :VIGIL',
     },
     '4B': {
       name: 'Dancing Queen',
-      description: 'Grant all allies 3 stacks :ENHANCE for 2 turns.',
+      description: 'Grant all player characters 3 stacks :ENHANCE for 2 turns.',
     },
   }),
   'lisa ssr': new Lisa({
@@ -62,7 +62,7 @@ export default {
     },
     advisor: {
       name: 'The Pink Imprint',
-      description: 'Grant all allies 3 stacks :ENHANCE for 2 turns (CD: 10)',
+      description: 'Grant all player characters 3 stacks :ENHANCE for 2 turns (CD: 10)',
     },
     '1B': {
       name: 'Dancing With Costars',
@@ -70,11 +70,11 @@ export default {
     },
     '2B': {
       name: 'Care To Dance',
-      description: 'Heal (:crossed_swords: x 0.54) all allies, grant :ENHANCE and :VIGIL for 2 turns',
+      description: 'Heal (:crossed_swords: x 0.54) all player characters, grant :ENHANCE and :VIGIL for 2 turns',
     },
     '4B': {
       name: 'Dancing Queen',
-      description: 'Grant all allies 3 stacks :ENHANCE for 2 turns.',
+      description: 'Grant all player characters 3 stacks :ENHANCE for 2 turns.',
     },
   }),
   'lisa skin-unreleased': new Lisa({
