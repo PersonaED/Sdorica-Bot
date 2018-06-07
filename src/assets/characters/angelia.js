@@ -21,7 +21,7 @@ export default {
     },
     '2B': {
       name: 'Let Us Pray',
-      description: 'Grant all allies (:crossed_swords: x 0.72) Armor',
+      description: 'Grant all player characters (:crossed_swords: x 0.72) Armor',
     },
     '4B': {
       name: 'Prayer Player',
@@ -46,7 +46,7 @@ export default {
     },
     '2B': {
       name: 'Let Us Pray',
-      description: 'Grant all allies (:crossed_swords: x 0.72) Armor',
+      description: 'Grant all player characters (:crossed_swords: x 0.72) Armor',
     },
     '4B': {
       name: 'Prayer Player',
@@ -71,7 +71,7 @@ export default {
     },
     '2B': {
       name: 'Let Us Pray',
-      description: 'Grant all allies (:crossed_swords: x 0.72) Armor',
+      description: 'Grant all player characters (:crossed_swords: x 0.72) Armor',
     },
     '4B': {
       name: 'Prayer Player',
@@ -96,7 +96,7 @@ export default {
     },
     '2B': {
       name: 'Let Us Pray',
-      description: 'Grant all allies (:crossed_swords: x 0.72) Armor, grant :DMGRED',
+      description: 'Grant all player characters (:crossed_swords: x 0.72) Armor, grant :DMGRED',
     },
     '4B': {
       name: 'Prayer Player',
@@ -121,7 +121,7 @@ export default {
     },
     '2B': {
       name: 'Glowing Prayer',
-      description: 'Grant all allies (:crossed_swords: x 0.72) Armor and :TANKU for 2 turns',
+      description: 'Grant all player characters (:crossed_swords: x 0.72) Armor and :TANKU for 2 turns',
     },
     '4B': {
       name: 'Luminious Radiance',
