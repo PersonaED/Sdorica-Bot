@@ -20,7 +20,7 @@ export default {
     },
     '2B': {
       name: 'Don\'t Call Me Short',
-      description: 'Attack (:crossed_swords: x 1.8) front row enemy. Grant taget :TEAR',
+      description: 'Attack (:crossed_swords: x 1.8) front row enemy. Grant target :TEAR',
     },
     '4B': {
       name: 'G.O.A.T',
@@ -33,7 +33,7 @@ export default {
     title: 'Horseless Cavalry',
     passive: {
       name: 'Now on Stage',
-      description: 'Upon start of each better, trigger self 2-orb skill',
+      description: 'Upon start of each battle, trigger self 2-orb skill',
     },
     advisor: {
       name: 'I Was Just Passing By',
@@ -45,7 +45,7 @@ export default {
     },
     '2B': {
       name: 'Don\'t Call Me Short',
-      description: 'Attack (:crossed_swords: x 1.8) front row enemy. Grant taget :TEAR. If have :ENHANCE, Attack (:crossed_swords: x 0.2) gold position ally and (:crossed_swords: x 2) front row enemy. Grant enemy :TEAR for 2 turns',
+      description: 'Attack (:crossed_swords: x 1.8) front row enemy. Grant target :TEAR. If have :ENHANCE, Attack (:crossed_swords: x 0.2) gold position ally and (:crossed_swords: x 2) front row enemy. Grant enemy :TEAR for 2 turns',
     },
     '4B': {
       name: 'G.O.A.T',
@@ -58,7 +58,7 @@ export default {
     title: 'Size Doesn\'t Matter',
     passive: {
       name: 'Now on Stage',
-      description: 'Upon start of each better, trigger self 1-orb skill and 2-orb skill',
+      description: 'Upon start of each battle, trigger self 1-orb skill and 2-orb skill',
     },
     advisor: {
       name: 'I Was Just Passing By',
