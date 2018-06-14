@@ -1,4 +1,4 @@
-import { TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR, SKILL_BOOK } from '../constants';
 import Pang from './model/Pang';
 
 export default {
