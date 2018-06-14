@@ -102,4 +102,29 @@ export default {
       description: 'Attack (:crossed_swords: x 3) front row enemy. Grant self 2 stacks :ENHANCE for 3 turns',
     },
   }),
+ 'pang skin': new Pang({
+    tier: SKILL_BOOK,
+    sprite: 'https://i.imgur.com/dQgfGAn.png',
+    title: 'Radiant Master',
+    passive: {
+      name: 'Solar Flare Power',
+      description: 'Upon cast 4-orb skill by ally, this character\'s next skill cast deals bonus damage (:crossed_swords: x 2)',
+    },
+    advisor: {
+      name: 'Eye-catching Moves',
+      description: 'Upon cast 4-orb skill by ally, grant other allies (skill caster excluded) :WARCRY',
+    },
+    '1B': {
+      name: 'Shining Finger',
+      description: 'Attack (:crossed_swords: x 0.75) front row enemy. Heal (:crossed_swords: x 0.675) self ',
+    },
+    '2B': {
+      name: 'Sunshine Smash',
+      description: 'Attack (:crossed_swords: x 1.5) front row enemy. Grant self :WARCRY',
+    },
+    '4B': {
+      name: "Golden Tiger Fist",
+      description: 'Attack (:crossed_swords: x 3) front row enemy. Grant self :WARCRY for 3 turns',
+    },
+  }), 
 };
