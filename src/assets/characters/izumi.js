@@ -16,15 +16,15 @@ export default {
     },
     '1B': {
       name: 'Fluttering Petals',
-      description: 'If umbrella is in the "Close" Position, enter the "Open" position for 8 turns; upon taking damage, shift back to "Close". If umbrella is in the "Open" position, grant selected ally :TAUNT instead',
+      description: 'If umbrella is in the "Close" Position, enter the "Open" position for 8 turns; upon taking damage, shift back to "Close". \nIf umbrella is in the "Open" position, grant selected ally :TAUNT instead',
     },
     '2B': {
       name: 'Dreams Of Prosperity',
-      description: 'If umbrella is in the "Close" position, Heal (:crossed_swords: x 1.62) player character with lowest HP. If umbrella is in the "Open" position, grant CD +1 to all enemies with CD:1 insead',
+      description: 'If umbrella is in the "Close" position, Heal (:crossed_swords: x 1.62) player character with lowest HP. \nIf umbrella is in the "Open" position, grant CD +1 to all enemies with CD:1 insead',
     },
     '4B': {
       name: 'Hyakka Ryouran',
-      description: 'If umbrella is in the "Close" position, enter the "Open" position for 6 turns with passive activated. If umbrella is in the "Open" position, grant 1 self stack of :CLOSEIMMUNITY instead',
+      description: 'If umbrella is in the "Close" position, enter the "Open" position for 6 turns with passive activated. \nIf umbrella is in the "Open" position, grant 1 self stack of :CLOSEIMMUNITY instead',
     },
   }),
   'izumi sr': new Izumi({
@@ -41,15 +41,15 @@ export default {
     },
     '1B': {
       name: 'Fluttering Petals',
-      description: 'If umbrella is in the "Close" Position, enter the "Open" position for 8 turns; upon taking damage, shift back to "Close". If umbrella is in the "Open" position, grant selected ally :TAUNT instead',
+      description: 'If umbrella is in the "Close" Position, enter the "Open" position for 8 turns; upon taking damage, shift back to "Close". \nIf umbrella is in the "Open" position, grant selected ally :TAUNT instead',
     },
     '2B': {
       name: 'Dreams Of Prosperity',
-      description: 'If umbrella is in the "Close" position, Heal (:crossed_swords: x 1.62) player character with lowest HP. If umbrella is in the "Open" position, grant CD +1 to all enemies with CD:1 insead',
+      description: 'If umbrella is in the "Close" position, Heal (:crossed_swords: x 1.62) player character with lowest HP. \nIf umbrella is in the "Open" position, grant CD +1 to all enemies with CD:1 insead',
     },
     '4B': {
       name: 'Hyakka Ryouran',
-      description: 'If umbrella is in the "Close" position, enter the "Open" position for 6 turns with passive activated. If umbrella is in the "Open" position, Heal (:crossed_swords: x 0.9) player character with lowest HP, grant 1 self stack of :CLOSEIMMUNITY instead',
+      description: 'If umbrella is in the "Close" position, enter the "Open" position for 6 turns with passive activated. \nIf umbrella is in the "Open" position, Heal (:crossed_swords: x 0.9) player character with lowest HP, grant 1 self stack of :CLOSEIMMUNITY instead',
     },
   }),
   'izumi ssr': new Izumi({
@@ -66,15 +66,15 @@ export default {
     },
     '1B': {
       name: 'Fluttering Petals',
-      description: 'If umbrella is in the "Close" Position, enter the "Open" position for 8 turns; upon taking damage, shift back to "Close". If umbrella is in the "Open" position, grant selected ally :TAUNT instead',
+      description: 'If umbrella is in the "Close" Position, enter the "Open" position for 8 turns; upon taking damage, shift back to "Close". \nIf umbrella is in the "Open" position, grant selected ally :TAUNT instead',
     },
     '2B': {
       name: 'Dreams Of Prosperity',
-      description: 'If umbrella is in the "Close" position, Heal (:crossed_swords: x 1.62) player character with lowest HP. If umbrella is in the "Open" position, grant CD +1 to all enemies with CD:1 insead',
+      description: 'If umbrella is in the "Close" position, Heal (:crossed_swords: x 1.62) player character with lowest HP. \nIf umbrella is in the "Open" position, grant CD +1 to all enemies with CD:1 insead',
     },
     '4B': {
       name: 'Magnificent Brilliance',
-      description: 'If umbrella is in the "Close" position, enter the "Open" position for 6 turns with passive activated. If umbrella is in the "Open" position, evolve passive Attack (:crossed_swords: x 2) for all turns instead. If already evolved, Heal (:crossed_swords: x 0.9) player character with lowest HP, grant 1 self stack of :CLOSEIMMUNITY instead',
+      description: 'If umbrella is in the "Close" position, enter the "Open" position for 6 turns with passive activated. \nIf umbrella is in the "Open" position, evolve passive Attack (:crossed_swords: x 2) for all turns instead. If already evolved, Heal (:crossed_swords: x 0.9) player character with lowest HP, grant 1 self stack of :CLOSEIMMUNITY instead',
     },
   }),
 };
