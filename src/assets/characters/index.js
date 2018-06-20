@@ -9,6 +9,7 @@ import fatima from './fatima';
 import fredrica from './fredrica';
 import golemwalt from './golemwalt';
 import hestia from './hestia';
+import izumi from './izumi';
 import jahan from './jahan';
 import karnulla from './karnulla';
 import kittyeyes from './kittyeyes';
@@ -44,6 +45,7 @@ export {
   fredrica,
   golemwalt,
   hestia,
+  izumi,
   jahan,
   karnulla,
   kittyeyes,

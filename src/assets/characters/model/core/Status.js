@@ -107,6 +107,12 @@ const Status = [
     label: 'Charisma',
     description: 'Charisma: Increase all allies\' skill power by 30% for each stack. 3 stacks max.',
   },
+  {
+    code: ':CLOSEIMMUNITY',
+    oldCode: 'CLOSEIMMUNITY',
+    label: 'Close Immunity',
+    description: 'Close Immunity: Upon taking damage, will not shift back to "Close" position once per stack. Can have multiple stacks.',
+  },
 ];
 
 export default Status;
