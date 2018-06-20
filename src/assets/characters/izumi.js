@@ -20,7 +20,7 @@ export default {
     },
     '2B': {
       name: 'Dreams Of Prosperity',
-      description: 'If umbrella is in the "Close" position, Heal (:crossed_swords: x 1.62) player character with lowest HP. \nIf umbrella is in the "Open" position, grant CD +1 to all enemies with CD:1 insead',
+      description: 'If umbrella is in the "Close" position, Heal (:crossed_swords: x 1.62) player character with lowest HP. \nIf umbrella is in the "Open" position, grant CD +1 to all enemies with CD:1 instead',
     },
     '4B': {
       name: 'Hyakka Ryouran',
@@ -45,7 +45,7 @@ export default {
     },
     '2B': {
       name: 'Dreams Of Prosperity',
-      description: 'If umbrella is in the "Close" position, Heal (:crossed_swords: x 1.62) player character with lowest HP. \nIf umbrella is in the "Open" position, grant CD +1 to all enemies with CD:1 insead',
+      description: 'If umbrella is in the "Close" position, Heal (:crossed_swords: x 1.62) player character with lowest HP. \nIf umbrella is in the "Open" position, grant CD +1 to all enemies with CD:1 instead',
     },
     '4B': {
       name: 'Hyakka Ryouran',
@@ -70,7 +70,7 @@ export default {
     },
     '2B': {
       name: 'Dreams Of Prosperity',
-      description: 'If umbrella is in the "Close" position, Heal (:crossed_swords: x 1.62) player character with lowest HP. \nIf umbrella is in the "Open" position, grant CD +1 to all enemies with CD:1 insead',
+      description: 'If umbrella is in the "Close" position, Heal (:crossed_swords: x 1.62) player character with lowest HP. \nIf umbrella is in the "Open" position, grant CD +1 to all enemies with CD:1 instead',
     },
     '4B': {
       name: 'Magnificent Brilliance',
