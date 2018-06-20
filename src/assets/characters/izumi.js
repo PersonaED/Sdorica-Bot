@@ -12,7 +12,7 @@ export default {
     },
     advisor: {
       name: 'The Fox\'s Charm',
-      description: 'If gold character has not taken damage for 4 turns, Izumi will Attack (:crossed_swords: x 0.96) back row enemy each turn. Upon taking damage by gold character, reset turn counter',
+      description: 'If gold character has not taken damage for 4 turns, Izumi will Attack (:crossed_swords: x 0.6) back row enemy each turn. Upon taking damage by gold character, reset turn counter',
     },
     '1B': {
       name: 'Fluttering Petals',
@@ -37,7 +37,7 @@ export default {
     },
     advisor: {
       name: 'The Fox\'s Charm',
-      description: 'If gold character has not taken damage for 3 turns, Izumi will Attack (:crossed_swords: x 0.96) back row enemy each turn. Upon taking damage by gold character, reset turn counter',
+      description: 'If gold character has not taken damage for 3 turns, Izumi will Attack (:crossed_swords: x 0.6) back row enemy each turn. Upon taking damage by gold character, reset turn counter',
     },
     '1B': {
       name: 'Fluttering Petals',
@@ -62,7 +62,7 @@ export default {
     },
     advisor: {
       name: 'The Fox\'s Charm',
-      description: 'If gold character has not taken damage for 2 turns, Izumi will Attack (:crossed_swords: x 0.96) back row enemy each turn. Upon taking damage by gold character, reset turn counter',
+      description: 'If gold character has not taken damage for 2 turns, Izumi will Attack (:crossed_swords: x 0.6) back row enemy each turn. Upon taking damage by gold character, reset turn counter',
     },
     '1B': {
       name: 'Fluttering Petals',
