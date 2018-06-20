@@ -19,7 +19,8 @@ export const STUN = 'Stun: Can\'t cast skill. Remove upon incoming damage skill.
 export const WARCRY = 'War Cry: Increase skill power by 30% for each stack. 3 stacks max. Upon cast skill, grant self 1 stack.';
 export const ARMORSHIFT = 'Armor Shift: Upon turn, grant self HP equal to 30% of current Armor for each stack. 3 stacks max.';
 export const TAUNT = 'Taunt: Become primary target.';
-export const CHARISMA = 'Charisma: Increases all allies\' skill power by 30% for each stack. 3 stacks max.'
+export const CHARISMA = 'Charisma: Increases all allies\' skill power by 30% for each stack. 3 stacks max.';
+export const CLOSEIMMUNITY = 'Close Immunity: Upon taking damage, will not shift back to "Close" position once per stack. Can have multiple stacks.'
 
 // tier level
 export const TIER_N = 'N';
