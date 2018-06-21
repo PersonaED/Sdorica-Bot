@@ -74,7 +74,7 @@ export default {
     },
     '4B': {
       name: 'Magnificent Brilliance',
-      description: 'If umbrella is in the "Close" position, enter the "Open" position for 6 turns with passive activated. \nIf umbrella is in the "Open" position, evolve passive Attack (:crossed_swords: x 2) for all turns instead. If already evolved, Heal (:crossed_swords: x 0.9) player character with lowest HP, grant 1 self stack of :CLOSEIMMUNITY instead',
+      description: 'If umbrella is in the "Close" position, enter the "Open" position for 6 turns with passive activated. \nIf umbrella is in the "Open" position, evolve passive Attack (:crossed_swords: x 2) for all turns instead. If already evolved, Heal (:crossed_swords: x 2.7) player character with lowest HP, grant 1 self stack of :CLOSEIMMUNITY instead',
     },
   }),
 };
