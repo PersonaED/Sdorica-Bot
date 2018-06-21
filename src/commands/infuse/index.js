@@ -186,16 +186,6 @@ export const millionInfuseCommand = (message, splitContent) => {
     }
     return true;
   }
-  if (splitContent[0] === `${standardPrefix}infuse-harvest`) {
-    if (splitContent.length > 1 && splitContent[1] === '10') {
-      console.log(harvestInfuseTable);
-      console.log(harvestInfuseTableSROnly);
-      rollMany(message, harvestInfuseTable, 10, true, false, splitContent[2], harvestInfuseTableSROnly);
-    } else {
-      rollOne(message, harvestInfuseTable);
-    }
-    return true;
-  }
   return false;
 };
 
