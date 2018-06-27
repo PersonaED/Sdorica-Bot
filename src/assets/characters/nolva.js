@@ -77,29 +77,29 @@ export default {
       description: 'True Damage (:crossed_swords: x 2) all enemies. Grant ally and all enemies 3 stacks :VUL',
     },
   }),
-  'nolva skin-unreleased': new Nolva({
+  'nolva skin': new Nolva({
     tier: SKILL_BOOK,
     sprite: 'https://i.imgur.com/Zc0bSfR.png',
-    title: '?????',
+    title: 'Somnus Puppeteer',
     passive: {
-      name: '?????',
-      description: '?????',
+      name: 'Puppet Trick: Forever',
+      description: 'For each downed ally, increase self skill power by 30%',
     },
     advisor: {
-      name: '?????',
-      description: '?????',
+      name: 'Puppet Trick: Little Secrets',
+      description: 'For each downed ally, increase remaining allies\' skill power by 30%',
     },
     '1B': {
-      name: '?????',
-      description: '?????',
+      name: 'Puppet Trick: Hopscotch Time',
+      description: 'True Damage (:crossed_swords: x 1) all enemies and (:crossed_swords: x 0.5) all allies',
     },
     '2B': {
-      name: '?????',
-      description: '?????',
+      name: 'Puppet Trick: Naughty Child',
+      description: 'Remove 30% of max HP from all player characters, grant all player characters 2 stacks :DMGRED and :ENHANCE for 2 turns',
     },
     '4B': {
-      name: '?????',
-      description: '?????',
+      name: 'Puppet Trick: New Toys',
+      description: 'True Damage (:crossed_swords: x 2.5) all enemies, trigger death of allies',
     },
     status: [],
   }),
