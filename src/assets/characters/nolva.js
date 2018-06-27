@@ -79,7 +79,7 @@ export default {
   }),
   'nolva skin': new Nolva({
     tier: SKILL_BOOK,
-    sprite: 'https://i.imgur.com/Zc0bSfR.png',
+    sprite: 'https://i.imgur.com/XYn0FAp.png',
     title: 'Somnus Puppeteer',
     passive: {
       name: 'Puppet Trick: Forever',
