@@ -106,7 +106,7 @@ export default {
   'nigel skin': new Nigel({
     tier: SKILL_BOOK,
     sprite: 'https://i.imgur.com/2D00IVa.png',
-    skin: 'Calamity Cutlass',
+    title: 'Calamity Cutlass',
     passive: {
       name: 'Into The Wind',
       description: 'Upon cast skill by player character, if target has 3 stacks of any debuff, increase skill power by 50%',
