@@ -103,29 +103,29 @@ export default {
       description: 'Armor Penetration (:crossed_swords: x 1.5) enemy with highest and lowest Armor.',
     },
   }),
-  'nigel skin-unreleased': new Nigel({
+  'nigel skin': new Nigel({
     tier: SKILL_BOOK,
     sprite: 'https://i.imgur.com/2D00IVa.png',
-    skin: '?????',
+    skin: 'Calamity Cutlass',
     passive: {
-      name: '?????',
-      description: '?????',
+      name: 'Into The Wind',
+      description: 'Upon cast skill by player character, if target has 3 stacks of any debuff, increase skill power by 50%',
     },
     advisor: {
-      name: '?????',
-      description: '?????',
+      name: 'Downwind',
+      description: 'Upon cast skill by ally, if target has 3 stacks of any debuff, increase skill power by 50%',
     },
     '1B': {
-      name: '?????',
-      description: '?????',
+      name: 'Upwind Edge',
+      description: 'Attack (:crossed_swords: x 0.5) front row enemy, grant 2 stacks :EXH',
     },
     '2B': {
-      name: '?????',
-      description: '?????',
+      name: 'Double Payback',
+      description: 'Attack (:crossed_swords: x 1.5) selected enemy; copy all debuffs this character has, grant selected enemy 3 stacks of the copied debuffs',
     },
     '4B': {
-      name: '?????',
-      description: '?????',
+      name: 'Calamity Gash',
+      description: 'Attack (:crossed_swords: x 3.5) front row enemy, grant 3 stacks :TEAR',
     },
   }),
 };
