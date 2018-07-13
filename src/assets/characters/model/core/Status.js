@@ -113,6 +113,18 @@ const Status = [
     label: 'Close Immunity',
     description: 'Close Immunity: Upon taking damage, will not shift back to "Close" position once per stack. Can have multiple stacks.',
   },
+  {
+    code: ':SUPPORT',
+    oldCode: 'SUPPORT',
+    label: 'Support',
+    description: 'Support: Upon cast damage skill by ally, Kittyeyes will throw her knife at the same target and grant Game Tag. 3 stacks max.',
+  },
+  {
+    code: ':VIGOR',
+    oldCode: 'VIGOR',
+    label: 'Vigor',
+    description: 'Vigor: Upon 3 stacks Vigor, remove Vigor from self, trigger 4-orb skill.',
+  },
 ];
 
 export default Status;
