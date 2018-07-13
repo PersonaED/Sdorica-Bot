@@ -31,11 +31,17 @@ const mapCharacterNames = (messageArray) => {
   if (copiedMessage[0] === `${standardPrefix}golem`) {
     copiedMessage[0] = `${standardPrefix}golemwalt`;
   }
+  
+  //kitty/kittyeyes
+  if (copiedMessage[0] === `${standardPrefix}kitty`) {
+    copiedMessage[0] = `${standardPrefix}kittyeyes`;
+  }
 
   //angelia skin/black
   if (copiedMessage[0] === `${standardPrefix}angelia` && copiedMessage[1] === 'black') {
     copiedMessage[1] = 'skin';
   }
+  
   return copiedMessage;
 };
 
