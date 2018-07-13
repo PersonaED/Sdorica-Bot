@@ -103,7 +103,7 @@ export default {
       description: 'True Damage (:crossed_swords: x 1) all enemies, grant Game Tag',
     },
   }),
-    'kittyeyes sp': new Kittyeyes({
+    'kittyeyes sp': new KittyeyesSP({
     tier: SP,
     sprite: 'https://i.imgur.com/2fLHa7N.png',
     title: 'Sweet Snack',
