@@ -105,7 +105,7 @@ export default {
   }),
     'kittyeyes sp': new Kittyeyes({
     tier: SP,
-    sprite: 'https://imgur.com/2fLHa7N',
+    sprite: 'https://i.imgur.com/2fLHa7N.png',
     title: 'Sweet Snack',
     passive: {
       name: 'A Maid\'s Duty',
