@@ -1,5 +1,6 @@
 import { TIER_R, TIER_SR, TIER_SSR, SKILL_BOOK, TIER_N, SP } from '../constants';
 import Kittyeyes from './model/Kittyeyes';
+import KittyeyesSP from './model/KittyeyesSP';
 
 export default {
   'kittyeyes n': new Kittyeyes({
