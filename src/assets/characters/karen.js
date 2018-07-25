@@ -74,7 +74,7 @@ export default {
     },
     '4B': {
       name: 'Total Armageddon',
-      description: 'Fire all weapons simultaneously.\\n\\n Machine gun: Armor Penetration (:crossed_swords: x 0.525) random enemy 3 times, remove 1 non-black orb.\\n Flamethrower: Attack (:crossed_swords: x 1) all enemies, remove 1 non-black orb.\\n Laser Blaster: True Damage (:crossed_swords: x 1) selected enemy, remove 1 non-black orb.',
+      description: 'Fire all weapons simultaneously.\n\n Machine gun: Armor Penetration (:crossed_swords: x 0.525) random enemy 3 times, remove 1 non-black orb.\n Flamethrower: Attack (:crossed_swords: x 1) all enemies, remove 1 non-black orb.\n Laser Blaster: True Damage (:crossed_swords: x 1) selected enemy, remove 1 non-black orb.',
     },
   }),
 };
