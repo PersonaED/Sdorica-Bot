@@ -12,7 +12,7 @@ export default {
     },
     advisor: {
       name: 'Public Support',
-      description: 'If gold character has Armor, increase black character's skill power by 15%.',
+      description: 'If gold character has Armor, increase black character\'s skill power by 15%.',
     },
     '1B': {
       name: 'Gun Control',
@@ -45,7 +45,7 @@ export default {
     },
     advisor: {
       name: 'Public Support',
-      description: 'If gold character has Armor or :DMGRED, increase black character's skill power by 15%. (Up to 30%)',
+      description: 'If gold character has Armor or :DMGRED, increase black character\'s skill power by 15%. (Up to 30%)',
     },
     '1B': {
       name: 'Gun Control',
@@ -78,7 +78,7 @@ export default {
     },
     advisor: {
       name: 'Public Support',
-      description: 'If gold character has Armor, :DMGRED or :TAUNT, increase black character's skill power by 15%. (Up to 45%)',
+      description: 'If gold character has Armor, :DMGRED or :TAUNT, increase black character\'s skill power by 15%. (Up to 45%)',
     },
     '1B': {
       name: 'Gun Control',
