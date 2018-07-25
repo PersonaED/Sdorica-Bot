@@ -4,7 +4,7 @@ import Karen from './model/Karen';
 export default {
   'karen r': new Karen({
     tier: TIER_R,
-    sprite: 'https://i.imgur.com/gxp5MYV.png',
+    sprite: 'https://i.imgur.com/PkjnUhj.png',
     title: 'Local Commerce President',
     passive: {
       name: 'Armed and Ready',
@@ -29,7 +29,7 @@ export default {
   }),
   'karen sr': new Karen({
     tier: TIER_SR,
-    sprite: 'https://i.imgur.com/soxgPHa.png',
+    sprite: 'https://i.imgur.com/uc9adUH.png',
     title: 'Senior Commerce President',
     passive: {
       name: 'Armed and Ready',
@@ -54,7 +54,7 @@ export default {
   }),
   'karen ssr': new Karen({
     tier: TIER_SSR,
-    sprite: 'https://i.imgur.com/PEDEMmr.png',
+    sprite: 'https://i.imgur.com/2lZW0z9.png',
     title: 'Executive Commerce President',
     passive: {
       name: 'Armed and Ready',
