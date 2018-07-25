@@ -83,11 +83,11 @@ export default {
     title: 'Beaming Bride',
     passive: {
       name: 'Morning Breeze',
-      description: 'Upon player's turn, remove 1 orb.',
+      description: 'Upon player\'s turn, remove 1 orb.',
     },
     advisor: {
       name: 'Auburn Sunset',
-      description: 'Trigger gold character 1-orb skill 2 times. If said character has armor, trigger 1 extra time. (CD:5)',
+      description: 'Trigger gold character 1-orb skill 2 times. If said character has armor, trigger 1 extra time. (CD: 5)',
     },
     '1B': {
       name: 'Sunrise Jingle',
