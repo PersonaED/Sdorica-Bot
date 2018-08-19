@@ -24,7 +24,7 @@ export default {
     },
     '4B': {
       name: 'Command No. 66',
-      description: 'If offense mode, Attack (:crossed_swords: x 3) selected enemy. If support mode, Heal (:crossed_swords: x 2.7) selected ally.',
+      description: 'If offense mode, Attack (:crossed_swords: x 3.5) selected enemy. If support mode, Heal (:crossed_swords: x 3.15) selected ally.',
     },
   }),
   'sherlock sr': new Sherlock({
@@ -33,7 +33,7 @@ export default {
     title: 'Mean Moneybags',
     passive: {
       name: 'Transformer Horror',
-      description: 'Upon cast skill by ally, if orb board is altered, grant :ENHANCE.',
+      description: 'Upon cast skill by ally, if the command zone is altered, grant :ENHANCE for 2 turns.',
     },
     advisor: {
       name: 'Avant Guard',
@@ -49,7 +49,7 @@ export default {
     },
     '4B': {
       name: 'Command No. 66',
-      description: 'If offense mode, Attack (:crossed_swords: x 3) selected enemy. If support mode, Heal (:crossed_swords: x 2.7) selected ally.',
+      description: 'If offense mode, Attack (:crossed_swords: x 3.5) selected enemy. If support mode, Heal (:crossed_swords: x 3.15) selected ally.',
     },
   }),
   'sherlock ssr': new Sherlock({
@@ -58,7 +58,7 @@ export default {
     title: 'Profit Prophet',
     passive: {
       name: 'Transformer Horror',
-      description: 'Upon cast skill by ally, if orb board is altered, grant :ENHANCE for 2 turns.',
+      description: 'Upon cast skill by ally, if the command zone is altered, grant :ENHANCE for 3 turns.',
     },
     advisor: {
       name: 'Avant Guard',
@@ -74,7 +74,7 @@ export default {
     },
     '4B': {
       name: 'Command No. 66',
-      description: 'If offense mode, Attack (:crossed_swords: x 3) selected enemy. If support mode, Heal (:crossed_swords: x 2.7) selected ally.',
+      description: 'If offense mode, Attack (:crossed_swords: x 3.5) selected enemy. If support mode, Heal (:crossed_swords: x 3.15) selected ally.',
     },
   }),
 };
