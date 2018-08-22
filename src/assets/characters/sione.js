@@ -17,7 +17,7 @@ export default {
     },
     '1B': {
       name: 'High Roller Blade',
-      description: 'Grant self :DMGRED for 3 turns',
+      description: 'Grant self :TAUNT and :DMGRED for 3 turns',
     },
     '2B': {
       name: 'Blade Runner',
@@ -25,7 +25,7 @@ export default {
     },
     '4B': {
       name: 'Blades of Glory',
-      description: 'True Damage (:crossed_swords: x 1) all enemies',
+      description: 'True Damage (:crossed_swords: x 1.5) all enemies',
     },
   }),
   'sione sr': new Sione({
@@ -42,7 +42,7 @@ export default {
     },
     '1B': {
       name: 'High Roller Blade',
-      description: 'Grant self :DMGRED for 3 turns',
+      description: 'Grant self :TAUNT and :DMGRED for 3 turns',
     },
     '2B': {
       name: 'Blade Runner',
@@ -50,7 +50,7 @@ export default {
     },
     '4B': {
       name: 'Blades of Glory',
-      description: 'True Damage (:crossed_swords: x 1) all enemies',
+      description: 'True Damage (:crossed_swords: x 1.5) all enemies',
     },
   }),
   'sione ssr': new Sione({
@@ -67,7 +67,7 @@ export default {
     },
     '1B': {
       name: 'High Roller Blade',
-      description: 'Grant self Taunt and :DMGRED for 3 turns',
+      description: 'Grant self :TAUNT and :DMGRED for 5 turns',
     },
     '2B': {
       name: 'Blade Runner',
@@ -75,7 +75,7 @@ export default {
     },
     '4B': {
       name: 'Blades of Glory',
-      description: 'True Damage (:crossed_swords: x 1) all enemies',
+      description: 'True Damage (:crossed_swords: x 1.5) all enemies',
     },
   }),
   'sione skin': new Sione({
@@ -92,7 +92,7 @@ export default {
     },
     '1B': {
       name: 'Cool, Calm, Collected',
-      description: 'Grant self Taunt and :DMGRED for 3 turns',
+      description: 'Grant self :TAUNT and :DMGRED for 5 turns',
     },
     '2B': {
       name: 'Flying Swallow Slash',
@@ -100,7 +100,7 @@ export default {
     },
     '4B': {
       name: 'Dancing Flames',
-      description: 'True Damage (:crossed_swords: x 1) all enemies. If target has :VUL, grant :VUL for 2 extra turns',
+      description: 'True Damage (:crossed_swords: x 1.5) all enemies. If target has :VUL, grant :VUL for 2 extra turns',
     },
   }),
   'sione sp': new SioneSP({
