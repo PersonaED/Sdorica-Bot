@@ -1,5 +1,6 @@
-import { TIER_R, TIER_SR, TIER_SSR, SKILL_BOOK } from '../constants';
+import { TIER_R, TIER_SR, TIER_SSR, SKILL_BOOK, SP } from '../constants';
 import Lisa from './model/Lisa';
+import LisaSP from './model/LisaSP';
 
 export default {
   'lisa r': new Lisa({
@@ -100,6 +101,31 @@ export default {
     '4B': {
       name: 'Moonlight Twirl',
       description: 'Trigger black character 2-orb skill 2 times. If said character has :ENHANCE, trigger 1 extra time.',
+    },
+  }),
+  'lisa sp': new LisaSP({
+    tier: SP,
+    sprite: 'https://i.imgur.com/3ylKqM1.png',
+    title: 'Steel Rose',
+    passive: {
+      name: 'Engage Autopilot',
+      description: 'Upon player\'s turn, trigger self skill 1 time. The triggers follow the order of 1, 2, 4-orb skill. (1-orb skill one turn, 2-orb skill the next turn and son on)',
+    },
+    advisor: {
+      name: 'Pressure Valve Safety',
+      description: 'Increase gold character\'s skill ratio by 30%.',
+    },
+    '1B': {
+      name: 'Heavy Shield Breaks',
+      description: 'Grant self (:crossed_swords: x 0.72) Armor, remove 1 gold orb. If already cast 1-orb skill this turn, grant self :DMGRED for 2 turns.',
+    },
+    '2B': {
+      name: 'Reckless Acceleration',
+      description: 'Armor Penetration (:crossed_swords: x 0.75) back row enemy, remove 1 gold orb. If already cast 2-orb skill this turn, Armor Penetration (:crossed_swords: x 0.75) all enemies instead, remove 1 gold orb.',
+    },
+    '4B': {
+      name: 'Mechanical Demolition',
+      description: 'Armor Penetration (:crossed_swords: x 0.9) selected enemy, remove 1 gold orb. If already cast 4-orb skill this turn, Armor Penetration (:crossed_swords: x 1.8) selected enemy instead, remove 1 gold orb.',
     },
   }),
 };
