@@ -77,29 +77,29 @@ export default {
       description: 'Grant all player characters 3 stacks :ENHANCE for 2 turns.',
     },
   }),
-  'lisa skin-unreleased': new Lisa({
+  'lisa skin': new Lisa({
     tier: SKILL_BOOK,
     sprite: 'https://i.imgur.com/0NhJjZG.png',
-    title: '?????',
+    title: 'Beaming Bride',
     passive: {
-      name: '?????',
-      description: '?????',
+      name: 'Morning Breeze',
+      description: 'Upon player\'s turn, remove 1 orb.',
     },
     advisor: {
-      name: '?????',
-      description: '?????',
+      name: 'Auburn Sunset',
+      description: 'Trigger gold character 1-orb skill 2 times. If said character has armor, trigger 1 extra time. (CD: 5)',
     },
     '1B': {
-      name: '?????',
-      description: '?????',
+      name: 'Sunrise Jingle',
+      description: 'Grant selected ally :WARCRY for 3 turns.',
     },
     '2B': {
-      name: '?????',
-      description: '?????',
+      name: 'Nightfall Chime',
+      description: 'Trigger gold character 1-orb skill 2 times. If said character has armor, trigger 1 extra time.',
     },
     '4B': {
-      name: '?????',
-      description: '?????',
+      name: 'Moonlight Twirl',
+      description: 'Trigger black character 2-orb skill 2 times. If said character has :ENHANCE, trigger 1 extra time.',
     },
   }),
 };

@@ -11,6 +11,7 @@ import golemwalt from './golemwalt';
 import hestia from './hestia';
 import izumi from './izumi';
 import jahan from './jahan';
+import karen from './karen';
 import karnulla from './karnulla';
 import kittyeyes from './kittyeyes';
 import koll from './koll';
@@ -47,6 +48,7 @@ export {
   hestia,
   izumi,
   jahan,
+  karen,
   karnulla,
   kittyeyes,
   koll,
