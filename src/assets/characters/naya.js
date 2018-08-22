@@ -12,19 +12,19 @@ export default {
     },
     advisor: {
       name: 'Bolt Down',
-      description: 'Attack (:crossed_swords: x 0.6) selected enemy, grant :VUL for 2 turns (CD: 7)',
+      description: 'Attack (:crossed_swords: x 0.6) selected enemy, grant :VUL for 2 turns. (CD: 7)',
     },
     '1B': {
       name: 'Hot Shot',
-      description: 'Attack (:crossed_swords: x 0.6) selected enemy, grant :VUL for 2 turns',
+      description: 'Attack (:crossed_swords: x 0.6) selected enemy, grant :VUL for 2 turns.',
     },
     '2B': {
       name: 'Blood Shot',
-      description: 'Attack (:crossed_swords: x 1.2) selected enemy. 20% chance for a Critical Strike that does 2x Damage',
+      description: 'Attack (:crossed_swords: x 1.2) selected enemy, 25% chance to deal (:crossed_swords: x 2.4) instead.',
     },
     '4B': {
       name: 'Skyfall Shot',
-      description: 'Attack (:crossed_swords: x 2.5) selected enemy',
+      description: 'Attack (:crossed_swords: x 3) selected enemy.',
     },
   }),
   'naya r': new Naya({
@@ -37,19 +37,19 @@ export default {
     },
     advisor: {
       name: 'Bolt Down',
-      description: 'Attack (:crossed_swords: x 0.6) selected enemy, grant :VUL for 2 turns (CD: 7)',
+      description: 'Attack (:crossed_swords: x 0.6) selected enemy, grant :VUL for 2 turns. (CD: 7)',
     },
     '1B': {
       name: 'Hot Shot',
-      description: 'Attack (:crossed_swords: x 0.6) selected enemy, grant :VUL for 2 turns',
+      description: 'Attack (:crossed_swords: x 0.6) selected enemy, grant :VUL for 2 turns.',
     },
     '2B': {
       name: 'Blood Shot',
-      description: 'Attack (:crossed_swords: x 1.2) selected enemy. 20% chance for a Critical Strike that does 2x Damage',
+      description: 'Attack (:crossed_swords: x 1.2) selected enemy, 25% chance to deal (:crossed_swords: x 2.4) instead.',
     },
     '4B': {
       name: 'Skyfall Shot',
-      description: 'Attack (:crossed_swords: x 2.5) selected enemy. 20% chance for a Critical Strike that does 2x Damage',
+      description: 'Attack (:crossed_swords: x 3) selected enemy, 25% chance to deal (:crossed_swords: x 4.5) instead.',
     },
   }),
   'naya sr': new Naya({
@@ -58,23 +58,23 @@ export default {
     title: 'Volley Fall',
     passive: {
       name: 'Bullseye',
-      description: 'Upon cast Attack, if target has :VUL, double Critical Strike Chance',
+      description: 'Upon cast Attack, if target has :VUL, double 2-orb and 4-orb skill potential.',
     },
     advisor: {
       name: 'Bolt Down',
-      description: 'Attack (:crossed_swords: x 0.6) selected enemy, grant :VUL for 2 turns (CD: 6)',
+      description: 'Attack (:crossed_swords: x 0.6) selected enemy, grant :VUL for 2 turns. (CD: 6)',
     },
     '1B': {
       name: 'Hot Shot',
-      description: 'Attack (:crossed_swords: x 0.6) selected enemy, grant :VUL for 2 turns',
+      description: 'Attack (:crossed_swords: x 0.6) selected enemy, grant :VUL for 2 turns.',
     },
     '2B': {
       name: 'Blood Shot',
-      description: 'Attack (:crossed_swords: x 1.2) selected enemy. 20% chance to trigger self 4-orb skill instead',
+      description: 'Attack (:crossed_swords: x 1.2) selected enemy, 50% chance to deal (:crossed_swords: x 2.4) instead.',
     },
     '4B': {
       name: 'Skyfall Shot',
-      description: 'Attack (:crossed_swords: x 2.5) selected enemy. 20% chance for a Critical Strike that does 2x Damage',
+      description: 'Attack (:crossed_swords: x 3) selected enemy, 25% chance to deal (:crossed_swords: x 4.5) instead.',
     },
   }),
   'naya ssr': new Naya({
@@ -83,23 +83,23 @@ export default {
     title: 'Cascade Of Curses',
     passive: {
       name: 'Bullseye',
-      description: 'Upon cast Attack, if target has :EXH/:VUL, double Critical Strike Chance',
+      description: 'Upon cast Attack, if target has :EXH/:VUL, double 2-orb and 4-orb skill potential.',
     },
     advisor: {
       name: 'Bolt Down',
-      description: 'Attack (:crossed_swords: x 0.6) selected enemy, grant :VUL for 2 turns (CD: 5)',
+      description: 'Attack (:crossed_swords: x 0.6) selected enemy, grant :VUL for 2 turns. (CD: 5)',
     },
     '1B': {
       name: 'Hot Shot',
-      description: 'Attack (:crossed_swords: x 0.6) selected enemy, grant :VUL for 2 turns',
+      description: 'Attack (:crossed_swords: x 0.6) selected enemy, grant :VUL for 2 turns.',
     },
     '2B': {
       name: 'Blood Shot',
-      description: 'Attack (:crossed_swords: x 1.2) selected enemy. 20% chance to trigger self 4-orb skill instead',
+      description: 'Attack (:crossed_swords: x 1.2) selected enemy, 50% chance to deal (:crossed_swords: x 2.4) instead.',
     },
     '4B': {
       name: 'Skyfall Shot',
-      description: 'Attack (:crossed_swords: x 2.5) selected enemy. 20% chance for a Critical Strike that does 3x Damage',
+      description: 'Attack (:crossed_swords: x 3) selected enemy, 50% chance to deal (:crossed_swords: x 4.5) instead.',
     },
   }),
   'naya skin': new Naya({
