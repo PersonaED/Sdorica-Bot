@@ -20,11 +20,11 @@ export default {
     },
     '2B': {
       name: 'Food Aid',
-      description: 'Heal (:crossed_swords: x 1.35) selected ally.',
+      description: 'Heal (:crossed_swords: x 1.8) selected ally.',
     },
     '4B': {
       name: 'Food Lay Waste',
-      description: 'Armor Penetration (:crossed_swords: x 2.4) back row enemy.',
+      description: 'Armor Penetration (:crossed_swords: x 3) back row enemy.',
     },
   }),
   'lio sr': new Lio({
@@ -45,11 +45,11 @@ export default {
     },
     '2B': {
       name: 'Food Aid',
-      description: 'Heal (:crossed_swords: x 1.35) selected ally.',
+      description: 'Heal (:crossed_swords: x 1.8) selected ally.',
     },
     '4B': {
       name: 'Food Lay Waste',
-      description: 'Armor Penetration (:crossed_swords: x 2.4) back row enemy.',
+      description: 'Armor Penetration (:crossed_swords: x 3) back row enemy.',
     },
   }),
   'lio ssr': new Lio({
@@ -70,11 +70,11 @@ export default {
     },
     '2B': {
       name: 'Food Aid',
-      description: 'Heal (:crossed_swords: x 1.35) selected ally.',
+      description: 'Heal (:crossed_swords: x 1.8) selected ally.',
     },
     '4B': {
       name: 'Food Lay Waste',
-      description: 'Armor Penetration (:crossed_swords: x 2.4) back row enemy.',
+      description: 'Armor Penetration (:crossed_swords: x 3) back row enemy.',
     },
   }),
   'lio skin': new Lio({
