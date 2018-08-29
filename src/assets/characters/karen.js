@@ -5,7 +5,7 @@ export default {
   'karen r': new Karen({
     tier: TIER_R,
     sprite: 'https://i.imgur.com/PkjnUhj.png',
-    title: 'Local Commerce President',
+    title: 'Local Board President',
     passive: {
       name: 'Armed and Ready',
       description: 'If gold character has Armor, increase self skill power by 15%.',
@@ -30,7 +30,7 @@ export default {
   'karen sr': new Karen({
     tier: TIER_SR,
     sprite: 'https://i.imgur.com/uc9adUH.png',
-    title: 'Senior Commerce President',
+    title: 'Senior Board President',
     passive: {
       name: 'Armed and Ready',
       description: 'If gold character has Armor or :DMGRED, increase self skill power by 15%. (Up to 30%)',
@@ -55,7 +55,7 @@ export default {
   'karen ssr': new Karen({
     tier: TIER_SSR,
     sprite: 'https://i.imgur.com/2lZW0z9.png',
-    title: 'Executive Commerce President',
+    title: 'Executive Board President',
     passive: {
       name: 'Armed and Ready',
       description: 'If gold character has Armor, :DMGRED or :TAUNT, increase self skill power by 15%. (Up to 45%)',
