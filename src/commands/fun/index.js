@@ -1,6 +1,6 @@
 import { standardPrefix } from "../../config";
 
-// JayDex, Na, Extrang, Cory, Rewase, Brionacc, Setesh, Krestfall, Nothing, Gugu, Meokya, Evermoving
+// JayDex, Na, Extrang, Cory, Rewase, Brionacc, Setesh, Krestfall, Nothing, Gugu, Meokya, Evermoving, Alan
 const validGFLUsers = [
   "128456283115356160",
   "157803628458016768",
@@ -13,10 +13,11 @@ const validGFLUsers = [
   "295165778716655617",
   "370557305458130955",
   "437600844725354517",
-  "452538924490031105"
+  "452538924490031105",
+  "289406908262121472"
 ];
 
-const onlyForUsers = ["157803628458016768"];
+const onlyForUsers = ["157803628458016768", "443039178515677184"];
 
 const fun = (message, splitContent) => {
   if (
