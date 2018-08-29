@@ -125,6 +125,12 @@ const Status = [
     label: 'Vigor',
     description: 'Vigor: Upon 3 stacks Vigor, remove Vigor from self, trigger 4-orb skill.',
   },
+  {
+    code: ':MAGEPOWER',
+    oldCode: 'MAGEPOWER',
+    label: 'Mage Power',
+    description: 'Mage Power: Increase skill ratio by 10% for each stack. 3 stacks max.',
+  },
 ];
 
 export default Status;
