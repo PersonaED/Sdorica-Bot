@@ -1,3 +1,6 @@
 src/settings.js
 node_modules
 build
+.vscode/settings.json
+log/error.log
+log/info.log
