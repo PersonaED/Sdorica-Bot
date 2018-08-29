@@ -24,7 +24,7 @@ export default {
     },
     '4B': {
       name: 'Bird Brain Storming',
-      description: 'Grant selected enemy CD +3',
+      description: 'Grant selected enemy CD +3.',
     },
   }),
   'puggi r': new Puggi({
@@ -49,7 +49,7 @@ export default {
     },
     '4B': {
       name: 'Bird Brain Storming',
-      description: 'Grant selected enemy CD +3',
+      description: 'Grant selected enemy CD +3.',
     },
   }),
   'puggi sr': new Puggi({
@@ -70,11 +70,11 @@ export default {
     },
     '2B': {
       name: "Bird's The Word",
-      description: 'Heal (:crossed_swords: x 2.25) or (:crossed_swords: x 0.9) selected ally, grant :ENHANCE',
+      description: 'Heal (:crossed_swords: x 2.25) or (:crossed_swords: x 0.9) selected ally, grant :ENHANCE.',
     },
     '4B': {
       name: 'Bird Brain Storming',
-      description: 'Grant selected enemy CD +3',
+      description: 'Grant selected enemy CD +3.',
     },
   }),
   'puggi ssr': new Puggi({
@@ -95,11 +95,11 @@ export default {
     },
     '2B': {
       name: "Bird's The Word",
-      description: 'Heal (:crossed_swords: x 2.25) or (:crossed_swords: x 0.9) selected ally, grant :ENHANCE',
+      description: 'Heal (:crossed_swords: x 2.25) or (:crossed_swords: x 0.9) selected ally, grant :ENHANCE.',
     },
     '4B': {
       name: 'Bird Brain Storming',
-      description: 'Grant all enemies CD +3',
+      description: 'Grant all enemies CD +3.',
     },
   }),
   'puggi skin': new Puggi({
@@ -116,7 +116,7 @@ export default {
     },
     '1B': {
       name: 'Mockingbird',
-      description: 'Grant selected enemy 2 stacks of :EXH',
+      description: 'Grant selected enemy 2 stacks of :EXH.',
     },
     '2B': {
       name: 'Praise The Lord',
@@ -124,7 +124,7 @@ export default {
     },
     '4B': {
       name: 'All Hail Puggi!',
-      description: 'Trigger all allies 4-orb skill. Reset all anemies CD',
+      description: 'Trigger all allies 4-orb skill. Reset all enemies\' CD.',
     },
   }),
 };
