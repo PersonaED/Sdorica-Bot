@@ -17,7 +17,11 @@ const validGFLUsers = [
   "289406908262121472"
 ];
 
-const onlyForUsers = ["157803628458016768", "443039178515677184"];
+const onlyForUsers = [
+  "157803628458016768",
+  "443039178515677184",
+  "128456283115356160"
+];
 
 const fun = (message, splitContent) => {
   if (
@@ -37,11 +41,23 @@ const fun = (message, splitContent) => {
     splitContent[0] === `${standardPrefix}gfl` &&
     onlyForUsers.includes(message.author.id)
   ) {
-    let stringBuilder = "";
+    let messageBuilder = `<@${message.author.id}> says: `;
+    for (let i = 1; i < splitContent.length; i++) {
+      messageBuilder = `${messageBuilder} ${splitContent[i]}`;
+    }
+    if (splitContent.length === 1) {
+      messageBuilder = `<@${message.author.id}> Notifying:`;
+    }
+
+    let stringBuilder = `${messageBuilder}\n\n`;
     validGFLUsers.forEach(id => {
-      stringBuilder = `${stringBuilder} <@${id}>`;
+      if (id !== message.author.id) {
+        stringBuilder = `${stringBuilder}<@${id}> `;
+      }
     });
-    message.channel.send(stringBuilder);
+    message.channel.send(stringBuilder).then(msg => {
+      msg.delete(300000);
+    });
     return true;
   }
   return false;
