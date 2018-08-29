@@ -77,30 +77,29 @@ export default {
       description: 'Attack (:crossed_swords: x 2) all enemies. Clear 3 orbs',
     },
   }),
-  'charle skin-unreleased': new Charle({
+  'charle skin': new Charle({
     tier: SKILL_BOOK,
     sprite: 'https://i.imgur.com/PkeR5Zw.png',
-    title: '?????',
+    title: 'Authority of Knowledge',
     passive: {
-      name: '?????',
-      description: '?????',
+      name: 'Orb Circulation',
+      description: 'Every time the command zone is altered, grant self 1 stack of :MAGEPOWER.',
     },
     advisor: {
-      name: '?????',
-      description: '?????',
+      name: 'Rune Rebirth',
+      description: 'Every time the command zone is altered, Heal (:crossed_swords: x 0.45) selected ally. This effect can only be triggered once per turn.',
     },
     '1B': {
-      name: '?????',
-      description: '?????',
+      name: 'Celestial Beam',
+      description: 'Attack (:crossed_swords: x 0.9) selected enemy, remove 1 orb.',
     },
     '2B': {
-      name: '?????',
-      description: '?????',
+      name: 'Sapphire Luster',
+      description: 'Attack (:crossed_swords: x 0.9) all enemies, remove 2 orbs.',
     },
     '4B': {
-      name: '?????',
-      description: '?????',
+      name: ' Heavenly Sparks',
+      description: 'Attack (:crossed_swords: x 1.5) all enemies and Heal (:crossed_swords: x 1.35) all player characters, remove all stacks of :MAGEPOWER.',
     },
-    status: [],
   }),
 };
