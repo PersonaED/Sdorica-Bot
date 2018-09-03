@@ -56,7 +56,7 @@ const fun = (message, splitContent) => {
       }
     });
     message.channel.send(stringBuilder).then(msg => {
-      msg.delete(300000);
+      msg.delete(43200000);
     });
     return true;
   }
