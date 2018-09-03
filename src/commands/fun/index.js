@@ -20,7 +20,8 @@ const validGFLUsers = [
 const onlyForUsers = [
   "157803628458016768",
   "443039178515677184",
-  "128456283115356160"
+  "128456283115356160",
+  "289406908262121472"
 ];
 
 const fun = (message, splitContent) => {
