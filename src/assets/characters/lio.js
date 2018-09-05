@@ -102,4 +102,29 @@ export default {
       description: 'Armor Penetration (:crossed_swords: x 2.25) selected enemy. 50% chance to trigger target CD +3',
     },
   }),
+  'lio sp': new LioSP({
+    tier: SP,
+    sprite: 'https://i.imgur.com/3on3iAE.png',
+    title: 'Flutterfly MAX!',
+    passive: {
+      name: 'Soul Energy Refuel',
+      description: 'Upon being damaged by ally, grant self 1 stack :OVERLOAD.',
+    },
+    advisor: {
+      name: 'Hyper B, B, Beam!',
+      description: 'Grant all enemies CD +1. (CD: 6)',
+    },
+    '1B': {
+      name: 'Flutterfly on Deck',
+      description: 'Regular mode: Grant self (:crossed_swords: x 1.8) Armor.\nIf have :OVERLOAD: Heal (:crossed_swords: x 2.25) self, remove 1 stack of :OVERLOAD.',
+    },
+    '2B': {
+      name: 'Booster Gold',
+      description: 'Regular mode: Armor Penetration (:crossed_swords: x 0.75) all enemies.\nIf have :OVERLOAD: Grant all enemies CD +2, remove 1 stack of :OVERLOAD.',
+    },
+    '4B': {
+      name: 'Supernova Insulator',
+      description: 'Regular mode: Grant self (:crossed_swords: x 3.6) Armor and :OVERLOAD.\nIf have :OVERLOAD: Grant all enemies CD +3, remove 1 stack of :OVERLOAD.',
+    },
+  }),
 };
