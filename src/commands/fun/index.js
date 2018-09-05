@@ -14,13 +14,15 @@ const validGFLUsers = [
   "370557305458130955",
   "437600844725354517",
   "452538924490031105",
-  "289406908262121472"
+  "289406908262121472",
+  "245434444008128512"
 ];
 
 const onlyForUsers = [
   "157803628458016768",
   "443039178515677184",
-  "128456283115356160"
+  "128456283115356160",
+  "289406908262121472"
 ];
 
 const fun = (message, splitContent) => {
@@ -56,7 +58,7 @@ const fun = (message, splitContent) => {
       }
     });
     message.channel.send(stringBuilder).then(msg => {
-      msg.delete(300000);
+      msg.delete(43200000);
     });
     return true;
   }
