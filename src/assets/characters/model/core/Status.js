@@ -131,6 +131,12 @@ const Status = [
     label: 'Mage Power',
     description: 'Mage Power: Increase skill ratio by 10% for each stack. 3 stacks max.',
   },
+  {
+    code: ':OVERLOAD',
+    oldCode: 'OVERLOAD',
+    label: 'Overload',
+    description: 'Overload: When Lio has Overload, his skills change.',
+  },
 ];
 
 export default Status;
