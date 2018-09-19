@@ -16,7 +16,7 @@ export default {
       description: 'Upon receive Armor of ally, grant self Taunt',
     },
     '1B': {
-      name: 'Lead a Stray',
+      name: 'Lead A Stray',
       description: 'Attack (:crossed_swords: x 1) front row enemy. If target has Armor, Armor Penetration (:crossed_swords: x 0.75) target instead',
     },
     '2B': {
@@ -41,7 +41,7 @@ export default {
       description: 'Upon receive Armor of ally, grant self Taunt',
     },
     '1B': {
-      name: 'Lead a Stray',
+      name: 'Lead A Stray',
       description: 'Attack (:crossed_swords: x 1) front row enemy. If target has Armor, Armor Penetration (:crossed_swords: x 0.75) target instead',
     },
     '2B': {
@@ -66,7 +66,7 @@ export default {
       description: 'Upon receive Armor of ally, grant self Taunt for 2 Turns',
     },
     '1B': {
-      name: 'Lead a Stray',
+      name: 'Lead A Stray',
       description: 'Attack (:crossed_swords: x 1) front row enemy. If target has Armor, Armor Penetration (:crossed_swords: x 0.75) target instead',
     },
     '2B': {
@@ -75,7 +75,7 @@ export default {
     },
     '4B': {
       name: 'Follow My Lead',
-      description: 'Attack (:crossed_swords: x 4) front row enemy. If target less than 50% HP, increase skill power by 50% for this turn',
+      description: 'Attack (:crossed_swords: x 4) front row enemy. If target less than 50% HP, increase skill ratio by 50% for this turn',
     },
   }),
   'nigel sp': new NigelSP({
@@ -96,11 +96,11 @@ export default {
     },
     '2B': {
       name: 'Twin Katana Strike',
-      description: 'Attack (:crossed_swords: x 1) enemy with highest and lowest HP.',
+      description: 'Attack (:crossed_swords: x 1) enemy with highest HP, then Attack (:crossed_swords: x 1) enemy with lowest HP.',
     },
     '4B': {
       name: 'Blooming Blood Flower',
-      description: 'Armor Penetration (:crossed_swords: x 1.5) enemy with highest and lowest Armor.',
+      description: 'Armor Penetration (:crossed_swords: x 1.5) enemy with highest Armor, then Armor Penetration (:crossed_swords: x 1.5) enemy with lowest Armor.',
     },
   }),
   'nigel skin': new Nigel({

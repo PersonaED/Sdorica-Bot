@@ -8,11 +8,11 @@ export default {
     title: 'Rebirth Reynard',
     passive: {
       name: 'Ukiyo-e',
-      description: 'If not taken damage for 4 turns in the "Open" position, Attack (:crossed_swords: x 1.2) back row enemy each turn. Upon taking damage, reset turn counter',
+      description: 'If not taken damage for 4 turns in the "Open" position, Attack (:crossed_swords: x 1.2) back row enemy at the end of enemy\'s turn. Upon taking damage, reset turn counter',
     },
     advisor: {
       name: 'The Fox\'s Charm',
-      description: 'If gold character has not taken damage for 4 turns, Izumi will Attack (:crossed_swords: x 0.6) back row enemy each turn. Upon taking damage by gold character, reset turn counter',
+      description: 'If gold character has not taken damage for 4 turns, Izumi will Attack (:crossed_swords: x 0.6) back row enemy at the end of enemy\'s turn. Upon taking damage by gold character, reset turn counter',
     },
     '1B': {
       name: 'Fluttering Petals',
@@ -33,11 +33,11 @@ export default {
     title: 'Foxy Berserker',
     passive: {
       name: 'Ukiyo-e',
-      description: 'If not taken damage for 3 turns in the "Open" position, Attack (:crossed_swords: x 1.2) back row enemy each turn. Upon taking damage, reset turn counter',
+      description: 'If not taken damage for 3 turns in the "Open" position, Attack (:crossed_swords: x 1.2) back row enemy at the end of enemy\'s turn. Upon taking damage, reset turn counter',
     },
     advisor: {
       name: 'The Fox\'s Charm',
-      description: 'If gold character has not taken damage for 3 turns, Izumi will Attack (:crossed_swords: x 0.6) back row enemy each turn. Upon taking damage by gold character, reset turn counter',
+      description: 'If gold character has not taken damage for 3 turns, Izumi will Attack (:crossed_swords: x 0.6) back row enemy at the end of enemy\'s turn. Upon taking damage by gold character, reset turn counter',
     },
     '1B': {
       name: 'Fluttering Petals',
@@ -58,11 +58,11 @@ export default {
     title: 'Kitsuné Of Death',
     passive: {
       name: 'Ukiyo-e',
-      description: 'If not taken damage for 2 turns in the "Open" position, Attack (:crossed_swords: x 1.2) back row enemy each turn. Upon taking damage, reset turn counter',
+      description: 'If not taken damage for 2 turns in the "Open" position, Attack (:crossed_swords: x 1.2) back row enemy at the end of enemy\'s turn. Upon taking damage, reset turn counter',
     },
     advisor: {
       name: 'The Fox\'s Charm',
-      description: 'If gold character has not taken damage for 2 turns, Izumi will Attack (:crossed_swords: x 0.6) back row enemy each turn. Upon taking damage by gold character, reset turn counter',
+      description: 'If gold character has not taken damage for 2 turns, Izumi will Attack (:crossed_swords: x 0.6) back row enemy at the end of enemy\'s turn. Upon taking damage by gold character, reset turn counter',
     },
     '1B': {
       name: 'Fluttering Petals',

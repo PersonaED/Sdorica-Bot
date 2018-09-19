@@ -33,7 +33,7 @@ export default {
     title: 'Femme Fatale',
     passive: {
       name: 'From The Ashes',
-      description: 'Only requires 4 Resurrection orbs to Resurrect. Upon Ressurect, grant self 3 stacks :ENHANCE',
+      description: 'Only requires 4 Resurrection orbs to Resurrect. Upon Resurrect, grant self 3 stacks :ENHANCE',
     },
     advisor: {
       name: 'Feather Tribe\'s Gift',
@@ -58,7 +58,7 @@ export default {
     title: 'Feathering Starlight',
     passive: {
       name: 'From The Ashes',
-      description: 'Only requires 4 Resurrection orbs to Resurrect. Upon Ressurect, grant self 3 stacks :ENHANCE. When downed, upon turn, deal True Damage (:crossed_swords: x 0.4) to selected enemy',
+      description: 'Only requires 4 Resurrection orbs to Resurrect. Upon Resurrect, grant self 3 stacks :ENHANCE. When downed, upon the end of player\'s turn, deal True Damage (:crossed_swords: x 0.4) to selected enemy',
     },
     advisor: {
       name: 'Feather Tribe\'s Gift',

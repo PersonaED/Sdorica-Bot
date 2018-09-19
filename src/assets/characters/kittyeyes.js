@@ -109,7 +109,7 @@ export default {
     title: 'Sweet Snack',
     passive: {
       name: 'A Maid\'s Duty',
-      description: 'Upon turn, Attack (:crossed_swords: x 0.5)(:crossed_swords: x 0.4) (:crossed_swords: x 0.3) targets with Game Tag multiple times based on number of stacks, remove Game Tag',
+      description: 'Upon the end of player\'s turn, Attack (:crossed_swords: x 0.5)(:crossed_swords: x 0.4) (:crossed_swords: x 0.3) targets with Game Tag multiple times based on number of stacks, remove Game Tag',
     },
     advisor: {
       name: 'Have Some Tea',

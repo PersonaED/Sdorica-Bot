@@ -34,7 +34,7 @@ export default {
     title: 'Nevermore Ninja',
     passive: {
       name: 'Insult To Injury',
-      description: 'Upon cast damage skill, if target has :VUL, increase skill power by 50% for this turn.',
+      description: 'Upon cast damage skill, if target has :VUL, increase skill ratio by 50% for this turn.',
     },
     advisor: {
       name: 'After Dark',
@@ -59,7 +59,7 @@ export default {
     title: 'Twin Of Twilight',
     passive: {
       name: 'Insult To Injury',
-      description: 'Upon cast damage skill, if target has :VUL/:EXH, increase skill power by 50% for this turn.',
+      description: 'Upon cast damage skill, if target has :VUL/:EXH, increase skill ratio by 50% for this turn.',
     },
     advisor: {
       name: 'After Dark',
@@ -84,19 +84,19 @@ export default {
     title: 'Dawnblade Killer',
     passive: {
       name: 'In Broad Daylight',
-      description: 'Upon turn, if have both :ENHANCE and :DMGRED, trigger self 1-orb skill.',
+      description: 'Upon the end of player\'s turn, if have both :ENHANCE and :DMGRED, trigger self 1-orb skill.',
     },
     advisor: {
       name: 'Suspicious Shadow',
-      description: 'Upon turn, if ally has both :ENHANCE and :DMGRED, trigger 1-orb skill.',
+      description: 'Upon the end of player\'s turn, if ally has both :ENHANCE and :DMGRED, trigger 1-orb skill.',
     },
     '1B': {
       name: 'Dawn Of Judgement',
-      description: 'Armor Penetration (:crossed_swords: x 0.6) selected enemy. If target has :DMGRED, copy 1 stack of it for 6 turns.',
+      description: 'Armor Penetration (:crossed_swords: x 0.6) selected enemy. If target has :DMGRED, copy 1 stack for 6 turns.',
     },
     '2B': {
       name: 'Conviction Verdict',
-      description: 'Armor Penetration (:crossed_swords: x 1.35) selected enemy. If target has :ENHANCE, copy 1 stack of it for 6 turns.',
+      description: 'Armor Penetration (:crossed_swords: x 1.35) selected enemy. If target has :ENHANCE, copy 1 stack for 6 turns.',
     },
     '4B': {
       name: 'Acquittal Declared',

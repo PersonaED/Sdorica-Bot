@@ -83,7 +83,7 @@ export default {
     title: 'Cunning Ruler',
     passive: {
       name: 'Ruler\'s Blessing',
-      description: 'Upon turn, if front row ally has over 20%/50%/80% Armor, grant ally :TAUNT/:TANKU/ :DMGRED.',
+      description: 'Upon the end of player\'s turn, if front row ally has over 20%/50%/80% Armor, grant ally :TAUNT/:TANKU/:DMGRED.',
     },
     advisor: {
       name: 'Ruler\'s Glory',

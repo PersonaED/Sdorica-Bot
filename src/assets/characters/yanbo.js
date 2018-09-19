@@ -83,22 +83,22 @@ export default {
     title: 'Enlightened One',
     passive: {
       name: 'Unlimited Power',
-      description: 'Upon turn, if have 5 stacks High Qi. Attack (:crossed_swords: x 1) all enemies. Upon cast 1/2/4-orb skill, reset High Qi stacks',
+      description: 'Upon the end of player\'s turn, if have 5 stacks High Qi, Attack (:crossed_swords: x 1) all enemies. Upon cast 1/2/4-orb skill, reset High Qi stacks',
     },
     advisor: {
-      name: 'Spirit Enhancement',
-      description: 'Upon Turn if front row ally has 3 stacks of any buff, trigger 2-orb skill',
+      name: 'Spirit Enchantment',
+      description: 'Upon player\'s turn, if front row ally has 3 stacks of any buff, trigger 2-orb skill',
     },
     '1B': {
-      name: 'Feel The Force',
-      description: 'Grant Self 1 stack High Qi',
+      name: 'Deep Breathing',
+      description: 'Grant self 1 stack High Qi',
     },
     '2B': {
       name: 'Tranquil Mind',
-      description: 'Grant Self 2 Stacks High Qi',
+      description: 'Grant self 2 Stacks High Qi',
     },
     '4B': {
-      name: 'Deep Breathing',
+      name: 'Feel The Force',
       description: 'Grant self 3 stacks High Qi',
     },
   }),

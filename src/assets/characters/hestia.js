@@ -108,7 +108,7 @@ export default {
     title: 'Flowers\' Whisper',
     passive: {
       name: 'Spring Solo',
-      description: 'Upon turn, grant self a random buff',
+      description: 'Upon player\'s turn, grant self a random buff',
     },
     advisor: {
       name: 'Summer Aria',
@@ -116,7 +116,7 @@ export default {
     },
     '1B': {
       name: 'Fall Etude',
-      description: 'Grand self a random buff for 2 turns.',
+      description: 'Grant self a random buff for 2 turns.',
     },
     '2B': {
       name: 'Winter Fantasia',
@@ -124,7 +124,7 @@ export default {
     },
     '4B': {
       name: 'Hestia\'s Four Seasons',
-      description: 'Copy all buffs this character has, grant all allies 3 stack of the copied buffs for 2 turns',
+      description: 'Copy all buffs this character has, grant all allies 3 stacks of the copied buffs for 2 turns',
     },
   }),
 };
