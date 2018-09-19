@@ -1,5 +1,6 @@
-import { TIER_R, TIER_SR, TIER_SSR, SKILL_BOOK } from '../constants';
+import { TIER_R, TIER_SR, TIER_SSR, SKILL_BOOK, SP } from '../constants';
 import Lio from './model/Lio';
+import LioSP from './model/LioSP';
 
 export default {
   'lio r': new Lio({
