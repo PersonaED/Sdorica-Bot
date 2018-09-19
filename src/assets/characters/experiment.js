@@ -33,7 +33,7 @@ export default {
     title: 'Evolution Module',
     passive: {
       name: 'Kick Starter',
-      description: 'Upon incoming Attack, grant self 1 stack. Upon 5 stacks, grant self :SHOCKL. Upon receive Heal, reset stacks',
+      description: 'Upon incoming damage skill, grant self 1 stack. Upon 5 stacks, grant self :SHOCKL. Upon receive Heal, reset stacks',
     },
     advisor: {
       name: 'Convert Alert',
@@ -58,7 +58,7 @@ export default {
     title: 'Genesis Module',
     passive: {
       name: 'Kick Starter',
-      description: 'Upon incoming Attack, grant self 1 stack. Upon 7 stacks, grant self :SHOCKL. Upon receive Heal, reset stacks',
+      description: 'Upon incoming damage skill, grant self 1 stack. Upon 7 stacks, grant self :SHOCKL. Upon receive Heal, reset stacks',
     },
     advisor: {
       name: 'Convert Alert',
