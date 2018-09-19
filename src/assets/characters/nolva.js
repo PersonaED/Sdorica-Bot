@@ -33,7 +33,7 @@ export default {
     title: 'Doll Housekeeper',
     passive: {
       name: 'For Gig Goals',
-      description: 'If any character has :VUL, increase self skill power by 15% for each character present',
+      description: 'Increase self skill power by 15% for each character with :VUL',
     },
     advisor: {
       name: 'Incur Mission',
@@ -58,7 +58,7 @@ export default {
     title: 'Muppet Artiste',
     passive: {
       name: 'For Gig Goals',
-      description: 'If any character has :VUL, increase self skill power by 20% for each character present',
+      description: 'Increase self skill power by 20% for each character with :VUL',
     },
     advisor: {
       name: 'Incur Mission',
@@ -95,7 +95,7 @@ export default {
     },
     '2B': {
       name: 'Puppet Trick: Naughty Child',
-      description: 'Remove 30% of max HP from all player characters, grant all player characters 2 stacks :DMGRED and :ENHANCE for 2 turns',
+      description: 'Deal damage to all player characters equal to 30% of their max HP, grant all player characters 2 stacks :DMGRED and :ENHANCE for 2 turns',
     },
     '4B': {
       name: 'Puppet Trick: New Toys',
