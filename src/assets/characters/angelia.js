@@ -124,7 +124,7 @@ export default {
       description: 'Grant all player characters (:crossed_swords: x 0.72) Armor and :TANKU for 2 turns',
     },
     '4B': {
-      name: 'Luminious Radiance',
+      name: 'Luminous Radiance',
       description: 'Heal (:crossed_swords: x 1.8) front row ally, grant :EXH, trigger 2-orb skill 2 times',
     },
   }),
