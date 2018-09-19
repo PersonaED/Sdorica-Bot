@@ -34,7 +34,7 @@ export default {
     title: 'Ace Cadet',
     passive: {
       name: 'Base Booster',
-      description: 'Upon turn, grant self 1 stack. Upon 4 stacks, increase skill power by 50% for next skill, reset stacks.',
+      description: 'Upon the end of player\'s turn, grant self 1 stack. Upon 4 stacks, increase skill ratio by 50% for next skill, reset stacks.',
     },
     advisor: {
       name: 'Nom Nom Nutrition',
@@ -59,7 +59,7 @@ export default {
     title: 'Homeland In Security',
     passive: {
       name: 'Base Booster',
-      description: 'Upon turn, grant self 1 stack. Upon 3 stacks, increase skill power by 50% for next skill, reset stacks.',
+      description: 'Upon the end of player\'s turn, grant self 1 stack. Upon 3 stacks, increase skill ratio by 50% for next skill, reset stacks.',
     },
     advisor: {
       name: 'Nom Nom Nutrition',
