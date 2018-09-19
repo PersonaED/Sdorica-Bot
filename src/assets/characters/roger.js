@@ -66,7 +66,7 @@ export default {
     },
     '1B': {
       name: 'Cut and Waste',
-      description: 'Attack (:crossed_swords: x 1.5) front row enemy. Remove self 20% HP',
+      description: 'Attack (:crossed_swords: x 1.5) front row enemy. Deal self damage equal to 20% HP of current HP',
     },
     '2B': {
       name: 'Cutting Pledge',
@@ -91,7 +91,7 @@ export default {
     },
     '1B': {
       name: 'Cut and Waste',
-      description: 'Attack (:crossed_swords: x 1.5) front row enemy. Remove self 20% HP',
+      description: 'Attack (:crossed_swords: x 1.5) front row enemy. Deal self damage equal to 20% of current HP',
     },
     '2B': {
       name: 'Cutting Pledge',
