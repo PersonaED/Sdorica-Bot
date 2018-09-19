@@ -108,11 +108,11 @@ export default {
     title: 'Chilling Arrows',
     passive: {
       name: 'Pickoff Attempt',
-      description: 'Upon turn, deal 1 damage to enemies with CD:1, grant :EXH',
+      description: 'Upon player\'s turn, deal 1 damage to enemies with CD:1, grant :EXH',
     },
     advisor: {
       name: 'Warning Shot',
-      description: 'Upon turn, deal 1 damage to enemies with CD:1, grant :EXH',
+      description: 'Upon player\'s turn, deal 1 damage to enemies with CD:1, grant :EXH',
     },
     '1B': {
       name: 'Frost Shot',
