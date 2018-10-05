@@ -70,7 +70,7 @@ export default {
     },
     '2B': {
       name: 'Cosmic Impact',
-      description: 'True Damage (:crossed_swords: x 1.5) back row enemy. IF target has Armor before this skill cast, grant self (:crossed_swords: x 1.2) Armor and :ARMORSHIFT as well.',
+      description: 'True Damage (:crossed_swords: x 1.5) back row enemy. If target has Armor before this skill cast, grant self (:crossed_swords: x 1.2) Armor and :ARMORSHIFT as well.',
     },
     '4B': {
       name: 'Infinite Solar Flare',
