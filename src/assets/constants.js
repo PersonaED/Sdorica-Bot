@@ -24,6 +24,8 @@ export const CLOSEIMMUNITY = 'Close Immunity: Upon taking damage, will not shift
 export const SUPPORT = 'Support: Upon cast damage skill by ally, Kittyeyes will throw her knife at the same target and grant Game Tag. 3 stacks max.';
 export const VIGOR = 'Vigor: Upon 3 stacks Vigor, remove Vigor from self, trigger 4-orb skill.';
 export const MAGEPOWER = 'Mage Power: Increase skill ratio by 10% for each stack. 3 stacks max.';
+export const OVERLOAD = 'Overload: When Lio has Overload, his skills chanage.';
+export const LASTING = 'Lasting: All buffs and debuffs this character has will not be removed at the end of each battle.';
 
 // tier level
 export const TIER_N = 'N';
