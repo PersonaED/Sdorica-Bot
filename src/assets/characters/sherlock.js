@@ -1,4 +1,4 @@
-import { TIER_R, TIER_SR, TIER_SSR } from '../constants';
+import { TIER_R, TIER_SR, TIER_SSR, SKILL_BOOK } from '../constants';
 import Sherlock from './model/Sherlock';
 
 export default {
@@ -66,7 +66,7 @@ export default {
     },
     '1B': {
       name: 'Go Command Pro',
-      description: 'If offense mode, switch to support mode, clear all black orbs. If support mode, switch to offense mode, clear all gold orbs',
+      description: 'If offense mode, switch to support mode, clear all black orbs. If support mode, switch to offense mode, clear all gold orbs.',
     },
     '2B': {
       name: 'Command No. 42',
@@ -75,6 +75,31 @@ export default {
     '4B': {
       name: 'Command No. 66',
       description: 'If offense mode, Attack (:crossed_swords: x 3.5) selected enemy. If support mode, Heal (:crossed_swords: x 3.15) selected ally.',
+    },
+  }),
+  'sherlock skin': new Sherlock({
+    tier: SKILL_BOOK,
+    sprite: 'https://i.imgur.com/2xWJiNh.png',
+    title: 'Greed Is Good',
+    passive: {
+      name: 'Iron Will',
+      description: 'Upon start of each battle, grant all player characters :LASTING.',
+    },
+    advisor: {
+      name: 'Performance Update',
+      description: 'Increase white character\'s skill ratio by 30%.',
+    },
+    '1B': {
+      name: 'Better Think Fast',
+      description: 'Switch modes, remove all debuffs from self.',
+    },
+    '2B': {
+      name: 'Command No. 17',
+      description: 'If offense mode, Armor Penetration (:crossed_swords: x 2.25) selected enemy, grant self :EXH for all turns. If support mode, grant selected ally (:crossed_swords: x 3.6) Armor, grant self :EXH for all turns.',
+    },
+    '4B': {
+      name: 'Command No. 99',
+      description: 'If offense mode, Armor Penetration (:crossed_swords: x 3.75) selected enemy, grant self :EXH for all turns. If support mode, Heal (:crossed_swords: x 4.5) selected ally, grant self :EXH for all turns.',
     },
   }),
 };
