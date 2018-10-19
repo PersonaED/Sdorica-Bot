@@ -109,7 +109,7 @@ export default {
     title: 'Dreamy Nolva',
     passive: {
       name: 'Cheshire Cat\'s Prank',
-      description: 'Upon player\'s turn, remove all Armor from all player characters.\nUpon player\'s turn, grant self 1 stack. Upon the end of player\'s turn, if have 4 stacks, reset the stacks and Armor Penetration (:crossed_swords: x 3) marked enemy. Afterwards, remove the mark.\nUpon the start and end of player\'s turn, if no enemy is marked, mark a random enemy.',
+      description: 'Upon player\'s turn, remove all Armor from all player characters. \nUpon player\'s turn, grant self 1 stack. Upon the end of player\'s turn, if have 4 stacks, reset the stacks and Armor Penetration (:crossed_swords: x 3) marked enemy. Afterwards, remove the mark. \nUpon the start and end of player\'s turn, if no enemy is marked, mark a random enemy.',
     },
     advisor: {
       name: 'Wonderland Poker',
