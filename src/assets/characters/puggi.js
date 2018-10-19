@@ -124,7 +124,7 @@ export default {
     },
     '4B': {
       name: 'All Hail Puggi!',
-      description: 'Grant all allies :EXH for turns, then trigger all allies\' 4-orb skills.',
+      description: 'Grant all allies :EXH for 2 turns, then trigger all allies\' 4-orb skills.',
     },
   }),
 };
