@@ -26,6 +26,7 @@ export const VIGOR = 'Vigor: Upon 3 stacks Vigor, remove Vigor from self, trigge
 export const MAGEPOWER = 'Mage Power: Increase skill ratio by 10% for each stack. 3 stacks max.';
 export const OVERLOAD = 'Overload: When Lio has Overload, his skills chanage.';
 export const LASTING = 'Lasting: All buffs and debuffs this character has will not be removed at the end of each battle.';
+export const RAGE = 'Rage: Increase skill power by 30% for each stack. 3 stacks max. Upon incoming damage skill, grant self 1 stack.';
 
 // tier level
 export const TIER_N = 'N';
