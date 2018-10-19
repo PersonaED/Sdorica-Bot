@@ -8,23 +8,23 @@ export default {
     title: 'Run Tamed',
     passive: {
       name: 'Cheer Leader',
-      description: 'Upon Tier R, unlock passive skill',
+      description: 'Upon Tier R, unlock passive skill.',
     },
     advisor: {
       name: 'Leap Of Faith',
-      description: 'Upon death of target by ally, grant :ENHANCE',
+      description: 'Upon start of each battle, trigger black character\'s 1-orb skill.',
     },
     '1B': {
       name: 'Behead Hunt',
-      description: 'Armor Penetration (:crossed_swords: x 0.75) front row enemy',
+      description: 'Armor Penetration (:crossed_swords: x 0.75) front row enemy.',
     },
     '2B': {
       name: 'Happy Huntress',
-      description: 'Armor Penetration (:crossed_swords: x 1.5) back row enemy',
+      description: 'Armor Penetration (:crossed_swords: x 1.5) back row enemy.',
     },
     '4B': {
       name: 'Good Kill Hunting',
-      description: 'Attack (:crossed_swords: x 3.6) with lowest HP',
+      description: 'Attack (:crossed_swords: x 3.6) enemy with lowest HP.',
     },
   }),
   'fatima r': new Fatima({
@@ -33,23 +33,23 @@ export default {
     title: 'Wild Earnest',
     passive: {
       name: 'Cheer Leader',
-      description: 'Upon death of target, grant self :ENHANCE',
+      description: 'Upon incoming damage skill, grant self :ENHANCE.',
     },
     advisor: {
       name: 'Leap Of Faith',
-      description: 'Upon death of target by ally, grant :ENHANCE',
+      description: 'Upon start of each battle, trigger black character\'s 1-orb skill.',
     },
     '1B': {
       name: 'Behead Hunt',
-      description: 'Armor Penetration (:crossed_swords: x 0.75) front row enemy. If have :ENHANCE, Armor Peneration (:crossed_swords: x 0.75) selected enemy instead',
+      description: 'Armor Penetration (:crossed_swords: x 0.75) front row enemy. If have :ENHANCE, Armor Peneration (:crossed_swords: x 0.75) selected enemy instead.',
     },
     '2B': {
       name: 'Happy Huntress',
-      description: 'Armor Penetration (:crossed_swords: x 1.5) back row enemy',
+      description: 'Armor Penetration (:crossed_swords: x 1.5) back row enemy.',
     },
     '4B': {
       name: 'Good Kill Hunting',
-      description: 'Attack (:crossed_swords: x 3.6) with lowest HP',
+      description: 'Attack (:crossed_swords: x 3.6) enemy with lowest HP.',
     },
   }),
   'fatima sr': new Fatima({
@@ -58,23 +58,23 @@ export default {
     title: 'Thunder Snap',
     passive: {
       name: 'Cheer Leader',
-      description: 'Upon death of target, grant self :ENHANCE 2 turns',
+      description: 'Upon incoming damage skill, grant self :ENHANCE for 2 turns.',
     },
     advisor: {
       name: 'Leap of Faith',
-      description: 'Upon death of target by ally, grant :ENHANCE for 2 turns',
+      description: 'Upon start of each battle, trigger black character\'s 2-orb skill.',
     },
     '1B': {
       name: 'Behead Hunt',
-      description: 'Armor Penetration (:crossed_swords: x 0.75) front row enemy. If have :ENHANCE, Armor Peneration (:crossed_swords: x 0.75) selected enemy instead',
+      description: 'Armor Penetration (:crossed_swords: x 0.75) front row enemy. If have :ENHANCE, Armor Peneration (:crossed_swords: x 0.75) selected enemy instead.',
     },
     '2B': {
       name: 'Happy Huntress',
-      description: 'Armor Penetration (:crossed_swords: x 1.5) back row enemy',
+      description: 'Armor Penetration (:crossed_swords: x 1.5) back row enemy.',
     },
     '4B': {
       name: 'Good Kill Hunting',
-      description: 'Attack (:crossed_swords: x 3.6) with lowest HP. If have :ENHANCE, Attack (:crossed_swords: x 3.6) selected enemy instead',
+      description: 'Attack (:crossed_swords: x 3.6) enemy with lowest HP. If have :ENHANCE, Attack (:crossed_swords: x 3.6) selected enemy instead.',
     },
   }),
   'fatima ssr': new Fatima({
@@ -83,23 +83,23 @@ export default {
     title: 'Lurid Lightning',
     passive: {
       name: 'Cheer Leader',
-      description: 'Upon death of target, grant self :ENHANCE 3 turns',
+      description: 'Upon incoming damage skill, grant self :ENHANCE for 3 turns.',
     },
     advisor: {
       name: 'Leap Of Faith',
-      description: 'Upon death of target by ally, grant :ENHANCE for 3 turns',
+      description: 'Upon start of each battle, trigger black character\'s 2-orb skill.',
     },
     '1B': {
       name: 'Behead Hunt',
-      description: 'Armor Penetration (:crossed_swords: x 0.75) front row enemy. If have :ENHANCE, Armor Peneration (:crossed_swords: x 0.75) selected enemy instead',
+      description: 'Armor Penetration (:crossed_swords: x 0.75) front row enemy. If have :ENHANCE, Armor Peneration (:crossed_swords: x 0.75) selected enemy instead.',
     },
     '2B': {
       name: 'Happy Huntress',
-      description: 'Armor Penetration (:crossed_swords: x 1.5) back row enemy. If have :ENHANCE, Armor Penetration (:crossed_swords: x 1.5) selected enemy instead',
+      description: 'Armor Penetration (:crossed_swords: x 1.5) back row enemy. If have :ENHANCE, Armor Penetration (:crossed_swords: x 1.5) selected enemy instead.',
     },
     '4B': {
       name: 'Good Kill Hunting',
-      description: 'Attack (:crossed_swords: x 3.6) with lowest HP. If have :ENHANCE, Attack (:crossed_swords: x 3.6) selected enemy instead',
+      description: 'Attack (:crossed_swords: x 3.6) enemy with lowest HP. If have :ENHANCE, Attack (:crossed_swords: x 3.6) selected enemy instead.',
     },
   }),
   'fatima skin': new Fatima({
@@ -108,11 +108,11 @@ export default {
     title: 'Crimson Bolt',
     passive: {
       name: 'Thirst for Blood',
-      description: 'Upon death of target, Heal (:crossed_swords: x 0.9) self, grant self :ENHANCE for all turns this round',
+      description: 'Upon death of target, Heal (:crossed_swords: x 0.9) self, grant self :ENHANCE for all turns this round.',
     },
     advisor: {
       name: 'Hunting Rites',
-      description: 'Allies\' True Damage effects increased by 30%',
+      description: 'Allies\' True Damage effects increased by 30%.',
     },
     '1B': {
       name: 'Heart Seeker',
@@ -120,11 +120,11 @@ export default {
     },
     '2B': {
       name: 'Sky Splitting Strike',
-      description: 'True Damage (:crossed_swords: x 1.75) back row enemy. Grant self :TEAR for 2 turns',
+      description: 'True Damage (:crossed_swords: x 1.75) back row enemy. Grant self :TEAR for 2 turns.',
     },
     '4B': {
       name: 'Unleash Thunder',
-      description: 'True Damage (:crossed_swords: x 2.5) enemy with lowest HP. Grant self :TEAR for 3 turns',
+      description: 'True Damage (:crossed_swords: x 2.5) enemy with lowest HP. Grant self :TEAR for 3 turns.',
     },
   }),
 };
