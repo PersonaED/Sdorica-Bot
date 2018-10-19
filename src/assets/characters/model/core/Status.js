@@ -137,6 +137,12 @@ const Status = [
     label: 'Overload',
     description: 'Overload: When Lio has Overload, his skills change.',
   },
+  {
+    code: ':LASTING',
+    oldCode: 'LASTING',
+    label: 'Lasting',
+    description: 'Lasting: All buffs and debuffs this character has will not be removed at the end of each battle.',
+  },
 ];
 
 export default Status;
