@@ -8,11 +8,11 @@ export default {
     title: 'Splash Sprite',
     passive: {
       name: 'Happy Harmony',
-      description: 'Upon Tier R, unlock passive skill',
+      description: 'Upon Tier R, unlock passive skill.',
     },
     advisor: {
       name: 'Magic Melody',
-      description: 'Remove all debuffs from selected ally. (CD: 5)',
+      description: 'Remove all debuffs from selected ally. (CD: 4)',
     },
     '1B': {
       name: 'Etude Chords',
@@ -20,11 +20,11 @@ export default {
     },
     '2B': {
       name: 'Serenade Chords',
-      description: 'Heal (:crossed_swords: x 1.35) selected ally',
+      description: 'Heal (:crossed_swords: x 1.35) selected ally.',
     },
     '4B': {
       name: 'Variation Chords',
-      description: 'Armor Penetration (:crossed_swords: x 2.25) selected enemy.',
+      description: 'Armor Penetration (:crossed_swords: x 2.25) selected enemy, grant target CD +2.',
     },
   }),
   'hestia r': new Hestia({
@@ -37,7 +37,7 @@ export default {
     },
     advisor: {
       name: 'Magic Melody',
-      description: 'Remove all debuffs from selected ally. (CD: 5)',
+      description: 'Remove all debuffs from selected ally. (CD: 4)',
     },
     '1B': {
       name: 'Etude Chords',
@@ -49,7 +49,7 @@ export default {
     },
     '4B': {
       name: 'Variation Chords',
-      description: 'Armor Penetration (:crossed_swords: x 2.25) selected enemy.',
+      description: 'Armor Penetration (:crossed_swords: x 2.25) selected enemy, grant target CD +2.',
     },
   }),
   'hestia sr': new Hestia({
@@ -59,31 +59,6 @@ export default {
     passive: {
       name: 'Happy Harmony',
       description: 'Upon cast Heal, if target has debuff(s), grant :REGEN for 2 turns.',
-    },
-    advisor: {
-      name: 'Magic Melody',
-      description: 'Remove all debuffs from selected ally. (CD: 4)',
-    },
-    '1B': {
-      name: 'Etude Chords',
-      description: 'Heal (:crossed_swords: x 0.45) selected ally, grant :REGEN for 2 turns.',
-    },
-    '2B': {
-      name: 'Serenade Chords',
-      description: 'Heal (:crossed_swords: x 1.35) selected ally, remove debuffs.',
-    },
-    '4B': {
-      name: 'Variation Chords',
-      description: 'Armor Penetration (:crossed_swords: x 2.25) selected enemy.',
-    },
-  }),
-  'hestia ssr': new Hestia({
-    tier: TIER_SSR,
-    sprite: 'https://i.imgur.com/HNTNTGt.png',
-    title: 'Bride Of The Sea',
-    passive: {
-      name: 'Happy Harmony',
-      description: 'Upon cast Heal, if target has debuff(s), grant :REGEN for 3 turns.',
     },
     advisor: {
       name: 'Magic Melody',
@@ -99,7 +74,32 @@ export default {
     },
     '4B': {
       name: 'Variation Chords',
-      description: 'Armor Penetration (:crossed_swords: x 3) selected enemy, heal (:crossed_swords: x 0.9) target ',
+      description: 'Armor Penetration (:crossed_swords: x 2.25) selected enemy, grant target CD +2.',
+    },
+  }),
+  'hestia ssr': new Hestia({
+    tier: TIER_SSR,
+    sprite: 'https://i.imgur.com/HNTNTGt.png',
+    title: 'Bride Of The Sea',
+    passive: {
+      name: 'Happy Harmony',
+      description: 'Upon cast Heal, if target has debuff(s), grant :REGEN for 3 turns.',
+    },
+    advisor: {
+      name: 'Magic Melody',
+      description: 'Remove all debuffs from selected ally. (CD: 2)',
+    },
+    '1B': {
+      name: 'Etude Chords',
+      description: 'Heal (:crossed_swords: x 0.45) selected ally, grant :REGEN for 2 turns.',
+    },
+    '2B': {
+      name: 'Serenade Chords',
+      description: 'Heal (:crossed_swords: x 1.35) selected ally, remove debuffs.',
+    },
+    '4B': {
+      name: 'Variation Chords',
+      description: 'Armor Penetration (:crossed_swords: x 2.25) selected enemy, grant target CD +2.',
      },
   }),
   'hestia skin': new Hestia({
@@ -108,11 +108,11 @@ export default {
     title: 'Flowers\' Whisper',
     passive: {
       name: 'Spring Solo',
-      description: 'Upon player\'s turn, grant self a random buff',
+      description: 'Upon player\'s turn, grant self a random buff.',
     },
     advisor: {
       name: 'Summer Aria',
-      description: 'Grant selected ally a random buff (CD: 1)',
+      description: 'Grant selected ally a random buff. (CD: 1)',
     },
     '1B': {
       name: 'Fall Etude',
@@ -120,11 +120,11 @@ export default {
     },
     '2B': {
       name: 'Winter Fantasia',
-      description: 'Copy all buffs this character has, grant all allies 1 stack of the copied buffs for 2 turns',
+      description: 'Copy all buffs this character has, grant all allies 1 stack of the copied buffs for 2 turns.',
     },
     '4B': {
       name: 'Hestia\'s Four Seasons',
-      description: 'Copy all buffs this character has, grant all allies 3 stacks of the copied buffs for 2 turns',
+      description: 'Copy all buffs this character has, grant all allies 3 stacks of the copied buffs for 2 turns.',
     },
   }),
 };
