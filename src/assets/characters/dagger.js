@@ -8,11 +8,11 @@ export default {
     title: 'Slam Punk',
     passive: {
         name: 'Hibernating Hate',
-        description: 'Upon Tier SR, unlock passive skill',
+        description: 'Upon Tier SR, unlock passive skill.',
     },
     advisor: {
         name: 'Death Dance',
-        description: 'Armor Penetration (:crossed_swords: x 1.5) front row enemy. (CD: 7)',
+        description: 'Increase black character\'s skill ratio by 15%.',
     },
     '1B': {
         name: 'Bear A Grudge',
@@ -20,11 +20,11 @@ export default {
     },
     '2B': {
         name: 'Bear Hug',
-        description: 'Armor Penetration (:crossed_swords: x 1.5) front row enemy',
+        description: 'Armor Penetration (:crossed_swords: x 1.5) front row enemy.',
     },
     '4B': {
         name: 'Bearly Alive',
-        description: 'Armor Penetration (:crossed_swords: x 1.2) all enemies',
+        description: 'Armor Penetration (:crossed_swords: x 1.2) all enemies.',
     },
   }),
   'dagger r': new Dagger({
@@ -33,23 +33,23 @@ export default {
     title: 'Foolhardy Animal',
     passive: {
       name: 'Hibernating Hate',
-      description: 'Upon Tier SR, unlock passive skill',
+      description: 'Upon Tier SR, unlock passive skill.',
     },
     advisor: {
       name: 'Death Dance',
-      description: 'Armor Penetration (:crossed_swords: x 1.5) front row enemy. (CD: 7)',
+      description: 'Increase black character\'s skill ratio by 20%.',
     },
     '1B': {
       name: 'Bear A Grudge',
-      description: 'Armor Penetration (:crossed_swords: x 0.6) front row enemy. 50% chance to trigger target CD +1',
+      description: 'Armor Penetration (:crossed_swords: x 0.6) front row enemy. 50% chance to trigger target CD +1.',
     },
     '2B': {
       name: 'Bear Hug',
-      description: 'Armor Penetration (:crossed_swords: x 1.5) front row enemy',
+      description: 'Armor Penetration (:crossed_swords: x 1.5) front row enemy.',
     },
     '4B': {
       name: 'Bearly Alive',
-      description: 'Armor Penetration (:crossed_swords: x 1.2) all enemies. Grant self :ENHANCE for 2 turns',
+      description: 'Armor Penetration (:crossed_swords: x 1.2) all enemies. Grant self :ENHANCE for 2 turns.',
     },
   }),
   'dagger sr': new Dagger({
@@ -58,23 +58,23 @@ export default {
     title: 'Diehard Dustbiter',
     passive: {
       name: 'Hibernating Hate',
-      description: 'Upon death of gold character, grant self :ENHANCE',
+      description: 'Upon death of ally, grant self :RAGE and trigger self 1-orb skill.',
     },
     advisor: {
       name: 'Death Dance',
-      description: 'Armor Penetration (:crossed_sword: x 1.5) front row enemy. (CD: 6)',
+      description: 'Increase black character\'s skill ratio by 25%.',
     },
     '1B': {
       name: 'Bear A Grudge',
-      description: 'Armor Penetration (:crossed_swords: x 0.6) front row enemy. 50% chance to trigger target CD +1',
+      description: 'Armor Penetration (:crossed_swords: x 0.6) front row enemy. 50% chance to trigger target CD +1.',
     },
     '2B': {
       name: 'Bear Hug',
-      description: 'Armor Penetration (:crossed_swords: x 1.5) Grant self :ENHANCE for 2 turns',
+      description: 'Armor Penetration (:crossed_swords: x 1.5) Grant self :ENHANCE for 2 turns.',
     },
     '4B': {
       name: 'Bearly Alive',
-      description: 'Armor Penetration (:crossed_swords: x 1.2) all enemies. Grant self :ENHANCE for 2 turns',
+      description: 'Armor Penetration (:crossed_swords: x 1.2) all enemies. Grant self :ENHANCE for 2 turns.',
     },
   }),
   'dagger ssr': new Dagger({
@@ -83,11 +83,11 @@ export default {
     title: 'Grizzly Guerrilla',
     passive: {
       name: 'Hibernating Hate',
-      description: 'Upon death of gold character, grant self :ENHANCE for 2 turns',
+      description: 'Upon death of ally, grant self :RAGE and trigger self 2-orb skill.',
     },
     advisor: {
       name: 'Death Dance',
-      description: 'Armor Penetration (:crossed_swords: x 1.5) front row enemy. (CD: 5)',
+      description: 'Increase black character\'s skill ratio by 30%.',
     },
     '1B': {
       name: 'Bear A Grudge',
@@ -99,7 +99,7 @@ export default {
     },
     '4B': {
       name: 'Bearly Alive',
-      description: 'Armor Penetration (:crossed_swords: x 1.2) all enemies. Grant self :ENHANCE for 2 turns',
+      description: 'Armor Penetration (:crossed_swords: x 1.2) all enemies. Grant self :ENHANCE for 2 turns.',
     },
   }),
   'dagger skin': new Dagger({
