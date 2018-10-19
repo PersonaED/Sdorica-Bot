@@ -84,19 +84,19 @@ export default {
     title: 'Dawnblade Killer',
     passive: {
       name: 'In Broad Daylight',
-      description: 'Upon the end of player\'s turn, if have both :ENHANCE and :DMGRED, trigger self 1-orb skill.',
+      description: 'If have both :ENHANCE and :DMGRED, increase self skill ratio by 30%.',
     },
     advisor: {
       name: 'Suspicious Shadow',
-      description: 'Upon the end of player\'s turn, if ally has both :ENHANCE and :DMGRED, trigger 1-orb skill.',
+      description: 'Upon player\'s turn, if ally has both :ENHANCE and :DMGRED, trigger 1-orb skill.',
     },
     '1B': {
       name: 'Dawn Of Judgement',
-      description: 'Armor Penetration (:crossed_swords: x 0.6) selected enemy. If target has :DMGRED, copy 1 stack for 6 turns.',
+      description: 'Armor Penetration (:crossed_swords: x 0.6) selected enemy, grant self :DMGRED for 3 turns.',
     },
     '2B': {
       name: 'Conviction Verdict',
-      description: 'Armor Penetration (:crossed_swords: x 1.35) selected enemy. If target has :ENHANCE, copy 1 stack for 6 turns.',
+      description: 'Armor Penetration (:crossed_swords: x 1.35) selected enemy, grant self :ENHANCE for 3 turns.',
     },
     '4B': {
       name: 'Acquittal Declared',
