@@ -4,7 +4,7 @@ import { GOLD } from "../../constants";
 
 class Elio extends BaseCharacter {
   constructor(param) {
-    super("Elio', new CharStat(2520, 11342, GOLD), param);
+    super("Elio", new CharStat(2520, 11342, GOLD), param);
     this.block = this.stat.block;
   }
 }
