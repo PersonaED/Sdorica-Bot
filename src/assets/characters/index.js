@@ -1,8 +1,11 @@
+import alice from "./alice";
 import angelia from "./angelia";
 import aosta from "./aosta";
+import celia from "./celia";
 import charle from "./charle";
 import crushfang from "./crushfang";
 import dagger from "./dagger";
+import deemo from "./deemo";
 import dylan from "./dylan";
 import elio from "./elio";
 import experiment from "./experiment";
@@ -36,11 +39,14 @@ import yamitsuki from "./yamitsuki";
 import yanbo from "./yanbo";
 
 export {
+  alice,
   angelia,
   aosta,
+  celia,
   charle,
   crushfang,
   dagger,
+  deemo,
   dylan,
   elio,
   experiment,
