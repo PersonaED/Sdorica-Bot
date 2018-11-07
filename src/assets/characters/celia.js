@@ -19,17 +19,17 @@ export default {
     "1B": {
         name: "Flowing Time",
       description:
-        "Attack (:crossed_swords: x 0.3) selected and back row enemy, grant both :EXH."
+        "The clock is ticking... /nAttack (:crossed_swords: x 0.3) selected and back row enemy, grant both :EXH."
     },
     "2B": {
       name: "Permanent Scars",
       description:
-        "Attack (:crossed_swords: x 1) selected and back row enemy, grant both :VUL."
+        "The clock is ticking... /nAttack (:crossed_swords: x 1) selected and back row enemy, grant both :VUL."
     },
     "4B": {
       name: "Finally Home",
       description:
-        "True Damage (:crossed_swords: x 1.4) selected and back row enemy. \nIf this character has :REGEN, :DMGRED, or :WARCRY, increase skill power of this skill by 15%. (Up to 45%)"
+        "The clock is ticking... /nTrue Damage (:crossed_swords: x 1.4) selected and back row enemy. \nIf this character has :REGEN, :DMGRED, or :WARCRY, increase skill power of this skill by 15%. (Up to 45%)"
     }
   })
 };
