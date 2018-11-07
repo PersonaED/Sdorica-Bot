@@ -42,6 +42,16 @@ const mapCharacterNames = (messageArray) => {
     copiedMessage[1] = 'skin';
   }
   
+  //maskedgirl/celia
+  if (copiedMessage[0] === `${standardPrefix}maskedgirl`) {
+    copiedMessage[0] = `${standardPrefix}celia`;
+  }
+  
+  //masked-girl/celia
+  if (copiedMessage[0] === `${standardPrefix}masked-girl`) {
+    copiedMessage[0] = `${standardPrefix}celia`;
+  }
+  
   return copiedMessage;
 };
 
