@@ -9,7 +9,7 @@ export default {
     passive: {
       name: "Whirling Illusions",
       description:
-        "Upon the end of player's turn, grant self 1 stack "Deep Slumber". \nUpon reaching 12 stacks of "Deep Slumber", trigger death of this character."
+        "Upon the end of player's turn, grant self 1 stack \"Deep Slumber\". \nUpon reaching 12 stacks of \"Deep Slumber\", trigger death of this character."
     },
     advisor: {
       name: "Revival in Darkness",
