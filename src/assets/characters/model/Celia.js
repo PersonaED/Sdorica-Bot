@@ -4,7 +4,7 @@ import { GOLD } from '../../constants';
 
 class Celia extends BaseCharacter {
   constructor(param) {
-    super('Celia', new CharStat(2520, 11342, GOLD), param);
+    super('Masked Girl', new CharStat(2520, 11342, GOLD), param);
     this.block = this.stat.block;
   }
 }
