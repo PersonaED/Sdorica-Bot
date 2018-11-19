@@ -29,7 +29,7 @@ export default {
     "4B": {
       name: "The Way Home",
       description:
-        "A graceful tempo... \nResurrect all downed allies. Trigger death of this character. /nIf no character is downed, nothing will happen."
+        "A graceful tempo... \nResurrect all downed allies. Trigger death of this character. \nIf no character is downed, nothing will happen."
     }
   })
 };
