@@ -102,7 +102,7 @@ export default {
       description: 'Attack (:crossed_swords: x 6) front row enemy. Trigger death of self',
     },
   }),
-  'roger skin-unreleased': new Roger({
+  'roger skin': new Roger({
     tier: SKILL_BOOK,
     sprite: 'https://i.imgur.com/jac4Bu8.png',
     title: 'Dangerous Zombie',
