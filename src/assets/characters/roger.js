@@ -105,26 +105,26 @@ export default {
   'roger skin-unreleased': new Roger({
     tier: SKILL_BOOK,
     sprite: 'https://i.imgur.com/jac4Bu8.png',
-    title: '?????',
+    title: 'Dangerous Zombie',
     passive: {
-      name: '?????',
-      description: '?????',
+      name: 'Desperate Counter',
+      description: 'If have more than 20%/50%/80% HP, increase skill ratio of 1/2/4-orb skill by 20%.\nUpon the end of player\'s turn, 1 orb becomes gold, deal damage (:crossed_swords: x 0.6) to self.',
     },
     advisor: {
-      name: '?????',
-      description: '?????',
+      name: 'Death-Defying Howl',
+      description: 'Upon the end of player\'s turn, if gold character has more than 50% Armor, trigger 2-orb skill and remove all Armor from gold character.',
     },
     '1B': {
-      name: '?????',
-      description: '?????',
+      name: 'Butcher Bash',
+      description: 'Attack (:crossed_swords: x 1.2) front row enemy, deal damage (:crossed_swords: x 0.3) to self, 1 orb becomes gold.',
     },
     '2B': {
-      name: '?????',
-      description: '?????',
+      name: 'Fatality Combo',
+      description: 'Attack (:crossed_swords: x 2) front row enemy, grant self :RAGE for 2 turns.',
     },
     '4B': {
-      name: '?????',
-      description: '?????',
+      name: 'Bloodthirsty Carnage',
+      description: 'Attack (:crossed_swords: x 0.5) then Drain (:crossed_swords: x 3.5) front row enemy. Heal self equal to the amount of damage dealt with Drain. This Drain effect is treated as an Attack, not as a Heal.',
     },
   }),
 };
