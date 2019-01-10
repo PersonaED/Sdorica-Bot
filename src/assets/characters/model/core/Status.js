@@ -155,6 +155,12 @@ const Status = [
     label: "Clockwork",
     description: "Clockwork: Tica's skills will change based on her Clockwork stacks. 5 stacks max.",
   },
+  {
+    code: ":FORESIGHT",
+    oldCode: "FORESIGHT",
+    label: "Foresight",
+    description: "Foresight: Can see the hidden effects on Hyde.",
+  },
 
 ];
 
