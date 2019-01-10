@@ -1,5 +1,6 @@
 export default {
   sr: {
+    hyde: 0.05
     elio: 0.05,
     karen: 0.05,
     izumi: 0.05,
@@ -31,6 +32,7 @@ export default {
     golemwalt: 0.5,
   },
   r: {
+    hyde: 0.2
     elio: 0.2,
     karen: 0.2,
     izumi: 0.2,
@@ -67,17 +69,17 @@ export default {
     angelia: 0.6,
   },
   n: {
-    dylan: 5.771,
-    hestia: 5.771,
-    kittyeyes: 5.771,
-    roger: 5.771,
-    koll: 5.771,
-    fatima: 5.771,
-    karnulla: 5.771,
-    ned: 5.771,
-    puggi: 5.771,
-    golemwalt: 5.771,
-    dagger: 5.771,
-    angelia: 5.771,
+    dylan: 5.75,
+    hestia: 5.75,
+    kittyeyes: 5.75,
+    roger: 5.75,
+    koll: 5.75,
+    fatima: 5.75,
+    karnulla: 5.75,
+    ned: 5.75,
+    puggi: 5.75,
+    golemwalt: 5.75,
+    dagger: 5.75,
+    angelia: 5.75,
   },
 };
