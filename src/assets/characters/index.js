@@ -13,6 +13,7 @@ import fatima from "./fatima";
 import fredrica from "./fredrica";
 import golemwalt from "./golemwalt";
 import hestia from "./hestia";
+import hyde from "./hyde";
 import izumi from "./izumi";
 import jahan from "./jahan";
 import karen from "./karen";
@@ -54,6 +55,7 @@ export {
   fredrica,
   golemwalt,
   hestia,
+  hyde,
   izumi,
   jahan,
   karen,
