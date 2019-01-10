@@ -28,6 +28,7 @@ export const OVERLOAD = 'Overload: When Lio has Overload, his skills chanage.';
 export const LASTING = 'Lasting: All buffs and debuffs this character has will not be removed at the end of each battle.';
 export const RAGE = 'Rage: Increase skill power by 30% for each stack. 3 stacks max. Upon incoming damage skill, grant self 1 stack.';
 export const CLOCKWORK = 'Clockwork: Tica\'s skills will change based on her Clockwork stacks. 5 stacks max.';
+export const FORESIGHT = 'Foresight: Can see the hidden effects on Hyde.';
 
 // tier level
 export const TIER_N = 'N';
