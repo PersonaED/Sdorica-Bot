@@ -85,7 +85,7 @@ export default {
     "2B": {
       name: "Flash Light",
       description:
-        "Attack (:crossed_swords: x 1.5) selected enemy. Clear 1 white orb."
+        "Attack (:crossed_swords: x 1.5) selected enemy, clear 1 white orb."
     },
     "4B": {
       name: "Let There Be Light",
@@ -115,7 +115,7 @@ export default {
     "2B": {
       name: "Flash Light",
       description:
-        "Attack (:crossed_swords: x 1.5) selected enemy. Clear 1 white orb."
+        "Attack (:crossed_swords: x 1.5) selected enemy, clear 1 white orb."
     },
     "4B": {
       name: "Let There Be Light",
@@ -151,6 +151,36 @@ export default {
       name: "Who Let The Dolls Out",
       description:
         "Attack (:crossed_swords: x 2) selected enemy and remove all :CLOCKWORK stacks. For each stack of :CLOCKWORK, Attack (:crossed_swords: x 0.5) 1 extra time."
+    },
+  }),
+  "tica skin": new Tica({
+    tier: SKILL_BOOK,
+    sprite: "https://i.imgur.com/cB3AMis.png",
+    title: "Holly Maiden",
+    passive: {
+      name: "Spread the Joy!",
+      description:
+        "Upon cast 2-orb skill continuously 2 times, trigger 2-orb skill 2 times."
+    },
+    advisor: {
+      name: "Rise and Shine!",
+      description:
+        "Allies' Heal effects increased by 30%."
+    },
+    "1B": {
+      name: "Surprise Starlight",
+      description:
+        "Heal (:crossed_swords: x 0.45) selected ally, grant :DMGRED for 2 turns."
+    },
+    "2B": {
+      name: "Flying Candy Canes",
+      description:
+        "Attack (:crossed_swords: x 1.1) selected enemy, grant target :VUL, clear 1 white orb."
+    },
+    "4B": {
+      name: "Holy Night Snowflakes",
+      description:
+        "Heal (:crossed_swords: x 2.25) selected ally, grant :REGEN for 3 turns."
     },
   }),
   "tica skin-unreleased": new Tica({
