@@ -1,5 +1,6 @@
 import { TIER_N, TIER_R, TIER_SR, TIER_SSR } from '../constants';
 import Hestia from './model/Hestia';
+import HestiaSP from './model/HestiaSP';
 
 export default {
   'hestia n': new Hestia({
