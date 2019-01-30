@@ -1,5 +1,6 @@
 import { TIER_N, TIER_R, TIER_SR, TIER_SSR, SKILL_BOOK } from '../constants';
 import Pang from './model/Pang';
+import PangSP from './model/PangSP';
 
 export default {
   'pang n': new Pang({
@@ -127,4 +128,29 @@ export default {
       description: 'Attack (:crossed_swords: x 3) front row enemy. Grant self :WARCRY for 3 turns',
     },
   }), 
+  'pang sp': new PangSP({
+    tier: SP,
+    sprite: '',
+    title: 'Murderous Inner Demon',
+    passive: {
+      name: 'Blood Scorch',
+      description: 'Upon death of target, lose 10% current HP, grant self :GUILT for 2 turns.',
+    },
+    advisor: {
+      name: 'Incinerated Mind',
+      description: 'Increase black and gold character\'s skill ratio by 20%.',
+    },
+    '1B': {
+      name: 'Rapid Ripper',
+      description: 'True Damage (:crossed_swords: x 1) back row enemy. If trigger death of target, cast this skill again.',
+    },
+    '2B': {
+      name: 'Grounding Slam',
+      description: 'True Damage (:crossed_swords: x 2.5) back row enemy. If trigger death of target, trigger self 1-orb skill.',
+    },
+    '4B': {
+      name: 'Hemorrhaging Massacre',
+      description: 'True Damage (:crossed_swords: x 4) back row enemy. If trigger death of target, trigger self 2-orb skill.',
+    },
+  }),
 };
