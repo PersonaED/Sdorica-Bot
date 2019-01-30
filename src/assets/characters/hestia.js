@@ -127,4 +127,29 @@ export default {
       description: 'Copy all buffs this character has, grant all allies 3 stacks of the copied buffs for 2 turns.',
     },
   }),
+  'hestia sp': new HestiaSP({
+    tier: SP,
+    sprite: '',
+    title: 'Cerulean Mirage',
+    passive: {
+      name: 'Bubble Illusion',
+      description: 'Upon player\'s turn, Heal (:crossed_swords: x 0.09)/(:crossed_swords: x 0.18)/(:crossed_swords: x 0.36)/(:crossed_swords: x 0.54) all player characters. The more bubbles Hestia has, the higher the amount healed. Hestia has 1 bubble on her at all times.',
+    },
+    advisor: {
+      name: 'Serenity Grace',
+      description: 'Upon cast skill continuously by the same ally, increase said ally\'s skill ratio by 20% for all turns. Reset upon cast skill by another ally.',
+    },
+    '1B': {
+      name: 'Deep Sea Water Drop',
+      description: 'Attack (:crossed_swords: x 0.6)/(:crossed_swords: x 0.7)/(:crossed_swords: x 0.9)/(:crossed_swords: x 1.2) front row enemy, grant self 1 bubble, 4 max. The more bubbles Hestia has, the higher the damage. If Hestia has 4 bubbles when this skill is cast, remove all but 1 bubble.',
+    },
+    '2B': {
+      name: 'Sparkling Splash',
+      description: 'Remove all but 1 bubble, randomly cast one of the following effects: Grant gold character :DMGRED; grant white character :ENHANCE; grant self :WARCRY for 3 turns.',
+    },
+    '4B': {
+      name: 'Furious Tidal Wave',
+      description: 'Remove all but 1 bubble, Attack (:crossed_swords: x 2)/(:crossed_swords: x 3)/(:crossed_swords: x 4.5)/(:crossed_swords: x 6.5) front row enemy. The more bubbles Hestia has, the higher the damage.',
+    },
+  }),
 };
