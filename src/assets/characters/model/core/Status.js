@@ -165,7 +165,7 @@ const Status = [
     code: ":GUILT",
     oldCode: "GUILT",
     label: "Guilt",
-    description: "Guilt: Upon player's turn, grant self :TAUNT. Can't be affected by allies' Heal and grant Armor skills.",
+    description: "Guilt: Upon player\'s turn, grant self :TAUNT. Can\'t be affected by allies\' Heal and grant Armor skills.",
   },
 ];
 
