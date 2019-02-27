@@ -16,6 +16,7 @@ import hestia from "./hestia";
 import hyde from "./hyde";
 import izumi from "./izumi";
 import jahan from "./jahan";
+import jerome from "./jerome";
 import karen from "./karen";
 import karnulla from "./karnulla";
 import kittyeyes from "./kittyeyes";
@@ -58,6 +59,7 @@ export {
   hyde,
   izumi,
   jahan,
+  jerome,
   karen,
   karnulla,
   kittyeyes,
