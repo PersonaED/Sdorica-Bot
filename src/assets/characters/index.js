@@ -6,6 +6,7 @@ import charle from "./charle";
 import crushfang from "./crushfang";
 import dagger from "./dagger";
 import deemo from "./deemo";
+import dumbbearsoldier from "./dumbbearsoldier";
 import dylan from "./dylan";
 import elio from "./elio";
 import experiment from "./experiment";
@@ -49,6 +50,7 @@ export {
   crushfang,
   dagger,
   deemo,
+  dumbbearsoldier,
   dylan,
   elio,
   experiment,
