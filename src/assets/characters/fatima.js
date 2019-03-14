@@ -130,7 +130,7 @@ export default {
     passive: {
       name: "Thirst for Blood",
       description:
-        "Upon death of target, Heal (:crossed_swords: x 0.9) self, grant self :ENHANCE for all turns this round."
+        "Upon death of target, Heal self to full HP, grant self :RAGE for all turns."
     },
     advisor: {
       name: "Hunting Rites",
@@ -140,17 +140,17 @@ export default {
     "1B": {
       name: "Heart Seeker",
       description:
-        "True Damage (:crossed_swords: x 0.75) front row enemy. Grant self :TEAR."
+        "True Damage (:crossed_swords: x 0.75) front row enemy. Deal (:crossed_swords: x 0.2) Attack damage to self."
     },
     "2B": {
       name: "Sky Splitting Strike",
       description:
-        "True Damage (:crossed_swords: x 1.75) back row enemy. Grant self :TEAR for 2 turns."
+        "True Damage (:crossed_swords: x 1.75) back row enemy. Deal (:crossed_swords: x 0.3) Attack damage to self."
     },
     "4B": {
       name: "Unleash Thunder",
       description:
-        "True Damage (:crossed_swords: x 2.5) enemy with lowest %HP. Grant self :TEAR for 3 turns."
+        "True Damage (:crossed_swords: x 2.5) enemy with lowest %HP. Deal (:crossed_swords: x 0.4) Attack damage to self."
     },
   }),
   "fatima sp": new FatimaSP({
@@ -160,7 +160,7 @@ export default {
     passive: {
       name: "Sacrificial Lambs",
       description:
-        "Upon cast skill, grant selected ally and enemy :TAUNT."
+        "Upon cast skill, grant selected ally and enemy :TAUNT for 2 turns."
     },
     advisor: {
       name: "Ancestral Blessings",
@@ -170,7 +170,7 @@ export default {
     "1B": {
       name: "Graceful Cures",
       description:
-        "Heal (:crossed_swords: x 0.54) random characters (both ally and enemy) 3 times. This skill has 80% chance to target ally with :TAUNT."
+        "Heal (:crossed_swords: x 0.54) random player characters 3 times. This skill has 80% chance to target ally with :TAUNT."
     },
     "2B": {
       name: "Sprouting Vines",
