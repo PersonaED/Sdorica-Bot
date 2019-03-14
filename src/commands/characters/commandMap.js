@@ -52,18 +52,10 @@ const mapCharacterNames = (messageArray) => {
     copiedMessage[0] = `${standardPrefix}celia`;
   }
   
-  //dbs/dumbbearsoldier
+  //dbs/dumb bear soldier
   if (copiedMessage[0] === `${standardPrefix}dbs`) {
-    copiedMessage[0] = `${standardPrefix}dumbbearsoldier`;
+    copiedMessage[0] = `${standardPrefix}dumb bear soldier`;
   }
-  
-  //dumb bear soldier/dumbbearsoldier
-  if (copiedMessage[0] === `${standardPrefix}dumb` && copiedMessage[1] === `${standardPrefix)bear` && copiedMessage[2] === `${standardPrefix}soldier`) {
-    copiedMessage[0] = `${standardPrefix}dumbbearsoldier`;
-    copiedMessage[1] = ``;
-    copiedMessage[2] = ``;
-  }
-  
   return copiedMessage;
 };
 
