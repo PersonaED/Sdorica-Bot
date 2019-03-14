@@ -12,7 +12,7 @@ export default {
     },
     advisor: {
       name: 'Aware Wolf',
-      description: 'Attack (:crossed_swords: x 2.5) all enemies and (:crossed_swords: x 1) all allies. (CD: 12)',
+      description: 'Attack (:crossed_swords: x 2.8) all enemies and (:crossed_swords: x 1) all allies. (CD: 12)',
     },
     '1B': {
       name: 'Ready Maim Fire',
@@ -37,7 +37,7 @@ export default {
     },
     advisor: {
       name: 'Aware Wolf',
-      description: 'Attack (:crossed_swords: x 2.5) all enemies and (:crossed_swords: x 1) all allies. (CD: 12)',
+      description: 'Attack (:crossed_swords: x 2.8) all enemies and (:crossed_swords: x 1) all allies. (CD: 12)',
     },
     '1B': {
       name: 'Ready Maim Fire',
@@ -62,7 +62,7 @@ export default {
     },
     advisor: {
       name: 'Aware Wolf',
-      description: 'Attack (:crossed_swords: x 2.5) all enemies and (:crossed_swords: x 1) all allies. (CD: 11)',
+      description: 'Attack (:crossed_swords: x 2.8) all enemies and (:crossed_swords: x 1) all allies. (CD: 10)',
     },
     '1B': {
       name: 'Ready Maim Fire',
@@ -87,7 +87,7 @@ export default {
     },
     advisor: {
       name: 'Aware Wolf',
-      description: 'Attack (:crossed_swords: x 2.5) all enemies and (:crossed_swords: x 1) all allies. (CD: 10)',
+      description: 'Attack (:crossed_swords: x 2.8) all enemies and (:crossed_swords: x 1) all allies. (CD: 8)',
     },
     '1B': {
       name: 'Ready Maim Fire',
