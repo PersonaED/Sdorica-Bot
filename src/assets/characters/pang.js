@@ -13,7 +13,7 @@ export default {
     },
     advisor: {
       name: "Acupoint Attack",
-      description: "Attack (:crossed_swords: x 1.5) front row enemy. (CD: 7)"
+      description: "Attack (:crossed_swords: x 2.6) front row enemy. (CD: 6)"
     },
     "1B": {
       name: "One Paw Man",
@@ -38,7 +38,7 @@ export default {
     },
     advisor: {
       name: "Acupoint Attack",
-      description: "Attack (:crossed_swords: x 1.5) front row enemy. (CD: 7)"
+      description: "Attack (:crossed_swords: x 2.6) front row enemy. (CD: 6)"
     },
     "1B": {
       name: "One Paw Man",
@@ -63,7 +63,7 @@ export default {
     },
     advisor: {
       name: "Acupoint Attack",
-      description: "Attack (:crossed_swords: x 1.5) front row enemy. (CD: 6)"
+      description: "Attack (:crossed_swords: x 2.6) front row enemy. (CD: 5)"
     },
     "1B": {
       name: "One Paw Man",
@@ -88,7 +88,7 @@ export default {
     },
     advisor: {
       name: "Acupoint Attack",
-      description: "Attack (:crossed_swords: x 1.5) front row enemy. (CD: 5)"
+      description: "Attack (:crossed_swords: x 2.6) front row enemy. (CD: 4)"
     },
     "1B": {
       name: "One Paw Man",
