@@ -109,7 +109,7 @@ export default {
     title: "Flowers' Whisper",
     passive: {
       name: "Spring Solo",
-      description: "Upon player's turn, grant self a random buff."
+      description: "Upon player's turn, grant self a random buff for 2 turns."
     },
     advisor: {
       name: "Summer Aria",
@@ -117,7 +117,7 @@ export default {
     },
     "1B": {
       name: "Fall Etude",
-      description: "Grant self a random buff for 2 turns."
+      description: "Grant self 2 random buffs."
     },
     "2B": {
       name: "Winter Fantasia",
