@@ -12,7 +12,7 @@ export default {
     },
     advisor: {
       name: 'Avant Guard',
-      description: 'Grant selected ally (:crossed_swords: x 1.8) Armor. (CD: 7)',
+      description: 'Grant selected ally (:crossed_swords: x 2.88) Armor. (CD: 7)',
     },
     '1B': {
       name: 'Go Command Pro',
@@ -37,7 +37,7 @@ export default {
     },
     advisor: {
       name: 'Avant Guard',
-      description: 'Grant selected ally (:crossed_swords: x 1.8) Armor. (CD: 6)',
+      description: 'Grant selected ally (:crossed_swords: x 2.88) Armor. (CD: 6)',
     },
     '1B': {
       name: 'Go Command Pro',
@@ -62,7 +62,7 @@ export default {
     },
     advisor: {
       name: 'Avant Guard',
-      description: 'Grant selected ally (:crossed_swords: x 1.8) Armor. (CD: 5)',
+      description: 'Grant selected ally (:crossed_swords: x 2.88) Armor. (CD: 5)',
     },
     '1B': {
       name: 'Go Command Pro',
