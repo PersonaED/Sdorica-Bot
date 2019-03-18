@@ -30,7 +30,7 @@ export const sendCharacterInfo = (characterInfo, message, infuse) => {
         url: characterInfo.sprite || '-',
       },
       author: {
-        name: characterInfo.name || '-',
+        name: characterInfo.nameOVERRIDE || '-',
       },
       fields: [
         {
