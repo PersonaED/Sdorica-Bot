@@ -1,4 +1,4 @@
-import { TIER_N, TIER_R, TIER_SR, TIER_SSR } from "../constants";
+import { TIER_N, TIER_R, TIER_SR, TIER_SSR, SP } from "../constants";
 import Hestia from "./model/Hestia";
 import HestiaSP from "./model/HestiaSP";
 
