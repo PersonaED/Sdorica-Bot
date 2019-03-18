@@ -2,7 +2,7 @@ import { TIER_R, TIER_SR, TIER_SSR } from "../constants";
 import DumbBearSoldier from "./model/DumbBearSoldier";
 
 export default {
-  "dumb bear soldier r": new DumbBearSoldier({
+  "dumbbearsoldier r": new DumbBearSoldier({
     tier: TIER_R,
     sprite: "https://i.imgur.com/8e60AC9.png",
     title: "Bumbling Boyfriend",
@@ -32,7 +32,7 @@ export default {
         "Remove 1 stack Wife's Boxed Lunch, grant self :DMGRED for 10 turns and :ENHANCE for 10 turns, Heal (:crossed_swords: x 0.9)/(:crossed_swords: x 0.9) 2 times. \nIf in combat mode, Armor Penetration (:crossed_swords: x 1.5)/(:crossed_swords: x 1.5)/(:crossed_swords: x 1.5) front row enemy 3 times instead."
     },
   }),
-  "dumb bear soldier sr": new DumbBearSoldier({
+  "dumbbearsoldier sr": new DumbBearSoldier({
     tier: TIER_SR,
     sprite: "https://i.imgur.com/Z3tYsgq.png",
     title: "Clueless Lover",
@@ -62,7 +62,7 @@ export default {
         "Remove 1 stack Wife's Boxed Lunch, grant self :DMGRED for 15 turns and :ENHANCE for 15 turns, Heal (:crossed_swords: x 0.9)/(:crossed_swords: x 0.9) 2 times. \nIf in combat mode, Armor Penetration (:crossed_swords: x 1.5)/(:crossed_swords: x 1.5)/(:crossed_swords: x 1.5) front row enemy 3 times instead."
     },
   }),
-  "dumb bear soldier ssr": new DumbBearSoldier({
+  "dumbbearsoldier ssr": new DumbBearSoldier({
     tier: TIER_SSR,
     sprite: "https://i.imgur.com/CKHbzsJ.png",
     title: "Clumsy Husband",
