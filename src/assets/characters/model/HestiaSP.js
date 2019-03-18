@@ -1,6 +1,6 @@
 import BaseCharacter from "./core/BaseCharacter";
 import CharStat from "./core/CharStat";
-import { BLACK } from "../../constant";
+import { BLACK } from "../../constants";
 
 class HestiaSP extends BaseCharacter {
   constructor(param) {
