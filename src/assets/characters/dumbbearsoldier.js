@@ -3,6 +3,7 @@ import DumbBearSoldier from "./model/DumbBearSoldier";
 
 export default {
   "dumbbearsoldier r": new DumbBearSoldier({
+    nameOVERRIDE: "Dumb Bear Soldier R",
     tier: TIER_R,
     sprite: "https://i.imgur.com/8e60AC9.png",
     title: "Bumbling Boyfriend",
@@ -33,6 +34,7 @@ export default {
     },
   }),
   "dumbbearsoldier sr": new DumbBearSoldier({
+    nameOVERRIDE: "Dumb Bear Soldier SR",
     tier: TIER_SR,
     sprite: "https://i.imgur.com/Z3tYsgq.png",
     title: "Clueless Lover",
@@ -63,6 +65,7 @@ export default {
     },
   }),
   "dumbbearsoldier ssr": new DumbBearSoldier({
+    nameOVERRIDE: "Dumb Bear Soldier SSR",
     tier: TIER_SSR,
     sprite: "https://i.imgur.com/CKHbzsJ.png",
     title: "Clumsy Husband",
