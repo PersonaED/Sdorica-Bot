@@ -6,6 +6,7 @@ import charle from "./charle";
 import crushfang from "./crushfang";
 import dagger from "./dagger";
 import deemo from "./deemo";
+import dumbbearsoldier from "./dumbbearsoldier";
 import dylan from "./dylan";
 import elio from "./elio";
 import experiment from "./experiment";
@@ -16,6 +17,7 @@ import hestia from "./hestia";
 import hyde from "./hyde";
 import izumi from "./izumi";
 import jahan from "./jahan";
+import jerome from "./jerome";
 import karen from "./karen";
 import karnulla from "./karnulla";
 import kittyeyes from "./kittyeyes";
@@ -48,6 +50,7 @@ export {
   crushfang,
   dagger,
   deemo,
+  dumbbearsoldier,
   dylan,
   elio,
   experiment,
@@ -58,6 +61,7 @@ export {
   hyde,
   izumi,
   jahan,
+  jerome,
   karen,
   karnulla,
   kittyeyes,

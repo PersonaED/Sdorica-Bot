@@ -4,7 +4,7 @@ import Hyde from "./model/Hyde";
 export default {
   "hyde r": new Hyde({
     tier: TIER_R,
-    sprite: "",
+    sprite: "https://i.imgur.com/a3W9zp0.png",
     title: "Cottage Teacher",
     passive: {
       name: "Furinkazan",
@@ -34,7 +34,7 @@ export default {
   }),
   "hyde sr": new Hyde({
     tier: TIER_SR,
-    sprite: "",
+    sprite: "https://i.imgur.com/tEN2pwx.png",
     title: "Wartime Minister",
     passive: {
       name: "Furinkazan",
@@ -64,7 +64,7 @@ export default {
   }),
   "hyde ssr": new Hyde({
     tier: TIER_SSR,
-    sprite: "",
+    sprite: "https://i.imgur.com/5WXFyMi.png",
     title: "Legendary Conspirator",
     passive: {
       name: "Furinkazan",

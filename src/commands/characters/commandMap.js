@@ -52,6 +52,10 @@ const mapCharacterNames = (messageArray) => {
     copiedMessage[0] = `${standardPrefix}celia`;
   }
   
+  //dbs/dumb bear soldier
+  if (copiedMessage[0] === `${standardPrefix}dbs`) {
+    copiedMessage[0] = `${standardPrefix}dumbbearsoldier`;
+  }
   return copiedMessage;
 };
 

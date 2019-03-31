@@ -130,7 +130,7 @@ export default {
     passive: {
       name: "Winding Up",
       description:
-        "Upon incoming damage skill, grant self :CLOCKWORK. If have :DMGRED, grant self 2 stacks of :CLOCKWORK instead."
+        "Upon incoming damage skill, grant self :CLOCKWORK. If have :DMGRED, grant self 2 stacks :CLOCKWORK instead."
     },
     advisor: {
       name: "Mystical Light",
@@ -140,17 +140,17 @@ export default {
     "1B": {
       name: "Party Must Go On!",
       description:
-        "Grant self :DMGRED for 3 turns."
+        "Grant self :DMGRED for 4 turns. Grant all enemies CD -1."
     },
     "2B": {
       name: "Clanging Cymbals",
       description:
-        "Grant all player characters (:crossed_swords: x 0.36) Armor and remove all :CLOCKWORK stacks. For each stack of :CLOCKWORK, grant (:crossed_swords: x 0.36) Armor 1 extra time."
+        "Grant all player characters (:crossed_swords: x 0.18) Armor and remove all :CLOCKWORK stacks. For each stack of :CLOCKWORK, grant (:crossed_swords: x 0.18) Armor 1 extra time. If have max :CLOCKWORK stacks, trigger allies' 1-orb skills as well."
     },
     "4B": {
       name: "Who Let The Dolls Out",
       description:
-        "Attack (:crossed_swords: x 2) selected enemy and remove all :CLOCKWORK stacks. For each stack of :CLOCKWORK, Attack (:crossed_swords: x 0.5) 1 extra time."
+        "Attack (:crossed_swords: x 2) selected enemy and remove all :CLOCKWORK stacks. For each stack of :CLOCKWORK, Attack (:crossed_swords: x 0.6) 1 extra time."
     },
   }),
   "tica skin": new Tica({

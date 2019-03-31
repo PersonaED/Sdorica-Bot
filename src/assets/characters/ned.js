@@ -12,7 +12,7 @@ export default {
     },
     advisor: {
       name: 'Up To Parched',
-      description: 'Attack (:crossed_swords: x 1.5) selected enemy. (CD: 7)',
+      description: 'Attack (:crossed_swords: x 2.4) selected enemy. (CD: 7)',
     },
     '1B': {
       name: 'Tamper Sand',
@@ -37,7 +37,7 @@ export default {
     },
     advisor: {
       name: 'Up To Parched',
-      description: 'Attack (:crossed_swords: x 1.5) selected enemy. (CD: 7)',
+      description: 'Attack (:crossed_swords: x 2.4) selected enemy. (CD: 7)',
     },
     '1B': {
       name: 'Tamper Sand',
@@ -62,7 +62,7 @@ export default {
     },
     advisor: {
       name: 'Up To Parched',
-      description: 'Attack (:crossed_swords: x 1.5) selected enemy. (CD: 6)',
+      description: 'Attack (:crossed_swords: x 2.4) selected enemy. (CD: 6)',
     },
     '1B': {
       name: 'Tamper Sand',
@@ -87,7 +87,7 @@ export default {
     },
     advisor: {
       name: 'Up To Parched',
-      description: 'Attack (:crossed_swords: x 1.5) selected enemy. (CD: 5)',
+      description: 'Attack (:crossed_swords: x 2.4) selected enemy. (CD: 5)',
     },
     '1B': {
       name: 'Tamper Sand',
